@@ -32,9 +32,12 @@ GitHub verwerkt vervolgens de nieuwe versie van mijn bestanden, waardoor de aanp
 
 ## Woensdag 2 september
 DEEP DIVE 1 HTML/CSS BASICS
-FOTO AANTEKENINGEN
+<img width="3024" height="2847" alt="Ontwerp zonder titel (2)" src="https://github.com/user-attachments/assets/eb4049ae-c15c-44c4-b367-1fcbfacd2c89" />
 
 DEEP DIVE 2 MMD, micro-interacties en forms
+<img width="3024" height="4032" alt="Ontwerp zonder titel (3)" src="https://github.com/user-attachments/assets/33e445d7-8b12-41fb-94a7-c1c5516807c1" />
+<img width="3024" height="1278" alt="Ontwerp zonder titel (1)" src="https://github.com/user-attachments/assets/5153466c-2263-4ea6-8f71-fb86e0270c57" />
+
 FOTO MENU KAART FIGMA
 
 ## Vrijdag 5 september
