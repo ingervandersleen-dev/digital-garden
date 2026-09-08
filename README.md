@@ -45,22 +45,27 @@ OPDRACHT 1-RANGSCHIKKEN
 OPDRACHT 2-EIGEN VERKENNING
 
 -Vanuit de inventarisatie: wat zou je zelf willen maken?
+
 Ik wil graag een ‘digital junk drawer’ maken: mijn eigen digitale rommella waarin ik alles verzamel wat mij fascineert, interesseert of opvalt. Net als in een echte rommella hoeft niet alles logisch bij elkaar te passen. Juist de combinatie van verschillende onderwerpen en losse gedachten maakt het persoonlijk.
 Het interactieve aspect van sommige websites sprak mij erg aan. Ik wil dat mijn website niet alleen mijn interesses laat zien, maar ook iets van de chaos en rommeligheid in mijn hoofd weerspiegelt. Dit zou ik willen versterken met animaties, transities en interactie. Deze technieken kan ik op dit moment nog niet goed, maar ik vind ze erg interessant en zou ze graag willen leren en toepassen in mijn website.
 
 -Welke ‘webby’ dingen heb je gezien die je ook wilt gebruiken?
+
 Het interactieve aspect van de website nuel.pw vond ik erg interessant en leuk. Ik vind het tof wanneer een website niet alleen bestaat uit tekst en afbeeldingen, maar wanneer je als bezoeker zelf dingen kunt ontdekken en wanneer er iets gebeurt door wat je doet.
 Dit wil ik ook graag toepassen op mijn eigen website. Ik wil experimenteren met bijvoorbeeld hover-effecten, animaties, transities en kleine interactieve elementen, zodat de website meer als een ervaring voelt dan als een standaard website.
 
 -Welke eigen content zou je over het onderwerp kunnen schrijven?
+
 De toon van mijn website wordt informeel, persoonlijk en een beetje chaotisch. Ik wil de bezoeker echt uitnodigen om even in de ‘la van mijn hoofd’ te kijken. Het hoeft niet allemaal netjes georganiseerd te zijn; juist de onverwachte combinaties en losse gedachten zijn onderdeel van het concept. Ik heb veel verschillende interesses en fascinaties, waardoor er veel mogelijke onderwerpen zijn. Een voorbeeld is ‘Overthinking Everything’: kleine propjes papier in de la waarop random gedachten, vragen en feitjes staan waar ik veel te lang over kan nadenken. Een ander onderwerp zou ‘Small Things, Big Feelings’ kunnen zijn. Hierin kan ik alledaagse dingen verzamelen die voor mij onverwacht veel emotionele betekenis hebben, bijvoorbeeld door middel van foto's, afbeeldingen of korte verhalen.
 Het doel van de website is vooral om mijn persoonlijkheid en manier van denken te laten zien. Ik wil niet één groot verhaal vertellen, maar juist allemaal kleine stukjes van mezelf verzamelen en de bezoeker zelf laten ontdekken wat er in mijn ‘junk drawer’ zit.
 
 -Maak je gebruik van content van een ander?
+
 Ik ben niet van plan om veel content van anderen te gebruiken. De content die ik op mijn website plaats wil ik zoveel mogelijk zelf maken en schrijven, zodat de website echt mijn eigen verhaal en perspectief weerspiegelt.
 Als ik toch content van iemand anders wil gebruiken, zou ik eerst kijken naar de rechten en voorwaarden waaronder die content gebruikt mag worden. Wanneer de maker toestemming geeft of de content onder een licentie valt die hergebruik toestaat, zou ik dit duidelijk vermelden op mijn website. Ik vind het belangrijk om eerlijk te zijn over wat wel en niet van mijzelf is.
 
 -Op welke manier is de content te ervaren?
+
 Ik wil verder gaan dan alleen tekst en beeld en proberen de website echt als een ervaring te laten voelen.
 Muziek is een groot onderdeel van mijn leven en ik koppel in mijn hoofd vaak bepaalde muziek aan specifieke onderwerpen, herinneringen of gevoelens. Dit wil ik graag meenemen in mijn website. Verschillende onderdelen van de ‘junk drawer’ zouden bijvoorbeeld hun eigen sfeer of muziek kunnen hebben. Daarnaast wil ik graag sound effects gebruiken, bijvoorbeeld bij hover-effecten of andere interacties. Op die manier reageert de website niet alleen visueel op de bezoeker, maar ook auditief. Uiteindelijk hoop ik dat mensen niet alleen mijn onderwerpen bekijken, maar er ook echt iets bij voelen. Door de combinatie van persoonlijke verhalen, muziek, beeld, geluid en interactie wil ik de bezoeker een klein kijkje geven in hoe mijn hoofd werkt.
 
@@ -157,16 +162,16 @@ ASSOCIATIES
 Bij een digital junk drawer denk ik aan veel meer dan alleen een rommelige lade. Het gaat voor mij vooral over verzamelen zonder dat alles een duidelijke reden hoeft te hebben. Associaties die ik bij mijn onderwerp heb:
 Een rommella, gedachten, overthinking, herinneringen, informatie, interesses, hobby's, sentimentaliteit, bonnetjes, losse papiertjes, kleine objecten, een computerdesktop vol bestanden, een overvolle camerarol, bookmarks, het oude internet, muziek, kunst, notitieboekjes, boeken, post-its, chaos
 
-SYMBOLIEK/ICONEN
+SYMBOLIEK/ICONEN:
 Voor mijn website kan ik gebruikmaken van herkenbare symbolen die verwijzen naar zowel een fysieke rommella als een digitale verzameling.
 
-FYSIEK
+FYSIEK:
 Lade, Paperclip, Punaises, Schaar, Sleutel, Batterij, Munt, Briefjes, Post-it, Doos
 
-DIGITAAL
+DIGITAAL:
 Folder, Computer, Prullenbak, Link, Bookmark, Screenshots, CD, Chat bubble, Cursor
 
-VOOR 'MIJN HOOFD'
+VOOR 'MIJN HOOFD':
 Brein, gedachten bubbel, Spiraal, Vraagtekens, Lampje, Hart, Sterretjes, Uitroeptekens
 
 Ik vind vooral de folder, lade, paperclip, cursor en thought bubble interessant omdat ze samen de overgang tussen een fysieke en digitale junk drawer kunnen laten zien. Voor iconen kan ik bijvoorbeeld kijken op https://thenounproject.com/. 
