@@ -43,6 +43,7 @@ FOTO MENU KAART FIGMA
 OPDRACHT 1-RANGSCHIKKEN
 
 OPDRACHT 2-EIGEN VERKENNING
+
 -Vanuit de inventarisatie: wat zou je zelf willen maken?
 Ik wil graag een ‘digital junk drawer’ maken: mijn eigen digitale rommella waarin ik alles verzamel wat mij fascineert, interesseert of opvalt. Net als in een echte rommella hoeft niet alles logisch bij elkaar te passen. Juist de combinatie van verschillende onderwerpen en losse gedachten maakt het persoonlijk.
 Het interactieve aspect van sommige websites sprak mij erg aan. Ik wil dat mijn website niet alleen mijn interesses laat zien, maar ook iets van de chaos en rommeligheid in mijn hoofd weerspiegelt. Dit zou ik willen versterken met animaties, transities en interactie. Deze technieken kan ik op dit moment nog niet goed, maar ik vind ze erg interessant en zou ze graag willen leren en toepassen in mijn website.
@@ -156,29 +157,36 @@ Een rommella, gedachten, overthinking, herinneringen, informatie, interesses, ho
 
 SYMBOLIEK/ICONEN
 Voor mijn website kan ik gebruikmaken van herkenbare symbolen die verwijzen naar zowel een fysieke rommella als een digitale verzameling.
-## Fysiek
+
+FYSIEK
+
 Lade, Paperclip, Punaises, Schaar, Sleutel, Batterij, Munt, Briefjes, Post-it, Doos
-## Digitaal
+
+DIGITAAL
+
 Folder, Computer, Prullenbak, Link, Bookmark, Screenshots, CD, Chat bubble, Cursor
-## Voor mijn ‘hoofd’
+
+VOOR 'MIJN HOOFD'
+
 Brein, gedachten bubbel, Spiraal, Vraagtekens, Lampje, Hart, Sterretjes, Uitroeptekens
 
 Ik vind vooral de folder, lade, paperclip, cursor en thought bubble interessant omdat ze samen de overgang tussen een fysieke en digitale junk drawer kunnen laten zien. Voor iconen kan ik bijvoorbeeld kijken op https://thenounproject.com/. 
 
 SUBCULTUUR
+
 Mijn onderwerp past denk ik vooral binnen de internet- en webcultuur, en dan specifiek bij de cultuur rondom persoonlijke websites, digital gardens en het ‘old web’. Het idee spreekt mij aan omdat het internet vroeger meer voelde als een verzameling persoonlijke plekken. Iedereen kon een eigen hoekje op het web maken met dingen die zij interessant vonden. Mijn website sluit daarbij aan: het is niet bedoeld als een perfect portfolio of een commerciële website, maar als een persoonlijk stukje internet.
 Daarnaast past het bij de huidige cultuur van scrapbooking, journaling, collecting en digital hoarding. Mensen verzamelen tegenwoordig niet alleen fysieke spullen, maar ook digitale herinneringen: foto's, screenshots, memes, TikToks, playlists, Pinterest-borden en opgeslagen posts.
 
 SUBONDERWERPEN
-## Gedachten-Overthinking Everything
+Gedachten-Overthinking Everything:
 Random gedachten, vragen, observaties en dingen waar ik veel te lang over nadenk.
-## Small Things, Big Feelings
+Small Things, Big Feelings:
 alledaagse dingen met onverwacht veel emotionele betekenis.
-## Music-Songs That Live in My Head
+Music-Songs That Live in My Head:
 Muziek die ik aan bepaalde herinneringen, personen, gevoelens of periodes koppel.
-## Fascinaties
+Fascinaties:
 Random onderwerpen waar ik volledig door gefascineerd ben.
-## Chaos- A Tour Through My Brain
+Chaos- A Tour Through My Brain:
 Een meer experimenteel gedeelte waarin alle onderwerpen door elkaar lopen en waarbij de bezoeker zelf mag ontdekken waar hij of zij terechtkomt.
 
 CONLUSIE ONDERZOEK
