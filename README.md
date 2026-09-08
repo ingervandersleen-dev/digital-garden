@@ -199,3 +199,34 @@ Een meer experimenteel gedeelte waarin alle onderwerpen door elkaar lopen en waa
 CONLUSIE ONDERZOEK
 
 Een junk drawer is een verzameling van dingen die nergens anders thuishoren. Mijn digital junk drawer is een verzameling van gedachten, herinneringen, fascinaties en kleine dingen die misschien nergens anders thuishoren, maar voor mij wel betekenis hebben.
+
+# Dinsdag 8 september 
+COLLAGES 50 FOTO'S 
+<img width="1333" height="2000" alt="1" src="https://github.com/user-attachments/assets/21e05e35-1857-47ec-9670-744701032cba" />
+<img width="1333" height="2000" alt="2" src="https://github.com/user-attachments/assets/2036594e-8e55-4af7-9df3-eceb181ff81d" />
+<img width="1333" height="2000" alt="3" src="https://github.com/user-attachments/assets/846e27d1-77c1-4b1f-a137-d67d85c91b83" />
+<img width="1333" height="2000" alt="4" src="https://github.com/user-attachments/assets/b9251e78-3a63-42b9-a979-e997e86630fa" />
+<img width="1333" height="2000" alt="5" src="https://github.com/user-attachments/assets/37277076-f3a1-4995-8d61-f1f4940497b6" />
+
+SLIDES PRESENTATIE
+<img width="1060" height="663" alt="Scherm­afbeelding 2026-09-08 om 23 09 10" src="https://github.com/user-attachments/assets/7e6f5901-8ea6-49b5-9bcc-5cafe5760255" />
+<img width="1060" height="663" alt="Scherm­afbeelding 2026-09-08 om 23 09 19" src="https://github.com/user-attachments/assets/b1871a58-5a6f-49e0-a7a3-d636dbb50eb9" />
+<img width="1060" height="663" alt="Scherm­afbeelding 2026-09-08 om 23 09 33" src="https://github.com/user-attachments/assets/f6be48b6-6bdc-4661-b432-58d22c2b3183" />
+<img width="1060" height="663" alt="Scherm­afbeelding 2026-09-08 om 23 09 40" src="https://github.com/user-attachments/assets/194c1800-595c-4216-9a19-266a087fc2bf" />
+<img width="1060" height="663" alt="Scherm­afbeelding 2026-09-08 om 23 09 52" src="https://github.com/user-attachments/assets/ecbead78-8f54-48ce-b011-c8bce8872553" />
+<img width="1060" height="663" alt="Scherm­afbeelding 2026-09-08 om 23 10 03" src="https://github.com/user-attachments/assets/30b7ec91-5a6d-4ef3-8e48-403943b80f19" />
+<img width="1060" height="663" alt="Scherm­afbeelding 2026-09-08 om 23 10 13" src="https://github.com/user-attachments/assets/77d39181-62d6-4c10-85e4-4e22a09a04c6" />
+<img width="1060" height="663" alt="Scherm­afbeelding 2026-09-08 om 23 10 19" src="https://github.com/user-attachments/assets/7a51de01-7143-4d22-aa8f-bdd3554035dd" />
+<img width="1060" height="663" alt="Scherm­afbeelding 2026-09-08 om 23 10 47" src="https://github.com/user-attachments/assets/3423e8c4-e862-4954-ac7b-cf32f888971c" />
+<img width="1060" height="663" alt="Scherm­afbeelding 2026-09-08 om 23 12 59" src="https://github.com/user-attachments/assets/cbc41ab0-7c5d-43dc-9f77-1779a2ddb608" />
+
+
+
+
+
+
+
+
+
+
+
