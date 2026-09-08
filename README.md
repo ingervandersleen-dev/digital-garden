@@ -141,6 +141,7 @@ VORMGEVING
 11. https://nl.pinterest.com/pin/2533343537070251/
 
 HEDEN EN VERLEDEN-hoe is mijn onderwerp veranderd?
+
 De junk drawer bestaat al veel langer dan het internet. De term junk drawer wordt al sinds het begin van de twintigste eeuw gebruikt; het Oxford English Dictionary dateert een vroeg gebruik van de term uit 1912. Een junk drawer was oorspronkelijk vooral een plek voor kleine spullen die handig konden zijn, maar geen vaste plek hadden: elastiekjes, batterijen, schroeven, pennen, bonnetjes en andere losse voorwerpen. (BRON; https://en.wikipedia.org/wiki/Junk_drawer) 
 
 Met de komst van computers en het internet is dit idee eigenlijk digitaal geworden. In plaats van een fysieke lade vol spullen hebben we nu bijvoorbeeld een Downloads-map vol bestanden, een camerarol vol foto's, honderden screenshots, opgeslagen posts, bookmarks en tientallen browser-tabs. Mijn digital junk drawer is een combinatie van deze twee werelden: een fysieke rommella vertaald naar de manier waarop ik tegenwoordig gedachten, herinneringen en interesses verzamel.
@@ -152,6 +153,7 @@ Personal Websites & Digital Gardens: over de geschiedenis en betekenis van perso
 Digital Garden-A Wiki You Can Walk Through: interessant als verbinding tussen mijn digital garden en het verzamelen van gedachten.
 
 ASSOCIATIES 
+
 Bij een digital junk drawer denk ik aan veel meer dan alleen een rommelige lade. Het gaat voor mij vooral over verzamelen zonder dat alles een duidelijke reden hoeft te hebben. Associaties die ik bij mijn onderwerp heb:
 Een rommella, gedachten, overthinking, herinneringen, informatie, interesses, hobby's, sentimentaliteit, bonnetjes, losse papiertjes, kleine objecten, een computerdesktop vol bestanden, een overvolle camerarol, bookmarks, het oude internet, muziek, kunst, notitieboekjes, boeken, post-its, chaos
 
@@ -159,15 +161,12 @@ SYMBOLIEK/ICONEN
 Voor mijn website kan ik gebruikmaken van herkenbare symbolen die verwijzen naar zowel een fysieke rommella als een digitale verzameling.
 
 FYSIEK
-
 Lade, Paperclip, Punaises, Schaar, Sleutel, Batterij, Munt, Briefjes, Post-it, Doos
 
 DIGITAAL
-
 Folder, Computer, Prullenbak, Link, Bookmark, Screenshots, CD, Chat bubble, Cursor
 
 VOOR 'MIJN HOOFD'
-
 Brein, gedachten bubbel, Spiraal, Vraagtekens, Lampje, Hart, Sterretjes, Uitroeptekens
 
 Ik vind vooral de folder, lade, paperclip, cursor en thought bubble interessant omdat ze samen de overgang tussen een fysieke en digitale junk drawer kunnen laten zien. Voor iconen kan ik bijvoorbeeld kijken op https://thenounproject.com/. 
