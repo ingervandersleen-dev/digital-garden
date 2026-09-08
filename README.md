@@ -73,7 +73,9 @@ Ik wil aan de slag met het maken van een digital junk drawer. Hieraan plaats ik 
 
 ## Dinsdag 8 september
 OPDRACHT 3- VERZAMELEN VAN INSPIRATIE
+
 Ik startte met het verzamelen van inspiratiefoto's. 
+
 LADES/BUREAU
 1. https://jp.pinterest.com/pin/minimalist-desk-decor-ideas--67413325665726302/
 2. https://www.marthastewart.com/1125186/office-organization-ideas
@@ -137,7 +139,7 @@ VORMGEVING
 10. https://nl.pinterest.com/pin/422281212422730/
 11. https://nl.pinterest.com/pin/2533343537070251/
 
-HEDEN EN VERLEDEN — hoe is mijn onderwerp veranderd?
+HEDEN EN VERLEDEN-hoe is mijn onderwerp veranderd?
 De junk drawer bestaat al veel langer dan het internet. De term junk drawer wordt al sinds het begin van de twintigste eeuw gebruikt; het Oxford English Dictionary dateert een vroeg gebruik van de term uit 1912. Een junk drawer was oorspronkelijk vooral een plek voor kleine spullen die handig konden zijn, maar geen vaste plek hadden: elastiekjes, batterijen, schroeven, pennen, bonnetjes en andere losse voorwerpen. (BRON; https://en.wikipedia.org/wiki/Junk_drawer) 
 
 Met de komst van computers en het internet is dit idee eigenlijk digitaal geworden. In plaats van een fysieke lade vol spullen hebben we nu bijvoorbeeld een Downloads-map vol bestanden, een camerarol vol foto's, honderden screenshots, opgeslagen posts, bookmarks en tientallen browser-tabs. Mijn digital junk drawer is een combinatie van deze twee werelden: een fysieke rommella vertaald naar de manier waarop ik tegenwoordig gedachten, herinneringen en interesses verzamel.
@@ -179,4 +181,6 @@ Random onderwerpen waar ik volledig door gefascineerd ben.
 ## Chaos- A Tour Through My Brain
 Een meer experimenteel gedeelte waarin alle onderwerpen door elkaar lopen en waarbij de bezoeker zelf mag ontdekken waar hij of zij terechtkomt.
 
+CONLUSIE ONDERZOEK
 
+Een junk drawer is een verzameling van dingen die nergens anders thuishoren. Mijn digital junk drawer is een verzameling van gedachten, herinneringen, fascinaties en kleine dingen die misschien nergens anders thuishoren, maar voor mij wel betekenis hebben.
