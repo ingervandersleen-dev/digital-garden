@@ -225,22 +225,18 @@ PRESENTEREN IN DUO'S (Isabeau Cool)
 Eigen verbinding:​
 
 -Wat is voor jou de essentie van wat je hebt gepresenteerd qua onderwerp en geschreven/beeldende content? ​
-
 Voor mij gaat mijn digital junk drawer vooral over verzamelen wat op een bepaald moment mijn aandacht trekt. Het is eigenlijk een soort digitale weerspiegeling van mijn interesses, gedachten en inspiratie. Niet alles wat ik bewaar heeft een duidelijke functie, maar juist die combinatie van willekeurige dingen laat zien wat mij bezighoudt. Mijn junk drawer is daardoor een soort verzameling van kleine digitale herinneringen en inspiratie.
 
 -Welke woorden uit de kwaliteitenlijst kunnen passen bij je onderwerp?​
-
-persoonlijk, speels, chaotisch, spontaan, nieuwsgierig, creatief, dynamisch, eigenzinnig
+Persoonlijk, speels, chaotisch, spontaan, nieuwsgierig, creatief, dynamisch, eigenzinnig
 
 -Heeft 'de ander' een aanvulling op je onderwerp?​
 nvt
 
 -Wat is het karakter/ de uitstraling/ het gevoel dat bij het onderwerp past? (bijv. stoer, hip, vrolijk, dynamisch, eenvoudig, enz.)​
-
 Ik vind dat mijn onderwerp een speels, persoonlijk en een beetje chaotisch karakter heeft. Het hoeft niet perfect geordend te zijn. Juist het onverwachte en de mix van verschillende dingen vind ik interessant. Je weet niet precies wat je tegenkomt, maar alles vertelt op een bepaalde manier iets over die persoon.
 
 -Welke inspiratie kun je uit je 25 afbeeldingen halen. Stijl, een gevoel, vorm, enz.
-
 Uit mijn 25 afbeeldingen haal ik vooral inspiratie uit de combinatie van verschillende stijlen en beelden. Ik hoef niet alles heel strak en consistent te maken. Juist het combineren van verschillende kleuren, vormen, typografie en soorten afbeeldingen past bij het idee van een junk drawer. Ik kan bijvoorbeeld werken met een collage-achtige stijl, overlappingen, verschillende formaten afbeeldingen en kleine details die eruitzien alsof ze ergens toevallig zijn neergelegd. Het mag een beetje imperfect en speels zijn.
 
 
