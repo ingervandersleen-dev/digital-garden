@@ -8,15 +8,13 @@
 
 html {
   color-scheme: light dark;
-  --color: light dark (black, white);
-  --background: light dark (black, white);
 }
 
-html:has([value="light"] :checked) {
+html:has([value="light"]:checked) {
   color-scheme: light;
 }
 
-html:has([value="dark"] :checked) {
+html:has([value="dark"]:checked) {
   color-scheme: dark;
 }
 
@@ -24,6 +22,4 @@ body {
   font-family: "Comic Relief", system-ui;
   background-color: Canvas;
   color: CanvasText;
-  background: var(--background);
-  color: var(--color);
 }
