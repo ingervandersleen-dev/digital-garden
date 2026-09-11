@@ -268,6 +268,15 @@ VISUAL RESEARCH OPDRACHT
 WIREFRAMES
 <img width="3024" height="4032" alt="Ontwerp zonder titel (4)" src="https://github.com/user-attachments/assets/867bda6c-250f-4044-b2e1-ff4e71237aef" />
 
+LIGHT & DARK MODE MIJN WEBSITE-CODE
+
+<img width="762" height="753" alt="Scherm­afbeelding 2026-09-11 om 11 41 37" src="https://github.com/user-attachments/assets/39951a8e-4ab5-4d5e-9996-61101d522567" />
+<img width="762" height="753" alt="Scherm­afbeelding 2026-09-11 om 11 41 47" src="https://github.com/user-attachments/assets/8e0eaa16-0392-4258-8f0d-a2de3d3f6eb3" />
+<img width="762" height="324" alt="Scherm­afbeelding 2026-09-11 om 11 41 55" src="https://github.com/user-attachments/assets/4aaaad8d-3ed0-4b22-adf3-196daf44bd29" />
+<img width="762" height="568" alt="Scherm­afbeelding 2026-09-11 om 11 44 14" src="https://github.com/user-attachments/assets/9f52673f-67d2-402d-8f67-19d3c21f7384" />
+
+<img width="762" height="784" alt="Scherm­afbeelding 2026-09-11 om 11 45 00" src="https://github.com/user-attachments/assets/093bc8a8-63d9-4f74-a04a-32ef5fade414" />
+<img width="762" height="784" alt="Scherm­afbeelding 2026-09-11 om 11 45 09" src="https://github.com/user-attachments/assets/5f80ab77-8aeb-4464-a33b-0d2b675a328b" />
 
 
 
