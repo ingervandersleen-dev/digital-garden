@@ -245,10 +245,12 @@ Ik vind dat mijn onderwerp een speels, persoonlijk en een beetje chaotisch karak
 Uit mijn 25 afbeeldingen haal ik vooral inspiratie uit de combinatie van verschillende stijlen en beelden. Ik hoef niet alles heel strak en consistent te maken. Juist het combineren van verschillende kleuren, vormen, typografie en soorten afbeeldingen past bij het idee van een junk drawer. Ik kan bijvoorbeeld werken met een collage-achtige stijl, overlappingen, verschillende formaten afbeeldingen en kleine details die eruitzien alsof ze ergens toevallig zijn neergelegd. Het mag een beetje imperfect en speels zijn.
 
 DEEP DIVE LIGHT & DARK MODE
+
 <img width="2880" height="1552" alt="Ontwerp zonder titel (1)" src="https://github.com/user-attachments/assets/70a3c17d-928d-4bab-bdaf-324e3811fbd9" />
 <img width="1440" height="776" alt="Scherm­afbeelding 2026-09-11 om 09 03 54" src="https://github.com/user-attachments/assets/bb62dc66-7bb5-4845-988a-82f8331d6397" />
 
 VISUAL RESEARCH OPDRACHT
+
 <img width="731" height="316" alt="Scherm­afbeelding 2026-09-11 om 09 18 37" src="https://github.com/user-attachments/assets/d7c887c9-1086-4bbb-b7ca-fd30a5e04539" />
 <img width="731" height="615" alt="Scherm­afbeelding 2026-09-11 om 09 19 14" src="https://github.com/user-attachments/assets/d9ddd2b8-5316-462c-bf34-1c517146c186" />
 <img width="731" height="615" alt="Scherm­afbeelding 2026-09-11 om 09 19 27" src="https://github.com/user-attachments/assets/e29315b6-393e-4528-bdbe-789efe9cf521" />
