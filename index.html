@@ -6,7 +6,7 @@
     <meta name="author" content="[jouw naam]" />
     <meta name="color-scheme" content="dark light" />
 
-    <title>[Inger's universe]</title>
+    <title>[Inger's Junk Drawer]</title>
     <link rel="stylesheet" href="./assets/style/normal.css" />
 
     <!-- Importeer het webring component, voeg jouw eigen domein toe in data-page -->
@@ -18,7 +18,33 @@
   </head>
   <body>
     <header>
-      <h1>[Welkom in het universum van Inger!]</h1>
+      <h1>[Inger's junk drawer]</h1>
+      <form>
+        <label for="system-mode">
+          <input
+            type="radio"
+            id="system-mode"
+            name="color-scheme"
+            value="auto"
+            checked
+          />
+          auto
+        </label>
+        <label for="light-mode">
+          <input
+            type="radio"
+            id="light-mode"
+            name="color-scheme"
+            value="light"
+          />
+          Licht
+        </label>
+        <label for="dark-mode">
+          <input type="radio" id="dark-mode" name="color-scheme" value="dark" />
+          Donker
+        </label>
+      </form>
+
       <p>
         [Dit is de model repository,
         <a href="https://github.com/CMDA/model"
