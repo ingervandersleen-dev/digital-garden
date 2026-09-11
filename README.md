@@ -265,6 +265,10 @@ VISUAL RESEARCH OPDRACHT
 <img width="731" height="615" alt="Scherm­afbeelding 2026-09-11 om 09 19 27" src="https://github.com/user-attachments/assets/e29315b6-393e-4528-bdbe-789efe9cf521" />
 <img width="703" height="715" alt="Scherm­afbeelding 2026-09-11 om 09 19 57" src="https://github.com/user-attachments/assets/e27eec71-1960-40d5-8149-1fbf1e4d1df1" />
 
+WIREFRAMES
+<img width="3024" height="4032" alt="Ontwerp zonder titel (4)" src="https://github.com/user-attachments/assets/867bda6c-250f-4044-b2e1-ff4e71237aef" />
+
+
 
 
 
