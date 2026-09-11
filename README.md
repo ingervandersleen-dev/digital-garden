@@ -254,6 +254,9 @@ DEEP DIVE LIGHT & DARK MODE
 
 <img width="2880" height="1552" alt="Ontwerp zonder titel (1)" src="https://github.com/user-attachments/assets/70a3c17d-928d-4bab-bdaf-324e3811fbd9" />
 <img width="1440" height="776" alt="Scherm­afbeelding 2026-09-11 om 09 03 54" src="https://github.com/user-attachments/assets/bb62dc66-7bb5-4845-988a-82f8331d6397" />
+<img width="1440" height="752" alt="Scherm­afbeelding 2026-09-11 om 09 38 17" src="https://github.com/user-attachments/assets/77af06af-e1ef-4f21-89f2-177afc33198a" />
+<img width="1440" height="752" alt="Scherm­afbeelding 2026-09-11 om 09 38 35" src="https://github.com/user-attachments/assets/c6cda033-5156-4a2a-a02b-5971d75402a2" />
+
 
 VISUAL RESEARCH OPDRACHT
 
