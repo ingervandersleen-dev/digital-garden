@@ -200,6 +200,12 @@ CONLUSIE ONDERZOEK
 
 Een junk drawer is een verzameling van dingen die nergens anders thuishoren. Mijn digital junk drawer is een verzameling van gedachten, herinneringen, fascinaties en kleine dingen die misschien nergens anders thuishoren, maar voor mij wel betekenis hebben.
 
+<img width="4032" height="3024" alt="Ontwerp zonder titel (1)" src="https://github.com/user-attachments/assets/5ae03f97-d904-43d2-8dca-73389289ec26" />
+<img width="3024" height="3588" alt="Ontwerp zonder titel (2)" src="https://github.com/user-attachments/assets/bef3d5e8-9371-4d0f-a806-5b3f317e8ca3" />
+
+
+
+
 # Dinsdag 8 september 
 COLLAGES 50 FOTO'S 
 <img width="1333" height="2000" alt="1" src="https://github.com/user-attachments/assets/21e05e35-1857-47ec-9670-744701032cba" />
