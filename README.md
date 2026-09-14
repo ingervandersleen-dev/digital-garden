@@ -278,7 +278,15 @@ LIGHT & DARK MODE MIJN WEBSITE-CODE
 <img width="762" height="784" alt="Scherm­afbeelding 2026-09-11 om 11 45 00" src="https://github.com/user-attachments/assets/093bc8a8-63d9-4f74-a04a-32ef5fade414" />
 <img width="762" height="784" alt="Scherm­afbeelding 2026-09-11 om 11 45 09" src="https://github.com/user-attachments/assets/5f80ab77-8aeb-4464-a33b-0d2b675a328b" />
 
+## Maandag 14 september
+DEEP DIVE- sophia
+Leg uit wanneer een website 'lelijk' wordt en geef voorbeelden wat je kan doen om deze 'lelijke' onderdelen te fixen?
+Ongeorganiseerd, niet adaptief, geen CSS alleen HTML, juiste formaten 
 
+Vertel welke volgende stap je neemt om je website responsive te maken.
+deep dive toepassen, 
+
+Kun je het ontwerp en de bouw van je eigen Garden (zo uit je hoofd) onderbouwen in Webby vocabulair?
 
 
 
