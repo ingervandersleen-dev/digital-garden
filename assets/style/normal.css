@@ -23,3 +23,259 @@ body {
   background-color: Canvas;
   color: CanvasText;
 }
+
+main {
+  margin: 2rem auto;
+  max-width: 1000px;
+}
+
+.park {
+  background: linear-gradient(
+    to bottom,
+    #dbeef2 0%,
+    #f8ddbf 48%,
+    #8caf79 48%,
+    #557d58 100%
+  );
+  color: #24372e;
+  min-height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Titel */
+
+.title {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 3rem;
+  transform: translateX(-50%);
+  width: 90%;
+}
+
+.title p {
+  font-size: 0.8rem;
+  letter-spacing: 0.15rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.title h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-weight: normal;
+  line-height: 0.9;
+  margin: 0.5rem 0;
+}
+
+.title em {
+  font-weight: normal;
+}
+
+/* Zon en wolken */
+
+.sun {
+  background: #f5bd6e;
+  border-radius: 50%;
+  height: 5rem;
+  position: absolute;
+  right: 12%;
+  top: 4rem;
+  width: 5rem;
+}
+
+.cloud {
+  background: #fff8e9aa;
+  border-radius: 3rem;
+  height: 2rem;
+  position: absolute;
+  width: 8rem;
+}
+
+.cloud::before,
+.cloud::after {
+  background: inherit;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+}
+
+.cloud::before {
+  height: 3rem;
+  left: 1.5rem;
+  top: -1.3rem;
+  width: 3rem;
+}
+
+.cloud::after {
+  height: 2.5rem;
+  right: 1rem;
+  top: -0.8rem;
+  width: 2.5rem;
+}
+
+.cloud-one {
+  left: 8%;
+  top: 8rem;
+}
+
+.cloud-two {
+  right: 10%;
+  top: 12rem;
+  transform: scale(0.7);
+}
+
+/* Bomen */
+
+.tree {
+  background: #67523d;
+  bottom: 8rem;
+  height: 8rem;
+  position: absolute;
+  width: 0.8rem;
+}
+
+.tree::before {
+  background: #547b55;
+  border-radius: 50%;
+  content: "";
+  height: 7rem;
+  left: -2.7rem;
+  position: absolute;
+  top: -4rem;
+  width: 6rem;
+}
+
+.tree-left {
+  left: 12%;
+}
+
+.tree-right {
+  right: 14%;
+}
+
+/* Gedachten */
+
+.thought {
+  align-items: center;
+  background: #f7ead4;
+  border-radius: 50%;
+  color: #4b5b4e;
+  display: flex;
+  font-size: 0.8rem;
+  height: 4.5rem;
+  justify-content: center;
+  padding: 0.5rem;
+  position: absolute;
+  text-align: center;
+  width: 4.5rem;
+}
+
+.thought-one {
+  left: 25%;
+  top: 17rem;
+}
+
+.thought-two {
+  right: 24%;
+  top: 18rem;
+}
+
+.thought-three {
+  right: 38%;
+  top: 24rem;
+  transform: scale(0.7);
+}
+
+/* Pad en bankje */
+
+.path {
+  background: #dac9aa;
+  bottom: 0;
+  clip-path: polygon(40% 0%, 60% 0%, 100% 100%, 0% 100%);
+  height: 19rem;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 15rem;
+}
+
+.bench {
+  border-bottom: 0.7rem solid #705438;
+  bottom: 5rem;
+  height: 2.8rem;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 9rem;
+  z-index: 1;
+}
+
+.bench::before {
+  background: #9c7650;
+  border: 0.4rem solid #705438;
+  content: "";
+  inset: 0 0 1rem;
+  position: absolute;
+}
+
+/* Tekst onderaan */
+
+.park-text {
+  bottom: 1.5rem;
+  color: white;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  width: 90%;
+  z-index: 2;
+}
+
+.park-text p {
+  font-family: Georgia, serif;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.park-text a {
+  background: #fff8e9;
+  border-radius: 2rem;
+  color: #24372e;
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  text-decoration: none;
+}
+
+.park-text a:hover {
+  background: #f5bd6e;
+}
+
+/* Mobiel */
+
+@media (max-width: 600px) {
+  .park {
+    min-height: 540px;
+  }
+
+  .tree-left {
+    left: 4%;
+  }
+
+  .tree-right {
+    right: 5%;
+  }
+
+  .thought-one {
+    left: 12%;
+  }
+
+  .thought-two {
+    right: 10%;
+  }
+
+  .thought-three {
+    display: none;
+  }
+}
