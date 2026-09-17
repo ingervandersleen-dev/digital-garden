@@ -22,11 +22,12 @@ body {
   font-family: "Comic Relief", system-ui;
   background-color: Canvas;
   color: CanvasText;
+  margin: 0;
 }
 
 main {
-  margin: 2rem auto;
-  max-width: 1000px;
+  margin: 0;
+  max-width: none;
 }
 
 .park {
@@ -38,9 +39,10 @@ main {
     #557d58 100%
   );
   color: #24372e;
-  min-height: 600px;
+  min-height: 100vh;
   overflow: hidden;
   position: relative;
+  width: 100%;
 }
 
 /* Titel */
