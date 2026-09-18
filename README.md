@@ -284,9 +284,6 @@ Ik startte vandaag met het schetsen van het hoofdscherm. Tijdens het schetsen kw
 
 <img width="939" height="690" alt="Scherm­afbeelding 2026-09-18 om 10 36 05" src="https://github.com/user-attachments/assets/d7ce7374-9897-4273-a5c1-a715ad347d08" />
 
-
-<img width="551" height="372" alt="Scherm­afbeelding 2026-09-18 om 09 15 04" src="https://github.com/user-attachments/assets/b1b4ea8f-a425-49be-a728-6bad4b94b419" />
-
 Dit wil ik gaan coderen als homepage voor mijn website.
 
 CHECK-OUT- sophia
@@ -300,6 +297,8 @@ Kun je het ontwerp en de bouw van je eigen Garden (zo uit je hoofd) onderbouwen 
 
 ## Woensdag 16 september 
 Tijdens het uitwerken van mijn homepage in VSCodium kwam ik tot de conclusie dat ik mijn onderwerp toch te breed vind en ik het mezelf hiermee onnodig lastig maak. Daarom koos ik ervoor mijn onderwerp aan te scherpen naar één specifiek onderdeel van mijn website waar ik nog steeds enorm veel interessants mee kan doen. Toen kwam ik uit op 'Overthinking Everything'. Ik startte met het maken van schetsen.
+
+<img width="551" height="372" alt="Scherm­afbeelding 2026-09-18 om 09 15 04" src="https://github.com/user-attachments/assets/b1b4ea8f-a425-49be-a728-6bad4b94b419" />
 
 <img width="941" height="690" alt="Scherm­afbeelding 2026-09-18 om 10 28 44" src="https://github.com/user-attachments/assets/e88dbeff-e51c-4fc9-941f-edd7633aae9f" />
 
