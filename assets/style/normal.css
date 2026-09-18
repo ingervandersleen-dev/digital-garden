@@ -26,8 +26,8 @@ body {
 }
 
 main {
-  margin: 0;
-  max-width: none;
+  margin: 2rem auto;
+  max-width: 1000px;
 }
 
 .park {
@@ -39,10 +39,9 @@ main {
     #557d58 100%
   );
   color: #24372e;
-  min-height: 100vh;
+  min-height: 600px;
   overflow: hidden;
   position: relative;
-  width: 100%;
 }
 
 /* Titel */
@@ -77,7 +76,7 @@ main {
 
 /* Zon en wolken */
 
-.sun {
+.zon {
   background: #f5bd6e;
   border-radius: 50%;
   height: 5rem;
@@ -87,7 +86,7 @@ main {
   width: 5rem;
 }
 
-.cloud {
+.wolk {
   background: #fff8e9aa;
   border-radius: 3rem;
   height: 2rem;
@@ -95,34 +94,34 @@ main {
   width: 8rem;
 }
 
-.cloud::before,
-.cloud::after {
+.wolk::before,
+.wolk::after {
   background: inherit;
   border-radius: 50%;
   content: "";
   position: absolute;
 }
 
-.cloud::before {
+.wolk::before {
   height: 3rem;
   left: 1.5rem;
   top: -1.3rem;
   width: 3rem;
 }
 
-.cloud::after {
+.wolk::after {
   height: 2.5rem;
   right: 1rem;
   top: -0.8rem;
   width: 2.5rem;
 }
 
-.cloud-one {
+.wolk-1 {
   left: 8%;
   top: 8rem;
 }
 
-.cloud-two {
+.wolk-2 {
   right: 10%;
   top: 12rem;
   transform: scale(0.7);
@@ -130,7 +129,7 @@ main {
 
 /* Bomen */
 
-.tree {
+.boom {
   background: #67523d;
   bottom: 8rem;
   height: 8rem;
@@ -138,7 +137,7 @@ main {
   width: 0.8rem;
 }
 
-.tree::before {
+.boom::before {
   background: #547b55;
   border-radius: 50%;
   content: "";
@@ -149,17 +148,17 @@ main {
   width: 6rem;
 }
 
-.tree-left {
+.boom-links {
   left: 12%;
 }
 
-.tree-right {
+.boom-rechts {
   right: 14%;
 }
 
 /* Gedachten */
 
-.thought {
+.bubbel {
   align-items: center;
   background: #f7ead4;
   border-radius: 50%;
@@ -174,17 +173,17 @@ main {
   width: 4.5rem;
 }
 
-.thought-one {
+.bubbel-1 {
   left: 25%;
   top: 17rem;
 }
 
-.thought-two {
+.bubbel-2 {
   right: 24%;
   top: 18rem;
 }
 
-.thought-three {
+.bubbel-3 {
   right: 38%;
   top: 24rem;
   transform: scale(0.7);
@@ -192,7 +191,7 @@ main {
 
 /* Pad en bankje */
 
-.path {
+.pad {
   background: #dac9aa;
   bottom: 0;
   clip-path: polygon(40% 0%, 60% 0%, 100% 100%, 0% 100%);
@@ -203,7 +202,7 @@ main {
   width: 15rem;
 }
 
-.bench {
+.bankje {
   border-bottom: 0.7rem solid #705438;
   bottom: 5rem;
   height: 2.8rem;
@@ -214,7 +213,7 @@ main {
   z-index: 1;
 }
 
-.bench::before {
+.bankje::before {
   background: #9c7650;
   border: 0.4rem solid #705438;
   content: "";
@@ -224,7 +223,7 @@ main {
 
 /* Tekst onderaan */
 
-.park-text {
+.park-tekst {
   bottom: 1.5rem;
   color: white;
   left: 50%;
@@ -235,13 +234,13 @@ main {
   z-index: 2;
 }
 
-.park-text p {
+.park-tekst p {
   font-family: Georgia, serif;
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
-.park-text a {
+.park-tekst a {
   background: #fff8e9;
   border-radius: 2rem;
   color: #24372e;
@@ -250,7 +249,7 @@ main {
   text-decoration: none;
 }
 
-.park-text a:hover {
+.park-tekst a:hover {
   background: #f5bd6e;
 }
 
@@ -261,23 +260,23 @@ main {
     min-height: 540px;
   }
 
-  .tree-left {
+  .boom-links {
     left: 4%;
   }
 
-  .tree-right {
+  .boom-rechts {
     right: 5%;
   }
 
-  .thought-one {
+  .bubbel-1 {
     left: 12%;
   }
 
-  .thought-two {
+  .bubbel-2 {
     right: 10%;
   }
 
-  .thought-three {
+  .bubbel-3 {
     display: none;
   }
 }
