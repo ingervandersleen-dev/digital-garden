@@ -81,7 +81,7 @@ body {
   bottom: 0;
   clip-path: polygon(40% 0%, 60% 0%, 100% 100%, 0% 100%);
   content: "";
-  height: 19rem;
+  height: 52vh;
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
