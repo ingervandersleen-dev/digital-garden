@@ -291,9 +291,9 @@ Ik heb een ontwerp in Canva gemaakt:
 
 Dit wil ik gaan coderen als homepage voor mijn website.
 
-CHECK-OUT- sophia
-Leg uit wanneer een website 'lelijk' wordt en geef voorbeelden wat je kan doen om deze 'lelijke' onderdelen te fixen?
-Ongeorganiseerd, niet adaptief, geen CSS alleen HTML, juiste formaten 
+CHECK-OUT-Sophia
+-Leg uit wanneer een website 'lelijk' wordt en geef voorbeelden wat je kan doen om deze 'lelijke' onderdelen te fixen?
+Ongeorganiseerd, niet adaptief, geen CSS alleen HTML, dit kan gefixt worden door: juiste formaten te gebruiken, 
 
 Vertel welke volgende stap je neemt om je website responsive te maken.
 deep dive toepassen, 
