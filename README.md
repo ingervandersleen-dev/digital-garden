@@ -280,7 +280,12 @@ LIGHT & DARK MODE MIJN WEBSITE-CODE
 
 ## Maandag 14 september
 
-Ik startte vandaag met het schetsen van het hoofdscherm. Tijdens het schetsen kwam ik tot de conclusie dat ik liever voor een concept wil kiezen die goed aansluit bij de naam van mijn website: The Ingerverse. Toen dacht ik aan een 'Junk Web' in plaats van een 'Junk Drawer'. Ik heb een ontwerp in Canva gemaakt:
+Ik startte vandaag met het schetsen van het hoofdscherm. Tijdens het schetsen kwam ik tot de conclusie dat ik liever voor een concept wil kiezen die goed aansluit bij de naam van mijn website: The Ingerverse. Toen dacht ik aan een 'Junk Web' in plaats van een 'Junk Drawer'. Ik startte met een grove schets: 
+
+<img width="939" height="690" alt="Scherm­afbeelding 2026-09-18 om 10 44 07" src="https://github.com/user-attachments/assets/3fa182a4-7255-4cfe-86f5-0cb8f865fb88" />
+
+
+Ik heb een ontwerp in Canva gemaakt:
 
 <img width="551" height="372" alt="Scherm­afbeelding 2026-09-18 om 09 15 04" src="https://github.com/user-attachments/assets/b1b4ea8f-a425-49be-a728-6bad4b94b419" />
 
