@@ -279,7 +279,13 @@ LIGHT & DARK MODE MIJN WEBSITE-CODE
 <img width="762" height="784" alt="Scherm­afbeelding 2026-09-11 om 11 45 09" src="https://github.com/user-attachments/assets/5f80ab77-8aeb-4464-a33b-0d2b675a328b" />
 
 ## Maandag 14 september
-DEEP DIVE- sophia
+
+Ik startte vandaag met het schetsen van het hoofdscherm. Tijdens het schetsen kwam ik tot de conclusie dat ik liever voor een concept wil kiezen die goed aansluit bij de naam van mijn website: The Ingerverse. Toen dacht ik aan een 'Junk Web' in plaats van een 'Junk Drawer'. Ik heb een ontwerp in Canva gemaakt:
+<img width="551" height="372" alt="Scherm­afbeelding 2026-09-18 om 09 15 04" src="https://github.com/user-attachments/assets/b1b4ea8f-a425-49be-a728-6bad4b94b419" />
+
+Dit wil ik gaan coderen als homepage voor mijn website.
+
+CHECK-OUT- sophia
 Leg uit wanneer een website 'lelijk' wordt en geef voorbeelden wat je kan doen om deze 'lelijke' onderdelen te fixen?
 Ongeorganiseerd, niet adaptief, geen CSS alleen HTML, juiste formaten 
 
@@ -287,6 +293,14 @@ Vertel welke volgende stap je neemt om je website responsive te maken.
 deep dive toepassen, 
 
 Kun je het ontwerp en de bouw van je eigen Garden (zo uit je hoofd) onderbouwen in Webby vocabulair?
+
+## Woensdag 16 september 
+Tijdens het uitwerken van mijn homepage in VSCodium kwam ik tot de conclusie dat ik mijn onderwerp toch te breed vind en ik het mezelf hiermee onnodig lastig maak. Daarom koos ik ervoor mijn onderwerp aan te scherpen naar één specifiek onderdeel van mijn website waar ik nog steeds enorm veel interessants mee kan doen. Toen kwam ik uit op 'Overthinking Everything'. Ik startte met het maken van schetsen. Het beeld wat ik wil uitstralen is rust en kalmte. Dit ontwerp heb ik in illustrator gemaakt: 
+<img width="682" height="518" alt="Scherm­afbeelding 2026-09-18 om 09 23 35" src="https://github.com/user-attachments/assets/88ea9fda-6d39-4145-be7c-dea1f4de4d1c" />
+
+Toen startte ik met coderen. Ik vind het niet gebruiken van div en classes heel moeilijk.
+
+
 
 
 
