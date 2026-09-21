@@ -1,13 +1,5 @@
 # Model
 
-Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door studenten worden gemaakt.
-
-## Learning Log
-
-### [...]
-
-[...]
-
 ### Maandag 21 september 
 
 CHECK-OUT
