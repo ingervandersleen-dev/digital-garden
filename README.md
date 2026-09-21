@@ -8,9 +8,15 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 [...]
 
-### 3 sept - [Workshop]
+### Maandag 21 september 
 
-[...]
+CHECK-OUT
+1. Wat zijn HTML landmark role elements?
+
+2. Wat zijn heading elementen en hoe horen deze 'genest' te worden?
+
+3. Hoe ga jij met cookies om? Beschrijf jouw beweegredenen en of die zijn veranderd na het volgen van dit college.
+
 
 ### 31 aug - Kickoff
 Een fork van de model repository gemaakt en gepubliceerd via mijn eigen Github omgeving.
