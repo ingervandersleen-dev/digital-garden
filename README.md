@@ -27,9 +27,9 @@ CHECK-OUT
 
 HTML landmark elements zijn onderdelen van een webpagina waarmee je de belangrijkste secties van een pagina herkenbaar maakt. Ze helpen vooral gebruikers van screenreaders om snel door een website te navigeren.
 
-2. Wat zijn heading elementen en hoe horen deze 'genest' te worden?
+2. Wat zijn heading elementen en hoe horen deze 'getest' te worden?
 
-Heading elementen zijn de titels en tussenkoppen op een webpagina. In HTML gebruik je hiervoor <h1> tot en met <h6>. Dit zorgt ervoor dat de structuur van de pagina duidelijk is voor zowel gebruikers als hulpmiddelen zoals screenreaders.
+Heading elementen zijn de titels en tussenkoppen op een webpagina. In HTML gebruik je hiervoor h1 tot en met h6. Dit zorgt ervoor dat de structuur van de pagina duidelijk is voor zowel gebruikers als hulpmiddelen zoals screenreaders.
 
 3. Hoe ga jij met cookies om? Beschrijf jouw beweegredenen en of die zijn veranderd na het volgen van dit college.
 
