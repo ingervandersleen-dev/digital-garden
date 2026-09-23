@@ -1,14 +1,39 @@
 # Model
+## Woensdag 23 september
+
+CHECK-OUT
+
+1. Wat is een wireflow en wat heb je er aan?
+
+Een wireflow is een combinatie van wireframes en een flowchart. Je laat hiermee zien welke schermen een gebruiker doorloopt en welke interacties daarbij plaatsvinden. Het is handig om de structuur en gebruikersflow van een website of app inzichtelijk te maken en te ontdekken waar eventuele problemen of verbeterpunten zitten.
+   
+2.Wat zijn dark UX patterns? Geef drie voorbeelden...
+
+Dark UX patterns zijn ontwerpkeuzes die gebruikers bewust of onbewust sturen richting een bepaalde actie, vaak in het voordeel van de organisatie en niet per se van de gebruiker.
+
+3.Waar moet je als ontwerper rekening mee houden bij het maken van een human consent component?
+
+Transparantie: leg duidelijk uit wat er met de gegevens gebeurt en waarom.
+Vrije keuze: de gebruiker moet kunnen weigeren zonder dat dit onnodig moeilijk wordt gemaakt.
+Gelijke opties: maak accepteren en weigeren even duidelijk en toegankelijk.
+Begrijpelijke taal: vermijd ingewikkelde juridische termen.
+Geen manipulatie: gebruik geen dark patterns, zoals misleidende knoppen, schuldgevoel of tijdsdruk.
+Controle: geef de gebruiker de mogelijkheid om de keuze later aan te passen of in te trekken.
 
 ### Maandag 21 september 
 
 CHECK-OUT
 1. Wat zijn HTML landmark role elements?
 
+HTML landmark elements zijn onderdelen van een webpagina waarmee je de belangrijkste secties van een pagina herkenbaar maakt. Ze helpen vooral gebruikers van screenreaders om snel door een website te navigeren.
+
 2. Wat zijn heading elementen en hoe horen deze 'genest' te worden?
+
+Heading elementen zijn de titels en tussenkoppen op een webpagina. In HTML gebruik je hiervoor <h1> tot en met <h6>. Dit zorgt ervoor dat de structuur van de pagina duidelijk is voor zowel gebruikers als hulpmiddelen zoals screenreaders.
 
 3. Hoe ga jij met cookies om? Beschrijf jouw beweegredenen en of die zijn veranderd na het volgen van dit college.
 
+Ik accepteerde cookies voorheen vaak zonder er echt bij stil te staan. Vooral omdat ik snel verder wilde op een website en de cookie-melding vaak als iets kleins en onbelangrijks zag. Na dit college ben ik me meer bewust geworden van hoeveel informatie cookies kunnen verzamelen en hoe websites met de keuzes van gebruikers kunnen omgaan. Ik kijk nu beter naar welke cookies ik accepteer en kies waar mogelijk alleen voor noodzakelijke cookies. Mijn belangrijkste reden hiervoor is dat ik meer controle wil houden over mijn persoonlijke gegevens en online gedrag.
 
 ### 31 aug - Kickoff
 Een fork van de model repository gemaakt en gepubliceerd via mijn eigen Github omgeving.
