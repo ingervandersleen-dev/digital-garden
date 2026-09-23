@@ -57,7 +57,7 @@ GitHub verwerkt vervolgens de nieuwe versie van mijn bestanden, waardoor de aanp
 ### DEEP DIVE 1 HTML/CSS BASICS
 <img width="3024" height="2847" alt="Ontwerp zonder titel (2)" src="https://github.com/user-attachments/assets/eb4049ae-c15c-44c4-b367-1fcbfacd2c89" />
 
-DEEP DIVE 2 MMD, micro-interacties en forms
+### DEEP DIVE 2 MMD, micro-interacties en forms
 <img width="3024" height="1278" alt="Ontwerp zonder titel (1)" src="https://github.com/user-attachments/assets/5153466c-2263-4ea6-8f71-fb86e0270c57" />
 <img width="3024" height="4032" alt="Ontwerp zonder titel (3)" src="https://github.com/user-attachments/assets/33e445d7-8b12-41fb-94a7-c1c5516807c1" />
 
@@ -66,9 +66,9 @@ FOTO MENU KAART FIGMA
 ## Vrijdag 5 september
 
 ## Maandag 7 september
-OPDRACHT 1-RANGSCHIKKEN
+### OPDRACHT 1-RANGSCHIKKEN
 
-OPDRACHT 2-EIGEN VERKENNING
+### OPDRACHT 2-EIGEN VERKENNING
 
 -Vanuit de inventarisatie: wat zou je zelf willen maken?
 
@@ -95,7 +95,7 @@ Als ik toch content van iemand anders wil gebruiken, zou ik eerst kijken naar de
 Ik wil verder gaan dan alleen tekst en beeld en proberen de website echt als een ervaring te laten voelen.
 Muziek is een groot onderdeel van mijn leven en ik koppel in mijn hoofd vaak bepaalde muziek aan specifieke onderwerpen, herinneringen of gevoelens. Dit wil ik graag meenemen in mijn website. Verschillende onderdelen van de ‘junk drawer’ zouden bijvoorbeeld hun eigen sfeer of muziek kunnen hebben. Daarnaast wil ik graag sound effects gebruiken, bijvoorbeeld bij hover-effecten of andere interacties. Op die manier reageert de website niet alleen visueel op de bezoeker, maar ook auditief. Uiteindelijk hoop ik dat mensen niet alleen mijn onderwerpen bekijken, maar er ook echt iets bij voelen. Door de combinatie van persoonlijke verhalen, muziek, beeld, geluid en interactie wil ik de bezoeker een klein kijkje geven in hoe mijn hoofd werkt.
 
-CHECK-OUT
+### CHECK-OUT
 1. Leg uit wat een digital garden is en waarom dat anders is dan een reguliere website.
 Een digital garden is een eigen online plek waar je ideeën, gedachten en kennis kunt publiceren en steeds opnieuw kunt aanvullen en aanpassen. In tegenstelling tot een reguliere website is een digital garden niet per se ‘af’. De inhoud kan blijven groeien en veranderen, waardoor het meer een proces is dan een eindproduct.
 2. Leg uit wat een website 'webby' maakt en welke websites jou het meeste inspireren.
@@ -104,11 +104,11 @@ Een website is webby wanneer het voldoet aan de volgende eisen: de website is fl
 Ik wil aan de slag met het maken van een digital junk drawer. Hieraan plaats ik al mijn ideeën en gedachtes over bepaalde onderwerpen. 
 
 ## Dinsdag 8 september
-OPDRACHT 3- VERZAMELEN VAN INSPIRATIE
+### OPDRACHT 3- VERZAMELEN VAN INSPIRATIE
 
 Ik startte met het verzamelen van inspiratiefoto's. 
 
-LADES/BUREAU
+### LADES/BUREAU
 1. https://jp.pinterest.com/pin/minimalist-desk-decor-ideas--67413325665726302/
 2. https://www.marthastewart.com/1125186/office-organization-ideas
 3. https://www.imovr.com/products/premium-drawer-3d-laminate?srsltid=AfmBOorShcvQlRW5Yw8mi1zFbuBIhBHsPAW4jBnjaKiT8fyGFEfmrsNz
@@ -120,7 +120,7 @@ LADES/BUREAU
 9. https://sjedbb.com/threads/lege-wc-papierrol-of-propje-papier.423/
 10. https://nl.pngtree.com/freepng/cute-spider-cartoon-drawing_19848508.html
 
-GEDACHTEN
+### GEDACHTEN
 1. https://www.magnific.com/vectors/messy-thoughts
 2. https://pixers.co.nz/stickers/man-head-full-of-confused-thoughts-64902697
 3. https://www.magnific.com/vectors/overthinking
@@ -132,7 +132,7 @@ GEDACHTEN
 9. https://stuffology101.com/cluttergories/say-it-say-what-bothers-you-and-let-go-of-mental-clutter/
 10. https://www.sdgnederland.nl/post-it-notes-1284667_1920/
 
-EMOTIE
+### EMOTIE
 1. https://www.extraspace.com/blog/home-organization/how-to-let-go-of-stuff-with-sentimental-value/
 2. https://pura-aventura.com/us/travel-blog/share-your-shoebox-of-memories
 3. https://www.thetriangle.org/article/cd-not-cd
@@ -144,7 +144,7 @@ EMOTIE
 9. https://jp.pinterest.com/pin/14073817581095839/
 10. https://jp.pinterest.com/pin/1094585884462347992/
 
-HOBBY'S/INTERRESES
+### HOBBY'S/INTERRESES
 1. https://jp.pinterest.com/pin/10977592837333012/
 2. https://jp.pinterest.com/pin/31806741114900098/
 3. https://jp.pinterest.com/pin/410460953606511112/
@@ -158,7 +158,7 @@ HOBBY'S/INTERRESES
 11. https://nl.pinterest.com/pin/722687071500018055/
 12. https://nl.pinterest.com/pin/2885187258678138/
 
-VORMGEVING
+### VORMGEVING
 1. https://nl.pinterest.com/pin/2040762329259963/
 2. https://nl.pinterest.com/pin/211387776268096260/
 3. https://nl.pinterest.com/pin/155233518398612860/
@@ -171,7 +171,7 @@ VORMGEVING
 10. https://nl.pinterest.com/pin/422281212422730/
 11. https://nl.pinterest.com/pin/2533343537070251/
 
-HEDEN EN VERLEDEN-hoe is mijn onderwerp veranderd?
+### HEDEN EN VERLEDEN-hoe is mijn onderwerp veranderd?
 
 De junk drawer bestaat al veel langer dan het internet. De term junk drawer wordt al sinds het begin van de twintigste eeuw gebruikt; het Oxford English Dictionary dateert een vroeg gebruik van de term uit 1912. Een junk drawer was oorspronkelijk vooral een plek voor kleine spullen die handig konden zijn, maar geen vaste plek hadden: elastiekjes, batterijen, schroeven, pennen, bonnetjes en andere losse voorwerpen. (BRON; https://en.wikipedia.org/wiki/Junk_drawer) 
 
@@ -183,31 +183,31 @@ What Your Junk Drawer Reveals About You: NPR, over wat een junk drawer kan verte
 Personal Websites & Digital Gardens: over de geschiedenis en betekenis van persoonlijke websites.
 Digital Garden-A Wiki You Can Walk Through: interessant als verbinding tussen mijn digital garden en het verzamelen van gedachten.
 
-ASSOCIATIES 
+### ASSOCIATIES 
 
 Bij een digital junk drawer denk ik aan veel meer dan alleen een rommelige lade. Het gaat voor mij vooral over verzamelen zonder dat alles een duidelijke reden hoeft te hebben. Associaties die ik bij mijn onderwerp heb:
 Een rommella, gedachten, overthinking, herinneringen, informatie, interesses, hobby's, sentimentaliteit, bonnetjes, losse papiertjes, kleine objecten, een computerdesktop vol bestanden, een overvolle camerarol, bookmarks, het oude internet, muziek, kunst, notitieboekjes, boeken, post-its, chaos
 
-SYMBOLIEK/ICONEN:
+### SYMBOLIEK/ICONEN:
 Voor mijn website kan ik gebruikmaken van herkenbare symbolen die verwijzen naar zowel een fysieke rommella als een digitale verzameling.
 
-FYSIEK:
+### FYSIEK:
 Lade, Paperclip, Punaises, Schaar, Sleutel, Batterij, Munt, Briefjes, Post-it, Doos
 
-DIGITAAL:
+### DIGITAAL:
 Folder, Computer, Prullenbak, Link, Bookmark, Screenshots, CD, Chat bubble, Cursor
 
-VOOR 'MIJN HOOFD':
+### VOOR 'MIJN HOOFD':
 Brein, gedachten bubbel, Spiraal, Vraagtekens, Lampje, Hart, Sterretjes, Uitroeptekens
 
 Ik vind vooral de folder, lade, paperclip, cursor en thought bubble interessant omdat ze samen de overgang tussen een fysieke en digitale junk drawer kunnen laten zien. Voor iconen kan ik bijvoorbeeld kijken op https://thenounproject.com/. 
 
-SUBCULTUUR
+### SUBCULTUUR
 
 Mijn onderwerp past denk ik vooral binnen de internet- en webcultuur, en dan specifiek bij de cultuur rondom persoonlijke websites, digital gardens en het ‘old web’. Het idee spreekt mij aan omdat het internet vroeger meer voelde als een verzameling persoonlijke plekken. Iedereen kon een eigen hoekje op het web maken met dingen die zij interessant vonden. Mijn website sluit daarbij aan: het is niet bedoeld als een perfect portfolio of een commerciële website, maar als een persoonlijk stukje internet.
 Daarnaast past het bij de huidige cultuur van scrapbooking, journaling, collecting en digital hoarding. Mensen verzamelen tegenwoordig niet alleen fysieke spullen, maar ook digitale herinneringen: foto's, screenshots, memes, TikToks, playlists, Pinterest-borden en opgeslagen posts.
 
-SUBONDERWERPEN
+### SUBONDERWERPEN
 Gedachten-Overthinking Everything:
 Random gedachten, vragen, observaties en dingen waar ik veel te lang over nadenk.
 Small Things, Big Feelings:
@@ -219,7 +219,7 @@ Random onderwerpen waar ik volledig door gefascineerd ben.
 Chaos- A Tour Through My Brain:
 Een meer experimenteel gedeelte waarin alle onderwerpen door elkaar lopen en waarbij de bezoeker zelf mag ontdekken waar hij of zij terechtkomt.
 
-CONLUSIE ONDERZOEK
+### CONLUSIE ONDERZOEK
 
 Een junk drawer is een verzameling van dingen die nergens anders thuishoren. Mijn digital junk drawer is een verzameling van gedachten, herinneringen, fascinaties en kleine dingen die misschien nergens anders thuishoren, maar voor mij wel betekenis hebben.
 
@@ -229,15 +229,15 @@ Een junk drawer is een verzameling van dingen die nergens anders thuishoren. Mij
 
 
 
-# Dinsdag 8 september 
-COLLAGES 50 FOTO'S 
+## Dinsdag 8 september 
+### COLLAGES 50 FOTO'S 
 <img width="1333" height="2000" alt="1" src="https://github.com/user-attachments/assets/21e05e35-1857-47ec-9670-744701032cba" />
 <img width="1333" height="2000" alt="2" src="https://github.com/user-attachments/assets/2036594e-8e55-4af7-9df3-eceb181ff81d" />
 <img width="1333" height="2000" alt="3" src="https://github.com/user-attachments/assets/846e27d1-77c1-4b1f-a137-d67d85c91b83" />
 <img width="1333" height="2000" alt="4" src="https://github.com/user-attachments/assets/b9251e78-3a63-42b9-a979-e997e86630fa" />
 <img width="1333" height="2000" alt="5" src="https://github.com/user-attachments/assets/37277076-f3a1-4995-8d61-f1f4940497b6" />
 
-SLIDES PRESENTATIE
+### SLIDES PRESENTATIE
 <img width="1060" height="663" alt="Scherm­afbeelding 2026-09-08 om 23 09 10" src="https://github.com/user-attachments/assets/7e6f5901-8ea6-49b5-9bcc-5cafe5760255" />
 <img width="1060" height="663" alt="Scherm­afbeelding 2026-09-08 om 23 09 19" src="https://github.com/user-attachments/assets/b1871a58-5a6f-49e0-a7a3-d636dbb50eb9" />
 <img width="1060" height="663" alt="Scherm­afbeelding 2026-09-08 om 23 09 33" src="https://github.com/user-attachments/assets/f6be48b6-6bdc-4661-b432-58d22c2b3183" />
@@ -250,7 +250,7 @@ SLIDES PRESENTATIE
 <img width="1060" height="663" alt="Scherm­afbeelding 2026-09-08 om 23 12 59" src="https://github.com/user-attachments/assets/cbc41ab0-7c5d-43dc-9f77-1779a2ddb608" />
 
 # Woensdag 9 september
-PRESENTEREN IN DUO'S (Isabeau Cool)
+### PRESENTEREN IN DUO'S (Isabeau Cool)
 Eigen verbinding:​
 
 -Wat is voor jou de essentie van wat je hebt gepresenteerd qua onderwerp en geschreven/beeldende content? ​
@@ -273,7 +273,7 @@ Ik vind dat mijn onderwerp een speels, persoonlijk en een beetje chaotisch karak
 
 Uit mijn 25 afbeeldingen haal ik vooral inspiratie uit de combinatie van verschillende stijlen en beelden. Ik hoef niet alles heel strak en consistent te maken. Juist het combineren van verschillende kleuren, vormen, typografie en soorten afbeeldingen past bij het idee van een junk drawer. Ik kan bijvoorbeeld werken met een collage-achtige stijl, overlappingen, verschillende formaten afbeeldingen en kleine details die eruitzien alsof ze ergens toevallig zijn neergelegd. Het mag een beetje imperfect en speels zijn.
 
-DEEP DIVE LIGHT & DARK MODE
+### DEEP DIVE LIGHT & DARK MODE
 
 <img width="2880" height="1552" alt="Ontwerp zonder titel (1)" src="https://github.com/user-attachments/assets/70a3c17d-928d-4bab-bdaf-324e3811fbd9" />
 <img width="1440" height="776" alt="Scherm­afbeelding 2026-09-11 om 09 03 54" src="https://github.com/user-attachments/assets/bb62dc66-7bb5-4845-988a-82f8331d6397" />
@@ -281,17 +281,17 @@ DEEP DIVE LIGHT & DARK MODE
 <img width="1440" height="752" alt="Scherm­afbeelding 2026-09-11 om 09 38 35" src="https://github.com/user-attachments/assets/c6cda033-5156-4a2a-a02b-5971d75402a2" />
 
 
-VISUAL RESEARCH OPDRACHT
+### VISUAL RESEARCH OPDRACHT
 
 <img width="731" height="316" alt="Scherm­afbeelding 2026-09-11 om 09 18 37" src="https://github.com/user-attachments/assets/d7c887c9-1086-4bbb-b7ca-fd30a5e04539" />
 <img width="731" height="615" alt="Scherm­afbeelding 2026-09-11 om 09 19 14" src="https://github.com/user-attachments/assets/d9ddd2b8-5316-462c-bf34-1c517146c186" />
 <img width="731" height="615" alt="Scherm­afbeelding 2026-09-11 om 09 19 27" src="https://github.com/user-attachments/assets/e29315b6-393e-4528-bdbe-789efe9cf521" />
 <img width="703" height="715" alt="Scherm­afbeelding 2026-09-11 om 09 19 57" src="https://github.com/user-attachments/assets/e27eec71-1960-40d5-8149-1fbf1e4d1df1" />
 
-WIREFRAMES
+### WIREFRAMES
 <img width="3024" height="4032" alt="Ontwerp zonder titel (4)" src="https://github.com/user-attachments/assets/867bda6c-250f-4044-b2e1-ff4e71237aef" />
 
-LIGHT & DARK MODE MIJN WEBSITE-CODE
+### LIGHT & DARK MODE MIJN WEBSITE-CODE
 
 <img width="762" height="753" alt="Scherm­afbeelding 2026-09-11 om 11 41 37" src="https://github.com/user-attachments/assets/39951a8e-4ab5-4d5e-9996-61101d522567" />
 <img width="762" height="753" alt="Scherm­afbeelding 2026-09-11 om 11 41 47" src="https://github.com/user-attachments/assets/8e0eaa16-0392-4258-8f0d-a2de3d3f6eb3" />
@@ -314,7 +314,7 @@ Ik heb een ontwerp in Canva gemaakt:
 
 Dit wil ik gaan coderen als homepage voor mijn website.
 
-CHECK-OUT-Sophia
+### CHECK-OUT-Sophia
 -Leg uit wanneer een website 'lelijk' wordt en geef voorbeelden wat je kan doen om deze 'lelijke' onderdelen te fixen?
 Ongeorganiseerd, niet adaptief, geen CSS alleen HTML, dit kan gefixt worden door: juiste formaten te gebruiken, 
 
