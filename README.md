@@ -1,7 +1,7 @@
 # Model
 ## Woensdag 23 september
 
-CHECK-OUT
+### CHECK-OUT
 
 1. Wat is een wireflow en wat heb je er aan?
 
@@ -20,9 +20,9 @@ Begrijpelijke taal: vermijd ingewikkelde juridische termen.
 Geen manipulatie: gebruik geen dark patterns, zoals misleidende knoppen, schuldgevoel of tijdsdruk.
 Controle: geef de gebruiker de mogelijkheid om de keuze later aan te passen of in te trekken.
 
-### Maandag 21 september 
+## Maandag 21 september 
 
-CHECK-OUT
+### CHECK-OUT
 1. Wat zijn HTML landmark role elements?
 
 HTML landmark elements zijn onderdelen van een webpagina waarmee je de belangrijkste secties van een pagina herkenbaar maakt. Ze helpen vooral gebruikers van screenreaders om snel door een website te navigeren.
@@ -35,9 +35,9 @@ Heading elementen zijn de titels en tussenkoppen op een webpagina. In HTML gebru
 
 Ik accepteerde cookies voorheen vaak zonder er echt bij stil te staan. Vooral omdat ik snel verder wilde op een website en de cookie-melding vaak als iets kleins en onbelangrijks zag. Na dit college ben ik me meer bewust geworden van hoeveel informatie cookies kunnen verzamelen en hoe websites met de keuzes van gebruikers kunnen omgaan. Ik kijk nu beter naar welke cookies ik accepteer en kies waar mogelijk alleen voor noodzakelijke cookies. Mijn belangrijkste reden hiervoor is dat ik meer controle wil houden over mijn persoonlijke gegevens en online gedrag.
 
-### 31 aug - Kickoff
+## 31 aug - Kickoff
 Een fork van de model repository gemaakt en gepubliceerd via mijn eigen Github omgeving.
-CHECK-OUT
+### CHECK-OUT
 1. Source hosting platform
 Een source hosting platform is een online platform waarop je de broncode van een website of applicatie kunt opslaan, beheren en bijhouden. Het maakt het mogelijk om wijzigingen aan je code te bewaren en verschillende versies van een project te beheren.
 
@@ -54,7 +54,7 @@ Aanpassingen aan mijn website maak ik door de code en bestanden van mijn website
 GitHub verwerkt vervolgens de nieuwe versie van mijn bestanden, waardoor de aanpassingen op de website worden gepubliceerd. Op deze manier kan ik mijn website blijven aanpassen en ervoor zorgen dat de nieuwste versie online beschikbaar is.
 
 ## Woensdag 2 september
-DEEP DIVE 1 HTML/CSS BASICS
+### DEEP DIVE 1 HTML/CSS BASICS
 <img width="3024" height="2847" alt="Ontwerp zonder titel (2)" src="https://github.com/user-attachments/assets/eb4049ae-c15c-44c4-b367-1fcbfacd2c89" />
 
 DEEP DIVE 2 MMD, micro-interacties en forms
