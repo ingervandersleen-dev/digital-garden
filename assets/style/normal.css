@@ -413,7 +413,8 @@ body {
   border-radius: var(--radius-knop);
   color: var(--kleur-knop-tekst);
   display: inline-block;
-  padding: 0.7rem 1.2rem;
+  font-size: 1.6rem;
+  padding: 0.7em 1.2em;
   text-decoration: none;
 }
 
