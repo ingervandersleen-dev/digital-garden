@@ -1,32 +1,39 @@
 /* ==========================================================================
    Custom properties
+   light-dark(licht, donker) kiest zelf de juiste kleur, op basis van
+   color-scheme (dus zowel voor "auto" als voor de Licht/Donker-knoppen).
    ========================================================================== */
 
 :root {
   /* Lucht */
-  --kleur-lucht-boven: #dbeef2;
-  --kleur-lucht-horizon: #f8ddbf;
-  --kleur-zon: #f5bd6e;
-  --kleur-wolk: #fff8e9aa;
+  --kleur-lucht-boven: light-dark(#dbeef2, #0a1030);
+  --kleur-lucht-horizon: light-dark(#f8ddbf, #2d2b5e);
+  --kleur-wolk: light-dark(#fff8e9aa, #8d93c455);
+
+  /* Zon (overdag) en maan + sterren ('s nachts) */
+  --kleur-zon: light-dark(#f5bd6e, transparent);
+  --kleur-maan: light-dark(transparent, #dddcd6);
+  --kleur-ster: light-dark(transparent, #fff8e9);
 
   /* Gras en bomen */
-  --kleur-gras-licht: #8caf79;
-  --kleur-gras-donker: #557d58;
-  --kleur-boom-blad: #547b55;
-  --kleur-boom-stam: #67523d;
+  --kleur-gras-licht: light-dark(#8caf79, #2c4a3a);
+  --kleur-gras-donker: light-dark(#557d58, #16291f);
+  --kleur-boom-blad: light-dark(#547b55, #1f3b2b);
+  --kleur-boom-stam: light-dark(#67523d, #2b2118);
 
   /* Pad en bankje */
-  --kleur-pad: #dac9aa;
-  --kleur-bankje: #9c7650;
-  --kleur-bankje-rand: #705438;
+  --kleur-pad: light-dark(#dac9aa, #5a5445);
+  --kleur-bankje: light-dark(#9c7650, #5c4630);
+  --kleur-bankje-rand: light-dark(#705438, #382a1b);
 
   /* Tekst en interface */
-  --kleur-tekst-park: #24372e;
-  --kleur-tekst-licht: white;
-  --kleur-bubbel-achtergrond: #f7ead4;
-  --kleur-bubbel-tekst: #4b5b4e;
-  --kleur-knop-achtergrond: #fff8e9;
-  --kleur-knop-hover: var(--kleur-zon);
+  --kleur-tekst-park: light-dark(#24372e, #eef0e4);
+  --kleur-tekst-licht: light-dark(white, #eef0e4);
+  --kleur-bubbel-achtergrond: light-dark(#f7ead4, #333a6b);
+  --kleur-bubbel-tekst: light-dark(#4b5b4e, #e6e8f5);
+  --kleur-knop-achtergrond: light-dark(#fff8e9, #333a6b);
+  --kleur-knop-tekst: light-dark(#24372e, #f3ecd9);
+  --kleur-knop-hover: light-dark(#f5bd6e, #4a5290);
 
   /* Lettertypes */
   --font-tekst: "Comic Relief", system-ui;
@@ -73,11 +80,7 @@ body {
 
 .park {
   background:
-    radial-gradient(
-      circle at 88% 12%,
-      var(--kleur-zon) 0 2.5rem,
-      transparent 2.6rem
-    ),
+    /* Wolken */
     radial-gradient(
       ellipse 4rem 1.1rem at 14% 24%,
       var(--kleur-wolk) 0 99%,
@@ -98,11 +101,48 @@ body {
       var(--kleur-wolk) 0 1.3rem,
       transparent 1.4rem
     ),
+    /* Sterren (alleen zichtbaar in dark mode) */
     radial-gradient(
-      ellipse 3rem 3.5rem at 12% 60%,
-      var(--kleur-boom-blad) 0 99%,
-      transparent 100%
+        circle at 6% 8%,
+        var(--kleur-ster) 0 0.12rem,
+        transparent 0.2rem
+      ),
+    radial-gradient(
+      circle at 24% 6%,
+      var(--kleur-ster) 0 0.1rem,
+      transparent 0.18rem
     ),
+    radial-gradient(
+      circle at 36% 17%,
+      var(--kleur-ster) 0 0.12rem,
+      transparent 0.2rem
+    ),
+    radial-gradient(
+      circle at 62% 20%,
+      var(--kleur-ster) 0 0.1rem,
+      transparent 0.18rem
+    ),
+    radial-gradient(
+      circle at 70% 8%,
+      var(--kleur-ster) 0 0.14rem,
+      transparent 0.22rem
+    ),
+    radial-gradient(
+      circle at 76% 24%,
+      var(--kleur-ster) 0 0.1rem,
+      transparent 0.18rem
+    ),
+    radial-gradient(
+      circle at 95% 27%,
+      var(--kleur-ster) 0 0.12rem,
+      transparent 0.2rem
+    ),
+    /* Bomen */
+    radial-gradient(
+        ellipse 3rem 3.5rem at 12% 60%,
+        var(--kleur-boom-blad) 0 99%,
+        transparent 100%
+      ),
     radial-gradient(
       ellipse 3rem 3.5rem at 86% 60%,
       var(--kleur-boom-blad) 0 99%,
@@ -110,18 +150,46 @@ body {
     ),
     linear-gradient(var(--kleur-boom-stam) 0 0) 12% 73% / 0.8rem 8rem no-repeat,
     linear-gradient(var(--kleur-boom-stam) 0 0) 86% 73% / 0.8rem 8rem no-repeat,
+    /* Lucht en gras */
     linear-gradient(
-      to bottom,
-      var(--kleur-lucht-boven) 0%,
-      var(--kleur-lucht-horizon) 48%,
-      var(--kleur-gras-licht) 48%,
-      var(--kleur-gras-donker) 100%
-    );
+        to bottom,
+        var(--kleur-lucht-boven) 0%,
+        var(--kleur-lucht-horizon) 48%,
+        var(--kleur-gras-licht) 48%,
+        var(--kleur-gras-donker) 100%
+      );
   color: var(--kleur-tekst-park);
   min-height: 100vh;
   overflow: hidden;
   position: relative;
   width: 100%;
+}
+
+/* Zon en maan
+   Allebei staan ze op dezelfde plek. Door de kleuren (zon: licht, maan: donker)
+   is steeds maar één van de twee zichtbaar. */
+
+.zon,
+.maan {
+  left: 88%;
+  position: absolute;
+  top: 12%;
+  transform: translate(-50%, -50%);
+}
+
+.zon {
+  aspect-ratio: 1;
+  background: var(--kleur-zon);
+  border-radius: var(--radius-rond);
+  width: 5rem;
+}
+
+.maan {
+  aspect-ratio: 500 / 596;
+  background: var(--kleur-maan);
+  -webkit-mask: url(../../assets/Maan1.png) center / contain no-repeat;
+  mask: url(../../assets/Maan1.png) center / contain no-repeat;
+  width: 4.2rem;
 }
 
 /* Pad */
@@ -247,7 +315,7 @@ body {
 .park-tekst a {
   background: var(--kleur-knop-achtergrond);
   border-radius: var(--radius-knop);
-  color: var(--kleur-tekst-park);
+  color: var(--kleur-knop-tekst);
   display: inline-block;
   padding: 0.7rem 1.2rem;
   text-decoration: none;
