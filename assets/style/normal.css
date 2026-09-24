@@ -391,48 +391,6 @@ body {
   font-weight: normal;
 }
 
-/* Gedachtenbubbels */
-
-.gedachten {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.gedachten li {
-  align-items: center;
-  background: var(--kleur-bubbel-achtergrond);
-  border-radius: var(--radius-rond);
-  color: var(--kleur-bubbel-tekst);
-  display: flex;
-  font-size: 0.8rem;
-  height: 4.5rem;
-  justify-content: center;
-  padding: 0.5rem;
-  position: absolute;
-  text-align: center;
-  width: 4.5rem;
-  z-index: 2;
-}
-
-.bubbel-1 {
-  left: 25%;
-  top: 17rem;
-}
-
-.bubbel-2 {
-  right: 24%;
-  top: 18rem;
-}
-
-.bubbel-3 {
-  right: 38%;
-  top: 24rem;
-  transform: scale(0.7);
-}
-
-/* Tekst onderaan */
-
 .park-tekst {
   bottom: 1.5rem;
   color: var(--kleur-tekst-licht);
