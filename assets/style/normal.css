@@ -8,7 +8,7 @@
   /* Lucht */
   --kleur-lucht-boven: light-dark(#dbeef2, #0a1030);
   --kleur-lucht-horizon: light-dark(#f8ddbf, #2d2b5e);
-  --kleur-wolk: light-dark(#fff8e9aa, #8d93c455);
+  --kleur-wolk: light-dark(#fffff0, #c9cce8);
 
   /* Zon (overdag) en maan + sterren ('s nachts) */
   --kleur-zon: light-dark(#f5bd6e, transparent);
@@ -84,7 +84,7 @@ body {
   background:
     /* Wolken */
     radial-gradient(
-      ellipse 4rem 1.1rem at 14% 24%,
+      ellipse 4rem 1.1rem at 14% 23%,
       var(--kleur-wolk) 0 99%,
       transparent 100%
     ),
@@ -94,7 +94,7 @@ body {
       transparent 1.6rem
     ),
     radial-gradient(
-      ellipse 3.5rem 1rem at 83% 31%,
+      ellipse 3.5rem 1rem at 83% 29.8%,
       var(--kleur-wolk) 0 99%,
       transparent 100%
     ),
@@ -429,18 +429,6 @@ body {
 @media (max-width: 600px) {
   .park {
     min-height: 100svh;
-  }
-
-  .bubbel-1 {
-    left: 12%;
-  }
-
-  .bubbel-2 {
-    right: 10%;
-  }
-
-  .bubbel-3 {
-    display: none;
   }
 
   .boom:nth-child(5),
