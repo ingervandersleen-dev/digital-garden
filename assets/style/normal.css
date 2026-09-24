@@ -176,8 +176,8 @@ body {
 .maan {
   aspect-ratio: 500 / 596;
   background: var(--kleur-maan);
-  -webkit-mask: url(../images/Maan.png) center / contain no-repeat;
-  mask: url(../images/Maan.png) center / contain no-repeat;
+  -webkit-mask: url(../images/Maan1.png) center / contain no-repeat;
+  mask: url(../images/Maan1.png) center / contain no-repeat;
   width: 4.2rem;
 }
 
