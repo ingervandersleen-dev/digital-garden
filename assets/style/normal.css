@@ -392,7 +392,7 @@ body {
 }
 
 .park-tekst {
-  bottom: 1.5rem;
+  bottom: 10rem;
   color: var(--kleur-tekst-licht);
   left: 50%;
   position: absolute;
