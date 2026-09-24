@@ -20,6 +20,8 @@
   --kleur-gras-donker: light-dark(#557d58, #16291f);
   --kleur-boom-blad: light-dark(#547b55, #1f3b2b);
   --kleur-boom-stam: light-dark(#67523d, #2b2118);
+  --kleur-boom-blad-ver: light-dark(#6f9670, #162a20);
+  --kleur-den: light-dark(#3f6a4b, #17301f);
 
   /* Pad en bankje */
   --kleur-pad: light-dark(#dac9aa, #5a5445);
@@ -137,19 +139,6 @@ body {
       var(--kleur-ster) 0 0.12rem,
       transparent 0.2rem
     ),
-    /* Bomen */
-    radial-gradient(
-        ellipse 3rem 3.5rem at 12% 60%,
-        var(--kleur-boom-blad) 0 99%,
-        transparent 100%
-      ),
-    radial-gradient(
-      ellipse 3rem 3.5rem at 86% 60%,
-      var(--kleur-boom-blad) 0 99%,
-      transparent 100%
-    ),
-    linear-gradient(var(--kleur-boom-stam) 0 0) 12% 73% / 0.8rem 8rem no-repeat,
-    linear-gradient(var(--kleur-boom-stam) 0 0) 86% 73% / 0.8rem 8rem no-repeat,
     /* Lucht en gras */
     linear-gradient(
         to bottom,
@@ -187,9 +176,158 @@ body {
 .maan {
   aspect-ratio: 500 / 596;
   background: var(--kleur-maan);
-  -webkit-mask: url(../../assets/Maan1.png) center / contain no-repeat;
-  mask: url(../../assets/Maan1.png) center / contain no-repeat;
+  -webkit-mask: url(../images/Maan.png) center / contain no-repeat;
+  mask: url(../images/Maan.png) center / contain no-repeat;
   width: 4.2rem;
+}
+
+/* Bos */
+
+.boom {
+  --blad: var(--kleur-boom-blad);
+  bottom: var(--y);
+  height: 11rem;
+  left: var(--x);
+  position: absolute;
+  transform: translateX(-50%) scale(var(--schaal));
+  transform-origin: bottom center;
+  width: 6rem;
+}
+
+/* Stam */
+.boom::before {
+  background: var(--kleur-boom-stam);
+  bottom: 0;
+  content: "";
+  height: 5rem;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 0.8rem;
+}
+
+/* Bladeren (loofboom) */
+.boom::after {
+  background: var(--blad);
+  border-radius: var(--radius-rond);
+  content: "";
+  height: 7rem;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* Den */
+.den {
+  --blad: var(--kleur-den);
+}
+
+.den::after {
+  border-radius: 0;
+  clip-path: polygon(
+    50% 0%,
+    78% 30%,
+    64% 30%,
+    90% 60%,
+    72% 60%,
+    100% 88%,
+    0% 88%,
+    28% 60%,
+    10% 60%,
+    36% 30%,
+    22% 30%
+  );
+  height: 10rem;
+}
+
+/* Bomen ver weg: kleiner en in een andere kleur (staat onder .den, dus wint) */
+.ver {
+  --blad: var(--kleur-boom-blad-ver);
+}
+
+/* Positie (--x), afstand tot de onderkant (--y) en grootte (--schaal).
+   Bomen ver weg staan bovenaan de grond en zijn klein, bomen dichtbij staan
+   lager en zijn groot. Het pad in het midden houden we vrij. */
+.boom:nth-child(1) {
+  --x: 4%;
+  --y: 47%;
+  --schaal: 0.5;
+}
+.boom:nth-child(2) {
+  --x: 95%;
+  --y: 47%;
+  --schaal: 0.5;
+}
+.boom:nth-child(3) {
+  --x: 13%;
+  --y: 48%;
+  --schaal: 0.55;
+}
+.boom:nth-child(4) {
+  --x: 85%;
+  --y: 48%;
+  --schaal: 0.6;
+}
+.boom:nth-child(5) {
+  --x: 22%;
+  --y: 46%;
+  --schaal: 0.5;
+}
+.boom:nth-child(6) {
+  --x: 76%;
+  --y: 47%;
+  --schaal: 0.5;
+}
+.boom:nth-child(7) {
+  --x: 8%;
+  --y: 36%;
+  --schaal: 0.85;
+}
+.boom:nth-child(8) {
+  --x: 91%;
+  --y: 34%;
+  --schaal: 0.9;
+}
+.boom:nth-child(9) {
+  --x: 20%;
+  --y: 32%;
+  --schaal: 0.8;
+}
+.boom:nth-child(10) {
+  --x: 79%;
+  --y: 30%;
+  --schaal: 0.8;
+}
+.boom:nth-child(11) {
+  --x: 3%;
+  --y: 20%;
+  --schaal: 1.25;
+}
+.boom:nth-child(12) {
+  --x: 96%;
+  --y: 18%;
+  --schaal: 1.3;
+}
+.boom:nth-child(13) {
+  --x: 15%;
+  --y: 14%;
+  --schaal: 1.15;
+}
+.boom:nth-child(14) {
+  --x: 84%;
+  --y: 10%;
+  --schaal: 1.2;
+}
+.boom:nth-child(15) {
+  --x: 6%;
+  --y: 2%;
+  --schaal: 1.6;
+}
+.boom:nth-child(16) {
+  --x: 93%;
+  --y: 0%;
+  --schaal: 1.7;
 }
 
 /* Pad */
@@ -343,6 +481,13 @@ body {
   }
 
   .bubbel-3 {
+    display: none;
+  }
+
+  .boom:nth-child(5),
+  .boom:nth-child(6),
+  .boom:nth-child(9),
+  .boom:nth-child(10) {
     display: none;
   }
 }
