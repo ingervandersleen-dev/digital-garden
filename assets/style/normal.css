@@ -38,7 +38,7 @@
   --kleur-knop-hover: light-dark(#f5bd6e, #4a5290);
 
   /* Vogel */
-  --kleur-vogel: light-dark(#24372e, #cfd2f0);
+  --kleur-vogel: light-dark(#24372e, #000000);
 
   /* Lettertypes */
   --font-tekst: "Comic Relief", system-ui;
