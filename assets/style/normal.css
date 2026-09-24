@@ -1,4 +1,46 @@
-/* HIER KOMT JOUW CSS */
+/* ==========================================================================
+   Custom properties
+   ========================================================================== */
+
+:root {
+  /* Lucht */
+  --kleur-lucht-boven: #dbeef2;
+  --kleur-lucht-horizon: #f8ddbf;
+  --kleur-zon: #f5bd6e;
+  --kleur-wolk: #fff8e9aa;
+
+  /* Gras en bomen */
+  --kleur-gras-licht: #8caf79;
+  --kleur-gras-donker: #557d58;
+  --kleur-boom-blad: #547b55;
+  --kleur-boom-stam: #67523d;
+
+  /* Pad en bankje */
+  --kleur-pad: #dac9aa;
+  --kleur-bankje: #9c7650;
+  --kleur-bankje-rand: #705438;
+
+  /* Tekst en interface */
+  --kleur-tekst-park: #24372e;
+  --kleur-tekst-licht: white;
+  --kleur-bubbel-achtergrond: #f7ead4;
+  --kleur-bubbel-tekst: #4b5b4e;
+  --kleur-knop-achtergrond: #fff8e9;
+  --kleur-knop-hover: var(--kleur-zon);
+
+  /* Lettertypes */
+  --font-tekst: "Comic Relief", system-ui;
+  --font-titel: Georgia, serif;
+
+  /* Vormen */
+  --radius-rond: 50%;
+  --radius-knop: 2rem;
+}
+
+/* ==========================================================================
+   Basis
+   ========================================================================== */
+
 @font-face {
   font-family: "Comic Relief";
   src: url(../type/ComicRelief-Regular.woff2);
@@ -19,55 +61,63 @@ html:has([value="dark"]:checked) {
 }
 
 body {
-  font-family: "Comic Relief", system-ui;
+  font-family: var(--font-tekst);
   background-color: Canvas;
   color: CanvasText;
   margin: 0;
 }
 
+/* ==========================================================================
+   Park
+   ========================================================================== */
+
 .park {
   background:
-    radial-gradient(circle at 88% 12%, #f5bd6e 0 2.5rem, transparent 2.6rem),
+    radial-gradient(
+      circle at 88% 12%,
+      var(--kleur-zon) 0 2.5rem,
+      transparent 2.6rem
+    ),
     radial-gradient(
       ellipse 4rem 1.1rem at 14% 24%,
-      #fff8e9aa 0 99%,
+      var(--kleur-wolk) 0 99%,
       transparent 100%
     ),
     radial-gradient(
       circle at 14% 21.8%,
-      #fff8e9aa 0 1.5rem,
+      var(--kleur-wolk) 0 1.5rem,
       transparent 1.6rem
     ),
     radial-gradient(
       ellipse 3.5rem 1rem at 83% 31%,
-      #fff8e9aa 0 99%,
+      var(--kleur-wolk) 0 99%,
       transparent 100%
     ),
     radial-gradient(
       circle at 83% 28.7%,
-      #fff8e9aa 0 1.3rem,
+      var(--kleur-wolk) 0 1.3rem,
       transparent 1.4rem
     ),
     radial-gradient(
       ellipse 3rem 3.5rem at 12% 60%,
-      #547b55 0 99%,
+      var(--kleur-boom-blad) 0 99%,
       transparent 100%
     ),
     radial-gradient(
       ellipse 3rem 3.5rem at 86% 60%,
-      #547b55 0 99%,
+      var(--kleur-boom-blad) 0 99%,
       transparent 100%
     ),
-    linear-gradient(#67523d 0 0) 12% 73% / 0.8rem 8rem no-repeat,
-    linear-gradient(#67523d 0 0) 86% 73% / 0.8rem 8rem no-repeat,
+    linear-gradient(var(--kleur-boom-stam) 0 0) 12% 73% / 0.8rem 8rem no-repeat,
+    linear-gradient(var(--kleur-boom-stam) 0 0) 86% 73% / 0.8rem 8rem no-repeat,
     linear-gradient(
       to bottom,
-      #dbeef2 0%,
-      #f8ddbf 48%,
-      #8caf79 48%,
-      #557d58 100%
+      var(--kleur-lucht-boven) 0%,
+      var(--kleur-lucht-horizon) 48%,
+      var(--kleur-gras-licht) 48%,
+      var(--kleur-gras-donker) 100%
     );
-  color: #24372e;
+  color: var(--kleur-tekst-park);
   min-height: 100vh;
   overflow: hidden;
   position: relative;
@@ -77,7 +127,7 @@ body {
 /* Pad */
 
 .park::before {
-  background: #dac9aa;
+  background: var(--kleur-pad);
   bottom: 0;
   clip-path: polygon(40% 0%, 60% 0%, 100% 100%, 0% 100%);
   content: "";
@@ -91,9 +141,9 @@ body {
 /* Bankje */
 
 .park::after {
-  background: #9c7650;
-  border: 0.4rem solid #705438;
-  border-bottom: 0.7rem solid #705438;
+  background: var(--kleur-bankje);
+  border: 0.4rem solid var(--kleur-bankje-rand);
+  border-bottom: 0.7rem solid var(--kleur-bankje-rand);
   bottom: 5rem;
   content: "";
   height: 1.8rem;
@@ -124,7 +174,7 @@ body {
 }
 
 .titel h1 {
-  font-family: Georgia, serif;
+  font-family: var(--font-titel);
   font-size: clamp(3rem, 8vw, 5.5rem);
   font-weight: normal;
   line-height: 0.9;
@@ -145,9 +195,9 @@ body {
 
 .gedachten li {
   align-items: center;
-  background: #f7ead4;
-  border-radius: 50%;
-  color: #4b5b4e;
+  background: var(--kleur-bubbel-achtergrond);
+  border-radius: var(--radius-rond);
+  color: var(--kleur-bubbel-tekst);
   display: flex;
   font-size: 0.8rem;
   height: 4.5rem;
@@ -179,7 +229,7 @@ body {
 
 .park-tekst {
   bottom: 1.5rem;
-  color: white;
+  color: var(--kleur-tekst-licht);
   left: 50%;
   position: absolute;
   text-align: center;
@@ -189,25 +239,27 @@ body {
 }
 
 .park-tekst p {
-  font-family: Georgia, serif;
+  font-family: var(--font-titel);
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
 .park-tekst a {
-  background: #fff8e9;
-  border-radius: 2rem;
-  color: #24372e;
+  background: var(--kleur-knop-achtergrond);
+  border-radius: var(--radius-knop);
+  color: var(--kleur-tekst-park);
   display: inline-block;
   padding: 0.7rem 1.2rem;
   text-decoration: none;
 }
 
 .park-tekst a:hover {
-  background: #f5bd6e;
+  background: var(--kleur-knop-hover);
 }
 
-/* Mobiel */
+/* ==========================================================================
+   Mobiel
+   ========================================================================== */
 
 @media (max-width: 600px) {
   .park {
