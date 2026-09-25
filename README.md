@@ -1,5 +1,14 @@
 # Model
 ## Woensdag 23 september
+### Herontwerp wireframe
+
+<img width="950" height="667" alt="Scherm­afbeelding 2026-09-23 om 13 21 16" src="https://github.com/user-attachments/assets/143784e7-6c90-4372-89fd-cc3eb272f6a6" />
+
+2. Bespreek met elkaar welke elementen 'dark' zijn en hoe er met data omgegaan wordt. Maak vervolgens een herontwerp voor dit pattern.
+
+We hebben naar de cookies pop-up gekeken. Er word nergens aangegeven om de cookies volledig af te wijzen. Er komt een knop met alleen vereiste cookies en alle cookies toestaan. Onderin de pop-up staat een knop met instellingen waar je verder kan kijken naar wat er met je data gaat gebeuren. Ook zijn niet alle noodzakelijke cookies noodzakelijk. Ook de tekst: "Statistische cookies helpen eigenaren van websites begrijpen hoe bezoekers hun website gebruiken, door anoniem gegevens te verzamelen en te rapporteren.", hoe kan dit anoniem zijn als deze cookie staat onder statistieken en niet onder noodzakelijk? 
+
+Als je ook de noodzakelijke cookies niet wilt accepteren, krijg je deze pop-up:"Verplicht - kan niet worden gedeselecteerd. Noodzakelijke cookies helpen een website bruikbaarder te maken, door basisfuncties als paginanavigatie en toegang tot beveiligde gedeelten van de website mogelijk te maken. Zonder deze cookies kan de website niet naar behoren werken."
 
 ### CHECK-OUT
 
@@ -21,6 +30,8 @@ Geen manipulatie: gebruik geen dark patterns, zoals misleidende knoppen, schuldg
 Controle: geef de gebruiker de mogelijkheid om de keuze later aan te passen of in te trekken.
 
 ## Maandag 21 september 
+
+<img width="645" height="462" alt="Scherm­afbeelding 2026-09-23 om 12 53 02" src="https://github.com/user-attachments/assets/97dad850-562f-46e9-94a6-bd4ed05209fd" />
 
 ### CHECK-OUT
 1. Wat zijn HTML landmark role elements?
