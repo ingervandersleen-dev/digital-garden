@@ -31,8 +31,6 @@
   /* Tekst en interface */
   --kleur-tekst-park: light-dark(#24372e, #eef0e4);
   --kleur-tekst-licht: light-dark(white, #eef0e4);
-  --kleur-bubbel-achtergrond: light-dark(#f7ead4, #333a6b);
-  --kleur-bubbel-tekst: light-dark(#4b5b4e, #e6e8f5);
   --kleur-knop-achtergrond: light-dark(#fff8e9, #333a6b);
   --kleur-knop-tekst: light-dark(#24372e, #f3ecd9);
   --kleur-knop-hover: light-dark(#f5bd6e, #4a5290);
@@ -501,6 +499,37 @@ body {
 
 .park-tekst a:hover {
   background: var(--kleur-knop-hover);
+}
+
+footer {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 1000;
+  margin: 0; /* voorkomt dat browser-default margin 'm scheef zet */
+}
+
+footer button {
+  background-color: var(--kleur-knop-achtergrond);
+  color: var(--kleur-knop-tekst);
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer button:hover {
+  background-color: var(--kleur-knop-hover);
+}
+
+:root {
+  --cookie-btn-bg: #e8e8e8;
+  --cookie-btn-text: #222;
+}
+
+[data-theme="dark"] {
+  --cookie-btn-bg: var(--kleur-knop-hover);
+  --cookie-btn-text: #eee;
 }
 
 /* ==========================================================================
