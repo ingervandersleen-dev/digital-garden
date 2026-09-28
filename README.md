@@ -1,4 +1,20 @@
 # Model
+
+## Maandag 28 september
+### CHECK-OUT
+1. Wat bedoelt Vasilis met de uitspraak: Semantiek doet mij niet zo veel, ik ben liever bezig met de UX van HTML?
+Dat de functie van het HTML element volgens hem belangrijk is dan de betekenis.
+
+2. Wat voor type beperkingen hebben invloed op het gebruiken van websites?
+Visueel, motorisch, cognitief en auditief
+
+3. Noem drie manieren om door een website te navigeren met jouw screenreader.
+
+1. [command]+[F5] = VoiceOver aanzetten/uitzetten
+2. [control]+[option]+[A] = de hele website voorlezen
+3. [control]+[option]+[U] = open lijst met headings, links, formelementen
+
+
 ## Woensdag 23 september
 ### Herontwerp wireframe
 
