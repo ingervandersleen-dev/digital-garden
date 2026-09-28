@@ -12,9 +12,9 @@ Visueel, motorisch, cognitief en auditief
 
 3. Noem drie manieren om door een website te navigeren met jouw screenreader.
 
-1. [command]+[F5] = VoiceOver aanzetten/uitzetten
-2. [control]+[option]+[A] = de hele website voorlezen
-3. [control]+[option]+[U] = open lijst met headings, links, formelementen
+- [command]+[F5] = VoiceOver aanzetten/uitzetten
+- [control]+[option]+[A] = de hele website voorlezen
+- [control]+[option]+[U] = open lijst met headings, links, formelementen
 
 
 ## Woensdag 23 september
