@@ -1,5 +1,8 @@
 # Model
 
+### Bi-weekly opdracht
+<img width="959" height="676" alt="Scherm­afbeelding 2026-09-28 om 18 04 07" src="https://github.com/user-attachments/assets/a29b9ae0-9e36-4af0-b23e-fd6211e1614b" />
+
 ## Maandag 28 september
 ### CHECK-OUT
 1. Wat bedoelt Vasilis met de uitspraak: Semantiek doet mij niet zo veel, ik ben liever bezig met de UX van HTML?
