@@ -25,8 +25,6 @@
 
   /* Pad en bankje */
   --kleur-pad: light-dark(#dac9aa, #5a5445);
-  --kleur-bankje: light-dark(#9c7650, #5c4630);
-  --kleur-bankje-rand: light-dark(#705438, #382a1b);
 
   /* Tekst en interface */
   --kleur-tekst-park: light-dark(#24372e, #eef0e4);
@@ -389,8 +387,8 @@ body {
   --schaal: 1.3;
 }
 .boom:nth-child(13) {
-  --x: 15%;
-  --y: 14%;
+  --x: 22%;
+  --y: 8%;
   --schaal: 1.15;
 }
 .boom:nth-child(14) {
@@ -407,6 +405,27 @@ body {
   --x: 93%;
   --y: 0%;
   --schaal: 1.7;
+}
+.boom:nth-child(17) {
+  --x: 30%;
+  --y: 25%;
+  --schaal: 1;
+}
+.boom:nth-child(18) {
+  --x: 70%;
+  --y: 22%;
+  --schaal: 1.05;
+}
+
+.boom:nth-child(19) {
+  --x: 30%;
+  --y: 47%;
+  --schaal: 0.5;
+}
+.boom:nth-child(20) {
+  --x: 68%;
+  --y: 47%;
+  --schaal: 0.5;
 }
 
 /* Pad */
@@ -440,7 +459,6 @@ body {
 }
 
 /* Titel */
-
 .titel {
   left: 50%;
   position: absolute;
@@ -483,7 +501,7 @@ body {
 
 .park-tekst p {
   font-family: var(--font-titel);
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
 }
 
@@ -492,7 +510,7 @@ body {
   border-radius: var(--radius-knop);
   color: var(--kleur-knop-tekst);
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding: 0.7em 1.2em;
   text-decoration: none;
 }
