@@ -1,6 +1,11 @@
 # Model
 
 ## Maandag 28 september
+### Deep dive Sanne
+<img width="1439" height="748" alt="Scherm­afbeelding 2026-09-29 om 21 14 30" src="https://github.com/user-attachments/assets/76870805-7662-487c-9752-c3c83af3f380" />
+<img width="1439" height="748" alt="Scherm­afbeelding 2026-09-29 om 21 16 09" src="https://github.com/user-attachments/assets/0c6ebd73-37bd-4d15-ba0b-97825ff2bd7a" />
+<img width="1439" height="748" alt="Scherm­afbeelding 2026-09-29 om 21 17 44" src="https://github.com/user-attachments/assets/751cac01-5d70-4414-8cfc-b9705b4c3844" />
+
 ### Bi-weekly opdracht
 <img width="959" height="676" alt="Scherm­afbeelding 2026-09-28 om 18 04 07" src="https://github.com/user-attachments/assets/a29b9ae0-9e36-4af0-b23e-fd6211e1614b" />
 
