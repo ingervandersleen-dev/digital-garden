@@ -28,6 +28,7 @@
   --kleur-knop-achtergrond: light-dark(#fff8e9, #333a6b);
   --kleur-knop-tekst: light-dark(#24372e, #f3ecd9);
   --kleur-knop-hover: light-dark(#f5bd6e, #4a5290);
+  --color-blokken: light-dark(#fff8e9, #333a6b);
 
   /* Vogel */
   --kleur-vogel: light-dark(#24372e, #000000);
@@ -39,6 +40,10 @@
   /* Vormen */
   --radius-rond: 50%;
   --radius-knop: 2rem;
+
+  /* Ruimte */
+  --whitespace: 2rem;
+  --whitespace-s: 1rem;
 }
 
 /* ==========================================================================
@@ -141,10 +146,16 @@ body {
         var(--kleur-lucht-horizon) 80%
       );
   color: var(--kleur-tekst-park);
-  min-height: 100vh;
+  min-height: 100svh;
   overflow: hidden;
   position: relative;
   width: 100%;
+}
+
+@media (min-width: 600px) {
+  .park {
+    min-height: 100vh;
+  }
 }
 
 /* Zon en maan
@@ -169,99 +180,21 @@ body {
 .maan {
   aspect-ratio: 500 / 596;
   background: var(--kleur-maan);
-  -webkit-mask: url(../../assets/Maan1.png) center / contain no-repeat;
-  mask: url(../../assets/Maan1.png) center / contain no-repeat;
+  -webkit-mask: url(../Maan1.png) center / contain no-repeat;
+  mask: url(../Maan1.png) center / contain no-repeat;
   width: 4.2rem;
 }
 
-/* Vogel */
-
-.vogel {
-  animation: vlieg 22s linear infinite;
-  font-size: 1rem;
-  height: 1em;
-  left: 0;
-  position: absolute;
-  top: 40%;
-  width: 2.6em;
-}
-
-.vogel::before,
-.vogel::after {
-  border-top: 0.2em solid var(--kleur-vogel);
-  content: "";
-  height: 0.6em;
-  position: absolute;
-  top: 0;
-  width: 1.4em;
-}
-
-.vogel::before {
-  animation: klap-links 0.5s ease-in-out infinite alternate;
-  border-radius: 100% 0 0 0;
-  left: 0;
-  transform-origin: right top;
-}
-
-.vogel::after {
-  animation: klap-rechts 0.5s ease-in-out infinite alternate;
-  border-radius: 0 100% 0 0;
-  right: 0;
-  transform-origin: left top;
-}
-
-/* Van links naar rechts over het scherm, met een lichte golfbeweging */
-@keyframes vlieg {
-  0% {
-    transform: translate(-4rem, 1rem);
-  }
-  30% {
-    transform: translate(30vw, -1.5rem);
-  }
-  60% {
-    transform: translate(65vw, 1rem);
-  }
-  100% {
-    transform: translate(105vw, -2rem);
-  }
-}
-
-/* De vleugels klappen omhoog en omlaag */
-@keyframes klap-links {
-  from {
-    transform: rotate(-5deg);
-  }
-  to {
-    transform: rotate(48deg);
-  }
-}
-
-@keyframes klap-rechts {
-  from {
-    transform: rotate(5deg);
-  }
-  to {
-    transform: rotate(-48deg);
-  }
-}
-
-/* Geen beweging voor mensen die dat in hun systeem hebben uitgezet */
-@media (prefers-reduced-motion: reduce) {
-  .vogel {
-    display: none;
-  }
-}
-
-/* Titel */
+/* Titel
+   Geen position: absolute hier: op deze pagina moet de titel gewoon
+   ruimte innemen in de flow, zodat het grid met blokken er automatisch
+   onder komt te staan in plaats van eroverheen. */
 
 .titel {
-  left: 50%;
-  position: absolute;
+  padding-top: 3rem;
   text-align: center;
-  top: 3rem;
-  transform: translateX(-50%);
   width: 90%;
-  z-index: 2;
+  margin-inline: auto;
 }
 
 .titel p {
@@ -284,14 +217,10 @@ body {
 }
 
 .park-tekst {
-  bottom: 10rem;
   color: var(--kleur-tekst-licht);
-  left: 50%;
-  position: absolute;
   text-align: center;
-  transform: translateX(-50%);
   width: 90%;
-  z-index: 2;
+  margin-inline: auto;
 }
 
 .park-tekst p {
@@ -314,6 +243,7 @@ body {
   background: var(--kleur-knop-hover);
 }
 
+/* Cookie-knop (blijft altijd zichtbaar, ook tijdens scrollen) */
 footer {
   position: fixed;
   bottom: 1rem;
@@ -327,7 +257,7 @@ footer button {
   color: var(--kleur-knop-tekst);
   border: none;
   padding: 0.5em 1em;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   cursor: pointer;
 }
 
@@ -335,33 +265,138 @@ footer button:hover {
   background-color: var(--kleur-knop-hover);
 }
 
-:root {
-  --cookie-btn-bg: #e8e8e8;
-  --cookie-btn-text: #222;
+/* ==========================================================================
+   Blokken (Books / Music / Mindfulness / Activities)
+   Vast 2x2-grid: de kolommen groeien nooit verder dan max-width toelaat,
+   dus ze komen nooit voorbij de onderkant van de titel uit.
+   ========================================================================== */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem var(--whitespace-s);
+  max-width: 20rem;
+  margin: var(--whitespace) auto 0;
 }
 
-[data-theme="dark"] {
-  --cookie-btn-bg: var(--kleur-knop-hover);
-  --cookie-btn-text: #eee;
+/* Vanaf hier past 2x2 (de blokken zelf blijven groot genoeg voor de tekst) */
+@media (min-width: 420px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 24rem;
+  }
+}
+
+/* Pas op een breed scherm gaan ze alle 4 naast elkaar */
+@media (min-width: 700px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 36rem;
+  }
+}
+
+/* Gedachtenwolkjes i.p.v. vierkante blokken: zelfde look als de wolken in
+   de lucht (var(--kleur-wolk)), dus dit werkt automatisch mee met
+   light/dark mode. */
+.blok1,
+.blok2,
+.blok3,
+.blok4 {
+  width: auto;
+  aspect-ratio: 1 / 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: clamp(0.9rem, 2.5vw, 1.3rem);
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--kleur-wolk);
+  border: 0.15rem solid var(--kleur-tekst-park);
+  border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
+  position: relative;
+  font-family: var(--font-titel);
+  text-decoration: none;
+  color: var(--kleur-tekst-park);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* De twee kleine "gedachte-bubbeltjes" onder elke wolk */
+.blok1::before,
+.blok2::before,
+.blok3::before,
+.blok4::before {
+  content: "";
+  position: absolute;
+  bottom: -1.2rem;
+  left: 30%;
+  width: 1rem;
+  height: 1rem;
+  background: var(--kleur-wolk);
+  border: 0.15rem solid var(--kleur-tekst-park);
+  border-radius: var(--radius-rond);
+}
+
+.blok1::after,
+.blok2::after,
+.blok3::after,
+.blok4::after {
+  content: "";
+  position: absolute;
+  bottom: -2rem;
+  left: 22%;
+  width: 0.6rem;
+  height: 0.6rem;
+  background: var(--kleur-wolk);
+  border: 0.15rem solid var(--kleur-tekst-park);
+  border-radius: var(--radius-rond);
+}
+
+.blok1:hover,
+.blok2:hover,
+.blok3:hover,
+.blok4:hover {
+  transform: translateY(-0.3rem);
+}
+
+/* Zachte zweefbeweging, met een lichte vertraging per wolkje zodat ze niet
+   allemaal precies gelijk bewegen */
+@keyframes zweven {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.4rem);
+  }
+}
+
+.blok1 {
+  animation: zweven 4s ease-in-out infinite;
+}
+
+.blok2 {
+  animation: zweven 4.5s ease-in-out infinite 0.3s;
+}
+
+.blok3 {
+  animation: zweven 4s ease-in-out infinite 0.6s;
+}
+
+.blok4 {
+  animation: zweven 4.5s ease-in-out infinite 0.9s;
+}
+
+/* Geen beweging voor mensen die dat in hun systeem hebben uitgezet */
+@media (prefers-reduced-motion: reduce) {
+  .blok1,
+  .blok2,
+  .blok3,
+  .blok4 {
+    animation: none;
+  }
 }
 
 main {
-  grid-area: main;
-  padding: var(--whitespace);
-  display: grid;
-  gap: var(--whitespace);
-  grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
-}
-
-@media (max-width: 600px) {
-  .park {
-    min-height: 100svh;
-  }
-
-  .boom:nth-child(5),
-  .boom:nth-child(6),
-  .boom:nth-child(9),
-  .boom:nth-child(10) {
-    display: none;
-  }
+  margin: 0;
 }
