@@ -25,6 +25,8 @@
 
   /* Pad en bankje */
   --kleur-pad: light-dark(#dac9aa, #5a5445);
+  --kleur-bankje: light-dark(#8a6b4d, #3a3025);
+  --kleur-bankje-rand: light-dark(#5c4630, #211a14);
 
   /* Tekst en interface */
   --kleur-tekst-park: light-dark(#24372e, #eef0e4);
@@ -147,10 +149,16 @@ body {
         var(--kleur-gras-donker) 100%
       );
   color: var(--kleur-tekst-park);
-  min-height: 100vh;
+  min-height: 100svh;
   overflow: hidden;
   position: relative;
   width: 100%;
+}
+
+@media (min-width: 600px) {
+  .park {
+    min-height: 100vh;
+  }
 }
 
 /* Zon en maan
@@ -175,8 +183,8 @@ body {
 .maan {
   aspect-ratio: 500 / 596;
   background: var(--kleur-maan);
-  -webkit-mask: url(../../assets/Maan1.png) center / contain no-repeat;
-  mask: url(../../assets/Maan1.png) center / contain no-repeat;
+  -webkit-mask: url(../Maan1.png) center / contain no-repeat;
+  mask: url(../Maan1.png) center / contain no-repeat;
   width: 4.2rem;
 }
 
@@ -258,7 +266,11 @@ body {
   }
 }
 
-/* Bos */
+/* Bos
+   Classes voor herbruikbare styling van de parkillustratie: dezelfde vorm
+   (stam + bladeren/den) wordt tientallen keren hertekend met andere
+   positie/grootte via --x, --y en --schaal. Bos-positionering en
+   vogel-animatie opgezet met hulp van Claude (Anthropic), sept 2026. */
 
 .boom {
   --blad: var(--kleur-boom-blad);
@@ -416,7 +428,6 @@ body {
   --y: 22%;
   --schaal: 1.05;
 }
-
 .boom:nth-child(19) {
   --x: 30%;
   --y: 47%;
@@ -426,6 +437,24 @@ body {
   --x: 68%;
   --y: 47%;
   --schaal: 0.5;
+}
+
+/* Op mobiel staan een paar bomen dichter bij het pad in de weg; die
+   verbergen we standaard (mobile-first) en tonen we weer op groter scherm. */
+.boom:nth-child(5),
+.boom:nth-child(6),
+.boom:nth-child(9),
+.boom:nth-child(10) {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .boom:nth-child(5),
+  .boom:nth-child(6),
+  .boom:nth-child(9),
+  .boom:nth-child(10) {
+    display: block;
+  }
 }
 
 /* Pad */
@@ -519,6 +548,8 @@ body {
   background: var(--kleur-knop-hover);
 }
 
+/* Cookie-knop (blijft altijd zichtbaar, ook tijdens scrollen op langere
+   pagina's zoals beginjewandeling.html) */
 footer {
   position: fixed;
   bottom: 1rem;
@@ -532,37 +563,10 @@ footer button {
   color: var(--kleur-knop-tekst);
   border: none;
   padding: 0.5em 1em;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   cursor: pointer;
 }
 
 footer button:hover {
   background-color: var(--kleur-knop-hover);
-}
-
-:root {
-  --cookie-btn-bg: #e8e8e8;
-  --cookie-btn-text: #222;
-}
-
-[data-theme="dark"] {
-  --cookie-btn-bg: var(--kleur-knop-hover);
-  --cookie-btn-text: #eee;
-}
-
-/* ==========================================================================
-   Mobiel
-   ========================================================================== */
-
-@media (max-width: 600px) {
-  .park {
-    min-height: 100svh;
-  }
-
-  .boom:nth-child(5),
-  .boom:nth-child(6),
-  .boom:nth-child(9),
-  .boom:nth-child(10) {
-    display: none;
-  }
 }

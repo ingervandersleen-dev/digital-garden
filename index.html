@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="[jouw naam]" />
+    <meta name="author" content="Inger van der Sleen" />
     <meta name="color-scheme" content="dark light" />
 
     <title>Inger's Junk Drawer</title>
@@ -11,38 +11,47 @@
 
     <!-- Importeer het webring component, voeg jouw eigen domein toe in data-page -->
     <script
-      data-page="[https://voorbeeld.nl]"
+      data-page="https://voorbeeld.nl"
       src="https://digitaaltuintje.nl/webring.js"
       defer
     ></script>
+    <script src="./assets/script.js" defer></script>
   </head>
 
   <body>
     <header>
       <form>
-        <label for="system-mode">
-          <input
-            type="radio"
-            id="system-mode"
-            name="color-scheme"
-            value="auto"
-            checked
-          />
-          auto
-        </label>
-        <label for="light-mode">
-          <input
-            type="radio"
-            id="light-mode"
-            name="color-scheme"
-            value="light"
-          />
-          Licht
-        </label>
-        <label for="dark-mode">
-          <input type="radio" id="dark-mode" name="color-scheme" value="dark" />
-          Donker
-        </label>
+        <fieldset>
+          <legend>Kleurmodus</legend>
+          <label for="system-mode">
+            <input
+              type="radio"
+              id="system-mode"
+              name="color-scheme"
+              value="auto"
+              checked
+            />
+            auto
+          </label>
+          <label for="light-mode">
+            <input
+              type="radio"
+              id="light-mode"
+              name="color-scheme"
+              value="light"
+            />
+            Licht
+          </label>
+          <label for="dark-mode">
+            <input
+              type="radio"
+              id="dark-mode"
+              name="color-scheme"
+              value="dark"
+            />
+            Donker
+          </label>
+        </fieldset>
       </form>
     </header>
     <main>
@@ -50,6 +59,8 @@
         <span class="zon" aria-hidden="true"></span>
         <span class="maan" aria-hidden="true"></span>
         <span class="vogel" aria-hidden="true"></span>
+
+        <!-- Bos-positionering opgezet met hulp van Claude (Anthropic), sept 2026 -->
         <div class="bos" aria-hidden="true">
           <span class="boom ver"></span>
           <span class="boom ver den"></span>
@@ -67,10 +78,10 @@
           <span class="boom den"></span>
           <span class="boom"></span>
           <span class="boom den"></span>
-          <span class="boom"></span>          <!-- loofboom, dichtbij -->
-<span class="boom den"></span>      <!-- den, dichtbij -->
-<span class="boom ver"></span>      <!-- loofboom, ver weg -->
-<span class="boom ver den"></span>  <!-- den, ver weg -->
+          <span class="boom"></span>
+          <span class="boom den"></span>
+          <span class="boom ver"></span>
+          <span class="boom ver den"></span>
         </div>
 
         <header class="titel">
@@ -84,7 +95,8 @@
         </section>
       </section>
     </main>
-      <footer>
+
+    <footer>
       <nav>
         <button commandfor="cookieModal" command="show-modal">
           <span>Allow cookies?</span>
@@ -98,15 +110,13 @@
           We use cookies to personalise content and ads, to provide social media
           features and to analyse our traffic. We also share information about
           your use of our site with our social media, advertising and analytics
-          partners who may combine it with other information that you’ve
-          provided to them or that they’ve collected from your use of their
+          partners who may combine it with other information that you've
+          provided to them or that they've collected from your use of their
           services.
         </p>
-        <button onclick="setCookie()">Allow</button>
-        <button onclick="unsetCookie()">Deny</button>
+        <button>Allow</button>
+        <button>Deny</button>
       </form>
     </dialog>
-  </body>
-</html>
   </body>
 </html>
