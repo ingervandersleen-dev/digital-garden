@@ -269,8 +269,7 @@ body {
 /* Bos
    Classes voor herbruikbare styling van de parkillustratie: dezelfde vorm
    (stam + bladeren/den) wordt tientallen keren hertekend met andere
-   positie/grootte via --x, --y en --schaal. Bos-positionering en
-   vogel-animatie opgezet met hulp van Claude (Anthropic), sept 2026. */
+   positie/grootte via --x, --y en --schaal. */
 
 .boom {
   --blad: var(--kleur-boom-blad);
