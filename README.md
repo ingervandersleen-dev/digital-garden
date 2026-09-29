@@ -1,5 +1,11 @@
 # Model
 
+## Dinsdag 29 september
+<img width="1264" height="629" alt="Scherm­afbeelding 2026-09-30 om 00 00 54" src="https://github.com/user-attachments/assets/8c3ac06d-ff79-4bcf-b8ec-ed2eba6c3832" />
+
+Vandaag heb ik mijn site verder afgemaakt. Ik heb een keuzemenu gemaakt met behulp van blokken en een grid. De blokken heb ik vormgegeven als gedachtenbubbels. Hiervoor heb ik onder de grote cirkel twee kleinere cirkels geplaatst, zodat het echt op een gedachtenwolk lijkt. Vervolgens heb ik met behulp van keyframes een animatie aan de bubbels toegevoegd.
+
+
 ## Maandag 28 september
 ### Deep dive Sanne
 <img width="1439" height="748" alt="Scherm­afbeelding 2026-09-29 om 21 14 30" src="https://github.com/user-attachments/assets/76870805-7662-487c-9752-c3c83af3f380" />
