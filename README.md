@@ -50,8 +50,15 @@ Begrijpelijke taal: vermijd ingewikkelde juridische termen.
 Geen manipulatie: gebruik geen dark patterns, zoals misleidende knoppen, schuldgevoel of tijdsdruk.
 Controle: geef de gebruiker de mogelijkheid om de keuze later aan te passen of in te trekken.
 
-## Maandag 21 september 
+## Maandag 21 september
+### Deep dive Sanne 
+<img width="1439" height="748" alt="Scherm­afbeelding 2026-09-29 om 21 06 33" src="https://github.com/user-attachments/assets/2b1ef10e-f037-4f82-a514-208a81c72ad6" />
+<img width="1439" height="748" alt="Scherm­afbeelding 2026-09-29 om 21 08 07" src="https://github.com/user-attachments/assets/b8f39818-a03e-43ec-b693-36db60ae5239" />
+<img width="1439" height="748" alt="Scherm­afbeelding 2026-09-29 om 21 09 34" src="https://github.com/user-attachments/assets/c8707ebd-3b37-4c7c-9c35-7c54b4214a61" />
+<img width="1439" height="748" alt="Scherm­afbeelding 2026-09-29 om 21 10 50" src="https://github.com/user-attachments/assets/73408e21-827b-4147-a86d-c1f57649a736" />
+<img width="1439" height="748" alt="Scherm­afbeelding 2026-09-29 om 21 11 52" src="https://github.com/user-attachments/assets/14810a4c-38da-4496-8597-fdcb5833951b" />
 
+### Biweekly
 <img width="645" height="462" alt="Scherm­afbeelding 2026-09-23 om 12 53 02" src="https://github.com/user-attachments/assets/97dad850-562f-46e9-94a6-bd4ed05209fd" />
 
 ### CHECK-OUT
