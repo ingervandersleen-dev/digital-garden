@@ -77,6 +77,68 @@ body {
 }
 
 /* ==========================================================================
+   Kleurmodus-knoppen
+   De <fieldset> en drie radiobuttons blijven functioneel (toetsenbord en
+   schermlezers werken gewoon), maar ogen als een rij pil-vormige knoppen
+   i.p.v. kale radiobuttons met tekst.
+   ========================================================================== */
+
+/* Header (kleurmodus-knoppen) zweeft los linksboven over de parkscène heen,
+   in plaats van een eigen balk over de volle breedte te vormen.
+   "body > header" i.p.v. gewoon "header", want .titel is óók een <header>
+   (binnen .park) en mag deze styling niet krijgen. */
+body > header {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000;
+  margin: 0;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  gap: 0.3rem;
+  padding: 0.3rem;
+  margin: 0;
+  width: fit-content;
+  background: var(--kleur-wolk);
+  border-radius: var(--radius-knop);
+}
+
+fieldset legend {
+  /* Visueel verborgen, maar nog voorleesbaar voor schermlezers */
+  position: absolute;
+  left: -9999em;
+}
+
+fieldset label {
+  padding: 0.4em 1em;
+  border-radius: var(--radius-knop);
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+fieldset input[type="radio"] {
+  /* Het bolletje zelf verbergen, wel toetsenbord-toegankelijk houden */
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+fieldset label:has(input:checked) {
+  background: var(--kleur-knop-achtergrond);
+  font-weight: bold;
+}
+
+fieldset label:has(input:focus-visible) {
+  outline: 0.15rem solid var(--kleur-knop-hover);
+  outline-offset: 0.15rem;
+}
+
+/* ==========================================================================
    Park
    ========================================================================== */
 
