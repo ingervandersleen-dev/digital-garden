@@ -533,22 +533,6 @@ fieldset label:has(input:focus-visible) {
   width: 15rem;
 }
 
-/* Bankje */
-
-.park::after {
-  background: var(--kleur-bankje);
-  border: 0.4rem solid var(--kleur-bankje-rand);
-  border-bottom: 0.7rem solid var(--kleur-bankje-rand);
-  bottom: 5rem;
-  content: "";
-  height: 1.8rem;
-  left: 50%;
-  position: absolute;
-  transform: translateX(-50%);
-  width: 8.2rem;
-  z-index: 1;
-}
-
 /* Titel */
 .titel {
   left: 50%;
@@ -631,4 +615,94 @@ footer button {
 
 footer button:hover {
   background-color: var(--kleur-knop-hover);
+}
+
+/* Nieuwe cookie-dialog, gebaseerd op je Figma-ontwerp */
+dialog#cookieModal {
+  max-width: 22rem;
+  width: 90%;
+  padding: 2rem 1.5rem;
+  border: none;
+  border-radius: 1.5rem;
+  background: var(--kleur-wolk);
+  color: var(--kleur-tekst-park);
+  text-align: center;
+}
+
+dialog#cookieModal::backdrop {
+  background: rgb(0 0 0 / 40%);
+}
+
+.cookie-illustratie svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+dialog#cookieModal h2 {
+  font-family: var(--font-titel);
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+}
+
+dialog#cookieModal ul {
+  background: Canvas;
+  border-radius: 1rem;
+  padding: 1.2rem 1.5rem;
+  text-align: left;
+  list-style: disc;
+  margin: 0 0 1rem;
+}
+
+dialog#cookieModal li + li {
+  margin-top: 0.8rem;
+}
+
+dialog#cookieModal li strong {
+  text-decoration: underline;
+  display: block;
+}
+
+.transparantie {
+  font-size: 0.8rem;
+  text-align: left;
+  margin: 0 0 1.5rem;
+}
+
+.transparantie strong {
+  text-decoration: underline;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+dialog#cookieModal form {
+  margin: 0;
+}
+
+dialog#cookieModal button {
+  background: Canvas;
+  color: var(--kleur-tekst-park);
+  border: none;
+  border-radius: var(--radius-knop);
+  padding: 0.7em 2em;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+dialog#cookieModal button:hover {
+  background: var(--kleur-knop-hover);
+}
+
+.cookie-illustratie {
+  width: 8rem;
+  margin: 0 auto 1rem;
+}
+
+.cookie-illustratie img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
