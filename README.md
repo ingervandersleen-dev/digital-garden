@@ -16,6 +16,10 @@ Vandaag heb ik mijn site verder afgemaakt. Ik heb een keuzemenu gemaakt met behu
 <img width="553" height="342" alt="Scherm­afbeelding 2026-09-30 om 09 53 21" src="https://github.com/user-attachments/assets/401482f0-6b45-4cf6-af6e-b7e934cb6454" />
 <img width="389" height="376" alt="Scherm­afbeelding 2026-09-23 om 12 27 24" src="https://github.com/user-attachments/assets/f452f458-2de4-495d-9fda-d081f127dad7" />
 
+### Uitwerking figma cookie button
+
+<img width="431" height="435" alt="Scherm­afbeelding 2026-09-30 om 12 05 16" src="https://github.com/user-attachments/assets/7c9eea2f-3be9-490f-abe2-9eed497cc331" />
+
 ### Bi-weekly opdracht
 <img width="959" height="676" alt="Scherm­afbeelding 2026-09-28 om 18 04 07" src="https://github.com/user-attachments/assets/a29b9ae0-9e36-4af0-b23e-fd6211e1614b" />
 
