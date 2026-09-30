@@ -1,5 +1,12 @@
 # Model
-
+## Woensdag 30 september 
+### CHECK-OUT
+1. Waar staat WCAG en A11y voor? ->
+   WCAG: Web content accessibility guidelines
+2. Wat vind je lastiger, je laptop/websites alleen met een toetsenbord bedienen of met een screenreader? Waarom? Waar moet je nog mee oefenen? -> Ik vind de screenreader het lastigst. Je moet er
+3. Met welke beperking rekening houden vind je het meest lastig? Vind je dat je beperkt wordt in wat je kunt ontwerpen?
+Of heb je al manieren gevonden om vanuit een solide basis  - die voor iedereen toegankelijk is - allemaal leuke en mooie extra's toe te voegen als je bezoekers dat goed vinden? -> Ja ik vind dat we beperkt worden in wat we kunnen ontwerpen. Het rekening houden met een visuele beperking vind ik persoonlijk het lastigst. 
+   
 ## Dinsdag 29 september
 <img width="1264" height="629" alt="Scherm­afbeelding 2026-09-30 om 00 00 54" src="https://github.com/user-attachments/assets/8c3ac06d-ff79-4bcf-b8ec-ed2eba6c3832" />
 
