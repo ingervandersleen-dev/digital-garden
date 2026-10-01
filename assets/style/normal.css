@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Custom properties
+   MARK: Custom properties
    light-dark(licht, donker) kiest zelf de juiste kleur, op basis van
    color-scheme (dus zowel voor "auto" als voor de Licht/Donker-knoppen).
    ========================================================================== */
@@ -34,6 +34,10 @@
   --kleur-knop-achtergrond: light-dark(#fff8e9, #333a6b);
   --kleur-knop-tekst: light-dark(#24372e, #f3ecd9);
   --kleur-knop-hover: light-dark(#f5bd6e, #4a5290);
+
+  /* Cookie pop-up */
+  --kleur-cookie-pop: light-dark(#f5bd6e, #c9cce8);
+  --kleur-cookie-tekst: light-dark(#000000, #547b55);
 
   /* Vogel */
   --kleur-vogel: light-dark(#24372e, #000000);
@@ -78,7 +82,7 @@ body {
 }
 
 /* ==========================================================================
-   Kleurmodus-knoppen
+   MARK: Kleurmodus-knoppen
    De <fieldset> en drie radiobuttons blijven functioneel (toetsenbord en
    schermlezers werken gewoon), maar ogen als een rij pil-vormige knoppen
    i.p.v. kale radiobuttons met tekst.
@@ -140,7 +144,7 @@ fieldset label:has(input:focus-visible) {
 }
 
 /* ==========================================================================
-   Park
+   MARK: Park
    ========================================================================== */
 
 .park {
@@ -223,7 +227,7 @@ fieldset label:has(input:focus-visible) {
   }
 }
 
-/* Zon en maan
+/* MARK: Zon en maan
    Allebei staan ze op dezelfde plek. Door de kleuren (zon: licht, maan: donker)
    is steeds maar één van de twee zichtbaar. */
 
@@ -250,7 +254,7 @@ fieldset label:has(input:focus-visible) {
   width: 4.2rem;
 }
 
-/* Vogel */
+/* MARK: Vogel */
 
 .vogel {
   animation: vlieg 22s linear infinite;
@@ -328,7 +332,7 @@ fieldset label:has(input:focus-visible) {
   }
 }
 
-/* Bos
+/* MARK:  Bos
    Classes voor herbruikbare styling van de parkillustratie: dezelfde vorm
    (stam + bladeren/den) wordt tientallen keren hertekend met andere
    positie/grootte via --x, --y en --schaal. Bos-positionering en
@@ -519,7 +523,7 @@ fieldset label:has(input:focus-visible) {
   }
 }
 
-/* Pad */
+/* MARK: Pad */
 
 .park::before {
   background: var(--kleur-pad);
@@ -533,7 +537,7 @@ fieldset label:has(input:focus-visible) {
   width: 15rem;
 }
 
-/* Titel */
+/* MARK: Titel */
 .titel {
   left: 50%;
   position: absolute;
@@ -594,7 +598,7 @@ fieldset label:has(input:focus-visible) {
   background: var(--kleur-knop-hover);
 }
 
-/* Cookie-knop (blijft altijd zichtbaar, ook tijdens scrollen op langere
+/* MARK: Cookie-knop (blijft altijd zichtbaar, ook tijdens scrollen op langere
    pagina's zoals beginjewandeling.html) */
 footer {
   position: fixed;
@@ -624,8 +628,8 @@ dialog#cookieModal {
   padding: 2rem 1.5rem;
   border: none;
   border-radius: 1.5rem;
-  background: var(--kleur-zon);
-  color: var(--kleur-tekst-park);
+  background: var(--kleur-cookie-pop);
+  color: var(--kleur-cookie-tekst);
   text-align: center;
 }
 

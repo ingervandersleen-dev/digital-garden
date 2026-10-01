@@ -35,6 +35,7 @@
 
   /* cookie pop-up */
   --kleur-cookie-pop: light-dark(#f5bd6e, #c9cce8);
+  --kleur-cookie-tekst: light-dark(#000000, #547b55);
 
   /* Lettertypes */
   --font-tekst: "Comic Relief", system-ui;
@@ -473,7 +474,7 @@ dialog#cookieModal {
   border: none;
   border-radius: 1.5rem;
   background: var(--kleur-cookie-pop);
-  color: var(--kleur-tekst-park);
+  color: var(--kleur-cookie-tekst);
   text-align: center;
 }
 

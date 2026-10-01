@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Inger van der Sleen" />
+    <meta name="color-scheme" content="dark light" />
+
+    <title>Inger's Junk Drawer — Book recommendations</title>
+    <link rel="stylesheet" href="./knoppen.css" />
+
+    <!-- Importeer het webring component, voeg jouw eigen domein toe in data-page -->
+    <script
+      data-page="https://voorbeeld.nl"
+      src="https://digitaaltuintje.nl/webring.js"
+      defer
+    ></script>
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Book recommendations</h1>
+      <nav>
+        <ul>
+          <li><a href="beginjewandeling.html">Terug naar wandeling</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+
+      <form>
+        <fieldset>
+          <legend>Kleurmodus</legend>
+          <label for="system-mode">
+            <input
+              type="radio"
+              id="system-mode"
+              name="color-scheme"
+              value="auto"
+              checked
+            />
+            auto
+          </label>
+          <label for="light-mode">
+            <input
+              type="radio"
+              id="light-mode"
+              name="color-scheme"
+              value="light"
+            />
+            Licht
+          </label>
+          <label for="dark-mode">
+            <input
+              type="radio"
+              id="dark-mode"
+              name="color-scheme"
+              value="dark"
+            />
+            Donker
+          </label>
+        </fieldset>
+      </form>
+    </header>
+
+    <main>
+      <article>
+        <button
+          class="boek-kaart"
+          commandfor="boek-donquichot"
+          command="show-modal"
+        >
+          <img
+            src="../../assets/Fourthwing.png"
+            alt="Picture of book 'The Fourth Wing"
+          />
+        </button>
+      </article>
+
+      <dialog id="boek-donquichot" class="boek-modal">
+        <h2>Fourth Wing</h2>
+        <img
+          src="../../assets/Fourthwing.png"
+          alt="Picture of book 'The Fourth Wing"
+        />
+        <p>
+          Fourth Wing by Rebecca Yarros is a fantasy romance novel and the first
+          book in the Empyrean series. The story follows Violet Sorrengail, who
+          is unexpectedly forced to attend Basgiath War College and train to
+          become a dragon rider. Although she had always planned to become a
+          scribe, Violet is thrown into a dangerous world filled with brutal
+          training, deadly challenges, dragons, and rival riders. As she fights
+          to survive, she also finds herself drawn into a complicated
+          relationship with Xaden Riorson, one of the most powerful and
+          dangerous riders at the college.
+        </p>
+        <a
+          class="boek-link"
+          href="https://www.goodreads.com/book/show/3836.Don_Quixote"
+          target="_blank"
+          rel="noopener"
+        >
+          More of this book →
+        </a>
+        <form method="dialog">
+          <button>CLOSE</button>
+        </form>
+      </dialog>
+
+      <article>
+        <button
+          class="boek-kaart"
+          commandfor="boek-fahrenheit"
+          command="show-modal"
+        >
+          <img
+            src="../../assets/Thornes.png"
+            alt="Picture of book 'A Court of Thorns and Roses"
+          />
+        </button>
+      </article>
+
+      <dialog id="boek-fahrenheit" class="boek-modal">
+        <h2>A Court of Thorns and Roses</h2>
+        <img
+          src="https://picsum.photos/190"
+          alt="Picture of book 'A Court of Thorns and Roses"
+        />
+        <p>
+          *A Court of Thorns and Roses* by Sarah J. Maas follows
+          nineteen-year-old Feyre, whose life changes when she kills a wolf in
+          the woods and is taken to the magical land of Prythian. There, she
+          discovers that the faerie world is far more complicated than she ever
+          imagined. As an ancient curse threatens the land and its rulers, Feyre
+          becomes caught in a dangerous struggle against the powerful Amarantha.
+          With the help of unexpected allies, she must face a series of deadly
+          challenges while uncovering the truth about the world around her—and
+          her own feelings along the way.
+        </p>
+        <a
+          class="boek-link"
+          href="https://www.goodreads.com/book/show/13079982-fahrenheit-451"
+          target="_blank"
+          rel="noopener"
+        >
+          More of this book →
+        </a>
+        <form method="dialog">
+          <button>CLOSE</button>
+        </form>
+      </dialog>
+
+      <article>
+        <button
+          class="boek-kaart"
+          commandfor="boek-nautilus"
+          command="show-modal"
+        >
+          <img
+            src="../../assets/EyeoftheWorld.png"
+            alt="Picture of book 'Eye of the world"
+          />
+        </button>
+      </article>
+
+      <dialog id="boek-nautilus" class="boek-modal">
+        <h2>The Eye of the World</h2>
+        <img
+          src="https://picsum.photos/200"
+          alt="Picture of book 'Eye of the world"
+        />
+        <p>
+          *The Wheel of Time* by Robert Jordan begins in the quiet village of
+          Emond’s Field, where the arrival of Moiraine Damodred sets a dangerous
+          journey in motion. She is searching for the person foretold to
+          confront the Dark One, an ancient force threatening to plunge the
+          world into chaos. When mysterious and deadly creatures attack the
+          village, Moiraine convinces Rand al’Thor and his friends to leave
+          their home behind. Together, they venture into a vast and unfamiliar
+          world where ancient prophecies, hidden dangers, and a growing battle
+          between light and darkness await them.
+        </p>
+        <a
+          class="boek-link"
+          href="https://www.goodreads.com/book/show/37857.Twenty_Thousand_Leagues_Under_the_Sea"
+          target="_blank"
+          rel="noopener"
+        >
+          More of this book →
+        </a>
+        <form method="dialog">
+          <button>CLOSE</button>
+        </form>
+      </dialog>
+
+      <article>
+        <button
+          class="boek-kaart"
+          commandfor="boek-frankenstein"
+          command="show-modal"
+        >
+          <img
+            src="../../assets/Sixofcrows.png"
+            alt="Picture of book 'Six of Crows"
+          />
+        </button>
+      </article>
+
+      <dialog id="boek-frankenstein" class="boek-modal">
+        <h2>Six of Crows</h2>
+        <img
+          src="https://picsum.photos/190"
+          alt="Picture of book 'Six of Crows"
+        />
+        <p>
+          Six of Crows by Leigh Bardugo is set in Ketterdam, a lively city where
+          money and power can buy almost anything. When criminal mastermind Kaz
+          Brekker is offered an opportunity to pull off an incredibly dangerous
+          heist, he assembles a team of six unlikely allies. Each member has
+          their own skills, secrets, and reasons for joining the mission.
+          Together, they must attempt the impossible while navigating rivalries,
+          hidden motives, and the constant threat of turning against one
+          another. If they want to succeed, they will have to learn to work
+          together—and stay alive.
+        </p>
+        <a
+          class="boek-link"
+          href="https://www.goodreads.com/book/show/35031085-frankenstein"
+          target="_blank"
+          rel="noopener"
+        >
+          Meer over dit boek →
+        </a>
+        <form method="dialog">
+          <button>Sluiten</button>
+        </form>
+      </dialog>
+    </main>
+
+    <footer>
+      <nav>
+        <button commandfor="cookieModal" command="show-modal">
+          <span>Allow cookies?</span>
+        </button>
+      </nav>
+    </footer>
+
+    <dialog id="cookieModal">
+      <div class="cookie-illustratie" aria-hidden="true">
+        <img src="./assets/Cookiewolk.svg" alt="" />
+      </div>
+
+      <h2>WHICH EXTERNAL SYSTEMS ARE INVOLVED?</h2>
+
+      <ul>
+        <li>
+          <strong>GitHub Pages</strong>
+          Handles the technical hosting and keeps this site online.
+        </li>
+        <li>
+          <strong>Digitaaltuintje Webring Component</strong>
+          Connects this site to the wider network of digital gardens.
+        </li>
+      </ul>
+
+      <p class="transparantie">
+        <strong>Transparency</strong>
+        Everything else on this site was designed and built 100% by me. No
+        sneaky ad networks, no commercial trackers, and no unnecessary cookies.
+      </p>
+
+      <form method="dialog">
+        <button>CLOSE</button>
+      </form>
+    </dialog>
+  </body>
+</html>

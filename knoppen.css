@@ -1,0 +1,433 @@
+/* ==========================================================================
+   Custom properties
+   Dezelfde kleuren als normal.css / normal2.css, zodat deze pagina bij het
+   parkthema van de rest van de site aansluit.
+   ========================================================================== */
+
+:root {
+  --kleur-lucht-boven: light-dark(#dbeef2, #0a1030);
+  --kleur-lucht-horizon: light-dark(#f8ddbf, #2d2b5e);
+  --kleur-wolk: light-dark(#fffff0, #c9cce8);
+
+  --kleur-tekst-park: light-dark(#24372e, #eef0e4);
+  --kleur-tekst-licht: light-dark(white, #eef0e4);
+  --kleur-knop-achtergrond: light-dark(#fff8e9, #333a6b);
+  --kleur-knop-tekst: light-dark(#24372e, #f3ecd9);
+  --kleur-knop-hover: light-dark(#f5bd6e, #4a5290);
+
+  /* Cookie pop-up */
+  --kleur-cookie-pop: light-dark(#f5bd6e, #c9cce8);
+  --kleur-cookie-tekst: light-dark(#000000, #547b55);
+
+  --font-tekst: "Comic Relief", system-ui;
+  --font-titel: Georgia, serif;
+
+  --radius-rond: 50%;
+  --radius-knop: 2rem;
+
+  --whitespace: 2rem;
+  --whitespace-s: 1rem;
+  --whitespace-xs: 0.5rem;
+}
+
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+@font-face {
+  font-family: "Comic Relief";
+  src: url(./assets/type/ComicRelief-Regular.woff2);
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ==========================================================================
+   Basis
+   ========================================================================== */
+
+html {
+  color-scheme: light dark;
+}
+
+html:has([value="light"]:checked) {
+  color-scheme: light;
+}
+
+html:has([value="dark"]:checked) {
+  color-scheme: dark;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: var(--font-tekst);
+  background: var(--kleur-lucht-horizon);
+  color: var(--kleur-tekst-park);
+  margin: 0;
+  min-height: 100svh;
+
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+@media (min-width: 60em) {
+  body {
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-areas:
+      "header header ."
+      "main main main"
+      ". footer footer";
+  }
+}
+
+article {
+  max-width: 30em;
+  background: var(--kleur-wolk);
+  border-radius: 1rem;
+  padding: var(--whitespace-s);
+}
+
+article img {
+  border-radius: 0.5rem;
+}
+
+button,
+summary {
+  cursor: pointer;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+h1 {
+  font-family: var(--font-titel);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: normal;
+  margin: 0 0 var(--whitespace-s);
+}
+
+h2 {
+  font-family: var(--font-titel);
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+a {
+  color: var(--kleur-tekst-park);
+}
+
+a:hover {
+  color: var(--kleur-knop-hover);
+}
+
+a:focus-visible {
+  color: var(--kleur-knop-hover);
+  outline: 0.15rem dashed var(--kleur-knop-hover);
+}
+
+/* ==========================================================================
+   Header (titel, navigatie, kleurmodus-knoppen)
+   ========================================================================== */
+
+header {
+  background: var(--kleur-knop-achtergrond);
+  color: var(--kleur-knop-tekst);
+  grid-area: header;
+  padding: var(--whitespace);
+}
+
+header nav ul {
+  display: flex;
+  gap: var(--whitespace-s);
+  padding: 0;
+  margin: 0 0 var(--whitespace-s);
+  list-style: none;
+}
+
+header nav a {
+  color: var(--kleur-knop-tekst);
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: var(--kleur-knop-hover);
+  text-decoration: underline;
+}
+
+/* Kleurmodus-knoppen: zelfde segmented-control-stijl als de rest van de site */
+
+fieldset {
+  border: none;
+  display: flex;
+  gap: 0.3rem;
+  padding: 0.3rem;
+  margin: 0;
+  width: fit-content;
+  background: var(--kleur-wolk);
+  border-radius: var(--radius-knop);
+}
+
+fieldset legend {
+  position: absolute;
+  left: -9999em;
+}
+
+fieldset label {
+  padding: 0.4em 1em;
+  border-radius: var(--radius-knop);
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--kleur-tekst-park);
+  transition: background-color 0.2s ease-in-out;
+}
+
+fieldset input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+fieldset label:has(input:checked) {
+  background: var(--kleur-knop-hover);
+  font-weight: bold;
+}
+
+fieldset label:has(input:focus-visible) {
+  outline: 0.15rem solid var(--kleur-knop-hover);
+  outline-offset: 0.15rem;
+}
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
+
+main {
+  grid-area: main;
+  padding: var(--whitespace);
+
+  display: grid;
+  gap: var(--whitespace);
+  grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+}
+
+/* ==========================================================================
+   Boek-kaarten (klikbaar, opent een pop-up met korte uitleg + link)
+   De hele kaart is een <button> die een <dialog> opent via command/
+   commandfor — puur HTML, geen JavaScript nodig.
+   ========================================================================== */
+
+.boek-kaart {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.boek-kaart:hover,
+.boek-kaart:focus-visible {
+  transform: translateY(-0.2rem);
+}
+
+.boek-kaart:focus-visible {
+  outline: 0.15rem dashed var(--kleur-knop-hover);
+  outline-offset: 0.3rem;
+}
+
+.boek-kaart img {
+  margin-bottom: var(--whitespace-xs);
+}
+
+/* Elke boek-dialog deelt dezelfde opmaak */
+
+dialog.boek-modal {
+  max-width: 24rem;
+  width: 90%;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 1.5rem;
+  background: var(--kleur-wolk);
+  color: var(--kleur-tekst-park);
+}
+
+dialog.boek-modal::backdrop {
+  background: rgb(0 0 0 / 40%);
+}
+
+dialog.boek-modal h2 {
+  margin-top: 0;
+}
+
+dialog.boek-modal img {
+  border-radius: 0.5rem;
+  margin-bottom: var(--whitespace-s);
+}
+
+dialog.boek-modal p {
+  line-height: 1.5;
+}
+
+dialog.boek-modal .boek-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+dialog.boek-modal form {
+  margin: 1.5rem 0 0;
+  text-align: right;
+}
+
+dialog.boek-modal form button {
+  background: var(--kleur-knop-achtergrond);
+  color: var(--kleur-knop-tekst);
+  border: none;
+  border-radius: var(--radius-knop);
+  padding: 0.5em 1.4em;
+  cursor: pointer;
+}
+
+dialog.boek-modal form button:hover {
+  background: var(--kleur-knop-hover);
+}
+
+/* ==========================================================================
+   Footer (cookie-knop)
+   Blijft altijd zichtbaar linksonder, net als op de andere pagina's.
+   ========================================================================== */
+
+footer {
+  grid-area: footer;
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 1000;
+  margin: 0;
+}
+
+footer button {
+  background-color: var(--kleur-knop-achtergrond);
+  color: var(--kleur-knop-tekst);
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+footer button:hover {
+  background-color: var(--kleur-knop-hover);
+}
+
+/* ==========================================================================
+   Cookie-dialog
+   ========================================================================== */
+
+dialog#cookieModal {
+  max-width: 22rem;
+  width: 90%;
+  padding: 2rem 1.5rem;
+  border: none;
+  border-radius: 1.5rem;
+  background: var(--kleur-cookie-pop);
+  color: var(--kleur-cookie-tekst);
+  text-align: center;
+}
+
+dialog#cookieModal::backdrop {
+  background: rgb(0 0 0 / 40%);
+}
+
+.cookie-illustratie {
+  width: 8rem;
+  margin: 0 auto 1rem;
+}
+
+.cookie-illustratie img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+dialog#cookieModal h2 {
+  font-family: var(--font-titel);
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+}
+
+dialog#cookieModal ul {
+  background: Canvas;
+  border-radius: 1rem;
+  padding: 1.2rem 1.5rem;
+  text-align: left;
+  list-style: disc;
+  margin: 0 0 1rem;
+}
+
+dialog#cookieModal li + li {
+  margin-top: 0.8rem;
+}
+
+dialog#cookieModal li strong {
+  text-decoration: underline;
+  display: block;
+}
+
+.transparantie {
+  font-size: 0.8rem;
+  text-align: left;
+  margin: 0 0 1.5rem;
+}
+
+.transparantie strong {
+  text-decoration: underline;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+dialog#cookieModal form {
+  margin: 0;
+}
+
+dialog#cookieModal button {
+  background: Canvas;
+  color: var(--kleur-tekst-park);
+  border: none;
+  border-radius: var(--radius-knop);
+  padding: 0.7em 2em;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+dialog#cookieModal button:hover {
+  background: var(--kleur-knop-hover);
+}
