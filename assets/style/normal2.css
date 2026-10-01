@@ -33,6 +33,9 @@
   /* Vogel */
   --kleur-vogel: light-dark(#24372e, #000000);
 
+  /* cookie pop-up */
+  --kleur-cookie-pop: light-dark(#f5bd6e, #c9cce8);
+
   /* Lettertypes */
   --font-tekst: "Comic Relief", system-ui;
   --font-titel: Georgia, serif;
@@ -461,4 +464,93 @@ footer button:hover {
 
 main {
   margin: 0;
+}
+
+dialog#cookieModal {
+  max-width: 22rem;
+  width: 90%;
+  padding: 2rem 1.5rem;
+  border: none;
+  border-radius: 1.5rem;
+  background: var(--kleur-cookie-pop);
+  color: var(--kleur-tekst-park);
+  text-align: center;
+}
+
+dialog#cookieModal::backdrop {
+  background: rgb(0 0 0 / 40%);
+}
+
+.cookie-illustratie svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+dialog#cookieModal h2 {
+  font-family: var(--font-titel);
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+}
+
+dialog#cookieModal ul {
+  background: Canvas;
+  border-radius: 1rem;
+  padding: 1.2rem 1.5rem;
+  text-align: left;
+  list-style: disc;
+  margin: 0 0 1rem;
+}
+
+dialog#cookieModal li + li {
+  margin-top: 0.8rem;
+}
+
+dialog#cookieModal li strong {
+  text-decoration: underline;
+  display: block;
+}
+
+.transparantie {
+  font-size: 0.8rem;
+  text-align: left;
+  margin: 0 0 1.5rem;
+}
+
+.transparantie strong {
+  text-decoration: underline;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+dialog#cookieModal form {
+  margin: 0;
+}
+
+dialog#cookieModal button {
+  background: Canvas;
+  color: var(--kleur-tekst-park);
+  border: none;
+  border-radius: var(--radius-knop);
+  padding: 0.7em 2em;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+dialog#cookieModal button:hover {
+  background: var(--kleur-gras-licht);
+}
+
+.cookie-illustratie {
+  width: 8rem;
+  margin: 0 auto 1rem;
+}
+
+.cookie-illustratie img {
+  width: 100%;
+  height: auto;
+  display: block;
 }

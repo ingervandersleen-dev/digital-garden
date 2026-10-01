@@ -624,7 +624,7 @@ dialog#cookieModal {
   padding: 2rem 1.5rem;
   border: none;
   border-radius: 1.5rem;
-  background: var(--kleur-wolk);
+  background: var(--kleur-zon);
   color: var(--kleur-tekst-park);
   text-align: center;
 }
@@ -693,7 +693,7 @@ dialog#cookieModal button {
 }
 
 dialog#cookieModal button:hover {
-  background: var(--kleur-knop-hover);
+  background: var(--kleur-gras-licht);
 }
 
 .cookie-illustratie {
