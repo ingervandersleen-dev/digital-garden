@@ -402,6 +402,11 @@ Het beeld wat ik wil uitstralen is rust en kalmte. Dit ontwerp heb ik in illustr
 
 Toen startte ik met coderen. Ik vind het niet gebruiken van div en classes heel moeilijk.
 
+<img width="511" height="593" alt="Scherm­afbeelding 2026-10-02 om 09 25 30" src="https://github.com/user-attachments/assets/6f61a5f0-28b5-446e-88b2-8a4c913f10ee" />
+<img width="857" height="593" alt="Scherm­afbeelding 2026-10-02 om 09 25 06" src="https://github.com/user-attachments/assets/39b71dfd-a4ad-4c70-ad36-5f2e6c3a31e6" />
+
+
+
 
 
 
