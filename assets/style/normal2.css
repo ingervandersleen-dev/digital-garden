@@ -51,7 +51,7 @@
 }
 
 /* ==========================================================================
-   Basis
+   MARK: Basis
    ========================================================================== */
 
 @font-face {
@@ -81,7 +81,7 @@ body {
 }
 
 /* ==========================================================================
-   Kleurmodus-knoppen
+   MARK: Kleurmodus-knoppen
    De <fieldset> en drie radiobuttons blijven functioneel (toetsenbord en
    schermlezers werken gewoon), maar ogen als een rij pil-vormige knoppen
    i.p.v. kale radiobuttons met tekst.
@@ -143,7 +143,7 @@ fieldset label:has(input:focus-visible) {
 }
 
 /* ==========================================================================
-   Park
+   MARK: Park
    ========================================================================== */
 
 .park {
@@ -251,7 +251,7 @@ fieldset label:has(input:focus-visible) {
   width: 4.2rem;
 }
 
-/* Titel
+/* MARK: Titel
    Geen position: absolute hier: op deze pagina moet de titel gewoon
    ruimte innemen in de flow, zodat het grid met blokken er automatisch
    onder komt te staan in plaats van eroverheen. */
@@ -332,7 +332,7 @@ footer button:hover {
 }
 
 /* ==========================================================================
-   Blokken (Books / Music / Mindfulness / Activities)
+   MARK: Blokken (Books / Music / Mindfulness / Activities)
    Vast 2x2-grid: de kolommen groeien nooit verder dan max-width toelaat,
    dus ze komen nooit voorbij de onderkant van de titel uit.
    ========================================================================== */
@@ -361,7 +361,7 @@ footer button:hover {
   }
 }
 
-/* Gedachtenwolkjes i.p.v. vierkante blokken: zelfde look als de wolken in
+/* MARK: Gedachtenwolkjes i.p.v. vierkante blokken: zelfde look als de wolken in
    de lucht (var(--kleur-wolk)), dus dit werkt automatisch mee met
    light/dark mode. */
 .blok1,

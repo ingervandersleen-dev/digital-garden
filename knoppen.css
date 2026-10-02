@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Custom properties
+   MARK: Custom properties
    Dezelfde kleuren als normal.css / normal2.css, zodat deze pagina bij het
    parkthema van de rest van de site aansluit.
    ========================================================================== */
@@ -31,7 +31,7 @@
 }
 
 /* ==========================================================================
-   Fonts
+   MARK: Fonts
    ========================================================================== */
 
 @font-face {
@@ -42,7 +42,7 @@
 }
 
 /* ==========================================================================
-   Basis
+   MARK: Basis
    ========================================================================== */
 
 html {
@@ -145,7 +145,7 @@ a:focus-visible {
 }
 
 /* ==========================================================================
-   Header (titel, navigatie, kleurmodus-knoppen)
+   MARK: Header (titel, navigatie, kleurmodus-knoppen)
    ========================================================================== */
 
 header {
@@ -218,7 +218,7 @@ fieldset label:has(input:focus-visible) {
 }
 
 /* ==========================================================================
-   Main
+   MARK: Main
    ========================================================================== */
 
 main {
@@ -231,7 +231,7 @@ main {
 }
 
 /* ==========================================================================
-   Boek-kaarten (klikbaar, opent een pop-up met korte uitleg + link)
+   MARK:Boek-kaarten (klikbaar, opent een pop-up met korte uitleg + link)
    De hele kaart is een <button> die een <dialog> opent via command/
    commandfor — puur HTML, geen JavaScript nodig.
    ========================================================================== */
@@ -319,7 +319,7 @@ dialog.boek-modal form button:hover {
 }
 
 /* ==========================================================================
-   Footer (cookie-knop)
+  MARK: Footer (cookie-knop)
    Blijft altijd zichtbaar linksonder, net als op de andere pagina's.
    ========================================================================== */
 
@@ -346,7 +346,7 @@ footer button:hover {
 }
 
 /* ==========================================================================
-   Cookie-dialog
+   MARK:Cookie-dialog
    ========================================================================== */
 
 dialog#cookieModal {
