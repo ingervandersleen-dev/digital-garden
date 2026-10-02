@@ -227,6 +227,26 @@ fieldset label:has(input:focus-visible) {
   }
 }
 
+/* MARK: Skip link
+   Onzichtbaar totdat een toetsenbordgebruiker er met Tab op komt. */
+
+.skip-link {
+  position: absolute;
+  top: -3rem;
+  left: 0.5rem;
+  background: var(--kleur-knop-achtergrond);
+  color: var(--kleur-knop-tekst);
+  padding: 0.6em 1.2em;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  z-index: 2000;
+  transition: top 0.2s ease-in-out;
+}
+
+.skip-link:focus {
+  top: 0.5rem;
+}
+
 /* MARK: Zon en maan
    Allebei staan ze op dezelfde plek. Door de kleuren (zon: licht, maan: donker)
    is steeds maar één van de twee zichtbaar. */

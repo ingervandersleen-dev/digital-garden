@@ -1,15 +1,14 @@
-// Cookie-knoppen in de dialog. We selecteren ze op hun plek in de dialog
-// (geen class nodig), zodat we niet met onclick-attributen in de HTML werken.
-const cookieKnoppen = document.querySelectorAll("#cookieModal form button");
-const [toestaanKnop, weigerKnop] = cookieKnoppen;
+const cookieKnop = document.querySelector("footer button");
+const cookieDialoog = document.getElementById("cookieModal");
+const sluitKnop = cookieDialoog.querySelector("form button");
 
-toestaanKnop.addEventListener("click", () => {
-  document.cookie = "cookies-toegestaan=true; path=/; max-age=31536000";
+// Knop verbergen als iemand de popup al eerder heeft gezien
+if (localStorage.getItem("cookieInfoGezien") === "true") {
+  cookieKnop.style.display = "none";
+}
+
+// Onthouden zodra iemand op "Sluiten" klikt
+sluitKnop.addEventListener("click", () => {
+  localStorage.setItem("cookieInfoGezien", "true");
+  cookieKnop.style.display = "none";
 });
-
-weigerKnop.addEventListener("click", () => {
-  document.cookie = "cookies-toegestaan=false; path=/; max-age=31536000";
-});
-
-// Het sluiten van de dialog gebeurt vanzelf door method="dialog" op het form,
-// daar is geen JS voor nodig.
