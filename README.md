@@ -1,4 +1,12 @@
 # Model
+
+## Maandag 5 oktober 
+### CHECK-OUT
+1. Leg uit wat er met de volgende termen bedoeld wordt: kerning, tracking, leading, flush-left, flush-right, centered, justified, indent, outdent, modular scale, movable type, focus punt, vijf soorten contrast, spatial tension. -> 
+2. Wat is jouw ideale regellengte (measure)? Leg uit waarom. -> Mijn ideale regellengte ligt rond de 60–70 tekens per regel. Dit vind ik prettig omdat de tekst dan niet te breed wordt, waardoor je ogen niet te ver hoeven te bewegen van het einde van een regel naar het begin van de volgende. Een te korte regellengte zorgt er juist voor dat je ogen steeds heen en weer moeten springen en de tekst onrustig kan worden.
+
+3. Als je in een ontwerp maar één variabele tot je beschikking had om hiërarchie aan te brengen (grootte, plaatsing, spacing, lettersoorten), welke zou je dan gebruiken en waarom? -> Als ik maar één variabele mocht gebruiken om hiërarchie aan te brengen, zou ik kiezen voor grootte. Met alleen verschillende lettergroottes kun je al duidelijk maken welke informatie het belangrijkst is. Een grote titel trekt automatisch meer aandacht dan kleinere tekst, waardoor je een duidelijke volgorde in een ontwerp kunt creëren. Daarnaast kun je met grootte ook verschillende niveaus van informatie aangeven, zonder dat je meerdere lettertypes of kleuren nodig hebt. Hierdoor blijft een ontwerp rustig, terwijl er toch een duidelijke hiërarchie ontstaat.
+
 ## Woensdag 30 september 
 ### CHECK-OUT
 1. Waar staat WCAG en A11y voor? ->
