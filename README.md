@@ -85,7 +85,7 @@ Of heb je al manieren gevonden om vanuit een solide basis  - die voor iedereen t
 ## Dinsdag 29 september
 <img width="1264" height="629" alt="Scherm­afbeelding 2026-09-30 om 00 00 54" src="https://github.com/user-attachments/assets/8c3ac06d-ff79-4bcf-b8ec-ed2eba6c3832" />
 
-Vandaag heb ik mijn site verder afgemaakt. Ik heb een keuzemenu gemaakt met behulp van blokken en een grid. De blokken heb ik vormgegeven als gedachtenbubbels. Hiervoor heb ik onder de grote cirkel twee kleinere cirkels geplaatst, zodat het echt op een gedachtenwolk lijkt. Vervolgens heb ik met behulp van keyframes een animatie aan de bubbels toegevoegd.
+Vandaag heb ik mijn site verder afgemaakt. Ik heb onder andere een keuzemenu gemaakt met behulp van verschillende blokken en een grid. De blokken heb ik vormgegeven als gedachtenbubbels, zodat ze goed aansluiten bij de speelse en chaotische stijl van mijn website. Om de bubbels meer op echte gedachtenwolkjes te laten lijken, heb ik onder de grote cirkel twee kleinere cirkels geplaatst. Vervolgens heb ik met behulp van keyframes een animatie aan de bubbels toegevoegd, waardoor ze subtiel bewegen en de pagina wat meer dynamiek krijgt. Op deze manier voelt het menu minder statisch aan en past de interactie beter bij het concept van mijn site.
 
 
 ## Maandag 28 september
