@@ -1,6 +1,7 @@
 # Model
 
 ## Maandag 5 oktober 
+### Artikelen
 Vandaag zijn we gestart met een nieuwe sprint: De regels & het spel. We begonnen de sprint met het lezen en analyseren van verschillende artikelen in groepjes. Ieder groepje kreeg een ander artikel toegewezen. Ons groepje las het artikel ‘Respect Thy Typography’.
 
 Om de belangrijkste informatie uit het artikel te halen, hebben we de tekst gezamenlijk doorgenomen en de belangrijkste punten gemarkeerd. Door middel van het highlighten konden we onderscheid maken tussen informatie die belangrijk was en voorbeelden of uitleg die minder relevant waren. Vervolgens hebben we deze belangrijkste punten samengebracht en geprobeerd om de kern van het artikel in onze eigen woorden te formuleren. De conclusie die wij uit het artikel trokken, is terug te zien op de foto's hierboven.
@@ -18,9 +19,31 @@ Hiërarchie: bepalen welke woorden of zinnen de meeste aandacht moeten krijgen e
 
 <img width="503" height="504" alt="Scherm­afbeelding 2026-10-08 om 21 46 02" src="https://github.com/user-attachments/assets/280fbfb0-d151-490e-9904-0d39ff7407bd" />
 
+### Schetsen
 Voor mijn tien schetsen heb ik verschillende belangrijke onderdelen en zinnen uit de songtekst gebruikt. Ik heb geprobeerd om niet alleen de tekst letterlijk weer te geven, maar ook de betekenis en het gevoel achter de woorden visueel te maken. Daarbij heb ik geëxperimenteerd met verschillende vormen van hiërarchie en met de ruimte rondom en tussen de tekst. Door bijvoorbeeld bepaalde woorden groter te maken, te verplaatsen of los te trekken van de rest van de tekst, probeer ik de nadruk te leggen op woorden die voor mij belangrijk zijn binnen het nummer. Ook heb ik vormen gebruikt om bepaalde emoties of ideeën uit de tekst te ondersteunen. Ik merkte tijdens het schetsen dat typografie op deze manier eigenlijk een soort beeldtaal wordt. De tekst hoeft niet alleen gelezen te worden, maar kan door de vorm, grootte, positie en onderlinge verhouding ook iets vertellen. Vooral bij een nummer als Sorrow vind ik dit interessant, omdat de emotie van het nummer minstens zo belangrijk is als de letterlijke tekst.
 
 De tien schetsen zijn daardoor allemaal verschillende interpretaties van hetzelfde nummer geworden. Door meerdere richtingen uit te proberen, kon ik onderzoeken welke typografische keuzes het beste passen bij de sfeer en betekenis van het lied.
+
+### Reflectie op de schetsen
+
+1. Wat wil je bij de kijker bereiken met je vormgeving? ->
+Met mijn vormgeving wil ik ervoor zorgen dat de kijker niet alleen de songtekst leest, maar ook de emotie en het gevoel achter het nummer ervaart. Sorrow heeft een melancholische en wat zware sfeer. Dit wil ik zichtbaar maken door te spelen met herhaling, grootte, plaatsing en beweging van de tekst. Vooral het steeds terugkerende woord Sorrow heb ik in meerdere schetsen benadrukt. Hiermee wil ik het gevoel van verdriet en het steeds terugkomen van dezelfde gedachten versterken. Ik wil dat de kijker als het ware even wordt meegenomen in de gedachtegang en emotie van het nummer.
+
+2. Hoe voegt jouw opzet iets toe aan de tekst? ->
+Mijn vormgeving probeert de betekenis van de songtekst visueel te versterken in plaats van alleen de tekst letterlijk weer te geven. Zo heb ik bijvoorbeeld het woord Sorrow meerdere keren achter elkaar geplaatst. Dit laat zien dat het verdriet steeds terugkomt en moeilijk los te laten is. In een andere schets heb ik de tekst in een cirkel geplaatst. Hierdoor ontstaat het gevoel van een soort vicieuze cirkel, alsof de gedachten steeds opnieuw rondgaan. Ook heb ik geëxperimenteerd met verschillende groottes en plaatsingen van woorden, waardoor bepaalde woorden meer nadruk krijgen dan andere. Op deze manier wordt de hiërarchie niet alleen bepaald door de inhoud van de tekst, maar ook door de visuele vorm.
+
+3. Wat is een volgende stap: welke schets vind je het meest geschikt om digitaal uit te werken? ->
+Van de verschillende schetsen vind ik vooral de onderste middelste schets interessant om digitaal uit te werken. Hierin komt de herhaling van Sorrow sterk naar voren en wordt er een duidelijk verschil gemaakt tussen de verschillende onderdelen van de tekst. Ik vind deze richting interessant omdat ik hier digitaal nog meer kan experimenteren met grootte, spacing, animatie en ritme. Een andere schets die ik interessant vind, is de onderste rechter, waarbij de tekst in een cirkel loopt. Deze zou ik eventueel kunnen combineren met de herhaling uit de middelste schets.
+
+Mijn volgende stap zou daarom zijn om één van deze richtingen verder uit te werken in Figma en vervolgens te onderzoeken hoe ik de typografie interactief of bewegend kan maken. Daarbij wil ik vooral kijken of de beweging van de tekst het gevoel van herhaling en vastzitten in bepaalde gedachten kan versterken.
+
+4. Hoe zou je dit kunnen aanpakken in code? ->
+Ik denk dat ik dit voornamelijk met HTML en CSS zou kunnen opbouwen. De verschillende stukken songtekst kunnen bijvoorbeeld losse HTML-elementen worden, zodat ik ze afzonderlijk kan positioneren en stylen. Met CSS kan ik vervolgens spelen met font-size, line-height, letter-spacing, position, transform en opacity om de verschillende hiërarchieën en bewegingen uit mijn schetsen na te maken.
+
+Voor de schets met de ronde tekst zou ik bijvoorbeeld gebruik kunnen maken van CSS transform en rotate() om woorden of regels rondom een cirkel te plaatsen. Voor de herhaling van Sorrow kan ik meerdere tekstregels onder elkaar zetten en met verschillende groottes, tussenruimtes en posities werken. Met CSS keyframes zou ik vervolgens animaties kunnen toevoegen, bijvoorbeeld waarbij de woorden langzaam verschuiven, groter en kleiner worden of steeds opnieuw verschijnen.
+
+Hierdoor kan ik mijn oorspronkelijke schets vertalen naar een dynamisch schermontwerp, waarbij de typografie niet statisch blijft maar daadwerkelijk reageert op het ritme en de emotie van de songtekst.
+
 ### CHECK-OUT
 1. Leg uit wat er met de volgende termen bedoeld wordt: kerning, tracking, leading, flush-left, flush-right, centered, justified, indent, outdent, modular scale, movable type, focus punt, vijf soorten contrast, spatial tension. -> Kerning= de ruimte tussen twee specifieke letters. tracking= de algemene ruimte tussen alle karakters in een tekst. Leading=de verticale ruimte tussen tekstregels. Flush-left=de tekst is links uitgelijnd en de rechterkant is ongelijk. Flush-right=de tekst is rechts uitgelijnd en de linkerkant is ongelijk. Centered=tekst staat gecentreerd. Justified=de tekst is zowel links als rechts uitgelijnd. Indent=een indent is een inspringing van tekst. Outdent=tekst loopt buiten de normale tekstmarge. Modular scale=een reeks vooraf bepaalde verhoudingen tussen verschillende tekstgroottes. Movable type=een historische druktechniek waarbij losse letters afzonderlijk werden gemaakt en opnieuw konden worden gerangschikt om verschillende teksten te drukken. Focuspunt=het element in een ontwerp waar je oog als eerste naartoe wordt getrokken. Vijf soorten contrast=verschillen bewust inzetten om bepaalde elementen van elkaar te onderscheiden of hiërarchie te creëren. Spatial tension=betekent letterlijk een soort ruimtelijke spanning. Je creëert spanning door elementen niet netjes en voorspelbaar te plaatsen. 
 2. Wat is jouw ideale regellengte (measure)? Leg uit waarom. -> Mijn ideale regellengte ligt rond de 60–70 tekens per regel. Dit vind ik prettig omdat de tekst dan niet te breed wordt, waardoor je ogen niet te ver hoeven te bewegen van het einde van een regel naar het begin van de volgende. Een te korte regellengte zorgt er juist voor dat je ogen steeds heen en weer moeten springen en de tekst onrustig kan worden.
