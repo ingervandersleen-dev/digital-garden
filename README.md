@@ -1,4 +1,16 @@
 # Model
+## Dinsdag 6 oktober
+Vandaag deed ik de deep-dive van Vasilis: Interessantere layouts
+
+<img width="1440" height="769" alt="Scherm­afbeelding 2026-10-08 om 22 25 25" src="https://github.com/user-attachments/assets/fa645c1e-43c0-4268-aea8-f34516cef2e6" />
+
+In deze deep dive heb ik geleerd dat grids niet alleen gebruikt hoeven te worden voor strakke, rechte layouts. Je kunt ze ook creatief inzetten door bijvoorbeeld elementen te verschuiven, te draaien of anders te positioneren.
+
+Ik vond vooral het schalen van typografie interessant. Met vw en cqi kan de grootte van tekst zich aanpassen aan de beschikbare ruimte. Met clamp() kun je ervoor zorgen dat de tekst niet te groot of te klein wordt. Dit lijkt me handig voor expressieve typografie, omdat de grootte van tekst zo onderdeel kan worden van de compositie.
+
+Ook vond ik writing-mode interessant. Hiermee kun je tekst bijvoorbeeld verticaal plaatsen en zo de ruimte aan de zijkant van een scherm gebruiken. In combinatie met mediaqueries kun je dit alleen toepassen wanneer er genoeg ruimte is.
+
+Wat ik meeneem: responsive design hoeft niet alleen te betekenen dat alles kleiner wordt. Je kunt de beschikbare ruimte juist gebruiken om een ontwerp op verschillende schermformaten anders en creatiever vorm te geven.
 
 ## Maandag 5 oktober 
 ### Artikelen
