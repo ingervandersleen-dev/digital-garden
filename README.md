@@ -62,6 +62,18 @@ Hierdoor kan ik mijn oorspronkelijke schets vertalen naar een dynamisch schermon
 
 3. Als je in een ontwerp maar één variabele tot je beschikking had om hiërarchie aan te brengen (grootte, plaatsing, spacing, lettersoorten), welke zou je dan gebruiken en waarom? -> Als ik maar één variabele mocht gebruiken om hiërarchie aan te brengen, zou ik kiezen voor grootte. Met alleen verschillende lettergroottes kun je al duidelijk maken welke informatie het belangrijkst is. Een grote titel trekt automatisch meer aandacht dan kleinere tekst, waardoor je een duidelijke volgorde in een ontwerp kunt creëren. Daarnaast kun je met grootte ook verschillende niveaus van informatie aangeven, zonder dat je meerdere lettertypes of kleuren nodig hebt. Hierdoor blijft een ontwerp rustig, terwijl er toch een duidelijke hiërarchie ontstaat.
 
+## Vrijdag 2 oktober 
+### Voortgangsgesprek 
+Vandaag had ik voor de derde keer een voortgangsgesprek, dit keer met Barbara. Ik vond het een prettig en nuttig gesprek, omdat ik zowel van Barbara als van de studentassistenten concrete feedback en tips heb gekregen.
+
+Tijdens het gesprek hebben we onder andere naar mijn code gekeken. Hierin zaten twee kleine foutjes waar ik zelf nog niet achter was gekomen. De studentassistenten hebben mij geholpen om deze fouten te vinden en op te lossen. Hierdoor begrijp ik ook beter waar ik op moet letten tijdens het coderen.
+
+Daarnaast gaf Barbara feedback op mijn designkeuzes. Ze keek onder andere naar de vormgeving en hoe bepaalde keuzes binnen mijn ontwerp overkomen. Deze feedback helpt mij om niet alleen te kijken naar of iets technisch werkt, maar ook beter na te denken over waarom ik bepaalde ontwerpkeuzes maak. Op de foto hieronder is de feedback uit het voortgangsgesprek te zien.
+
+<img width="1440" height="769" alt="Scherm­afbeelding 2026-10-08 om 22 32 34" src="https://github.com/user-attachments/assets/877eee65-6745-4b49-bc75-32a2e11a99d0" /> 
+<img width="1440" height="769" alt="Scherm­afbeelding 2026-10-08 om 22 32 59" src="https://github.com/user-attachments/assets/247c5725-609f-4612-9e8e-02bd11f74645" />
+<img width="1440" height="769" alt="Scherm­afbeelding 2026-10-08 om 22 33 35" src="https://github.com/user-attachments/assets/64361e8f-a551-4bf8-8b6c-e32c73eb700f" />
+
 ## Woensdag 30 september 
 ### CHECK-OUT
 1. Waar staat WCAG en A11y voor? ->
