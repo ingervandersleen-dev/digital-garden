@@ -98,6 +98,9 @@ Vandaag heb ik mijn site verder afgemaakt. Ik heb onder andere een keuzemenu gem
 <img width="553" height="342" alt="Scherm­afbeelding 2026-09-30 om 09 53 21" src="https://github.com/user-attachments/assets/401482f0-6b45-4cf6-af6e-b7e934cb6454" />
 <img width="389" height="376" alt="Scherm­afbeelding 2026-09-23 om 12 27 24" src="https://github.com/user-attachments/assets/f452f458-2de4-495d-9fda-d081f127dad7" />
 
+Als inspiratiebron voor mijn cookiebutton en pop-up wilde ik graag weg van de standaard, saaie meldingen die ik op veel websites zie. Deze voorbeelden laten heel mooi zien hoe je zoiets functioneels op een speelse en visuele manier kunt uitbeelden. Door letterlijk geïllustreerde koekjes en schattige karaktertjes te gebruiken, verandert een melding meteen in een leuke interactie die goed aansluit bij de speelse sfeer van mijn website.
+Door deze kleuren en de afgeronde, vriendelijke vormen over te nemen in mijn eigen Figma-uitwerking, zorg ik ervoor dat de cookie pop-up echt voelt als een natuurlijk onderdeel van het ontwerp in plaats van een storende onderbreking. 
+
 ### Uitwerking figma cookie button
 
 <img width="431" height="435" alt="Scherm­afbeelding 2026-09-30 om 12 05 16" src="https://github.com/user-attachments/assets/7c9eea2f-3be9-490f-abe2-9eed497cc331" />
