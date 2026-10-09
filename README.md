@@ -3,11 +3,11 @@
 ### CHECK-OUT
 1. Welke variabelen van Seraphs gebruik je in de opmaak van je songtekst?
 
-Voor de opmaak van mijn songtekst maak ik gebruik van verschillende variabelen, zoals font-size, color, line-height, letter-spacing en animation. Hiermee kan ik spelen met de vormgeving van de tekst en ervoor zorgen dat bepaalde woorden meer opvallen dan andere.
+Voor de opmaak van mijn songtekst maak ik gebruik van verschillende variabelen, zoals font-size, line-height, letter-spacing en animation. Hiermee kan ik spelen met de vormgeving van de tekst en ervoor zorgen dat bepaalde woorden meer opvallen dan andere.
 
 2. Wat voegt iedere variabele toe aan je ontwerp?
 
-Met font-size kan ik nadruk leggen op bepaalde woorden en de hiërarchie van de tekst bepalen. Met color kan ik contrast creëren en de uitstraling van mijn ontwerp versterken. Line-height zorgt ervoor dat de regels voldoende ruimte hebben en prettig leesbaar blijven. Met letter-spacing kan ik de ruimte tussen letters aanpassen, waardoor de tekst er net wat anders uitziet. Met animation breng ik beweging in de tekst, waardoor deze beter aansluit bij het ritme en de betekenis van de songtekst.
+Met font-size kan ik nadruk leggen op bepaalde woorden en de hiërarchie van de tekst bepalen. Line-height zorgt ervoor dat de regels voldoende ruimte hebben en prettig leesbaar blijven. Met letter-spacing kan ik de ruimte tussen letters aanpassen, waardoor de tekst er net wat anders uitziet. Met animation breng ik beweging in de tekst, waardoor deze beter aansluit bij het ritme en de betekenis van de songtekst.
 
 3. Hoe zou je animatie kunnen toepassen om het ritme of de accenten in de weergave van je songtekst nog beter visueel te maken?
 
