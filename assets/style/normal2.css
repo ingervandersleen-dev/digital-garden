@@ -360,10 +360,12 @@ footer button:hover {
 
 .container {
   display: grid;
+  justify-content: center;
   grid-template-columns: 1fr;
-  gap: 2.5rem var(--whitespace-s);
+  gap: 4rem 3rem;
   max-width: 20rem;
   margin: var(--whitespace) auto 0;
+  margin-top: 4rem;
 }
 
 /* Vanaf hier past 2x2 (de blokken zelf blijven groot genoeg voor de tekst) */
@@ -382,9 +384,7 @@ footer button:hover {
   }
 }
 
-/* MARK: Gedachtenwolkjes i.p.v. vierkante blokken: zelfde look als de wolken in
-   de lucht (var(--kleur-wolk)), dus dit werkt automatisch mee met
-   light/dark mode. */
+/* MARK: Gedachtenwolkjes  */
 .blok1,
 .blok2,
 .blok3,
@@ -396,9 +396,8 @@ footer button:hover {
   display: flex;
   font-size: clamp(0.9rem, 2.5vw, 1.3rem);
   text-align: center;
-  padding: 1rem;
+  padding: 2.5rem;
   background-color: var(--kleur-wolk);
-  border: 0.15rem solid var(--kleur-tekst-park);
   border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
   position: relative;
   font-family: var(--font-titel);
@@ -420,7 +419,6 @@ footer button:hover {
   width: 1rem;
   height: 1rem;
   background: var(--kleur-wolk);
-  border: 0.15rem solid var(--kleur-tekst-park);
   border-radius: var(--radius-rond);
 }
 
@@ -435,7 +433,6 @@ footer button:hover {
   width: 0.6rem;
   height: 0.6rem;
   background: var(--kleur-wolk);
-  border: 0.15rem solid var(--kleur-tekst-park);
   border-radius: var(--radius-rond);
 }
 
@@ -443,7 +440,7 @@ footer button:hover {
 .blok2:hover,
 .blok3:hover,
 .blok4:hover {
-  transform: translateY(-0.3rem);
+  transform: translateY(-8px) scale(1.05);
 }
 
 /* Zachte zweefbeweging, met een lichte vertraging per wolkje zodat ze niet
