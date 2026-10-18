@@ -629,16 +629,36 @@ footer {
 }
 
 footer button {
-  background-color: var(--kleur-knop-achtergrond);
-  color: var(--kleur-knop-tekst);
+  background: none;
   border: none;
-  padding: 0.5em 1em;
-  border-radius: 0.25rem;
+  padding: 0;
   cursor: pointer;
 }
 
-footer button:hover {
-  background-color: var(--kleur-knop-hover);
+footer button img {
+  display: block;
+  width: 5rem; /* pas aan naar smaak */
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+footer button:hover img {
+  transform: scale(1.1) rotate(-4deg);
+}
+
+footer button:focus-visible {
+  outline: 0.15rem solid var(--kleur-knop-hover);
+  outline-offset: 0.15rem;
+  border-radius: var(--radius-knop);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  footer button img {
+    transition: none;
+  }
+  footer button:hover img {
+    transform: none;
+  }
 }
 
 /* Nieuwe cookie-dialog, gebaseerd op je Figma-ontwerp */

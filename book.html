@@ -64,26 +64,63 @@
       </form>
     </header>
 
-    <main>
-      <main id="main-content" tabindex="-1"></main>
-      <article>
-        <button
-          class="boek-kaart"
-          commandfor="boek-donquichot"
-          command="show-modal"
-        >
-          <img
-            src="../../assets/Fourthwing.png"
-            alt="Picture of book 'The Fourth Wing"
-          />
-        </button>
-      </article>
+    <main id="main-content" tabindex="-1">
+      <div class="boeken">
+        <article>
+          <button
+            class="boek-kaart"
+            commandfor="boek-donquichot"
+            command="show-modal"
+          >
+            <img
+              src="../../assets/Fourthwing.png"
+              alt="Picture of book 'The Fourth Wing'"
+            />
+          </button>
+        </article>
+        <article>
+          <button
+            class="boek-kaart"
+            commandfor="boek-fahrenheit"
+            command="show-modal"
+          >
+            <img
+              src="../../assets/Thornes.png"
+              alt="Picture of book 'A Court of Thorns and Roses'"
+            />
+          </button>
+        </article>
+        <article>
+          <button
+            class="boek-kaart"
+            commandfor="boek-nautilus"
+            command="show-modal"
+          >
+            <img
+              src="../../assets/Eyeoftheworld.png"
+              alt="Picture of book 'The Eye of the World'"
+            />
+          </button>
+        </article>
+        <article>
+          <button
+            class="boek-kaart"
+            commandfor="boek-frankenstein"
+            command="show-modal"
+          >
+            <img
+              src="../../assets/Sixofcrows.png"
+              alt="Picture of book 'Six of Crows'"
+            />
+          </button>
+        </article>
+      </div>
 
       <dialog id="boek-donquichot" class="boek-modal">
         <h2>Fourth Wing</h2>
         <img
           src="../../assets/Fourthwing.png"
-          alt="Picture of book 'The Fourth Wing"
+          alt="Picture of book 'The Fourth Wing'"
         />
         <p>
           Fourth Wing by Rebecca Yarros is a fantasy romance novel and the first
@@ -98,7 +135,7 @@
         </p>
         <a
           class="boek-link"
-          href="https://www.goodreads.com/book/show/3836.Don_Quixote"
+          href="https://www.goodreads.com/book/show/61431922-fourth-wing?ref=nav_sb_ss_1_6"
           target="_blank"
           rel="noopener"
         >
@@ -108,25 +145,11 @@
           <button>CLOSE</button>
         </form>
       </dialog>
-
-      <article>
-        <button
-          class="boek-kaart"
-          commandfor="boek-fahrenheit"
-          command="show-modal"
-        >
-          <img
-            src="../../assets/Thornes.png"
-            alt="Picture of book 'A Court of Thorns and Roses"
-          />
-        </button>
-      </article>
-
       <dialog id="boek-fahrenheit" class="boek-modal">
         <h2>A Court of Thorns and Roses</h2>
         <img
-          src="https://picsum.photos/190"
-          alt="Picture of book 'A Court of Thorns and Roses"
+          src="../../assets/Thornes.png"
+          alt="Picture of book 'A Court of Thorns and Roses'"
         />
         <p>
           *A Court of Thorns and Roses* by Sarah J. Maas follows
@@ -141,7 +164,7 @@
         </p>
         <a
           class="boek-link"
-          href="https://www.goodreads.com/book/show/13079982-fahrenheit-451"
+          href="https://www.goodreads.com/book/show/50659467-a-court-of-thorns-and-roses?ref=nav_sb_ss_1_4"
           target="_blank"
           rel="noopener"
         >
@@ -151,25 +174,11 @@
           <button>CLOSE</button>
         </form>
       </dialog>
-
-      <article>
-        <button
-          class="boek-kaart"
-          commandfor="boek-nautilus"
-          command="show-modal"
-        >
-          <img
-            src="../../assets/Eyeoftheworld.png"
-            alt="Picture of book 'Eye of the world"
-          />
-        </button>
-      </article>
-
       <dialog id="boek-nautilus" class="boek-modal">
         <h2>The Eye of the World</h2>
         <img
-          src="https://picsum.photos/200"
-          alt="Picture of book 'Eye of the world"
+          src="../../assets/Eyeoftheworld.png"
+          alt="Picture of book 'The Eye of the World'"
         />
         <p>
           *The Wheel of Time* by Robert Jordan begins in the quiet village of
@@ -184,7 +193,7 @@
         </p>
         <a
           class="boek-link"
-          href="https://www.goodreads.com/book/show/37857.Twenty_Thousand_Leagues_Under_the_Sea"
+          href="https://www.goodreads.com/book/show/228665.The_Eye_of_the_World?ref=nav_sb_ss_1_4"
           target="_blank"
           rel="noopener"
         >
@@ -194,25 +203,11 @@
           <button>CLOSE</button>
         </form>
       </dialog>
-
-      <article>
-        <button
-          class="boek-kaart"
-          commandfor="boek-frankenstein"
-          command="show-modal"
-        >
-          <img
-            src="../../assets/Sixofcrows.png"
-            alt="Picture of book 'Six of Crows"
-          />
-        </button>
-      </article>
-
       <dialog id="boek-frankenstein" class="boek-modal">
         <h2>Six of Crows</h2>
         <img
-          src="https://picsum.photos/190"
-          alt="Picture of book 'Six of Crows"
+          src="../../assets/Sixofcrows.png"
+          alt="Picture of book 'Six of Crows'"
         />
         <p>
           Six of Crows by Leigh Bardugo is set in Ketterdam, a lively city where
@@ -227,7 +222,7 @@
         </p>
         <a
           class="boek-link"
-          href="https://www.goodreads.com/book/show/35031085-frankenstein"
+          href="https://www.goodreads.com/book/show/23437156-six-of-crows?ref=nav_sb_ss_3_4"
           target="_blank"
           rel="noopener"
         >
@@ -238,42 +233,5 @@
         </form>
       </dialog>
     </main>
-
-    <footer>
-      <nav>
-        <button commandfor="cookieModal" command="show-modal">
-          <span>Allow cookies?</span>
-        </button>
-      </nav>
-    </footer>
-
-    <dialog id="cookieModal">
-      <div class="cookie-illustratie" aria-hidden="true">
-        <img src="./assets/Cookiewolk.svg" alt="" />
-      </div>
-
-      <h2>WHICH EXTERNAL SYSTEMS ARE INVOLVED?</h2>
-
-      <ul>
-        <li>
-          <strong>GitHub Pages</strong>
-          Handles the technical hosting and keeps this site online.
-        </li>
-        <li>
-          <strong>Digitaaltuintje Webring Component</strong>
-          Connects this site to the wider network of digital gardens.
-        </li>
-      </ul>
-
-      <p class="transparantie">
-        <strong>Transparency</strong>
-        Everything else on this site was designed and built 100% by me. No
-        sneaky ad networks, no commercial trackers, and no unnecessary cookies.
-      </p>
-
-      <form method="dialog">
-        <button>CLOSE</button>
-      </form>
-    </dialog>
   </body>
 </html>

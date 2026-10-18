@@ -79,6 +79,7 @@ body {
   min-height: 100svh;
 
   display: grid;
+  grid-template-columns: minmax(0, 1fr); /* nieuw */
   grid-template-areas:
     "header"
     "main"
@@ -87,7 +88,7 @@ body {
 
 @media (min-width: 60em) {
   body {
-    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 3fr) minmax(0, 2fr);
     grid-template-areas:
       "header header ."
       "main main main"
@@ -104,6 +105,7 @@ article {
 
 article img {
   border-radius: 0.5rem;
+  width: 100%;
 }
 
 button,
@@ -224,10 +226,31 @@ fieldset label:has(input:focus-visible) {
 main {
   grid-area: main;
   padding: var(--whitespace);
+}
 
+.boeken {
   display: grid;
   gap: var(--whitespace);
-  grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+  grid-template-columns: minmax(0, 1fr); /* smal: onder elkaar */
+}
+
+.boeken > article {
+  max-width: none;
+  min-width: 0;
+}
+
+/* Middelgroot: 2 x 2 */
+@media (min-width: 30em) {
+  .boeken {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Desktop: vier naast elkaar (haal dit blok weg als je op desktop ook 2 x 2 wilt) */
+@media (min-width: 60em) {
+  .boeken {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
 /* MARK: Skip link
@@ -251,7 +274,7 @@ main {
 }
 
 /* ==========================================================================
-   MARK:Boek-kaarten (klikbaar, opent een pop-up met korte uitleg + link)
+   MARK: Boek-kaarten (klikbaar, opent een pop-up met korte uitleg + link)
    De hele kaart is een <button> die een <dialog> opent via command/
    commandfor — puur HTML, geen JavaScript nodig.
    ========================================================================== */
@@ -285,7 +308,8 @@ main {
   margin-bottom: var(--whitespace-xs);
 }
 
-/* Elke boek-dialog deelt dezelfde opmaak */
+/* Elke boek-dialog deelt dezelfde opmaak.
+   Smal scherm: alles onder elkaar (titel, plaatje, tekst, link, knop). */
 
 dialog.boek-modal {
   max-width: 24rem;
@@ -338,8 +362,55 @@ dialog.boek-modal form button:hover {
   background: var(--kleur-knop-hover);
 }
 
+/* Breder scherm: plaatje links, tekst rechts.
+   [open] is nodig, anders overschrijft display: grid het standaard
+   "display: none" van een gesloten dialog. */
+
+@media (min-width: 40em) {
+  dialog.boek-modal {
+    max-width: 40rem;
+  }
+
+  dialog.boek-modal[open] {
+    display: grid;
+    grid-template-columns: 12rem 1fr;
+    grid-template-rows: auto auto auto 1fr;
+    grid-template-areas:
+      "titel   titel"
+      "plaatje tekst"
+      "plaatje link"
+      "plaatje sluiten";
+    column-gap: var(--whitespace);
+    align-items: start;
+  }
+
+  dialog.boek-modal h2 {
+    grid-area: titel;
+  }
+
+  dialog.boek-modal img {
+    grid-area: plaatje;
+    margin-bottom: 0;
+  }
+
+  dialog.boek-modal p {
+    grid-area: tekst;
+    margin-top: 0;
+  }
+
+  dialog.boek-modal .boek-link {
+    grid-area: link;
+    justify-self: start;
+  }
+
+  dialog.boek-modal form {
+    grid-area: sluiten;
+    align-self: end;
+  }
+}
+
 /* ==========================================================================
-  MARK: Footer (cookie-knop)
+   MARK: Footer (cookie-knop)
    Blijft altijd zichtbaar linksonder, net als op de andere pagina's.
    ========================================================================== */
 
@@ -363,91 +434,4 @@ footer button {
 
 footer button:hover {
   background-color: var(--kleur-knop-hover);
-}
-
-/* ==========================================================================
-   MARK:Cookie-dialog
-   ========================================================================== */
-
-dialog#cookieModal {
-  max-width: 22rem;
-  width: 90%;
-  padding: 2rem 1.5rem;
-  border: none;
-  border-radius: 1.5rem;
-  background: var(--kleur-cookie-pop);
-  color: var(--kleur-cookie-tekst);
-  text-align: center;
-}
-
-dialog#cookieModal::backdrop {
-  background: rgb(0 0 0 / 40%);
-}
-
-.cookie-illustratie {
-  width: 8rem;
-  margin: 0 auto 1rem;
-}
-
-.cookie-illustratie img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-dialog#cookieModal h2 {
-  font-family: var(--font-titel);
-  font-size: 1.1rem;
-  letter-spacing: 0.05rem;
-  text-transform: uppercase;
-  margin: 0 0 1rem;
-}
-
-dialog#cookieModal ul {
-  background: Canvas;
-  border-radius: 1rem;
-  padding: 1.2rem 1.5rem;
-  text-align: left;
-  list-style: disc;
-  margin: 0 0 1rem;
-}
-
-dialog#cookieModal li + li {
-  margin-top: 0.8rem;
-}
-
-dialog#cookieModal li strong {
-  text-decoration: underline;
-  display: block;
-}
-
-.transparantie {
-  font-size: 0.8rem;
-  text-align: left;
-  margin: 0 0 1.5rem;
-}
-
-.transparantie strong {
-  text-decoration: underline;
-  display: block;
-  margin-bottom: 0.2rem;
-}
-
-dialog#cookieModal form {
-  margin: 0;
-}
-
-dialog#cookieModal button {
-  background: Canvas;
-  color: var(--kleur-tekst-park);
-  border: none;
-  border-radius: var(--radius-knop);
-  padding: 0.7em 2em;
-  font-weight: bold;
-  font-size: 1.1rem;
-  cursor: pointer;
-}
-
-dialog#cookieModal button:hover {
-  background: var(--kleur-knop-hover);
 }
