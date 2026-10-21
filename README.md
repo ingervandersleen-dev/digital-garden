@@ -1,5 +1,14 @@
 # Model
+## Woensdag 21 oktober
+### Bi-weekly 
+We startten de dag met bi-weekly geek 3
+## Maandag 19 oktober
+
 ## Vrijdag 9 oktober
+### Voortgangsgesprek 
+<img width="583" height="201" alt="Scherm­afbeelding 2026-10-21 om 09 05 54" src="https://github.com/user-attachments/assets/8766ee92-2232-4259-8e05-9337b8208b79" />
+Ik startte de dag met een voortgangsgesprek, dit is de feedback die ik heb ontvangen van Barbara en de studentassistent.
+
 ### CHECK-OUT
 1. Welke variabelen van Seraphs gebruik je in de opmaak van je songtekst?
 
