@@ -1,7 +1,8 @@
 /* MARK: fonts */
 @font-face {
   font-family: "Seraphs";
-  src: url("font/SeraphsVF.woff2") format("woff2"); /* Modern Browsers */
+  src: url("font/SeraphsVF.woff2") format("woff2");
+  font-weight: 100 900; /* pas aan op de range van je font */
 }
 /* MARK: items */
 body {
@@ -14,8 +15,35 @@ header {
   font-size: 8vh;
 }
 
-main > div {
+main {
+  overflow-x: clip; /* geen horizontale scrollbalk als het woord te breed wordt */
+}
+
+main > p {
+  display: grid; /* strong wordt een eigen regel zonder <div> of display:block */
+  justify-items: center;
   text-align: center;
+}
+
+main > p > strong {
+  font-size: 8vh;
+  transform-origin: center top; /* de bovenkant blijft staan, het woord loopt naar beneden uit */
+  animation: sorrow-stretch linear both;
+  animation-timeline: view(
+
+  ); /* gekoppeld aan de positie van het woord in beeld */
+  animation-range: entry 0% cover 70%;
+}
+
+@keyframes sorrow-stretch {
+  from {
+    transform: scaleY(1);
+    margin-bottom: 0;
+  }
+  to {
+    transform: scaleY(5);
+    margin-bottom: 38vh; /* duwt de volgende regel mee naar beneden */
+  }
 }
 
 .sorrow {
@@ -26,6 +54,7 @@ main > div {
 .wave-text {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   font-size: 6vh;
   gap: 0.4em;
@@ -42,28 +71,28 @@ main > div {
   animation-delay: 0s;
 }
 .wave-text > span:nth-child(2) {
-  animation-delay: 0.1s;
+  animation-delay: 0.25s;
 }
 .wave-text > span:nth-child(3) {
-  animation-delay: 0.2s;
-}
-.wave-text > span:nth-child(4) {
-  animation-delay: 0.3s;
-}
-.wave-text > span:nth-child(5) {
-  animation-delay: 0.4s;
-}
-.wave-text > span:nth-child(6) {
   animation-delay: 0.5s;
 }
+.wave-text > span:nth-child(4) {
+  animation-delay: 0.75s;
+}
+.wave-text > span:nth-child(5) {
+  animation-delay: 1s;
+}
+.wave-text > span:nth-child(6) {
+  animation-delay: 1.25s;
+}
 .wave-text > span:nth-child(7) {
-  animation-delay: 0.6s;
+  animation-delay: 1.5s;
 }
 .wave-text > span:nth-child(8) {
-  animation-delay: 0.7s;
+  animation-delay: 1.75s;
 }
 .wave-text > span:nth-child(9) {
-  animation-delay: 0.8s;
+  animation-delay: 2s;
 }
 
 @keyframes --wave-animation {
@@ -102,6 +131,7 @@ main > div {
 .sympathy {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: baseline;
   gap: 0.15em;
   margin: 100px 0;
@@ -125,4 +155,118 @@ main > div {
   font-weight: bold;
   text-transform: uppercase;
   margin-left: -0.15em;
+}
+
+/* MARK: I don't wanna get over you */
+p:has(> em) {
+  --from: 0; /* 0 = tegen de linkerrand, 0.5 = midden, 1 = tegen de rechterrand */
+  --to: 0.5;
+  position: relative;
+  width: fit-content;
+  font-size: 4vh;
+  margin: 8vh 0;
+  left: calc(var(--from) * 100%);
+  translate: calc(var(--from) * -100%) 0;
+}
+
+p:has(> em) ~ p:has(> em) {
+  --from: 0.25; /* midden-links */
+  --to: 0.75; /* midden-rechts */
+}
+
+p:has(> em) ~ p:has(> em) ~ p:has(> em) {
+  --from: 0.5; /* midden */
+  --to: 1; /* helemaal rechts */
+}
+
+@keyframes slide-across {
+  to {
+    left: calc(var(--to) * 100%);
+    translate: calc(var(--to) * -100%) 0;
+  }
+}
+
+/* alleen scroll-driven animeren als de browser dat kan */
+@supports (animation-timeline: view()) {
+  p:has(> em) {
+    animation: slide-across linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+  }
+}
+
+/* het sprongetje van "over" blijft */
+p > em {
+  display: inline-block;
+  font-style: normal;
+  animation: over-jump 3s ease-in-out infinite;
+}
+
+@keyframes over-jump {
+  0% {
+    translate: 0 0;
+    rotate: 0deg;
+  }
+  30% {
+    translate: 0 -0.8em;
+    rotate: -6deg;
+  } /* omhoog, probeert er overheen te komen */
+  55% {
+    translate: 0 0.15em;
+    rotate: 3deg;
+  } /* valt terug, iets te diep */
+  75% {
+    translate: 0 -0.1em;
+    rotate: 0deg;
+  } /* veert na */
+  100% {
+    translate: 0 0;
+    rotate: 0deg;
+  }
+}
+
+/* MARK: honey and milk */
+p:has(> mark) {
+  text-align: center;
+  font-size: 8vh;
+  padding: 12vh 5vw;
+}
+
+/* honey: gele verloop-vulling die naar beneden schuift */
+p > mark {
+  color: transparent;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, #f7c948, #e89a00, #a85f00);
+  background-size: 100% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: honey-drip 9s ease-in-out infinite alternate;
+}
+
+@keyframes honey-drip {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+
+/* milk: roomwitte tekst met een zachte schaduw, die vervaagt */
+p > i {
+  font-style: normal;
+  color: #fffaf0;
+  text-shadow:
+    0 0 6px rgba(0, 0, 0, 0.35),
+    0 0 14px rgba(0, 0, 0, 0.2);
+  animation: milk-blur 5s ease-in-out infinite alternate;
+}
+
+@keyframes milk-blur {
+  from {
+    filter: blur(0);
+  }
+  to {
+    filter: blur(3px);
+  }
 }
