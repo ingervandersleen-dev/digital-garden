@@ -832,10 +832,17 @@ dialog.boek-modal form button:hover {
 
 .mindfulness-blokken {
   display: grid;
+  color: var(--kleur-tekst-bubbel);
   gap: var(--whitespace);
-  grid-template-columns: minmax(0, 1fr); /* smal: onder elkaar */
+  grid-template-columns: minmax(0, 1fr);
   padding: var(--whitespace);
-  position: relative; /* boven de zon en maan, die ook gepositioneerd zijn */
+  position: relative;
+}
+
+.mindfulness-blokken article img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* elk plaatje krijgt hetzelfde vierkante vak */
+  object-fit: contain; /* de tekening past erin zonder te vervormen */
 }
 
 /* Middelgroot: 2 x 2 */

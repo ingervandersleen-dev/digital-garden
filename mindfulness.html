@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="nl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Inger van der Sleen" />
     <meta name="color-scheme" content="dark light" />
 
-    <title>Inger's Junk Drawer</title>
+    <title>Inger's Junk Drawer — Mindfulness</title>
     <link rel="stylesheet" href="./assets/style/style.css" />
 
     <!-- Importeer het webring component, voeg jouw eigen domein toe in data-page -->
@@ -20,6 +20,7 @@
 
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
       <details>
         <summary>Kleurmodus</summary>
@@ -58,49 +59,79 @@
         </form>
       </details>
     </header>
-  </body>
-  <main id="main-content" tabindex="-1">
-    <section class="park">
-      <span class="zon" aria-hidden="true"></span>
-      <span class="maan" aria-hidden="true"></span>
 
-      <header class="titel">
-        <p>inger's junk drawer</p>
-        <h1 id="park-titel">Mindfulness</h1>
-        <nav>
-          <ul>
-            <li><a href="beginjewandeling.html">Take a different path</a></li>
-            <li><a href="index.html">Home</a></li>
-          </ul>
-        </nav>
-      </header>
-      <p class="intro-mind">Stop overthinking the past or the future</p>
+    <main id="main-content" tabindex="-1">
+      <section class="park">
+        <span class="zon" aria-hidden="true"></span>
+        <span class="maan" aria-hidden="true"></span>
 
-    <div class="mindfulness-blokken">
+        <header class="titel">
+          <p>inger's junk drawer</p>
+          <h1 id="park-titel">Mindfulness</h1>
+          <nav>
+            <ul>
+              <li><a href="beginjewandeling.html">Take a different path</a></li>
+              <li><a href="index.html">Home</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <p class="intro-mind">Stop overthinking the past or the future</p>
+
+        <div class="mindfulness-blokken">
           <article>
             <button
               class="boek-kaart"
-              commandfor="boek-donquichot"
+              commandfor="mindfulness-neus"
               command="show-modal"
             >
               <img
                 src="../../assets/Neus.svg"
-                alt="Picture of book 'The Fourth Wing'"
+                alt="Drawing of a nose breathing out"
               />
             </button>
           </article>
           <article>
             <button
               class="boek-kaart"
-              commandfor="boek-fahrenheit"
+              commandfor="mindfulness-hand"
               command="show-modal"
             >
-              <img
-                src="../../assets/Hand.svg"
-                alt="Picture of book 'A Court of Thorns and Roses'"
-              />
+              <img src="../../assets/Hand.svg" alt="Drawing of an open hand" />
             </button>
           </article>
-     </section>
-  </main>
+        </div>
+      </section>
+
+      <dialog id="mindfulness-neus" class="boek-modal">
+        <h2>Breathe</h2>
+        <img
+          src="../../assets/Neus.svg"
+          alt="Drawing of a nose breathing out"
+        />
+        <p>
+          Breathe in through your nose for four seconds, hold your breath for
+          four seconds and breathe out slowly for six. Repeat this five times
+          and notice how your shoulders drop and your thoughts slow down.
+        </p>
+        <form method="dialog">
+          <button>Close</button>
+        </form>
+      </dialog>
+
+      <dialog id="mindfulness-hand" class="boek-modal">
+        <h2>Five senses</h2>
+        <img src="../../assets/Hand.svg" alt="Drawing of an open hand" />
+        <p>
+          Look at your hand and count your fingers. Name five things you can
+          see, four things you can feel, three things you can hear, two things
+          you can smell and one thing you can taste. It brings your attention
+          back to right now.
+        </p>
+        <form method="dialog">
+          <button>Close</button>
+        </form>
+      </dialog>
+    </main>
+  </body>
 </html>
