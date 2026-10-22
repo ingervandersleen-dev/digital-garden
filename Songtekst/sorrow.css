@@ -1,38 +1,80 @@
+/* MARK: variables */
+:root {
+  --bg: #0f1c2b;
+  --text: #f2eadb;
+  --sorrow: #9fb3c8;
+  --heart: #d6403f;
+  --rag: #c8a18d;
+  --bone: #fffaf0;
+  --honey-light: #f7c948;
+  --honey-mid: #e89a00;
+  --honey-dark: #a85f00;
+  --milk: #fffaf0;
+}
+
 /* MARK: fonts */
 @font-face {
   font-family: "Seraphs";
   src: url("font/SeraphsVF.woff2") format("woff2");
-  font-weight: 100 900; /* pas aan op de range van je font */
+  font-weight: 100 900; /* pas aan op de echte range van je font */
+  font-display: swap;
 }
-/* MARK: items */
+
+/* MARK: base */
 body {
-  font-family: "Seraphs";
+  font-family: "Seraphs", sans-serif;
+  background: var(--bg);
+  color: var(--text);
 }
 
 header {
+  position: fixed;
+  inset: 0 auto 0 0; /* boven 0, onder 0, links 0, rechts automatisch */
+  box-sizing: border-box; /* padding telt mee in de hoogte */
+  padding: 2vh 1vw;
   writing-mode: sideways-lr;
-  position: sticky;
+  text-align: center; /* titel in het midden van de hoogte */
+  white-space: nowrap;
   font-size: 8vh;
+  color: var(--sorrow);
+  z-index: 1;
+}
+
+header > h1 {
+  margin: 0;
+  font: inherit; /* de h1 ziet er hetzelfde uit als de gewone header */
 }
 
 main {
-  overflow-x: clip; /* geen horizontale scrollbalk als het woord te breed wordt */
+  padding-inline: 12vh; /* ruimte voor de titel, links en rechts gelijk */
+  overflow-x: clip;
 }
 
-main > p {
-  display: grid; /* strong wordt een eigen regel zonder <div> of display:block */
+footer {
+  padding: 8vh 12vh;
+  text-align: center;
+  color: var(--sorrow);
+}
+
+/* MARK: Sorrow (uitrekken bij scrollen) */
+main > p:has(> strong) {
+  display: grid;
   justify-items: center;
   text-align: center;
 }
 
 main > p > strong {
+  color: var(--sorrow);
   font-size: 8vh;
   transform-origin: center top; /* de bovenkant blijft staan, het woord loopt naar beneden uit */
-  animation: sorrow-stretch linear both;
-  animation-timeline: view(
+}
 
-  ); /* gekoppeld aan de positie van het woord in beeld */
-  animation-range: entry 0% cover 70%;
+@supports (animation-timeline: view()) {
+  main > p > strong {
+    animation: sorrow-stretch linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 70%;
+  }
 }
 
 @keyframes sorrow-stretch {
@@ -46,71 +88,69 @@ main > p > strong {
   }
 }
 
-.sorrow {
-  display: block;
-  font-size: 8vh;
-}
-
-.wave-text {
+/* MARK: Don't leave my hyper heart (wave) */
+p:has(> span) {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  font-size: 6vh;
   gap: 0.4em;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin: 100px 0;
+  font-size: 6vh;
 }
 
-.wave-text > span {
-  display: inline-block;
-  animation: --wave-animation 4s ease-in-out infinite;
+p > span {
+  animation: wave-animation 3.5s ease-in-out infinite alternate;
 }
 
-.wave-text > span:nth-child(1) {
+p > span:nth-child(1) {
   animation-delay: 0s;
 }
-.wave-text > span:nth-child(2) {
+p > span:nth-child(2) {
   animation-delay: 0.25s;
 }
-.wave-text > span:nth-child(3) {
+p > span:nth-child(3) {
   animation-delay: 0.5s;
 }
-.wave-text > span:nth-child(4) {
+p > span:nth-child(4) {
   animation-delay: 0.75s;
 }
-.wave-text > span:nth-child(5) {
+p > span:nth-child(5) {
   animation-delay: 1s;
 }
-.wave-text > span:nth-child(6) {
+p > span:nth-child(6) {
   animation-delay: 1.25s;
 }
-.wave-text > span:nth-child(7) {
+p > span:nth-child(7) {
   animation-delay: 1.5s;
 }
-.wave-text > span:nth-child(8) {
+p > span:nth-child(8) {
   animation-delay: 1.75s;
 }
-.wave-text > span:nth-child(9) {
+p > span:nth-child(9) {
   animation-delay: 2s;
 }
 
-@keyframes --wave-animation {
-  0%,
-  100% {
-    translate: 0 0;
+@keyframes wave-animation {
+  from {
+    translate: 0 18px;
+    rotate: -2deg;
   }
-  50% {
-    translate: 0 -40px;
+  to {
+    translate: 0 -18px;
+    rotate: 2deg;
   }
 }
 
-.heart {
-  display: inline-block;
-  animation: --heart-animation 1s infinite ease-in-out;
+/* "heart" (5e woord): meegolven én kloppen, op hetzelfde element */
+p > span:nth-child(5) {
+  color: var(--heart);
+  animation:
+    wave-animation 3.5s ease-in-out 1s infinite alternate,
+    heart-beat 1s ease-in-out infinite;
 }
 
-@keyframes --heart-animation {
+@keyframes heart-beat {
   0% {
     scale: 1;
   }
@@ -128,7 +168,8 @@ main > p > strong {
   }
 }
 
-.sympathy {
+/* MARK: Cover me in rag and bone sympathy */
+p:has(> u) {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -138,9 +179,8 @@ main > p > strong {
   font-size: 3rem;
 }
 
-.rag {
-  display: inline-block;
-  position: relative;
+p > u {
+  color: var(--rag);
   rotate: -8deg;
   font-style: italic;
   text-decoration: underline wavy;
@@ -148,9 +188,8 @@ main > p > strong {
   margin-right: -0.15em;
 }
 
-.bone {
-  display: inline-block;
-  position: relative;
+p > b {
+  color: var(--bone);
   rotate: 5deg;
   font-weight: bold;
   text-transform: uppercase;
@@ -158,6 +197,7 @@ main > p > strong {
 }
 
 /* MARK: I don't wanna get over you */
+/* basispositie = eindpositie, zodat het ook zonder scroll-animatie goed staat */
 p:has(> em) {
   --from: 0; /* 0 = tegen de linkerrand, 0.5 = midden, 1 = tegen de rechterrand */
   --to: 0.5;
@@ -165,8 +205,8 @@ p:has(> em) {
   width: fit-content;
   font-size: 4vh;
   margin: 8vh 0;
-  left: calc(var(--from) * 100%);
-  translate: calc(var(--from) * -100%) 0;
+  left: calc(var(--to) * 100%);
+  translate: calc(var(--to) * -100%) 0;
 }
 
 p:has(> em) ~ p:has(> em) {
@@ -180,13 +220,12 @@ p:has(> em) ~ p:has(> em) ~ p:has(> em) {
 }
 
 @keyframes slide-across {
-  to {
-    left: calc(var(--to) * 100%);
-    translate: calc(var(--to) * -100%) 0;
+  from {
+    left: calc(var(--from) * 100%);
+    translate: calc(var(--from) * -100%) 0;
   }
 }
 
-/* alleen scroll-driven animeren als de browser dat kan */
 @supports (animation-timeline: view()) {
   p:has(> em) {
     animation: slide-across linear both;
@@ -195,7 +234,7 @@ p:has(> em) ~ p:has(> em) ~ p:has(> em) {
   }
 }
 
-/* het sprongetje van "over" blijft */
+/* het sprongetje van "over" */
 p > em {
   display: inline-block;
   font-style: normal;
@@ -236,7 +275,12 @@ p:has(> mark) {
 p > mark {
   color: transparent;
   background-color: transparent;
-  background-image: linear-gradient(to bottom, #f7c948, #e89a00, #a85f00);
+  background-image: linear-gradient(
+    to bottom,
+    var(--honey-light),
+    var(--honey-mid),
+    var(--honey-dark)
+  );
   background-size: 100% 300%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -252,13 +296,11 @@ p > mark {
   }
 }
 
-/* milk: roomwitte tekst met een zachte schaduw, die vervaagt */
+/* milk: roomwitte tekst met een zachte gloed, die vervaagt */
 p > i {
   font-style: normal;
-  color: #fffaf0;
-  text-shadow:
-    0 0 6px rgba(0, 0, 0, 0.35),
-    0 0 14px rgba(0, 0, 0, 0.2);
+  color: var(--milk);
+  text-shadow: 0 0 12px var(--milk);
   animation: milk-blur 5s ease-in-out infinite alternate;
 }
 
@@ -268,5 +310,14 @@ p > i {
   }
   to {
     filter: blur(3px);
+  }
+}
+
+/* MARK: toegankelijkheid */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
   }
 }
