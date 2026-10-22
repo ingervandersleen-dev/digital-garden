@@ -1,7 +1,7 @@
 # Model
 ## Woensdag 21 oktober
 ### Bi-weekly 
-We startten de dag met stellingen
+We begonnen de dag met een aantal stellingen.
 
 <img width="585" height="1266" alt="IMG_5747" src="https://github.com/user-attachments/assets/5bb32803-b2ad-401b-b1c3-3800bd194f2f" />
 
@@ -9,7 +9,7 @@ Vervolgens gingen we door met het maken van de bi-weekly 3
 
 <img width="921" height="646" alt="Scherm­afbeelding 2026-10-23 om 00 28 00" src="https://github.com/user-attachments/assets/f6dc8d0f-9024-400d-875e-094fc44b6968" />
 
-Tot slot testte we onze site in drietallen aan de hand van de rubric
+Tot slot hebben we onze websites in drietallen getest aan de hand van de rubric. We bekeken elkaars websites en controleerden in hoeverre deze voldeden aan de verschillende criteria. Door de websites van anderen te bekijken, kon ik ook inspiratie opdoen en zien hoe medestudenten bepaalde onderdelen hadden aangepakt. Een voorbeeld hiervan is een spotify pop-up die ik ook met behulp van mijn medestudent heb gecodeerd. Daarnaast helpt het testen met de rubric om kritisch naar mijn eigen website te kijken en te ontdekken welke onderdelen eventueel nog verbeterd kunnen worden. 
 
 <img width="450" height="578" alt="Scherm­afbeelding 2026-10-23 om 00 27 42" src="https://github.com/user-attachments/assets/49cf2cff-ef6e-4843-99e3-623876bc9634" />
 
@@ -22,7 +22,9 @@ Tot slot testte we onze site in drietallen aan de hand van de rubric
 ### Voortgangsgesprek 
 <img width="583" height="201" alt="Scherm­afbeelding 2026-10-21 om 09 05 54" src="https://github.com/user-attachments/assets/8766ee92-2232-4259-8e05-9337b8208b79" />
 
-Ik startte de dag met een voortgangsgesprek, dit is de feedback die ik heb ontvangen van Barbara en de studentassistent.
+Ik startte de dag met een voortgangsgesprek met Barbara en de studentassistent. Tijdens dit gesprek kreeg ik feedback op mijn voortgang en de manier waarop ik aan de opdrachten werk. De feedback gaf me de mogelijkheid om stil te staan bij wat al goed gaat en welke onderdelen nog aandacht nodig hebben.
+
+De feedback die ik tijdens dit gesprek heb ontvangen, heb ik hierboven toegevoegd. Deze kan ik gebruiken om verder te werken aan mijn site en om te bepalen welke punten ik nog wil verbeteren.
 
 ### CHECK-OUT
 1. Welke variabelen van Seraphs gebruik je in de opmaak van je songtekst?
