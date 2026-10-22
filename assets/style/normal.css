@@ -781,6 +781,15 @@ dialog#cookieModal button:hover {
   background: var(--kleur-gras-licht);
 }
 
+dialog#cookieModal li a {
+  color: inherit;
+  transition: color 0.2s ease-in-out;
+}
+
+dialog#cookieModal li a:hover {
+  color: var(--kleur-knop-hover);
+}
+
 .cookie-illustratie {
   width: 8rem;
   margin: 0 auto 1rem;

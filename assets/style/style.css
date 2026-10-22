@@ -779,3 +779,31 @@ dialog.boek-modal form button:hover {
   outline: 0.15rem dashed var(--kleur-knop-hover);
   outline-offset: 0.3rem;
 }
+
+.muziek-info {
+  max-width: 35rem;
+  margin: 3rem auto 0.2rem;
+  padding: 0 1.5rem;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.muziek-info a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.2em;
+  transition:
+    color 0.2s ease-in-out,
+    text-decoration-thickness 0.2s ease-in-out;
+}
+
+.muziek-info a:hover {
+  color: var(--kleur-knop-hover);
+  text-decoration-thickness: 0.15em;
+}
+
+.muziek-info a:focus-visible {
+  outline: 0.15rem dashed var(--kleur-knop-hover);
+  outline-offset: 0.2rem;
+}
