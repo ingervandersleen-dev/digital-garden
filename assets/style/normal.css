@@ -23,7 +23,7 @@
   --kleur-boom-blad-ver: light-dark(#6f9670, #162a20);
   --kleur-den: light-dark(#3f6a4b, #17301f);
 
-  /* Pad en bankje */
+  /* Pad */
   --kleur-pad: light-dark(#dac9aa, #5a5445);
   --kleur-bankje: light-dark(#8a6b4d, #3a3025);
   --kleur-bankje-rand: light-dark(#5c4630, #211a14);
@@ -36,8 +36,11 @@
   --kleur-knop-hover: light-dark(#f5bd6e, #4a5290);
 
   /* Cookie pop-up */
+  /* Cookie pop-up */
   --kleur-cookie-pop: light-dark(#f5bd6e, #c9cce8);
-  --kleur-cookie-tekst: light-dark(#000000, #547b55);
+  --kleur-cookie-tekst: light-dark(#24372e, #0a1030);
+  --kleur-cookie-vlak: light-dark(#fff8e9, #2d2b5e);
+  --kleur-cookie-accent: light-dark(#547b55, #a6c99b);
 
   /* Vogel */
   --kleur-vogel: light-dark(#24372e, #000000);
@@ -666,7 +669,7 @@ footer {
   bottom: 1rem;
   left: 1rem;
   z-index: 1000;
-  margin: 0; /* voorkomt dat browser-default margin 'm scheef zet */
+  margin: 0;
 }
 
 footer button {
@@ -678,7 +681,7 @@ footer button {
 
 footer button img {
   display: block;
-  width: 5rem; /* pas aan naar smaak */
+  width: 5rem;
   height: auto;
   transition: transform 0.2s ease-in-out;
 }
@@ -697,12 +700,13 @@ footer button:focus-visible {
   footer button img {
     transition: none;
   }
+
   footer button:hover img {
     transform: none;
   }
 }
 
-/* Nieuwe cookie-dialog, gebaseerd op je Figma-ontwerp */
+/* MARK: Cookie-dialog */
 dialog#cookieModal {
   max-width: 22rem;
   width: 90%;
@@ -733,7 +737,8 @@ dialog#cookieModal h2 {
 }
 
 dialog#cookieModal ul {
-  background: Canvas;
+  background: var(--kleur-cookie-vlak);
+  color: var(--kleur-cookie-accent);
   border-radius: 1rem;
   padding: 1.2rem 1.5rem;
   text-align: left;
@@ -767,18 +772,20 @@ dialog#cookieModal form {
 }
 
 dialog#cookieModal button {
-  background: Canvas;
-  color: var(--kleur-tekst-park);
+  background: var(--kleur-cookie-vlak);
+  color: var(--kleur-cookie-pop);
   border: none;
   border-radius: var(--radius-knop);
   padding: 0.7em 2em;
   font-weight: bold;
   font-size: 1.1rem;
   cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
 }
 
 dialog#cookieModal button:hover {
-  background: var(--kleur-gras-licht);
+  background: var(--kleur-cookie-accent);
+  color: var(--kleur-cookie-tekst);
 }
 
 dialog#cookieModal li a {
@@ -788,6 +795,12 @@ dialog#cookieModal li a {
 
 dialog#cookieModal li a:hover {
   color: var(--kleur-knop-hover);
+}
+
+dialog#cookieModal a:focus-visible,
+dialog#cookieModal button:focus-visible {
+  outline: 0.15rem dashed var(--kleur-knop-hover);
+  outline-offset: 0.2rem;
 }
 
 .cookie-illustratie {

@@ -18,6 +18,7 @@
   --kleur-knop-achtergrond: light-dark(#fff8e9, #333a6b);
   --kleur-knop-tekst: light-dark(#24372e, #f3ecd9);
   --kleur-knop-hover: light-dark(#f5bd6e, #4a5290);
+  --kleur-tekst-bubbel: light-dark(#24372e, #2d2b5e);
 
   /* Lettertypes */
   --font-tekst: "Comic Relief", system-ui;
@@ -464,7 +465,7 @@ fieldset label:has(input:focus-visible) {
   position: relative;
   font-family: var(--font-titel);
   text-decoration: none;
-  color: var(--kleur-tekst-park);
+  color: var(--kleur-tekst-bubbel);
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
@@ -609,7 +610,7 @@ dialog.boek-modal {
   border: none;
   border-radius: 1.5rem;
   background: var(--kleur-wolk);
-  color: var(--kleur-tekst-park);
+  color: var(--kleur-tekst-bubbel);
 }
 
 dialog.boek-modal::backdrop {
@@ -617,10 +618,13 @@ dialog.boek-modal::backdrop {
 }
 
 dialog.boek-modal h2 {
+  grid-area: titel;
   font-family: var(--font-titel);
-  font-size: 1.4rem;
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
   font-weight: normal;
-  margin-top: 0;
+  line-height: 1.15;
+  margin: 0 0 1.5rem;
+  text-align: center;
 }
 
 dialog.boek-modal img {
@@ -636,6 +640,11 @@ dialog.boek-modal .boek-link {
   display: inline-block;
   margin-top: 0.5rem;
   font-weight: bold;
+  color: inherit;
+}
+
+dialog.boek-modal .boek-link:hover {
+  color: var(--kleur-knop-hover);
 }
 
 dialog.boek-modal form {
