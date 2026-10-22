@@ -789,6 +789,8 @@ dialog.boek-modal form button:hover {
   outline-offset: 0.3rem;
 }
 
+/* MARK: Info tekst music pagina */
+
 .muziek-info {
   max-width: 35rem;
   margin: 3rem auto 0.2rem;
@@ -817,6 +819,8 @@ dialog.boek-modal form button:hover {
   outline-offset: 0.2rem;
 }
 
+/* MARK: Mindfulness pagina- intro tekst  */
+
 .intro-mind {
   max-width: 35rem;
   margin: 0.5rem auto 0.1rem;
@@ -824,4 +828,26 @@ dialog.boek-modal form button:hover {
   padding: 0 1.5rem;
   text-align: center;
   line-height: 1.7;
+}
+
+.mindfulness-blokken {
+  display: grid;
+  gap: var(--whitespace);
+  grid-template-columns: minmax(0, 1fr); /* smal: onder elkaar */
+  padding: var(--whitespace);
+  position: relative; /* boven de zon en maan, die ook gepositioneerd zijn */
+}
+
+/* Middelgroot: 2 x 2 */
+@media (min-width: 30em) {
+  .mindfulness-blokken {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Desktop: vier naast elkaar */
+@media (min-width: 60em) {
+  .mindfulness-blokken {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
