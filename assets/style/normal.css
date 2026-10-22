@@ -82,22 +82,63 @@ body {
 }
 
 /* ==========================================================================
-   MARK: Kleurmodus-knoppen
-   De <fieldset> en drie radiobuttons blijven functioneel (toetsenbord en
-   schermlezers werken gewoon), maar ogen als een rij pil-vormige knoppen
-   i.p.v. kale radiobuttons met tekst.
+   MARK: Kleurmodus-knop
+   Eén klein knopje (<details>/<summary>) linksboven. Pas na een klik klapt
+   de pil met auto/Licht/Donker eronder open. De radiobuttons blijven in de
+   DOM, dus de gekozen modus blijft werken als het menu dicht is.
+   "body > header" i.p.v. gewoon "header", want .titel is óók een <header>.
    ========================================================================== */
 
-/* Header (kleurmodus-knoppen) zweeft los linksboven over de parkscène heen,
-   in plaats van een eigen balk over de volle breedte te vormen.
-   "body > header" i.p.v. gewoon "header", want .titel is óók een <header>
-   (binnen .park) en mag deze styling niet krijgen. */
 body > header {
   position: fixed;
   top: 1rem;
   left: 1rem;
   z-index: 1000;
   margin: 0;
+}
+
+body > header details {
+  position: relative; /* de pil positioneert t.o.v. dit element */
+  width: fit-content;
+}
+
+body > header summary {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.5em 1em;
+  background: var(--kleur-knop-achtergrond);
+  color: var(--kleur-knop-tekst);
+  border-radius: var(--radius-knop);
+  font-size: 0.9rem;
+  cursor: pointer;
+  list-style: none; /* haalt het standaard driehoekje weg */
+  transition: background-color 0.2s ease-in-out;
+}
+
+body > header summary::-webkit-details-marker {
+  display: none; /* hetzelfde voor Safari */
+}
+
+body > header summary::before {
+  content: "◐"; /* halve cirkel: licht en donker */
+}
+
+body > header summary:hover,
+body > header details[open] summary {
+  background: var(--kleur-knop-hover);
+}
+
+body > header summary:focus-visible {
+  outline: 0.15rem solid var(--kleur-knop-hover);
+  outline-offset: 0.15rem;
+}
+
+/* de pil zweeft onder de knop, zodat de pagina niet verschuift */
+body > header details[open] form {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
 }
 
 fieldset {

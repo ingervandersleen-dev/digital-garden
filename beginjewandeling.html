@@ -7,7 +7,7 @@
     <meta name="color-scheme" content="dark light" />
 
     <title>Inger's Junk Drawer</title>
-    <link rel="stylesheet" href="./assets/style/normal2.css" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
 
     <!-- Importeer het webring component, voeg jouw eigen domein toe in data-page -->
     <script
@@ -21,43 +21,45 @@
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
-      <form>
-        <fieldset>
-          <legend>Kleurmodus</legend>
-          <label for="system-mode">
-            <input
-              type="radio"
-              id="system-mode"
-              name="color-scheme"
-              value="auto"
-              checked
-            />
-            auto
-          </label>
-          <label for="light-mode">
-            <input
-              type="radio"
-              id="light-mode"
-              name="color-scheme"
-              value="light"
-            />
-            Licht
-          </label>
-          <label for="dark-mode">
-            <input
-              type="radio"
-              id="dark-mode"
-              name="color-scheme"
-              value="dark"
-            />
-            Donker
-          </label>
-        </fieldset>
-      </form>
+      <details>
+        <summary>Kleurmodus</summary>
+        <form>
+          <fieldset>
+            <legend>Kleurmodus</legend>
+            <label for="system-mode">
+              <input
+                type="radio"
+                id="system-mode"
+                name="color-scheme"
+                value="auto"
+                checked
+              />
+              auto
+            </label>
+            <label for="light-mode">
+              <input
+                type="radio"
+                id="light-mode"
+                name="color-scheme"
+                value="light"
+              />
+              Licht
+            </label>
+            <label for="dark-mode">
+              <input
+                type="radio"
+                id="dark-mode"
+                name="color-scheme"
+                value="dark"
+              />
+              Donker
+            </label>
+          </fieldset>
+        </form>
+      </details>
     </header>
 
-    <main>
-       <main id="main-content" tabindex="-1">
+    <main id="main-content" tabindex="-1">
       <section class="park">
         <span class="zon" aria-hidden="true"></span>
         <span class="maan" aria-hidden="true"></span>
@@ -65,17 +67,22 @@
         <header class="titel">
           <p>inger's junk drawer</p>
           <h1 id="park-titel">overthinking<br /><em>everything</em></h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+            </ul>
+          </nav>
         </header>
 
         <div class="container">
           <a href="book.html" class="blok1">
-            <p>Book reccommendations</p>
+            <p>Book recommendations</p>
           </a>
-          <a href="Songtekst/sorrow.html" class="blok2">
+          <a href="music.html" class="blok2">
             <p>Music</p>
           </a>
           <a href="knop3.html" class="blok3">
-            <p>Mindfullness</p>
+            <p>Mindfulness</p>
           </a>
           <a href="knop4.html" class="blok4">
             <p>Activities</p>

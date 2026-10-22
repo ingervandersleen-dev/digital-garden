@@ -1,0 +1,781 @@
+/* ==========================================================================
+   MARK: Custom properties
+   ========================================================================== */
+
+:root {
+  /* Lucht */
+  --kleur-lucht-boven: light-dark(#dbeef2, #0a1030);
+  --kleur-lucht-horizon: light-dark(#f8ddbf, #2d2b5e);
+  --kleur-wolk: light-dark(#fffff0, #c9cce8);
+
+  /* Zon (overdag) en maan + sterren ('s nachts) */
+  --kleur-zon: light-dark(#f5bd6e, transparent);
+  --kleur-maan: light-dark(transparent, #dddcd6);
+  --kleur-ster: light-dark(transparent, #fff8e9);
+
+  /* Tekst en interface */
+  --kleur-tekst-park: light-dark(#24372e, #eef0e4);
+  --kleur-knop-achtergrond: light-dark(#fff8e9, #333a6b);
+  --kleur-knop-tekst: light-dark(#24372e, #f3ecd9);
+  --kleur-knop-hover: light-dark(#f5bd6e, #4a5290);
+
+  /* Lettertypes */
+  --font-tekst: "Comic Relief", system-ui;
+  --font-titel: Georgia, serif;
+
+  /* Vormen */
+  --radius-rond: 50%;
+  --radius-knop: 2rem;
+
+  /* Ruimte */
+  --whitespace: 2rem;
+  --whitespace-s: 1rem;
+  --whitespace-xs: 0.5rem;
+}
+
+/* ==========================================================================
+   MARK: Fonts
+   ========================================================================== */
+
+@font-face {
+  font-family: "Comic Relief";
+  src: url(../type/ComicRelief-Regular.woff2);
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ==========================================================================
+   MARK: Basis
+   ========================================================================== */
+
+html {
+  color-scheme: light dark;
+}
+
+html:has([value="light"]:checked) {
+  color-scheme: light;
+}
+
+html:has([value="dark"]:checked) {
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: var(--font-tekst);
+  background-color: Canvas;
+  color: CanvasText;
+  margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+summary {
+  cursor: pointer;
+}
+
+nav a,
+dialog a {
+  color: var(--kleur-tekst-park);
+}
+
+nav a:hover,
+dialog a:hover {
+  color: var(--kleur-knop-hover);
+}
+
+a:focus-visible {
+  outline: 0.15rem dashed var(--kleur-knop-hover);
+  outline-offset: 0.2rem;
+}
+
+/* ==========================================================================
+   MARK: Skip link
+   Onzichtbaar totdat een toetsenbordgebruiker er met Tab op komt.
+   ========================================================================== */
+
+.skip-link {
+  position: absolute;
+  top: -3rem;
+  left: 0.5rem;
+  background: var(--kleur-knop-achtergrond);
+  color: var(--kleur-knop-tekst);
+  padding: 0.6em 1.2em;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  z-index: 2000;
+  transition: top 0.2s ease-in-out;
+}
+
+.skip-link:focus {
+  top: 0.5rem;
+}
+
+/* ==========================================================================
+   MARK: Kleurmodus-knop
+   Eén klein knopje (<details>/<summary>) linksboven. Pas na een klik klapt
+   de pil met auto/Licht/Donker eronder open. De radiobuttons blijven in de
+   DOM, dus de gekozen modus blijft werken als het menu dicht is.
+   "body > header" i.p.v. gewoon "header", want .titel is óók een <header>.
+   ========================================================================== */
+
+body > header {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000;
+  margin: 0;
+}
+
+body > header details {
+  position: relative; /* de pil positioneert t.o.v. dit element */
+  width: fit-content;
+}
+
+body > header summary {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.5em 1em;
+  background: var(--kleur-knop-achtergrond);
+  color: var(--kleur-knop-tekst);
+  border-radius: var(--radius-knop);
+  font-size: 0.9rem;
+  list-style: none; /* haalt het standaard driehoekje weg */
+  transition: background-color 0.2s ease-in-out;
+}
+
+body > header summary::-webkit-details-marker {
+  display: none; /* hetzelfde voor Safari */
+}
+
+body > header summary::before {
+  content: "◐"; /* halve cirkel: licht en donker */
+}
+
+body > header summary:hover,
+body > header details[open] summary {
+  background: var(--kleur-knop-hover);
+}
+
+body > header summary:focus-visible {
+  outline: 0.15rem solid var(--kleur-knop-hover);
+  outline-offset: 0.15rem;
+}
+
+/* de pil zweeft onder de knop, zodat de pagina niet verschuift */
+body > header details[open] form {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  gap: 0.3rem;
+  padding: 0.3rem;
+  margin: 0;
+  width: fit-content;
+  background: var(--kleur-wolk);
+  border-radius: var(--radius-knop);
+}
+
+fieldset legend {
+  /* Visueel verborgen, maar nog voorleesbaar voor schermlezers */
+  position: absolute;
+  left: -9999em;
+}
+
+fieldset label {
+  padding: 0.4em 1em;
+  border-radius: var(--radius-knop);
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+fieldset input[type="radio"] {
+  /* Het bolletje zelf verbergen, wel toetsenbord-toegankelijk houden */
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+fieldset label:has(input:checked) {
+  background: var(--kleur-knop-achtergrond);
+  font-weight: bold;
+}
+
+fieldset label:has(input:focus-visible) {
+  outline: 0.15rem solid var(--kleur-knop-hover);
+  outline-offset: 0.15rem;
+}
+
+/* ==========================================================================
+   MARK: Park (achtergrond voor alle pagina's)
+   ========================================================================== */
+
+.park {
+  background:
+    /* Wolken */
+    radial-gradient(
+      ellipse 4rem 1.1rem at 14% 23%,
+      var(--kleur-wolk) 0 99%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 14% 21.8%,
+      var(--kleur-wolk) 0 1.5rem,
+      transparent 1.6rem
+    ),
+    radial-gradient(
+      ellipse 3.5rem 1rem at 83% 29.8%,
+      var(--kleur-wolk) 0 99%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 83% 28.7%,
+      var(--kleur-wolk) 0 1.3rem,
+      transparent 1.4rem
+    ),
+    /* Sterren (alleen zichtbaar in dark mode) */
+    radial-gradient(
+        circle at 6% 8%,
+        var(--kleur-ster) 0 0.12rem,
+        transparent 0.2rem
+      ),
+    radial-gradient(
+      circle at 24% 6%,
+      var(--kleur-ster) 0 0.1rem,
+      transparent 0.18rem
+    ),
+    radial-gradient(
+      circle at 36% 17%,
+      var(--kleur-ster) 0 0.12rem,
+      transparent 0.2rem
+    ),
+    radial-gradient(
+      circle at 62% 20%,
+      var(--kleur-ster) 0 0.1rem,
+      transparent 0.18rem
+    ),
+    radial-gradient(
+      circle at 70% 8%,
+      var(--kleur-ster) 0 0.14rem,
+      transparent 0.22rem
+    ),
+    radial-gradient(
+      circle at 76% 24%,
+      var(--kleur-ster) 0 0.1rem,
+      transparent 0.18rem
+    ),
+    radial-gradient(
+      circle at 95% 27%,
+      var(--kleur-ster) 0 0.12rem,
+      transparent 0.2rem
+    ),
+    /* Lucht */
+    linear-gradient(
+        to bottom,
+        var(--kleur-lucht-boven) 0%,
+        var(--kleur-lucht-horizon) 80%
+      );
+  color: var(--kleur-tekst-park);
+  min-height: 100svh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 37.5em) {
+  .park {
+    min-height: 100vh;
+  }
+}
+
+/* Zon en maan
+   Allebei staan ze op dezelfde plek. Door de kleuren (zon: licht, maan: donker)
+   is steeds maar één van de twee zichtbaar. */
+
+.zon,
+.maan {
+  left: 88%;
+  position: absolute;
+  top: 12%;
+  transform: translate(-50%, -50%);
+}
+
+.zon {
+  aspect-ratio: 1;
+  background: var(--kleur-zon);
+  border-radius: var(--radius-rond);
+  width: 5rem;
+}
+
+.maan {
+  aspect-ratio: 500 / 596;
+  background: var(--kleur-maan);
+  -webkit-mask: url(../Maan1.png) center / contain no-repeat;
+  mask: url(../Maan1.png) center / contain no-repeat;
+  width: 4.2rem;
+}
+
+/* ==========================================================================
+   MARK: Titel + knoppen (Home / Terug)
+   De titel neemt ruimte in de flow in. De knoppen staan linksboven, onder de
+   Kleurmodus-knop, en scrollen mee met de pagina.
+   ========================================================================== */
+
+.titel {
+  padding-top: 11rem; /* ruimte voor de Kleurmodus-knop en de knoppen eronder */
+  text-align: center;
+  width: 90%;
+  margin-inline: auto;
+}
+
+/* op een breed scherm staat de titel naast de knoppen, dus minder ruimte nodig */
+@media (min-width: 75em) {
+  .titel {
+    padding-top: 3rem;
+  }
+}
+
+.titel p {
+  font-size: 0.8rem;
+  letter-spacing: 0.15rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.titel h1 {
+  font-family: var(--font-titel);
+  font-size: clamp(2.2rem, 8vw, 5.5rem);
+  font-weight: normal;
+  line-height: 0.9;
+  margin: 0.5rem 0;
+}
+
+.titel em {
+  font-weight: normal;
+}
+
+/* de knoppen: linksboven, net onder de Kleurmodus-knop (die staat op top: 1rem) */
+.titel nav {
+  position: absolute;
+  top: 4rem;
+  left: 1rem;
+}
+
+.titel nav ul {
+  display: flex;
+  flex-direction: column; /* onder elkaar */
+  align-items: flex-start;
+  gap: var(--whitespace-xs);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.titel nav a {
+  display: inline-block;
+  padding: 0.5em 1.2em;
+  background: var(--kleur-knop-achtergrond);
+  color: var(--kleur-knop-tekst);
+  border-radius: var(--radius-knop);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.titel nav a:hover {
+  background: var(--kleur-knop-hover);
+  color: var(--kleur-knop-tekst);
+}
+
+/* pijltje voor de eerste knop; het deel na de / is de tekst voor schermlezers (leeg) */
+.titel nav li:first-child a::before {
+  content: "← " / "";
+}
+
+/* ==========================================================================
+   MARK: Wandelpagina: gedachtewolkjes (Books / Music / Mindfulness / Activities)
+   ========================================================================== */
+
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  gap: 4rem 3rem;
+  max-width: 20rem;
+  margin: 4rem auto 0;
+}
+
+/* Vanaf hier gaan de blokken 2x2 */
+@media (min-width: 26em) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 24rem;
+  }
+}
+
+/* Op een breed scherm gaan ze alle 4 naast elkaar */
+@media (min-width: 43.75em) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 36rem;
+  }
+}
+
+.blok1,
+.blok2,
+.blok3,
+.blok4 {
+  width: auto;
+  aspect-ratio: 1 / 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: clamp(0.9rem, 2.5vw, 1.3rem);
+  text-align: center;
+  padding: 2.5rem;
+  background-color: var(--kleur-wolk);
+  border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
+  position: relative;
+  font-family: var(--font-titel);
+  text-decoration: none;
+  color: var(--kleur-tekst-park);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* De twee kleine "gedachte-bubbeltjes" onder elke wolk */
+.blok1::before,
+.blok2::before,
+.blok3::before,
+.blok4::before {
+  content: "";
+  position: absolute;
+  bottom: -1.2rem;
+  left: 30%;
+  width: 1rem;
+  height: 1rem;
+  background: var(--kleur-wolk);
+  border-radius: var(--radius-rond);
+}
+
+.blok1::after,
+.blok2::after,
+.blok3::after,
+.blok4::after {
+  content: "";
+  position: absolute;
+  bottom: -2rem;
+  left: 22%;
+  width: 0.6rem;
+  height: 0.6rem;
+  background: var(--kleur-wolk);
+  border-radius: var(--radius-rond);
+}
+
+.blok1:hover,
+.blok2:hover,
+.blok3:hover,
+.blok4:hover {
+  transform: translateY(-0.5rem) scale(1.05);
+}
+
+/* Zachte zweefbeweging, met een kleine vertraging per wolkje zodat ze niet
+   allemaal precies gelijk bewegen */
+@keyframes zweven {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.4rem);
+  }
+}
+
+.blok1 {
+  animation: zweven 4s ease-in-out infinite;
+}
+
+.blok2 {
+  animation: zweven 4.5s ease-in-out infinite 0.3s;
+}
+
+.blok3 {
+  animation: zweven 4s ease-in-out infinite 0.6s;
+}
+
+.blok4 {
+  animation: zweven 4.5s ease-in-out infinite 0.9s;
+}
+
+/* ==========================================================================
+   MARK: Boekenpagina: kaarten
+   ========================================================================== */
+
+.boeken {
+  display: grid;
+  gap: var(--whitespace);
+  grid-template-columns: minmax(0, 1fr); /* smal: onder elkaar */
+  padding: var(--whitespace);
+  position: relative; /* boven de zon en maan, die ook gepositioneerd zijn */
+}
+
+/* Middelgroot: 2 x 2 */
+@media (min-width: 30em) {
+  .boeken {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Desktop: vier naast elkaar */
+@media (min-width: 60em) {
+  .boeken {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+article {
+  background: var(--kleur-wolk);
+  border-radius: 1rem;
+  padding: var(--whitespace-s);
+  min-width: 0;
+}
+
+article img {
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+/* ==========================================================================
+   MARK: Boekenpagina: klikbare kaart + pop-up
+   De hele kaart is een <button> die een <dialog> opent via command.
+   ========================================================================== */
+
+.boek-kaart {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  color: inherit;
+  border-radius: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.boek-kaart:hover,
+.boek-kaart:focus-visible {
+  transform: translateY(-0.2rem);
+}
+
+.boek-kaart:focus-visible {
+  outline: 0.15rem dashed var(--kleur-knop-hover);
+  outline-offset: 0.3rem;
+}
+
+/* Elke boek-dialog heeft dezelfde opmaak.
+   Smal scherm = alles onder elkaar (titel, plaatje, tekst, link, knop). */
+
+dialog.boek-modal {
+  max-width: 24rem;
+  width: 90%;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 1.5rem;
+  background: var(--kleur-wolk);
+  color: var(--kleur-tekst-park);
+}
+
+dialog.boek-modal::backdrop {
+  background: rgb(0 0 0 / 40%);
+}
+
+dialog.boek-modal h2 {
+  font-family: var(--font-titel);
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+dialog.boek-modal img {
+  border-radius: 0.5rem;
+  margin-bottom: var(--whitespace-s);
+}
+
+dialog.boek-modal p {
+  line-height: 1.5;
+}
+
+dialog.boek-modal .boek-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+dialog.boek-modal form {
+  margin: 1.5rem 0 0;
+  text-align: right;
+}
+
+dialog.boek-modal form button {
+  background: var(--kleur-knop-achtergrond);
+  color: var(--kleur-knop-tekst);
+  border: none;
+  border-radius: var(--radius-knop);
+  padding: 0.5em 1.4em;
+}
+
+dialog.boek-modal form button:hover {
+  background: var(--kleur-knop-hover);
+}
+
+/* Breder scherm: plaatje links, tekst rechts.
+   [open] is nodig, anders overschrijft het display: grid het standaard
+   "display: none" van een gesloten dialog. */
+
+@media (min-width: 40em) {
+  dialog.boek-modal {
+    max-width: 40rem;
+  }
+
+  dialog.boek-modal[open] {
+    display: grid;
+    grid-template-columns: 12rem 1fr;
+    grid-template-rows: auto auto auto 1fr;
+    grid-template-areas:
+      "titel   titel"
+      "plaatje tekst"
+      "plaatje link"
+      "plaatje sluiten";
+    column-gap: var(--whitespace);
+    align-items: start;
+  }
+
+  dialog.boek-modal h2 {
+    grid-area: titel;
+  }
+
+  dialog.boek-modal img {
+    grid-area: plaatje;
+    margin-bottom: 0;
+  }
+
+  dialog.boek-modal p {
+    grid-area: tekst;
+    margin-top: 0;
+  }
+
+  dialog.boek-modal .boek-link {
+    grid-area: link;
+    justify-self: start;
+  }
+
+  dialog.boek-modal form {
+    grid-area: sluiten;
+    align-self: end;
+  }
+}
+
+/* ==========================================================================
+   MARK: Beweging uit voor mensen die dat in hun systeem hebben ingesteld
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .blok1,
+  .blok2,
+  .blok3,
+  .blok4 {
+    animation: none;
+  }
+
+  .blok1,
+  .blok2,
+  .blok3,
+  .blok4,
+  .boek-kaart {
+    transition: none;
+  }
+
+  .blok1:hover,
+  .blok2:hover,
+  .blok3:hover,
+  .blok4:hover,
+  .boek-kaart:hover {
+    transform: none;
+  }
+}
+
+/* MARK: Spotify playlist */
+
+.playlist {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.playlist iframe {
+  width: 100%;
+  max-width: 35rem;
+  height: 352px;
+  border: none;
+  border-radius: 12px;
+}
+
+/* MARK: Knop naar de songtekst */
+
+#songtekst-knop {
+  display: block;
+  width: fit-content;
+  max-width: calc(100% - 2rem);
+  margin: 1rem auto 3rem;
+  padding: 1.2rem 3rem;
+
+  background: var(--kleur-knop-achtergrond);
+  color: var(--kleur-knop-tekst);
+  border-radius: var(--radius-knop);
+
+  font-family: var(--font-titel);
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  text-align: center;
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
+}
+
+#songtekst-knop:hover {
+  background: var(--kleur-knop-hover);
+  transform: scale(1.05);
+}
+
+#songtekst-knop:focus-visible {
+  outline: 0.15rem dashed var(--kleur-knop-hover);
+  outline-offset: 0.3rem;
+}
