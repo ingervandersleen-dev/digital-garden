@@ -1,7 +1,21 @@
 # Model
 ## Woensdag 21 oktober
 ### Bi-weekly 
-We startten de dag met bi-weekly geek 3
+We startten de dag met stellingen
+
+<img width="585" height="1266" alt="IMG_5747" src="https://github.com/user-attachments/assets/5bb32803-b2ad-401b-b1c3-3800bd194f2f" />
+
+Vervolgens gingen we door met het maken van de bi-weekly 3
+
+<img width="921" height="646" alt="Scherm­afbeelding 2026-10-23 om 00 28 00" src="https://github.com/user-attachments/assets/f6dc8d0f-9024-400d-875e-094fc44b6968" />
+
+Tot slot testte we onze site in drietallen aan de hand van de rubric
+
+<img width="450" height="578" alt="Scherm­afbeelding 2026-10-23 om 00 27 42" src="https://github.com/user-attachments/assets/49cf2cff-ef6e-4843-99e3-623876bc9634" />
+
+<img width="450" height="578" alt="Scherm­afbeelding 2026-10-23 om 00 27 53" src="https://github.com/user-attachments/assets/8484e4a3-602f-46dd-8950-e63f11a65bc8" />
+
+
 ## Maandag 19 oktober
 
 ## Vrijdag 9 oktober
