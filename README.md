@@ -18,7 +18,8 @@ Tot slot hebben we onze websites in drietallen getest aan de hand van de rubric.
 
 </details>  
    
-## Maandag 19 oktober
+<details> 
+<summary><strong> Maandag 19 oktober </strong></summary>
 
 Vandaag hebben we tijdens de les zelfstandig aan onze websites gewerkt. Ik heb mijn songtekst verder uitgewerkt en afgerond door kleur toe te voegen en verschillende scroll-driven animaties te implementeren. Hierbij heb ik geprobeerd om de betekenis en het gevoel van de songtekst visueel te versterken door beweging, kleur en typografie met elkaar te combineren.
 
@@ -43,8 +44,51 @@ Daarnaast ben ik aan de slag gegaan met het maken van een icoontje voor in het p
 <img width="577" height="353" alt="Scherm­afbeelding 2026-10-22 om 16 44 29" src="https://github.com/user-attachments/assets/b99ae1b5-d285-4e5b-82e4-3a56ccd4cbd7" />
 <img width="625" height="586" alt="Scherm­afbeelding 2026-10-22 om 16 40 23" src="https://github.com/user-attachments/assets/9cbf7d6b-7723-4a14-9e4c-235f8777efd4" />
 
-## Vrijdag 9 oktober
+</details> 
 
+<details> 
+<summary><strong> Dinsdag 18 oktober </strong></summary>
+## Artikel: From Shrimp Jesus to Erotic Tractors (2025)
+
+AI-slop is goedkope, surrealistische content die met AI wordt gegenereerd en op social media wordt geplaatst. Het ontstaat door een combinatie van twee factoren:
+
+- Algoritmes die vooral zijn ontworpen om interactie en viraliteit te maximaliseren.
+- Een wereldeconomie waarin echt werk steeds minder oplevert, terwijl het maken van virale content juist veel geld kan opleveren.
+
+AI-slop kwam op na de doorbraak van grote AI-modellen, zoals ChatGPT en DALL·E. Hierdoor werd het voor steeds meer mensen mogelijk om eenvoudig content te maken.
+
+Hoewel de technologie steeds beter wordt, blijft de inhoud vaak vreemd, contextloos en gericht op het uitlokken van sterke, primitieve reacties.
+
+AI-slop wordt wereldwijd gemaakt. Veel content wordt op grote schaal en tegen zo laag mogelijke kosten geproduceerd. Naar schatting slaagt slechts 5% van de makers erin om geld te verdienen met hun video's, terwijl maar 1% er daadwerkelijk van kan leven.
+
+YouTube grijpt steeds strenger in tegen dit soort content. Het platform benadrukt dat AI slechts een hulpmiddel is en dat de focus blijft liggen op kwalitatieve content die aan de richtlijnen voldoet.
+
+## Artikel: Dead Internet Theory (2026)
+
+De *Dead Internet Theory* (DIT) ontstond ruim tien jaar geleden als reactie op veranderingen op het internet, met name door de opkomst van social media. Tegenwoordig heeft de ontwikkeling van AI de theorie nieuw leven ingeblazen. Door het gebruik van bots om content te genereren en de sterke focus op likes en interactie, lijkt het internet steeds minder om authenticiteit te draaien en steeds meer om inkomsten. Hierdoor komen de menselijke verbindingen waarvoor het internet oorspronkelijk bedoeld was onder druk te staan.
+
+De theorie stelt dat het internet tegenwoordig:
+
+- Vol staat met AI-gegenereerde content, waardoor menselijke activiteit steeds meer naar de achtergrond verdwijnt.
+- Niet langer voornamelijk door mensen wordt aangedreven, maar steeds meer door AI-agenten, bots en algoritmisch gegenereerde content.
+
+Door de opkomst van AI is ook het gebruik van bots toegenomen. Bots zijn geautomatiseerde softwaretoepassingen die zelfstandig taken op het internet uitvoeren. Hoewel ze nuttig kunnen zijn, brengen ze ook nadelen met zich mee, zoals illegale activiteiten en de moeilijkheid om bots van echte gebruikers te onderscheiden. Sinds 2024 zou het geautomatiseerde internetverkeer groter zijn dan het menselijke verkeer.
+
+Voorbeelden van ontwikkelingen die hierbij passen zijn:
+
+- **Verbedrijfseming (corporatization) van het internet:** Het internet wordt steeds meer gecontroleerd door bedrijven. De aandacht en gegevens van gebruikers worden ingezet voor productontwikkeling, verkoop, toezicht en spionage.
+- **Vervalste interacties en viraliteit:** Online ruimtes worden steeds vaker beïnvloed door kunstmatige interacties, algoritmes en nepactiviteit.
+- **Manipulatie van meningen:** AI-gegenereerde content en bots maken het eenvoudiger om meningen te beïnvloeden en te manipuleren. Dit kan worden versterkt door censuur en het steeds meer op elkaar gaan lijken van de aangeboden informatie.
+- **Contentfarming:** Hierbij worden grote hoeveelheden herhalende webpagina's van lage kwaliteit gepubliceerd om bezoekers te trekken en inkomsten te genereren. Kwantiteit wordt hierbij belangrijker dan kwaliteit.
+
+Een mogelijke oplossing ligt in het toepassen van ethische principes bij de ontwikkeling en het gebruik van AI. Er moeten modellen en systemen komen die gebaseerd zijn op ethische AI-kaders, met aandacht voor transparantie, verantwoordelijkheid, eerlijkheid en menselijk toezicht. Daarnaast is het belangrijk om kritisch te kijken naar de werking van algoritmes en de manier waarop informatie wordt getoond en gefilterd.
+
+Het is cruciaal dat de menselijke autonomie behouden blijft. Gebruikers kunnen hieraan bijdragen door kritisch na te denken over regelgeving, toestemming voor het gebruik van hun gegevens en de software die ze gebruiken. Ook bewust offline gaan kan helpen om afstand te nemen van de constante stroom aan online informatie.
+
+</details>
+
+<details> 
+<summary><strong> Vrijdag 9 oktober </strong></summary>
 ### Voortgangsgesprek
 
 <img width="583" height="201" alt="Scherm­afbeelding 2026-10-21 om 09 05 54" src="https://github.com/user-attachments/assets/8766ee92-2232-4259-8e05-9337b8208b79" />
@@ -67,7 +111,10 @@ Met font-size kan ik nadruk leggen op bepaalde woorden en de hiërarchie van de 
 
 Ik heb al animaties toegevoegd aan mijn songtekst om de tekst wat dynamischer te maken. Zo heb ik de woorden waves en heart op verschillende manieren laten bewegen. Bij waves heb ik gekozen voor een golvende beweging, zodat de animatie aansluit bij de betekenis van het woord. Het woord heart heb ik juist een pulserende animatie gegeven, alsof het een kloppend hart is. Op deze manier versterken de animaties de betekenis van de woorden en sluiten ze aan bij het gevoel en het ritme van de songtekst. Ik zou dit eventueel nog verder kunnen uitbreiden door bepaalde woorden op het ritme van de muziek te laten bewegen of specifieke woorden extra nadruk te geven met een grotere beweging.
 
-## Dinsdag 6 oktober
+</details> 
+
+<details> 
+<summary><strong> Dinsdag 6 oktober </strong></summary>
 
 Vandaag deed ik de deep-dive van Vasilis: Interessantere layouts
 
@@ -80,6 +127,8 @@ Ik vond vooral het schalen van typografie interessant. Met vw en cqi kan de groo
 Ook vond ik writing-mode interessant. Hiermee kun je tekst bijvoorbeeld verticaal plaatsen en zo de ruimte aan de zijkant van een scherm gebruiken. In combinatie met mediaqueries kun je dit alleen toepassen wanneer er genoeg ruimte is.
 
 Wat ik meeneem: responsive design hoeft niet alleen te betekenen dat alles kleiner wordt. Je kunt de beschikbare ruimte juist gebruiken om een ontwerp op verschillende schermformaten anders en creatiever vorm te geven.
+
+</details> 
 
 ## Maandag 5 oktober
 
