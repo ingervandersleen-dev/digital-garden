@@ -130,7 +130,8 @@ Wat ik meeneem: responsive design hoeft niet alleen te betekenen dat alles klein
 
 </details> 
 
-## Maandag 5 oktober
+<details> 
+<summary><strong> Maandag 5 oktober </strong></summary>
 
 ### Artikelen
 
@@ -184,7 +185,10 @@ Hierdoor kan ik mijn oorspronkelijke schets vertalen naar een dynamisch schermon
 
 3. Als je in een ontwerp maar één variabele tot je beschikking had om hiërarchie aan te brengen (grootte, plaatsing, spacing, lettersoorten), welke zou je dan gebruiken en waarom? -> Als ik maar één variabele mocht gebruiken om hiërarchie aan te brengen, zou ik kiezen voor grootte. Met alleen verschillende lettergroottes kun je al duidelijk maken welke informatie het belangrijkst is. Een grote titel trekt automatisch meer aandacht dan kleinere tekst, waardoor je een duidelijke volgorde in een ontwerp kunt creëren. Daarnaast kun je met grootte ook verschillende niveaus van informatie aangeven, zonder dat je meerdere lettertypes of kleuren nodig hebt. Hierdoor blijft een ontwerp rustig, terwijl er toch een duidelijke hiërarchie ontstaat.
 
-## Vrijdag 2 oktober
+</details> 
+
+<details> 
+<summary><strong> Vrijdag 2 oktober </strong></summary>
 
 ### Voortgangsgesprek
 
@@ -198,7 +202,10 @@ Daarnaast gaf Barbara feedback op mijn designkeuzes. Ze keek onder andere naar d
 <img width="1440" height="769" alt="Scherm­afbeelding 2026-10-08 om 22 32 59" src="https://github.com/user-attachments/assets/247c5725-609f-4612-9e8e-02bd11f74645" />
 <img width="1440" height="769" alt="Scherm­afbeelding 2026-10-08 om 22 33 35" src="https://github.com/user-attachments/assets/64361e8f-a551-4bf8-8b6c-e32c73eb700f" />
 
-## Woensdag 30 september
+</details> 
+
+<details> 
+<summary><strong> Woensdag 30 september </strong></summary>
 
 ### CHECK-OUT
 
@@ -208,11 +215,16 @@ Daarnaast gaf Barbara feedback op mijn designkeuzes. Ze keek onder andere naar d
 3. Met welke beperking rekening houden vind je het meest lastig? Vind je dat je beperkt wordt in wat je kunt ontwerpen?
    Of heb je al manieren gevonden om vanuit een solide basis - die voor iedereen toegankelijk is - allemaal leuke en mooie extra's toe te voegen als je bezoekers dat goed vinden? -> Ik vind het persoonlijk het lastigst om rekening te houden met een visuele beperking. Vooral bij het ontwerpen van een visueel aantrekkelijke website denk je snel vanuit kleur, afbeeldingen, animaties en andere visuele elementen. Je moet er dan rekening mee houden dat niet iedereen deze elementen op dezelfde manier kan waarnemen. Ik vind wel dat toegankelijkheid je soms beperkt in wat je kunt ontwerpen, omdat je bepaalde ontwerpkeuzes niet zomaar kunt maken. Tegelijkertijd denk ik dat het je ook kan uitdagen om creatiever na te denken over een ontwerp. Je kunt bijvoorbeeld eerst een goede en toegankelijke basis maken en daar vervolgens extra visuele elementen, animaties of interacties aan toevoegen, zolang deze de toegankelijkheid niet in de weg staan. Zo blijft de website voor iedereen bruikbaar, maar kun je hem alsnog een eigen en creatieve uitstraling geven.
 
-## Dinsdag 29 september
+</details> 
+
+<details> 
+<summary><strong> Dinsdag 29 september </strong></summary>
 
 <img width="1264" height="629" alt="Scherm­afbeelding 2026-09-30 om 00 00 54" src="https://github.com/user-attachments/assets/8c3ac06d-ff79-4bcf-b8ec-ed2eba6c3832" />
 
 Vandaag heb ik mijn site verder afgemaakt. Ik heb onder andere een keuzemenu gemaakt met behulp van verschillende blokken en een grid. De blokken heb ik vormgegeven als gedachtenbubbels, zodat ze goed aansluiten bij de speelse en chaotische stijl van mijn website. Om de bubbels meer op echte gedachtenwolkjes te laten lijken, heb ik onder de grote cirkel twee kleinere cirkels geplaatst. Vervolgens heb ik met behulp van keyframes een animatie aan de bubbels toegevoegd, waardoor ze subtiel bewegen en de pagina wat meer dynamiek krijgt. Op deze manier voelt het menu minder statisch aan en past de interactie beter bij het concept van mijn site.
+
+</details> 
 
 ## Maandag 28 september
 
