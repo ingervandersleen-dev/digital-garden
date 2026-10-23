@@ -1,5 +1,24 @@
 /* ==========================================================================
-   MARK: Custom properties
+   Inhoud van mijn bestand
+   1. Custom properties
+   2. Fonts
+   3. Basis
+   4. Op elke pagina: skip-link en kleurmodus-knop
+   5. Achtergrond (lucht, zon en maan)
+   6. Titel en knoppen bovenaan
+   7. Tekstlinks
+   8. Gedachtewolkjes (beginjewandeling)
+   9. Kaarten (book en mindfulness)
+   10. Muziekpagina: playlist en songtekst-knop
+   11. Pop-ups bij de kaarten
+   12. Homepage: bos, vogel, pad en tekst
+   13. Homepage: cookie-knop en cookie-pop-up
+   14. Beweging uit
+   ========================================================================== */
+
+/* ==========================================================================
+   MARK: 1. Custom properties
+   light-dark(licht, donker)
    ========================================================================== */
 
 :root {
@@ -13,12 +32,30 @@
   --kleur-maan: light-dark(transparent, #dddcd6);
   --kleur-ster: light-dark(transparent, #fff8e9);
 
+  /* Gras, bomen en pad (homepage) */
+  --kleur-gras-licht: light-dark(#8caf79, #2c4a3a);
+  --kleur-gras-donker: light-dark(#557d58, #16291f);
+  --kleur-boom-blad: light-dark(#547b55, #1f3b2b);
+  --kleur-boom-stam: light-dark(#67523d, #2b2118);
+  --kleur-boom-blad-ver: light-dark(#6f9670, #162a20);
+  --kleur-den: light-dark(#3f6a4b, #17301f);
+  --kleur-pad: light-dark(#dac9aa, #5a5445);
+
+  /* Vogel */
+  --kleur-vogel: light-dark(#24372e, #000000);
+
   /* Tekst en interface */
   --kleur-tekst-park: light-dark(#24372e, #eef0e4);
+  --kleur-tekst-bubbel: light-dark(#24372e, #2d2b5e);
   --kleur-knop-achtergrond: light-dark(#fff8e9, #333a6b);
   --kleur-knop-tekst: light-dark(#24372e, #f3ecd9);
   --kleur-knop-hover: light-dark(#f5bd6e, #4a5290);
-  --kleur-tekst-bubbel: light-dark(#24372e, #2d2b5e);
+
+  /* Cookie pop-up */
+  --kleur-cookie-pop: light-dark(#f5bd6e, #c9cce8);
+  --kleur-cookie-tekst: light-dark(#24372e, #0a1030);
+  --kleur-cookie-vlak: light-dark(#fff8e9, #2d2b5e);
+  --kleur-cookie-accent: light-dark(#547b55, #a6c99b);
 
   /* Lettertypes */
   --font-tekst: "Comic Relief", system-ui;
@@ -32,213 +69,9 @@
   --whitespace: 2rem;
   --whitespace-s: 1rem;
   --whitespace-xs: 0.5rem;
-}
 
-/* ==========================================================================
-   MARK: Fonts
-   ========================================================================== */
-
-@font-face {
-  font-family: "Comic Relief";
-  src: url(../type/ComicRelief-Regular.woff2);
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* ==========================================================================
-   MARK: Basis
-   ========================================================================== */
-
-html {
-  color-scheme: light dark;
-}
-
-html:has([value="light"]:checked) {
-  color-scheme: light;
-}
-
-html:has([value="dark"]:checked) {
-  color-scheme: dark;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-img,
-svg,
-video {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-body {
-  font-family: var(--font-tekst);
-  background-color: Canvas;
-  color: CanvasText;
-  margin: 0;
-}
-
-button,
-input,
-select,
-textarea {
-  font: inherit;
-}
-
-button,
-summary {
-  cursor: pointer;
-}
-
-nav a,
-dialog a {
-  color: var(--kleur-tekst-park);
-}
-
-nav a:hover,
-dialog a:hover {
-  color: var(--kleur-knop-hover);
-}
-
-a:focus-visible {
-  outline: 0.15rem dashed var(--kleur-knop-hover);
-  outline-offset: 0.2rem;
-}
-
-/* ==========================================================================
-   MARK: Skip link
-   Onzichtbaar totdat een toetsenbordgebruiker er met Tab op komt.
-   ========================================================================== */
-
-.skip-link {
-  position: absolute;
-  top: -3rem;
-  left: 0.5rem;
-  background: var(--kleur-knop-achtergrond);
-  color: var(--kleur-knop-tekst);
-  padding: 0.6em 1.2em;
-  border-radius: 0.25rem;
-  text-decoration: none;
-  z-index: 2000;
-  transition: top 0.2s ease-in-out;
-}
-
-.skip-link:focus {
-  top: 0.5rem;
-}
-
-/* ==========================================================================
-   MARK: Kleurmodus-knop
-   Eén klein knopje (<details>/<summary>) linksboven. Pas na een klik klapt
-   de pil met auto/Licht/Donker eronder open. De radiobuttons blijven in de
-   DOM, dus de gekozen modus blijft werken als het menu dicht is.
-   "body > header" i.p.v. gewoon "header", want .titel is óók een <header>.
-   ========================================================================== */
-
-body > header {
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  z-index: 1000;
-  margin: 0;
-}
-
-body > header details {
-  position: relative; /* de pil positioneert t.o.v. dit element */
-  width: fit-content;
-}
-
-body > header summary {
-  display: flex;
-  align-items: center;
-  gap: 0.4em;
-  padding: 0.5em 1em;
-  background: var(--kleur-knop-achtergrond);
-  color: var(--kleur-knop-tekst);
-  border-radius: var(--radius-knop);
-  font-size: 0.9rem;
-  list-style: none; /* haalt het standaard driehoekje weg */
-  transition: background-color 0.2s ease-in-out;
-}
-
-body > header summary::-webkit-details-marker {
-  display: none; /* hetzelfde voor Safari */
-}
-
-body > header summary::before {
-  content: "◐"; /* halve cirkel: licht en donker */
-}
-
-body > header summary:hover,
-body > header details[open] summary {
-  background: var(--kleur-knop-hover);
-}
-
-body > header summary:focus-visible {
-  outline: 0.15rem solid var(--kleur-knop-hover);
-  outline-offset: 0.15rem;
-}
-
-/* de pil zweeft onder de knop, zodat de pagina niet verschuift */
-body > header details[open] form {
-  position: absolute;
-  top: calc(100% + 0.5rem);
-  left: 0;
-}
-
-fieldset {
-  border: none;
-  display: flex;
-  gap: 0.3rem;
-  padding: 0.3rem;
-  margin: 0;
-  width: fit-content;
-  background: var(--kleur-wolk);
-  border-radius: var(--radius-knop);
-}
-
-fieldset legend {
-  /* Visueel verborgen, maar nog voorleesbaar voor schermlezers */
-  position: absolute;
-  left: -9999em;
-}
-
-fieldset label {
-  padding: 0.4em 1em;
-  border-radius: var(--radius-knop);
-  cursor: pointer;
-  font-size: 0.9rem;
-  transition: background-color 0.2s ease-in-out;
-}
-
-fieldset input[type="radio"] {
-  /* Het bolletje zelf verbergen, wel toetsenbord-toegankelijk houden */
-  position: absolute;
-  opacity: 0;
-  width: 1px;
-  height: 1px;
-}
-
-fieldset label:has(input:checked) {
-  background: var(--kleur-knop-achtergrond);
-  font-weight: bold;
-}
-
-fieldset label:has(input:focus-visible) {
-  outline: 0.15rem solid var(--kleur-knop-hover);
-  outline-offset: 0.15rem;
-}
-
-/* ==========================================================================
-   MARK: Park (achtergrond voor alle pagina's)
-   ========================================================================== */
-
-.park {
-  background:
+  /* Wolken en sterren, wordt gebruikt op elke pagina */
+  --wolken-en-sterren:
     /* Wolken */
     radial-gradient(
       ellipse 4rem 1.1rem at 14% 23%,
@@ -295,46 +128,241 @@ fieldset label:has(input:focus-visible) {
       circle at 95% 27%,
       var(--kleur-ster) 0 0.12rem,
       transparent 0.2rem
-    ),
-    /* Lucht */
+    );
+}
+
+/* ==========================================================================
+   MARK: 2. Fonts
+   ========================================================================== */
+
+@font-face {
+  font-family: "Comic Relief";
+  src: url(../type/ComicRelief-Regular.woff2);
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ==========================================================================
+   MARK: 3. Basis
+   ========================================================================== */
+
+html {
+  color-scheme: light dark;
+}
+
+html:has([value="light"]:checked) {
+  color-scheme: light;
+}
+
+html:has([value="dark"]:checked) {
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: var(--font-tekst);
+  background-color: Canvas;
+  color: CanvasText;
+  margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+summary {
+  cursor: pointer;
+}
+
+a:focus-visible {
+  outline: 0.15rem dashed var(--kleur-knop-hover);
+  outline-offset: 0.2rem;
+}
+
+/* ==========================================================================
+   MARK: 4. Op elke pagina: skip-link en kleurmodus-knop
+   ========================================================================== */
+
+/* Skip-link: onzichtbaar totdat een toetsenbordgebruiker er met Tab op komt. */
+a[href="#main-content"] {
+  position: absolute;
+  top: -3rem;
+  left: 0.5rem;
+  background: var(--kleur-knop-achtergrond);
+  color: var(--kleur-knop-tekst);
+  padding: 0.6em 1.2em;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  z-index: 2000;
+  transition: top 0.2s ease-in-out;
+}
+
+a[href="#main-content"]:focus {
+  top: 0.5rem;
+}
+
+/* Kleurmodus-knop: één klein knopje (<details>/<summary>) linksboven. Pas na
+   een klik klapt de knop met auto/light/dark eronder open. De buttons
+   blijven werken als het menu dicht is.
+   "body > header" i.p.v. gewoon "header", want de titel is óók een <header>.
+   fixed: want de knop moet altijd bereikbaar blijven, ook tijdens het scrollen. */
+body > header {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000;
+  margin: 0;
+}
+
+body > header details {
+  position: relative;
+  width: fit-content;
+}
+
+body > header summary {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.5em 1em;
+  background: var(--kleur-knop-achtergrond);
+  color: var(--kleur-knop-tekst);
+  border-radius: var(--radius-knop);
+  font-size: 0.9rem;
+  list-style: none; /* dit haalt dat standaard driehoekje weg */
+  transition: background-color 0.2s ease-in-out;
+}
+
+body > header summary::-webkit-details-marker {
+  display: none; /* hetzelfde voor Safari */
+}
+
+body > header summary::before {
+  content: "◐"; /* halve cirkel: licht en donker */
+}
+
+body > header summary:hover,
+body > header details[open] summary {
+  background: var(--kleur-knop-hover);
+}
+
+body > header summary:focus-visible {
+  outline: 0.15rem solid var(--kleur-knop-hover);
+  outline-offset: 0.15rem;
+}
+
+/* de auto/light/dark zweeft onder de knop, zodat de pagina niet verschuift */
+body > header details[open] form {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  gap: 0.3rem;
+  padding: 0.3rem;
+  margin: 0;
+  width: fit-content;
+  background: var(--kleur-wolk);
+  border-radius: var(--radius-knop);
+}
+
+fieldset legend {
+  /* Verborgen, maar nog voorleesbaar voor schermlezers */
+  position: absolute;
+  left: -9999em;
+}
+
+fieldset label {
+  padding: 0.4em 1em;
+  border-radius: var(--radius-knop);
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+fieldset input[type="radio"] {
+  /* Het bolletje zelf verbergen, wel toetsenbord toegankelijk */
+  position: absolute;
+  opacity: 0;
+  width: 0.0625rem;
+  height: 0.0625rem;
+}
+
+fieldset label:has(input:checked) {
+  background: var(--kleur-knop-achtergrond);
+  font-weight: bold;
+}
+
+fieldset label:has(input:focus-visible) {
+  outline: 0.15rem solid var(--kleur-knop-hover);
+  outline-offset: 0.15rem;
+}
+
+/* ==========================================================================
+   MARK: 5. Achtergrond (lucht, zon en maan)
+   Elke pagina heeft één <section> direct in <main>: dat is het "park".
+   ========================================================================== */
+
+main > section {
+  background:
+    var(--wolken-en-sterren),
     linear-gradient(
-        to bottom,
-        var(--kleur-lucht-boven) 0%,
-        var(--kleur-lucht-horizon) 80%
-      );
+      to bottom,
+      var(--kleur-lucht-boven) 0%,
+      var(--kleur-lucht-horizon) 80%
+    );
   color: var(--kleur-tekst-park);
+  isolation: isolate; /* nodig zodat zon en maan achter de inhoud blijven */
   min-height: 100svh;
   overflow: hidden;
   position: relative;
-  width: 100%;
 }
 
 @media (min-width: 37.5em) {
-  .park {
+  main > section {
     min-height: 100vh;
   }
 }
 
-/* Zon en maan
-   Allebei staan ze op dezelfde plek. Door de kleuren (zon: licht, maan: donker)
-   is steeds maar één van de twee zichtbaar. */
-
-.zon,
-.maan {
+/* Zon en maan staan op dezelfde plek. Door de kleuren (zon: licht, maan:
+   donker) is steeds maar één van de twee zichtbaar. */
+main > section::before,
+main > section::after {
+  content: "";
   left: 88%;
   position: absolute;
   top: 12%;
-  transform: translate(-50%, -50%);
+  translate: -50% -50%;
+  z-index: -1;
 }
 
-.zon {
+main > section::before {
   aspect-ratio: 1;
   background: var(--kleur-zon);
   border-radius: var(--radius-rond);
   width: 5rem;
 }
 
-.maan {
+main > section::after {
   aspect-ratio: 500 / 596;
   background: var(--kleur-maan);
   -webkit-mask: url(../Maan1.png) center / contain no-repeat;
@@ -343,33 +371,26 @@ fieldset label:has(input:focus-visible) {
 }
 
 /* ==========================================================================
-   MARK: Titel + knoppen (Home / Terug)
-   De titel neemt ruimte in de flow in. De knoppen staan linksboven, onder de
-   Kleurmodus-knop, en scrollen mee met de pagina.
+   MARK: 6. Titel en knoppen bovenaan
+   De knoppen (nav) staan in dezelfde grid als de titel: op een smal scherm
+   boven de titel, op een breed scherm links ervan.
    ========================================================================== */
 
-.titel {
-  padding-top: 11rem; /* ruimte voor de Kleurmodus-knop en de knoppen eronder */
+main > section > header {
+  display: grid;
+  justify-items: center;
+  padding: 4rem var(--whitespace) 0;
   text-align: center;
-  width: 90%;
-  margin-inline: auto;
 }
 
-/* op een breed scherm staat de titel naast de knoppen, dus minder ruimte nodig */
-@media (min-width: 75em) {
-  .titel {
-    padding-top: 3rem;
-  }
-}
-
-.titel p {
+main > section > header p {
   font-size: 0.8rem;
   letter-spacing: 0.15rem;
   margin: 0;
   text-transform: uppercase;
 }
 
-.titel h1 {
+main > section > header h1 {
   font-family: var(--font-titel);
   font-size: clamp(2.2rem, 8vw, 5.5rem);
   font-weight: normal;
@@ -377,28 +398,27 @@ fieldset label:has(input:focus-visible) {
   margin: 0.5rem 0;
 }
 
-.titel em {
+/* de tweede regel van de titel staat op een nieuwe regel */
+main > section > header h1 em {
+  display: block;
   font-weight: normal;
 }
 
-/* de knoppen: linksboven, net onder de Kleurmodus-knop (die staat op top: 1rem) */
-.titel nav {
-  position: absolute;
-  top: 4rem;
-  left: 1rem;
+main > section > header nav {
+  justify-self: start;
 }
 
-.titel nav ul {
+main > section > header nav ul {
   display: flex;
   flex-direction: column; /* onder elkaar */
   align-items: flex-start;
   gap: var(--whitespace-xs);
-  padding: 0;
-  margin: 0;
   list-style: none;
+  margin: 0 0 var(--whitespace-s);
+  padding: 0;
 }
 
-.titel nav a {
+main > section > header nav a {
   display: inline-block;
   padding: 0.5em 1.2em;
   background: var(--kleur-knop-achtergrond);
@@ -409,72 +429,117 @@ fieldset label:has(input:focus-visible) {
   transition: background-color 0.2s ease-in-out;
 }
 
-.titel nav a:hover {
+main > section > header nav a:hover {
   background: var(--kleur-knop-hover);
   color: var(--kleur-knop-tekst);
 }
 
-/* pijltje voor de eerste knop; het deel na de / is de tekst voor schermlezers (leeg) */
-.titel nav li:first-child a::before {
+/* pijltje voor de eerste knop; het deel na de / is de tekst voor
+   schermlezers. */
+main > section > header nav li:first-child a::before {
+  content: "← ";
   content: "← " / "";
 }
 
+/* Brede schermen: knoppen links, titel in het midden */
+@media (min-width: 75em) {
+  main > section > header {
+    align-items: start;
+    grid-template-columns: 1fr auto 1fr;
+  }
+
+  main > section > header > p,
+  main > section > header > h1 {
+    grid-column: 2;
+  }
+
+  main > section > header nav {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+}
+
+/* De korte tekst onder de titel (muziek en mindfulness) */
+main > section > header + p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: var(--whitespace) auto 0;
+  max-width: 35rem;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
 /* ==========================================================================
-   MARK: Wandelpagina: gedachtewolkjes (Books / Music / Mindfulness / Activities)
+   MARK: 7. Tekstlinks
+   Geen kleurwissel bij hover maar de onderstreping wordt dikker.
    ========================================================================== */
 
-.container {
+main > section > header + p a,
+main > dialog a,
+body > dialog a {
+  color: inherit;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.2em;
+  transition: text-decoration-thickness 0.2s ease-in-out;
+}
+
+main > section > header + p a:hover,
+main > dialog a:hover,
+body > dialog a:hover {
+  text-decoration-thickness: 0.2em;
+}
+
+/* ==========================================================================
+   MARK: 8. Gedachtewolkjes (beginjewandeling)
+   ========================================================================== */
+
+main > section > ul:has(a) {
   display: grid;
+  gap: 4rem 2rem;
+  grid-template-columns: minmax(0, 1fr);
   justify-content: center;
-  grid-template-columns: 1fr;
-  gap: 4rem 3rem;
+  list-style: none;
+  margin: 4rem auto 6rem;
   max-width: 20rem;
-  margin: 4rem auto 0;
+  padding: 0 var(--whitespace-s);
 }
 
-/* Vanaf hier gaan de blokken 2x2 */
+/* Vanaf hier gaan de wolkjes 2x2 */
 @media (min-width: 26em) {
-  .container {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 24rem;
+  main > section > ul:has(a) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 28rem;
   }
 }
 
-/* Op een breed scherm gaan ze alle 4 naast elkaar */
-@media (min-width: 43.75em) {
-  .container {
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 36rem;
+/* Op een breed scherm staan ze alle 4 naast elkaar */
+@media (min-width: 60em) {
+  main > section > ul:has(a) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    max-width: 70rem;
   }
 }
 
-.blok1,
-.blok2,
-.blok3,
-.blok4 {
-  width: auto;
-  aspect-ratio: 1 / 1;
+main > section > ul:has(a) a {
   align-items: center;
-  justify-content: center;
-  display: flex;
-  font-size: clamp(0.9rem, 2.5vw, 1.3rem);
-  text-align: center;
-  padding: 2.5rem;
+  animation: zweven 4s ease-in-out infinite;
+  aspect-ratio: 1 / 1;
   background-color: var(--kleur-wolk);
   border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
-  position: relative;
-  font-family: var(--font-titel);
-  text-decoration: none;
   color: var(--kleur-tekst-bubbel);
-  cursor: pointer;
+  display: flex;
+  font-family: var(--font-titel);
+  font-size: clamp(0.9rem, 1.6vw, 1.3rem);
+  justify-content: center;
+  padding: 12%; /* procenten: het wolkje behoudt zijn verhoudingen op elk scherm */
+  position: relative;
+  text-align: center;
+  text-decoration: none;
   transition: transform 0.3s ease-in-out;
 }
 
-/* De twee kleine "gedachte-bubbeltjes" onder elke wolk */
-.blok1::before,
-.blok2::before,
-.blok3::before,
-.blok4::before {
+/* De twee kleine "gedachte-bubbeltjes" onder elk wolkje */
+main > section > ul:has(a) a::before {
   content: "";
   position: absolute;
   bottom: -1.2rem;
@@ -485,10 +550,7 @@ fieldset label:has(input:focus-visible) {
   border-radius: var(--radius-rond);
 }
 
-.blok1::after,
-.blok2::after,
-.blok3::after,
-.blok4::after {
+main > section > ul:has(a) a::after {
   content: "";
   position: absolute;
   bottom: -2rem;
@@ -499,126 +561,190 @@ fieldset label:has(input:focus-visible) {
   border-radius: var(--radius-rond);
 }
 
-.blok1:hover,
-.blok2:hover,
-.blok3:hover,
-.blok4:hover {
+main > section > ul:has(a) a:hover {
   transform: translateY(-0.5rem) scale(1.05);
 }
 
 /* Zachte zweefbeweging, met een kleine vertraging per wolkje zodat ze niet
-   allemaal precies gelijk bewegen */
+   allemaal precies gelijk bewegen. Het gebruikt "translate" (en niet
+   "transform"), zodat de hover-beweging er gewoon bovenop werkt. */
 @keyframes zweven {
   0%,
   100% {
-    transform: translateY(0);
+    translate: 0 0;
   }
   50% {
-    transform: translateY(-0.4rem);
+    translate: 0 -0.4rem;
   }
 }
 
-.blok1 {
-  animation: zweven 4s ease-in-out infinite;
+main > section > ul:has(a) li:nth-child(2) a {
+  animation-delay: 0.3s;
+  animation-duration: 4.5s;
 }
 
-.blok2 {
-  animation: zweven 4.5s ease-in-out infinite 0.3s;
+main > section > ul:has(a) li:nth-child(3) a {
+  animation-delay: 0.6s;
 }
 
-.blok3 {
-  animation: zweven 4s ease-in-out infinite 0.6s;
-}
-
-.blok4 {
-  animation: zweven 4.5s ease-in-out infinite 0.9s;
+main > section > ul:has(a) li:nth-child(4) a {
+  animation-delay: 0.9s;
+  animation-duration: 4.5s;
 }
 
 /* ==========================================================================
-   MARK: Boekenpagina: kaarten
+   MARK: 9. Kaarten (book en mindfulness)
+   Elke kaart is een <li> met een <button> die een <dialog> opent via command.
    ========================================================================== */
 
-.boeken {
+main > section > ul:has(button) {
   display: grid;
   gap: var(--whitespace);
   grid-template-columns: minmax(0, 1fr); /* smal: onder elkaar */
+  list-style: none;
+  margin: 0;
   padding: var(--whitespace);
-  position: relative; /* boven de zon en maan, die ook gepositioneerd zijn */
 }
 
 /* Middelgroot: 2 x 2 */
 @media (min-width: 30em) {
-  .boeken {
+  main > section > ul:has(button) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 /* Desktop: vier naast elkaar */
 @media (min-width: 60em) {
-  .boeken {
+  main > section > ul:has(button) {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  /* Weinig kaarten (mindfulness): twee blokken, in het midden */
+  main > section > ul:has(button):not(:has(li:nth-child(3))) {
+    grid-template-columns: repeat(2, minmax(0, 18rem));
+    justify-content: center;
   }
 }
 
-article {
+main > section > ul:has(button) > li {
   background: var(--kleur-wolk);
   border-radius: 1rem;
-  padding: var(--whitespace-s);
   min-width: 0;
+  padding: var(--whitespace-s);
 }
 
-article img {
+main > section > ul:has(button) img {
   border-radius: 0.5rem;
   width: 100%;
 }
 
-/* ==========================================================================
-   MARK: Boekenpagina: klikbare kaart + pop-up
-   De hele kaart is een <button> die een <dialog> opent via command.
-   ========================================================================== */
+/* Weinig kaarten (mindfulness): elke tekening krijgt hetzelfde vierkante vak */
+main > section > ul:has(button):not(:has(li:nth-child(3))) img {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
 
-.boek-kaart {
-  display: block;
-  width: 100%;
+main > section > ul:has(button) button {
   background: none;
   border: none;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-  color: inherit;
   border-radius: 0.5rem;
+  color: inherit;
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: left;
   transition: transform 0.2s ease-in-out;
+  width: 100%;
 }
 
-.boek-kaart:hover,
-.boek-kaart:focus-visible {
+main > section > ul:has(button) button:hover,
+main > section > ul:has(button) button:focus-visible {
   transform: translateY(-0.2rem);
 }
 
-.boek-kaart:focus-visible {
+main > section > ul:has(button) button:focus-visible {
   outline: 0.15rem dashed var(--kleur-knop-hover);
   outline-offset: 0.3rem;
 }
 
-/* Elke boek-dialog heeft dezelfde opmaak.
-   Smal scherm = alles onder elkaar (titel, plaatje, tekst, link, knop). */
+/* ==========================================================================
+   MARK: 10. Muziekpagina: playlist en songtekst-knop
+   ========================================================================== */
 
-dialog.boek-modal {
-  max-width: 24rem;
-  width: 90%;
-  padding: 1.5rem;
-  border: none;
-  border-radius: 1.5rem;
-  background: var(--kleur-wolk);
-  color: var(--kleur-tekst-bubbel);
+main > section > section:has(> iframe) {
+  display: flex;
+  justify-content: center;
+  padding: var(--whitespace) var(--whitespace-s);
 }
 
-dialog.boek-modal::backdrop {
+/* De (verborgen) kop van de playlist: wel voor schermlezers, niet zichtbaar */
+main > section > section:has(> iframe) > h2 {
+  block-size: 0.0625rem;
+  clip-path: inset(50%);
+  inline-size: 0.0625rem;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+
+main > section > section > iframe {
+  border: none;
+  border-radius: 0.75rem;
+  height: 22rem;
+  max-width: 35rem;
+  width: 100%;
+}
+
+/* De knop onder de playlist */
+main > section > a {
+  background: var(--kleur-knop-achtergrond);
+  border-radius: var(--radius-knop);
+  color: var(--kleur-knop-tekst);
+  display: block;
+  font-family: var(--font-titel);
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  margin: var(--whitespace-s) auto 3rem;
+  max-width: calc(100% - 2rem);
+  padding: 1.2rem 3rem;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
+  width: fit-content;
+}
+
+main > section > a::after {
+  content: " →";
+  content: " →" / "";
+}
+
+main > section > a:hover {
+  background: var(--kleur-knop-hover);
+  transform: scale(1.05);
+}
+
+/* ==========================================================================
+   MARK: 11. Pop-ups bij de kaarten
+   Elke pop-up heeft dezelfde opmaak. Smal scherm: alles onder elkaar (titel,
+   plaatje, tekst, link, knop).
+   ========================================================================== */
+
+main > dialog {
+  background: var(--kleur-wolk);
+  border: none;
+  border-radius: 1.5rem;
+  color: var(--kleur-tekst-bubbel);
+  max-width: 24rem;
+  padding: 1.5rem;
+  width: 90%;
+}
+
+main > dialog::backdrop {
   background: rgb(0 0 0 / 40%);
 }
 
-dialog.boek-modal h2 {
-  grid-area: titel;
+main > dialog h2 {
   font-family: var(--font-titel);
   font-size: clamp(1.8rem, 5vw, 2.8rem);
   font-weight: normal;
@@ -627,234 +753,627 @@ dialog.boek-modal h2 {
   text-align: center;
 }
 
-dialog.boek-modal img {
+main > dialog img {
   border-radius: 0.5rem;
   margin-bottom: var(--whitespace-s);
 }
 
-dialog.boek-modal p {
+main > dialog p {
   line-height: 1.5;
 }
 
-dialog.boek-modal .boek-link {
+main > dialog a {
   display: inline-block;
-  margin-top: 0.5rem;
   font-weight: bold;
-  color: inherit;
+  margin-top: 0.5rem;
 }
 
-dialog.boek-modal .boek-link:hover {
-  color: var(--kleur-knop-hover);
+main > dialog a::after {
+  content: " →";
+  content: " →" / "";
 }
 
-dialog.boek-modal form {
+main > dialog form {
   margin: 1.5rem 0 0;
   text-align: right;
 }
 
-dialog.boek-modal form button {
+main > dialog form button {
   background: var(--kleur-knop-achtergrond);
-  color: var(--kleur-knop-tekst);
   border: none;
   border-radius: var(--radius-knop);
+  color: var(--kleur-knop-tekst);
   padding: 0.5em 1.4em;
 }
 
-dialog.boek-modal form button:hover {
+main > dialog form button:hover {
   background: var(--kleur-knop-hover);
 }
 
 /* Breder scherm: plaatje links, tekst rechts.
    [open] is nodig, anders overschrijft het display: grid het standaard
    "display: none" van een gesloten dialog. */
-
 @media (min-width: 40em) {
-  dialog.boek-modal {
+  main > dialog {
     max-width: 40rem;
   }
 
-  dialog.boek-modal[open] {
+  main > dialog[open] {
+    align-items: start;
+    column-gap: var(--whitespace);
     display: grid;
-    grid-template-columns: 12rem 1fr;
-    grid-template-rows: auto auto auto 1fr;
     grid-template-areas:
       "titel   titel"
       "plaatje tekst"
       "plaatje link"
       "plaatje sluiten";
-    column-gap: var(--whitespace);
-    align-items: start;
+    grid-template-columns: 12rem 1fr;
+    grid-template-rows: auto auto auto 1fr;
   }
 
-  dialog.boek-modal h2 {
+  main > dialog h2 {
     grid-area: titel;
   }
 
-  dialog.boek-modal img {
+  main > dialog img {
     grid-area: plaatje;
     margin-bottom: 0;
   }
 
-  dialog.boek-modal p {
+  main > dialog p {
     grid-area: tekst;
     margin-top: 0;
   }
 
-  dialog.boek-modal .boek-link {
+  main > dialog a {
     grid-area: link;
     justify-self: start;
   }
 
-  dialog.boek-modal form {
-    grid-area: sluiten;
+  main > dialog form {
     align-self: end;
+    grid-area: sluiten;
   }
 }
 
 /* ==========================================================================
-   MARK: Beweging uit voor mensen die dat in hun systeem hebben ingesteld
+   MARK: 12. Homepage: bos, vogel, pad en tekst
+   De homepage herkennen we aan het bos in de section (.bos).
+   De bomen, het bos en de vogel zijn decoratie: die elementen zijn er alleen
+   voor de styling, dus daarom wél classes, span en div.
    ========================================================================== */
 
-@media (prefers-reduced-motion: reduce) {
-  .blok1,
-  .blok2,
-  .blok3,
-  .blok4 {
-    animation: none;
-  }
-
-  .blok1,
-  .blok2,
-  .blok3,
-  .blok4,
-  .boek-kaart {
-    transition: none;
-  }
-
-  .blok1:hover,
-  .blok2:hover,
-  .blok3:hover,
-  .blok4:hover,
-  .boek-kaart:hover {
-    transform: none;
-  }
+main > section:has(> .bos) {
+  background:
+    var(--wolken-en-sterren),
+    linear-gradient(
+      to bottom,
+      var(--kleur-lucht-boven) 0%,
+      var(--kleur-lucht-horizon) 48%,
+      var(--kleur-gras-licht) 48%,
+      var(--kleur-gras-donker) 100%
+    );
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding-bottom: 10rem; /* ruimte onder de tekst, boven de onderrand */
 }
 
-/* MARK: Spotify playlist */
-
-.playlist {
-  display: flex;
-  justify-content: center;
-  padding: 2rem 1rem;
+/* De titel en de tekst liggen boven het bos (z-index werkt op grid-items) */
+main > section:has(> .bos) > header,
+main > section:has(> .bos) > section {
+  z-index: 1;
 }
 
-.playlist iframe {
-  width: 100%;
-  max-width: 35rem;
-  height: 352px;
-  border: none;
-  border-radius: 12px;
+main > section:has(> .bos) > section {
+  align-self: end;
+  display: grid;
+  justify-items: center;
+  text-align: center;
 }
 
-/* MARK: Knop naar de songtekst */
-
-#songtekst-knop {
-  display: block;
-  width: fit-content;
-  max-width: calc(100% - 2rem);
-  margin: 1rem auto 3rem;
-  padding: 1.2rem 3rem;
-
+main > section:has(> .bos) > section h2 {
   background: var(--kleur-knop-achtergrond);
-  color: var(--kleur-knop-tekst);
   border-radius: var(--radius-knop);
-
+  color: var(--kleur-knop-tekst);
+  display: inline-block;
   font-family: var(--font-titel);
-  font-size: clamp(1.3rem, 3vw, 2rem);
-  text-align: center;
+  font-size: clamp(1.2rem, 4vw, 1.6rem);
+  font-weight: normal;
+  margin: 0 0 var(--whitespace-s);
+  padding: 0.3em 1em;
+}
+
+main > section:has(> .bos) > section a {
+  background: var(--kleur-knop-achtergrond);
+  border-radius: var(--radius-knop);
+  color: var(--kleur-knop-tekst);
+  display: inline-block;
+  font-size: clamp(1.4rem, 4vw, 1.8rem);
+  padding: 0.7em 1.2em;
   text-decoration: none;
-
-  transition:
-    transform 0.2s ease-in-out,
-    background-color 0.2s ease-in-out;
 }
 
-#songtekst-knop:hover {
+main > section:has(> .bos) > section a:hover {
   background: var(--kleur-knop-hover);
-  transform: scale(1.05);
 }
 
-#songtekst-knop:focus-visible {
-  outline: 0.15rem dashed var(--kleur-knop-hover);
-  outline-offset: 0.3rem;
+/* MARK: Vogel */
+
+.vogel {
+  animation: vlieg 22s linear infinite;
+  font-size: 1rem;
+  height: 1em;
+  left: 0;
+  position: absolute;
+  top: 40%;
+  width: 2.6em;
 }
 
-/* MARK: Info tekst music pagina */
+.vogel::before,
+.vogel::after {
+  border-top: 0.2em solid var(--kleur-vogel);
+  content: "";
+  height: 0.6em;
+  position: absolute;
+  top: 0;
+  width: 1.4em;
+}
 
-.muziek-info {
-  max-width: 35rem;
-  margin: 3rem auto 0.2rem;
-  padding: 0 1.5rem;
+.vogel::before {
+  animation: klap-links 0.5s ease-in-out infinite alternate;
+  border-radius: 100% 0 0 0;
+  left: 0;
+  transform-origin: right top;
+}
+
+.vogel::after {
+  animation: klap-rechts 0.5s ease-in-out infinite alternate;
+  border-radius: 0 100% 0 0;
+  right: 0;
+  transform-origin: left top;
+}
+
+/* Van links naar rechts over het scherm, met een lichte golfbeweging */
+@keyframes vlieg {
+  0% {
+    transform: translate(-4rem, 1rem);
+  }
+  30% {
+    transform: translate(30vw, -1.5rem);
+  }
+  60% {
+    transform: translate(65vw, 1rem);
+  }
+  100% {
+    transform: translate(105vw, -2rem);
+  }
+}
+
+/* De vleugels klappen omhoog en omlaag */
+@keyframes klap-links {
+  from {
+    transform: rotate(-5deg);
+  }
+  to {
+    transform: rotate(48deg);
+  }
+}
+
+@keyframes klap-rechts {
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(-48deg);
+  }
+}
+
+/* MARK: Bos
+   Dezelfde vorm (stam + bladeren/den) wordt tientallen keren hertekend met
+   andere positie/grootte via --x, --y en --schaal. Bos-positionering en
+   vogel-animatie opgezet met hulp van Claude (Anthropic), sept 2026. */
+
+.bos {
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.boom {
+  --blad: var(--kleur-boom-blad);
+  bottom: var(--y);
+  height: 11rem;
+  left: var(--x);
+  position: absolute;
+  transform: translateX(-50%) scale(var(--schaal));
+  transform-origin: bottom center;
+  width: 6rem;
+}
+
+/* Stam */
+.boom::before {
+  background: var(--kleur-boom-stam);
+  bottom: 0;
+  content: "";
+  height: 5rem;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 0.8rem;
+}
+
+/* Bladeren (loofboom) */
+.boom::after {
+  background: var(--blad);
+  border-radius: var(--radius-rond);
+  content: "";
+  height: 7rem;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* Den */
+.den {
+  --blad: var(--kleur-den);
+}
+
+.den::after {
+  border-radius: 0;
+  clip-path: polygon(
+    50% 0%,
+    78% 30%,
+    64% 30%,
+    90% 60%,
+    72% 60%,
+    100% 88%,
+    0% 88%,
+    28% 60%,
+    10% 60%,
+    36% 30%,
+    22% 30%
+  );
+  height: 10rem;
+}
+
+/* Bomen ver weg: kleiner en in een andere kleur (staat onder .den, dus wint) */
+.ver {
+  --blad: var(--kleur-boom-blad-ver);
+}
+
+/* Positie (--x), afstand tot de onderkant (--y) en grootte (--schaal).
+   Bomen ver weg staan bovenaan de grond en zijn klein, bomen dichtbij staan
+   lager en zijn groot. Het pad in het midden houden we vrij.
+   Een boom die later in de HTML staat, ligt over eerdere heen: zet bomen die
+   verder weg staan dus eerder in de HTML. */
+.boom:nth-child(1) {
+  --x: 4%;
+  --y: 47%;
+  --schaal: 0.5;
+}
+.boom:nth-child(2) {
+  --x: 95%;
+  --y: 47%;
+  --schaal: 0.7;
+}
+.boom:nth-child(3) {
+  --x: 13%;
+  --y: 48%;
+  --schaal: 0.55;
+}
+.boom:nth-child(4) {
+  --x: 85%;
+  --y: 48%;
+  --schaal: 0.6;
+}
+.boom:nth-child(5) {
+  --x: 22%;
+  --y: 46%;
+  --schaal: 0.5;
+}
+.boom:nth-child(6) {
+  --x: 76%;
+  --y: 47%;
+  --schaal: 0.5;
+}
+.boom:nth-child(7) {
+  --x: 8%;
+  --y: 36%;
+  --schaal: 0.85;
+}
+.boom:nth-child(8) {
+  --x: 90%;
+  --y: 34%;
+  --schaal: 0.9;
+}
+.boom:nth-child(9) {
+  --x: 20%;
+  --y: 32%;
+  --schaal: 0.8;
+}
+.boom:nth-child(10) {
+  --x: 79%;
+  --y: 30%;
+  --schaal: 0.8;
+}
+.boom:nth-child(11) {
+  --x: 3%;
+  --y: 20%;
+  --schaal: 1.25;
+}
+.boom:nth-child(12) {
+  --x: 96%;
+  --y: 17%;
+  --schaal: 1.3;
+}
+.boom:nth-child(13) {
+  --x: 22%;
+  --y: 8%;
+  --schaal: 1.15;
+}
+.boom:nth-child(14) {
+  --x: 81%;
+  --y: 29%;
+  --schaal: 1;
+}
+.boom:nth-child(15) {
+  --x: 6%;
+  --y: 2%;
+  --schaal: 1.6;
+}
+.boom:nth-child(16) {
+  --x: 87%;
+  --y: 0%;
+  --schaal: 1.7;
+}
+.boom:nth-child(17) {
+  --x: 30%;
+  --y: 47%;
+  --schaal: 0.5;
+}
+.boom:nth-child(18) {
+  --x: 70%;
+  --y: 22%;
+  --schaal: 1.05;
+}
+.boom:nth-child(19) {
+  --x: 30%;
+  --y: 25%;
+  --schaal: 1;
+}
+.boom:nth-child(20) {
+  --x: 68%;
+  --y: 47%;
+  --schaal: 0.5;
+}
+.boom:nth-child(21) {
+  --x: 38%;
+  --y: 47%;
+  --schaal: 0.45;
+}
+.boom:nth-child(22) {
+  --x: 62%;
+  --y: 47%;
+  --schaal: 0.45;
+}
+.boom:nth-child(23) {
+  --x: 40%;
+  --y: 38%;
+  --schaal: 0.7;
+}
+.boom:nth-child(24) {
+  --x: 61%;
+  --y: 36%;
+  --schaal: 0.75;
+}
+.boom:nth-child(25) {
+  --x: 35%;
+  --y: 14%;
+  --schaal: 1;
+}
+.boom:nth-child(26) {
+  --x: 66%;
+  --y: 8%;
+  --schaal: 1.15;
+}
+.boom:nth-child(27) {
+  --x: 14%;
+  --y: 26%;
+  --schaal: 0.95;
+}
+.boom:nth-child(28) {
+  --x: 77%;
+  --y: 10%;
+  --schaal: 1.2;
+}
+
+/* Op mobiel staan een paar bomen dichter bij het pad in de weg; die
+   verbergen we standaard (mobile-first) en tonen we weer op groter scherm. */
+.boom:nth-child(5),
+.boom:nth-child(6),
+.boom:nth-child(9),
+.boom:nth-child(10),
+.boom:nth-child(23),
+.boom:nth-child(24),
+.boom:nth-child(25),
+.boom:nth-child(26) {
+  display: none;
+}
+
+@media (min-width: 37.5em) {
+  .boom:nth-child(5),
+  .boom:nth-child(6),
+  .boom:nth-child(9),
+  .boom:nth-child(10),
+  .boom:nth-child(23),
+  .boom:nth-child(24),
+  .boom:nth-child(25),
+  .boom:nth-child(26) {
+    display: block;
+  }
+}
+
+/* MARK: Pad */
+
+.bos::before {
+  background: var(--kleur-pad);
+  bottom: 0;
+  clip-path: polygon(40% 0%, 60% 0%, 100% 100%, 0% 100%);
+  content: "";
+  height: 52vh;
+  left: calc(50% - 7.5rem);
+  position: absolute;
+  width: 15rem;
+}
+
+/* ==========================================================================
+   MARK: 13. Homepage: cookie-knop en cookie-pop-up
+   ========================================================================== */
+
+/* Cookie-knop: blijft altijd zichtbaar (fixed), ook tijdens het scrollen. */
+body > footer {
+  bottom: 1rem;
+  left: 1rem;
+  margin: 0;
+  position: fixed;
+  z-index: 1000;
+}
+
+body > footer button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+body > footer button img {
+  display: block;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+  width: 5rem;
+}
+
+body > footer button:hover img {
+  transform: scale(1.1) rotate(-4deg);
+}
+
+body > footer button:focus-visible {
+  border-radius: var(--radius-knop);
+  outline: 0.15rem solid var(--kleur-knop-hover);
+  outline-offset: 0.15rem;
+}
+
+/* Cookie-pop-up */
+body > dialog {
+  background: var(--kleur-cookie-pop);
+  border: none;
+  border-radius: 1.5rem;
+  color: var(--kleur-cookie-tekst);
+  max-width: 22rem;
+  padding: 2rem 1.5rem;
   text-align: center;
-  line-height: 1.7;
+  width: 90%;
 }
 
-.muziek-info a {
-  color: inherit;
+body > dialog::backdrop {
+  background: rgb(0 0 0 / 40%);
+}
+
+body > dialog > img {
+  margin: 0 auto 1rem;
+  width: 8rem;
+}
+
+body > dialog h2 {
+  font-family: var(--font-titel);
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+}
+
+body > dialog ul {
+  background: var(--kleur-cookie-vlak);
+  border-radius: 1rem;
+  color: var(--kleur-cookie-accent);
+  list-style: disc;
+  margin: 0 0 1rem;
+  padding: 1.2rem 1.5rem;
+  text-align: left;
+}
+
+body > dialog li + li {
+  margin-top: 0.8rem;
+}
+
+body > dialog li strong {
+  display: block;
   text-decoration: underline;
-  text-decoration-thickness: 0.08em;
-  text-underline-offset: 0.2em;
-  transition:
-    color 0.2s ease-in-out,
-    text-decoration-thickness 0.2s ease-in-out;
 }
 
-.muziek-info a:hover {
-  color: var(--kleur-knop-hover);
-  text-decoration-thickness: 0.15em;
+body > dialog > p {
+  font-size: 0.8rem;
+  margin: 0 0 1.5rem;
+  text-align: left;
 }
 
-.muziek-info a:focus-visible {
+body > dialog > p strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  text-decoration: underline;
+}
+
+body > dialog form {
+  margin: 0;
+}
+
+body > dialog form button {
+  background: var(--kleur-cookie-vlak);
+  border: none;
+  border-radius: var(--radius-knop);
+  color: var(--kleur-cookie-tekst);
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  transition: background-color 0.2s ease-in-out;
+}
+
+body > dialog form button:hover {
+  background: var(--kleur-cookie-accent);
+  color: var(--kleur-cookie-vlak);
+}
+
+body > dialog a:focus-visible,
+body > dialog button:focus-visible {
   outline: 0.15rem dashed var(--kleur-knop-hover);
   outline-offset: 0.2rem;
 }
 
-/* MARK: Mindfulness pagina- intro tekst  */
+/* ==========================================================================
+   MARK: 14. Beweging uit
+   Geen beweging voor mensen die dat in hun systeem hebben uitgezet.
+   ========================================================================== */
 
-.intro-mind {
-  max-width: 35rem;
-  margin: 0.5rem auto 0.1rem;
-  font-size: clamp(1rem, 3vw, 1rem);
-  padding: 0 1.5rem;
-  text-align: center;
-  line-height: 1.7;
-}
-
-.mindfulness-blokken {
-  display: grid;
-  color: var(--kleur-tekst-bubbel);
-  gap: var(--whitespace);
-  grid-template-columns: minmax(0, 1fr);
-  padding: var(--whitespace);
-  position: relative;
-}
-
-.mindfulness-blokken article img {
-  width: 100%;
-  aspect-ratio: 1 / 1; /* elk plaatje krijgt hetzelfde vierkante vak */
-  object-fit: contain; /* de tekening past erin zonder te vervormen */
-}
-
-/* Middelgroot: 2 x 2 */
-@media (min-width: 30em) {
-  .mindfulness-blokken {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+@media (prefers-reduced-motion: reduce) {
+  .vogel {
+    display: none;
   }
-}
 
-/* Desktop: vier naast elkaar */
-@media (min-width: 60em) {
-  .mindfulness-blokken {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  main > section > ul:has(a) a {
+    animation: none;
+    transition: none;
+  }
+
+  main > section > ul:has(a) a:hover,
+  main > section > ul:has(button) button:hover,
+  main > section > a:hover,
+  body > footer button:hover img {
+    transform: none;
+  }
+
+  main > section > ul:has(button) button,
+  main > section > a,
+  body > footer button img {
+    transition: none;
   }
 }

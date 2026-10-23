@@ -1,13 +1,17 @@
 <!doctype html>
-<html lang="nl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Inger van der Sleen" />
     <meta name="color-scheme" content="dark light" />
+    <meta
+      name="description"
+      content="Inger's Junk Drawer: a calm walk through a park with book recommendations, music and mindfulness exercises to help you stop overthinking."
+    />
 
-    <title>Inger's Junk Drawer</title>
-    <link rel="stylesheet" href="./assets/style/normal.css" />
+    <title>Inger's Junk Drawer — Overthinking everything</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
 
     <!-- Importeer het webring component, voeg jouw eigen domein toe in data-page -->
     <script
@@ -19,53 +23,37 @@
   </head>
 
   <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content">Skip to main content</a>
+
     <header>
       <details>
-        <summary>Kleurmodus</summary>
+        <summary>Color mode</summary>
         <form>
           <fieldset>
-            <legend>Kleurmodus</legend>
-            <label for="system-mode">
-              <input
-                type="radio"
-                id="system-mode"
-                name="color-scheme"
-                value="auto"
-                checked
-              />
+            <legend>Color mode</legend>
+            <label>
+              <input type="radio" name="color-scheme" value="auto" checked />
               auto
             </label>
-            <label for="light-mode">
-              <input
-                type="radio"
-                id="light-mode"
-                name="color-scheme"
-                value="light"
-              />
-              Licht
+            <label>
+              <input type="radio" name="color-scheme" value="light" />
+              light
             </label>
-            <label for="dark-mode">
-              <input
-                type="radio"
-                id="dark-mode"
-                name="color-scheme"
-                value="dark"
-              />
-              Donker
+            <label>
+              <input type="radio" name="color-scheme" value="dark" />
+              dark
             </label>
           </fieldset>
         </form>
       </details>
     </header>
 
-      <main id="main-content" tabindex="-1"></main>
-      <section class="park">
-        <span class="zon" aria-hidden="true"></span>
-        <span class="maan" aria-hidden="true"></span>
+    <main id="main-content" tabindex="-1">
+      <section>
+        <!-- Decoratie: de vogel en het bos hebben alleen een span/div en classes
+             nodig voor de styling (de bomen verschillen in positie, soort en afstand). -->
         <span class="vogel" aria-hidden="true"></span>
 
-        <!-- Bos-positionering opgezet met hulp van Claude (Anthropic), sept 2026 -->
         <div class="bos" aria-hidden="true">
           <span class="boom ver"></span>
           <span class="boom ver den"></span>
@@ -83,45 +71,41 @@
           <span class="boom den"></span>
           <span class="boom"></span>
           <span class="boom den"></span>
-          <span class="boom ver"></span> <!-- was het 17e: boom -->
-<span class="boom den"></span>
-<span class="boom"></span>     <!-- was het 19e: boom ver -->
+          <span class="boom ver"></span>
+          <span class="boom den"></span>
+          <span class="boom"></span>
           <span class="boom ver den"></span>
           <span class="boom ver den"></span>
-<span class="boom ver"></span>
-<span class="boom den"></span>
-<span class="boom"></span>
-<span class="boom den"></span>
-<span class="boom"></span>
-<span class="boom"></span>
-<span class="boom den"></span>
+          <span class="boom ver"></span>
+          <span class="boom den"></span>
+          <span class="boom"></span>
+          <span class="boom den"></span>
+          <span class="boom"></span>
+          <span class="boom"></span>
+          <span class="boom den"></span>
         </div>
 
-        <header class="titel">
+        <header>
           <p>inger's junk drawer</p>
-          <h1 id="park-titel">overthinking<br /><em>everything</em></h1>
+          <h1>overthinking <em>everything</em></h1>
         </header>
 
-        <section class="park-tekst">
-          <p>Ready to clear your head?</p>
+        <section>
+          <h2>Ready to clear your head?</h2>
           <a href="beginjewandeling.html">Start your walk</a>
         </section>
       </section>
     </main>
 
     <footer>
-      <nav>
-        <button commandfor="cookieModal" command="show-modal">
-          <img src="./assets/Cookiebutton.svg" alt="Allow cookies?" />
-        </button>
-      </nav>
+      <button commandfor="cookieModal" command="show-modal">
+        <img src="./assets/Cookiebutton.svg" alt="Allow cookies?" />
+      </button>
     </footer>
 
     <dialog id="cookieModal">
-      <div class="cookie-illustratie" aria-hidden="true">
-        <img src="../../assets/Cookiewolk.svg" alt="" />
-      </div>
-      <h2>WHICH EXTERNAL SYSTEMS ARE INVOLVED?</h2>
+      <img src="./assets/Cookiewolk.svg" alt="" />
+      <h2>Which external systems are involved?</h2>
 
       <ul>
         <li>
@@ -138,14 +122,14 @@
         </li>
       </ul>
 
-      <p class="transparantie">
+      <p>
         <strong>Transparency</strong>
         Everything else on this site was designed and built 100% by me. No
         sneaky ad networks, no commercial trackers, and no unnecessary cookies.
       </p>
 
       <form method="dialog">
-        <button>CLOSE</button>
+        <button>Close</button>
       </form>
     </dialog>
   </body>

@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Inger van der Sleen" />
     <meta name="color-scheme" content="dark light" />
+    <meta
+      name="description"
+      content="Two short mindfulness exercises to stop overthinking the past or the future: a breathing exercise and the five senses."
+    />
 
     <title>Inger's Junk Drawer — Mindfulness</title>
     <link rel="stylesheet" href="./assets/style/style.css" />
@@ -19,41 +23,25 @@
   </head>
 
   <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content">Skip to main content</a>
 
     <header>
       <details>
-        <summary>Kleurmodus</summary>
+        <summary>Color mode</summary>
         <form>
           <fieldset>
-            <legend>Kleurmodus</legend>
-            <label for="system-mode">
-              <input
-                type="radio"
-                id="system-mode"
-                name="color-scheme"
-                value="auto"
-                checked
-              />
+            <legend>Color mode</legend>
+            <label>
+              <input type="radio" name="color-scheme" value="auto" checked />
               auto
             </label>
-            <label for="light-mode">
-              <input
-                type="radio"
-                id="light-mode"
-                name="color-scheme"
-                value="light"
-              />
-              Licht
+            <label>
+              <input type="radio" name="color-scheme" value="light" />
+              light
             </label>
-            <label for="dark-mode">
-              <input
-                type="radio"
-                id="dark-mode"
-                name="color-scheme"
-                value="dark"
-              />
-              Donker
+            <label>
+              <input type="radio" name="color-scheme" value="dark" />
+              dark
             </label>
           </fieldset>
         </form>
@@ -61,53 +49,43 @@
     </header>
 
     <main id="main-content" tabindex="-1">
-      <section class="park">
-        <span class="zon" aria-hidden="true"></span>
-        <span class="maan" aria-hidden="true"></span>
-
-        <header class="titel">
-          <p>inger's junk drawer</p>
-          <h1 id="park-titel">Mindfulness</h1>
+      <section>
+        <header>
           <nav>
             <ul>
               <li><a href="beginjewandeling.html">Take a different path</a></li>
               <li><a href="index.html">Home</a></li>
             </ul>
           </nav>
+          <p>inger's junk drawer</p>
+          <h1>Mindfulness</h1>
         </header>
 
-        <p class="intro-mind">Stop overthinking the past or the future</p>
+        <p>Stop overthinking the past or the future</p>
 
-        <div class="mindfulness-blokken">
-          <article>
-            <button
-              class="boek-kaart"
-              commandfor="mindfulness-neus"
-              command="show-modal"
-            >
+        <ul>
+          <li>
+            <button commandfor="breathing-exercise" command="show-modal">
+              <img src="./assets/Neus.svg" alt="Open the breathing exercise" />
+            </button>
+          </li>
+          <li>
+            <button commandfor="five-senses" command="show-modal">
               <img
-                src="../../assets/Neus.svg"
-                alt="Drawing of a nose breathing out"
+                src="./assets/Hand.svg"
+                alt="Open the five senses exercise"
               />
             </button>
-          </article>
-          <article>
-            <button
-              class="boek-kaart"
-              commandfor="mindfulness-hand"
-              command="show-modal"
-            >
-              <img src="../../assets/Hand.svg" alt="Drawing of an open hand" />
-            </button>
-          </article>
-        </div>
+          </li>
+        </ul>
       </section>
 
-      <dialog id="mindfulness-neus" class="boek-modal">
+      <dialog id="breathing-exercise">
         <h2>Breathe</h2>
         <img
-          src="../../assets/Neus.svg"
+          src="./assets/Neus.svg"
           alt="Drawing of a nose breathing out"
+          loading="lazy"
         />
         <p>
           Breathe in through your nose for four seconds, hold your breath for
@@ -119,9 +97,13 @@
         </form>
       </dialog>
 
-      <dialog id="mindfulness-hand" class="boek-modal">
+      <dialog id="five-senses">
         <h2>Five senses</h2>
-        <img src="../../assets/Hand.svg" alt="Drawing of an open hand" />
+        <img
+          src="./assets/Hand.svg"
+          alt="Drawing of an open hand"
+          loading="lazy"
+        />
         <p>
           Look at your hand and count your fingers. Name five things you can
           see, four things you can feel, three things you can hear, two things

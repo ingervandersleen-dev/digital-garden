@@ -1,10 +1,14 @@
 <!doctype html>
-<html lang="nl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Inger van der Sleen" />
     <meta name="color-scheme" content="dark light" />
+    <meta
+      name="description"
+      content="Four fantasy book recommendations to get lost in: Fourth Wing, A Court of Thorns and Roses, The Eye of the World and Six of Crows."
+    />
 
     <title>Inger's Junk Drawer — Book recommendations</title>
     <link rel="stylesheet" href="./assets/style/style.css" />
@@ -15,45 +19,29 @@
       src="https://digitaaltuintje.nl/webring.js"
       defer
     ></script>
-    <script src="./script.js" defer></script>
+    <script src="./assets/script.js" defer></script>
   </head>
 
   <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content">Skip to main content</a>
 
     <header>
       <details>
-        <summary>Kleurmodus</summary>
+        <summary>Color mode</summary>
         <form>
           <fieldset>
-            <legend>Kleurmodus</legend>
-            <label for="system-mode">
-              <input
-                type="radio"
-                id="system-mode"
-                name="color-scheme"
-                value="auto"
-                checked
-              />
+            <legend>Color mode</legend>
+            <label>
+              <input type="radio" name="color-scheme" value="auto" checked />
               auto
             </label>
-            <label for="light-mode">
-              <input
-                type="radio"
-                id="light-mode"
-                name="color-scheme"
-                value="light"
-              />
-              Licht
+            <label>
+              <input type="radio" name="color-scheme" value="light" />
+              light
             </label>
-            <label for="dark-mode">
-              <input
-                type="radio"
-                id="dark-mode"
-                name="color-scheme"
-                value="dark"
-              />
-              Donker
+            <label>
+              <input type="radio" name="color-scheme" value="dark" />
+              dark
             </label>
           </fieldset>
         </form>
@@ -61,78 +49,60 @@
     </header>
 
     <main id="main-content" tabindex="-1">
-      <section class="park">
-        <span class="zon" aria-hidden="true"></span>
-        <span class="maan" aria-hidden="true"></span>
-
-        <header class="titel">
-          <p>inger's junk drawer</p>
-          <h1>book<br /><em>recommendations</em></h1>
+      <section>
+        <header>
           <nav>
             <ul>
               <li><a href="beginjewandeling.html">Take a different path</a></li>
               <li><a href="index.html">Home</a></li>
             </ul>
           </nav>
+          <p>inger's junk drawer</p>
+          <h1>book <em>recommendations</em></h1>
         </header>
 
-        <div class="boeken">
-          <article>
-            <button
-              class="boek-kaart"
-              commandfor="boek-donquichot"
-              command="show-modal"
-            >
+        <ul>
+          <li>
+            <button commandfor="fourth-wing" command="show-modal">
               <img
-                src="../../assets/Fourthwing.png"
-                alt="Picture of book 'The Fourth Wing'"
+                src="./assets/Fourthwing.png"
+                alt="Read more about Fourth Wing"
               />
             </button>
-          </article>
-          <article>
-            <button
-              class="boek-kaart"
-              commandfor="boek-fahrenheit"
-              command="show-modal"
-            >
+          </li>
+          <li>
+            <button commandfor="thorns-and-roses" command="show-modal">
               <img
-                src="../../assets/Thornes.png"
-                alt="Picture of book 'A Court of Thorns and Roses'"
+                src="./assets/Thornes.png"
+                alt="Read more about A Court of Thorns and Roses"
               />
             </button>
-          </article>
-          <article>
-            <button
-              class="boek-kaart"
-              commandfor="boek-nautilus"
-              command="show-modal"
-            >
+          </li>
+          <li>
+            <button commandfor="eye-of-the-world" command="show-modal">
               <img
-                src="../../assets/Eyeoftheworld.png"
-                alt="Picture of book 'The Eye of the World'"
+                src="./assets/Eyeoftheworld.png"
+                alt="Read more about The Eye of the World"
               />
             </button>
-          </article>
-          <article>
-            <button
-              class="boek-kaart"
-              commandfor="boek-frankenstein"
-              command="show-modal"
-            >
+          </li>
+          <li>
+            <button commandfor="six-of-crows" command="show-modal">
               <img
-                src="../../assets/Sixofcrows.png"
-                alt="Picture of book 'Six of Crows'"
+                src="./assets/Sixofcrows.png"
+                alt="Read more about Six of Crows"
               />
             </button>
-          </article>
-        </div>
+          </li>
+        </ul>
       </section>
 
-      <dialog id="boek-donquichot" class="boek-modal">
+      <dialog id="fourth-wing">
         <h2>Fourth Wing</h2>
         <img
-          src="../../assets/Fourthwing.png"
-          alt="Picture of book 'The Fourth Wing'"
+          src="./assets/Fourthwing.png"
+          alt="Book cover of Fourth Wing by Rebecca Yarros"
+          loading="lazy"
         />
         <p>
           <em>Fourth Wing</em> by Rebecca Yarros is a fantasy romance novel and
@@ -146,23 +116,23 @@
           dangerous riders at the college.
         </p>
         <a
-          class="boek-link"
           href="https://www.goodreads.com/book/show/61431922-fourth-wing?ref=nav_sb_ss_1_6"
           target="_blank"
           rel="noopener"
         >
-          More about this book →
+          More about this book
         </a>
         <form method="dialog">
           <button>Close</button>
         </form>
       </dialog>
 
-      <dialog id="boek-fahrenheit" class="boek-modal">
+      <dialog id="thorns-and-roses">
         <h2>A Court of Thorns and Roses</h2>
         <img
-          src="../../assets/Thornes.png"
-          alt="Picture of book 'A Court of Thorns and Roses'"
+          src="./assets/Thornes.png"
+          alt="Book cover of A Court of Thorns and Roses by Sarah J. Maas"
+          loading="lazy"
         />
         <p>
           <em>A Court of Thorns and Roses</em> by Sarah J. Maas follows
@@ -176,23 +146,23 @@
           her own feelings along the way.
         </p>
         <a
-          class="boek-link"
           href="https://www.goodreads.com/book/show/50659467-a-court-of-thorns-and-roses?ref=nav_sb_ss_1_4"
           target="_blank"
           rel="noopener"
         >
-          More about this book →
+          More about this book
         </a>
         <form method="dialog">
           <button>Close</button>
         </form>
       </dialog>
 
-      <dialog id="boek-nautilus" class="boek-modal">
+      <dialog id="eye-of-the-world">
         <h2>The Eye of the World</h2>
         <img
-          src="../../assets/Eyeoftheworld.png"
-          alt="Picture of book 'The Eye of the World'"
+          src="./assets/Eyeoftheworld.png"
+          alt="Book cover of The Eye of the World by Robert Jordan"
+          loading="lazy"
         />
         <p>
           <em>The Wheel of Time</em> by Robert Jordan begins in the quiet
@@ -206,23 +176,23 @@
           growing battle between light and darkness await them.
         </p>
         <a
-          class="boek-link"
           href="https://www.goodreads.com/book/show/228665.The_Eye_of_the_World?ref=nav_sb_ss_1_4"
           target="_blank"
           rel="noopener"
         >
-          More about this book →
+          More about this book
         </a>
         <form method="dialog">
           <button>Close</button>
         </form>
       </dialog>
 
-      <dialog id="boek-frankenstein" class="boek-modal">
+      <dialog id="six-of-crows">
         <h2>Six of Crows</h2>
         <img
-          src="../../assets/Sixofcrows.png"
-          alt="Picture of book 'Six of Crows'"
+          src="./assets/Sixofcrows.png"
+          alt="Book cover of Six of Crows by Leigh Bardugo"
+          loading="lazy"
         />
         <p>
           <em>Six of Crows</em> by Leigh Bardugo is set in Ketterdam, a lively
@@ -236,12 +206,11 @@
           to learn to work together—and stay alive.
         </p>
         <a
-          class="boek-link"
           href="https://www.goodreads.com/book/show/23437156-six-of-crows?ref=nav_sb_ss_3_4"
           target="_blank"
           rel="noopener"
         >
-          More about this book →
+          More about this book
         </a>
         <form method="dialog">
           <button>Close</button>

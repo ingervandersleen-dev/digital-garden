@@ -1,12 +1,16 @@
 <!doctype html>
-<html lang="nl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Inger van der Sleen" />
     <meta name="color-scheme" content="dark light" />
+    <meta
+      name="description"
+      content="A playlist of favourite songs to help you relax, plus a visual interpretation of the lyrics of Sorrow by The National."
+    />
 
-    <title>Inger's Junk Drawer</title>
+    <title>Inger's Junk Drawer — Music</title>
     <link rel="stylesheet" href="./assets/style/style.css" />
 
     <!-- Importeer het webring component, voeg jouw eigen domein toe in data-page -->
@@ -19,40 +23,25 @@
   </head>
 
   <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content">Skip to main content</a>
+
     <header>
       <details>
-        <summary>Kleurmodus</summary>
+        <summary>Color mode</summary>
         <form>
           <fieldset>
-            <legend>Kleurmodus</legend>
-            <label for="system-mode">
-              <input
-                type="radio"
-                id="system-mode"
-                name="color-scheme"
-                value="auto"
-                checked
-              />
+            <legend>Color mode</legend>
+            <label>
+              <input type="radio" name="color-scheme" value="auto" checked />
               auto
             </label>
-            <label for="light-mode">
-              <input
-                type="radio"
-                id="light-mode"
-                name="color-scheme"
-                value="light"
-              />
-              Licht
+            <label>
+              <input type="radio" name="color-scheme" value="light" />
+              light
             </label>
-            <label for="dark-mode">
-              <input
-                type="radio"
-                id="dark-mode"
-                name="color-scheme"
-                value="dark"
-              />
-              Donker
+            <label>
+              <input type="radio" name="color-scheme" value="dark" />
+              dark
             </label>
           </fieldset>
         </form>
@@ -60,21 +49,19 @@
     </header>
 
     <main id="main-content" tabindex="-1">
-      <section class="park">
-        <span class="zon" aria-hidden="true"></span>
-        <span class="maan" aria-hidden="true"></span>
-
-        <header class="titel">
-          <p>inger's junk drawer</p>
-          <h1 id="park-titel">Music</h1>
+      <section>
+        <header>
           <nav>
             <ul>
               <li><a href="beginjewandeling.html">Take a different path</a></li>
               <li><a href="index.html">Home</a></li>
             </ul>
           </nav>
+          <p>inger's junk drawer</p>
+          <h1>Music</h1>
         </header>
-        <p class="muziek-info">
+
+        <p>
           Research from institutions such as the
           <a
             href="https://www.uva.nl/shared-content/faculteiten/nl/faculteit-der-maatschappij-en-gedragswetenschappen/nieuws/2020/12/muziek-en-stress.html"
@@ -88,10 +75,12 @@
           suggests that your own favourite music can be particularly effective
           in helping you relax, regardless of the genre.
         </p>
-        <section class="playlist">
+
+        <section>
+          <h2>Playlist</h2>
           <iframe
-            src="https://open.spotify.com/embed/playlist/1scb1Mlq2eRRW7QpByZY5H?utm_source=generator&theme=0&si=4a7dfcfd167644a1"
-            title="Spotify-playlist: allermooiste nummers"
+            src="https://open.spotify.com/embed/playlist/1scb1Mlq2eRRW7QpByZY5H?utm_source=generator&amp;theme=0&amp;si=4a7dfcfd167644a1"
+            title="Spotify playlist: allermooiste nummers"
             allow="
               autoplay;
               clipboard-write;
@@ -100,13 +89,10 @@
               picture-in-picture;
             "
             loading="lazy"
-          >
-          </iframe>
+          ></iframe>
         </section>
 
-        <a href="Songtekst/sorrow.html" id="songtekst-knop">
-          discover the lyrics →
-        </a>
+        <a href="Songtekst/sorrow.html">Discover the lyrics</a>
       </section>
     </main>
   </body>
