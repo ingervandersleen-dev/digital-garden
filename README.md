@@ -17,6 +17,16 @@ Tot slot hebben we onze websites in drietallen getest aan de hand van de rubric.
 
 
 ## Maandag 19 oktober
+Vandaag hebben we tijdens de les zelfstandig aan onze websites gewerkt. Ik ben begonnen aan een nieuwe HTML-pagina: Mindfulness. Op deze pagina wil ik verschillende mindfulnessoefeningen aanbieden, op dezelfde manier als bij de boeken op mijn website. Wanneer je op een oefening klikt, verschijnt er een pop-upvenster met meer informatie.
+
+Voor nu heb ik gekozen voor twee oefeningen: Mindful Breathing en 5-4-3-2-1 Grounding. Ik houd het bewust bij deze twee oefeningen, omdat er op dit moment nog andere, belangrijkere onderdelen van mijn website zijn die ik eerst wil afronden.
+
+Daarnaast ben ik aan de slag gegaan met het maken van een icoontje voor in het pop-upvenster. Dit heb ik gedaan door in Figma zelf een afbeelding over te trekken en deze vervolgens om te zetten naar een SVG-bestand. Op deze manier kan ik een eigen, passend icoontje gebruiken dat aansluit bij de stijl van mijn website.
+
+<img width="577" height="353" alt="Scherm­afbeelding 2026-10-22 om 16 44 29" src="https://github.com/user-attachments/assets/b99ae1b5-d285-4e5b-82e4-3a56ccd4cbd7" />
+<img width="625" height="586" alt="Scherm­afbeelding 2026-10-22 om 16 40 23" src="https://github.com/user-attachments/assets/9cbf7d6b-7723-4a14-9e4c-235f8777efd4" />
+
+
 
 ## Vrijdag 9 oktober
 ### Voortgangsgesprek 
