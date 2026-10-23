@@ -16,6 +16,8 @@ Tot slot hebben we onze websites in drietallen getest aan de hand van de rubric.
 
 <img width="450" height="578" alt="Scherm­afbeelding 2026-10-23 om 00 27 53" src="https://github.com/user-attachments/assets/8484e4a3-602f-46dd-8950-e63f11a65bc8" />
 
+<details>  
+   
 ## Maandag 19 oktober
 
 Vandaag hebben we tijdens de les zelfstandig aan onze websites gewerkt. Ik heb mijn songtekst verder uitgewerkt en afgerond door kleur toe te voegen en verschillende scroll-driven animaties te implementeren. Hierbij heb ik geprobeerd om de betekenis en het gevoel van de songtekst visueel te versterken door beweging, kleur en typografie met elkaar te combineren.
