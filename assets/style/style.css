@@ -372,7 +372,7 @@ main > section::after {
 
 /* ==========================================================================
    MARK: 6. Titel en knoppen bovenaan
-   De knoppen (nav) staan in dezelfde grid als de titel: op een smal scherm
+   De knoppen (nav) staan in dezelfde grid als de titel -> op een smal scherm
    boven de titel, op een breed scherm links ervan.
    ========================================================================== */
 
@@ -434,7 +434,7 @@ main > section > header nav a:hover {
   color: var(--kleur-knop-tekst);
 }
 
-/* pijltje voor de eerste knop; het deel na de / is de tekst voor
+/* pijltje voor de eerste knop; het deel na de '/' is de tekst voor
    schermlezers. */
 main > section > header nav li:first-child a::before {
   content: "← ";
@@ -531,7 +531,7 @@ main > section > ul:has(a) a {
   font-family: var(--font-titel);
   font-size: clamp(0.9rem, 1.6vw, 1.3rem);
   justify-content: center;
-  padding: 12%; /* procenten: het wolkje behoudt zijn verhoudingen op elk scherm */
+  padding: 12%; /* procenten zodat het wolkje zijn verhoudingen behoudt op elk scherm */
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -565,9 +565,9 @@ main > section > ul:has(a) a:hover {
   transform: translateY(-0.5rem) scale(1.05);
 }
 
-/* Zachte zweefbeweging, met een kleine vertraging per wolkje zodat ze niet
-   allemaal precies gelijk bewegen. Het gebruikt "translate" (en niet
-   "transform"), zodat de hover-beweging er gewoon bovenop werkt. */
+/* Zachte zweefbeweging, met een vertraging per wolkje zodat ze niet
+   allemaal precies gelijk bewegen. Ik maak gebruik van "translate" (en niet
+   "transform"), zodat de hover-beweging er gewoon bovenop werkt. Dit heb ik ondervonden met behulp van een medestudent die in het vierde jaar van de opleiding zit. */
 @keyframes zweven {
   0%,
   100% {
@@ -638,7 +638,7 @@ main > section > ul:has(button) img {
   width: 100%;
 }
 
-/* Weinig kaarten (mindfulness): elke tekening krijgt hetzelfde vierkante vak */
+/* Beide tekeningen krijgen hetzelfde vierkante vak */
 main > section > ul:has(button):not(:has(li:nth-child(3))) img {
   aspect-ratio: 1 / 1;
   object-fit: contain;
@@ -838,9 +838,9 @@ main > dialog form button:hover {
 
 /* ==========================================================================
    MARK: 12. Homepage: bos, vogel, pad en tekst
-   De homepage herkennen we aan het bos in de section (.bos).
-   De bomen, het bos en de vogel zijn decoratie: die elementen zijn er alleen
-   voor de styling, dus daarom wél classes, span en div.
+   De homepage herkennen we aan het bos in de section.
+   De bomen, het bos en de vogel zijn decoratie -> die elementen zijn er alleen
+   voor de styling, dus daarom heb ik hier wél classes, span en div.
    ========================================================================== */
 
 main > section:has(> .bos) {
@@ -858,7 +858,7 @@ main > section:has(> .bos) {
   padding-bottom: 10rem; /* ruimte onder de tekst, boven de onderrand */
 }
 
-/* De titel en de tekst liggen boven het bos (z-index werkt op grid-items) */
+/* De titel en de tekst liggen boven het bos */
 main > section:has(> .bos) > header,
 main > section:has(> .bos) > section {
   z-index: 1;
@@ -933,7 +933,7 @@ main > section:has(> .bos) > section a:hover {
   transform-origin: left top;
 }
 
-/* Van links naar rechts over het scherm, met een lichte golfbeweging */
+/* Van links naar rechts over het scherm, met een golfbeweging. Ik heb deze animatie kunnen maken dmv de deepdive. */
 @keyframes vlieg {
   0% {
     transform: translate(-4rem, 1rem);
@@ -969,9 +969,8 @@ main > section:has(> .bos) > section a:hover {
 }
 
 /* MARK: Bos
-   Dezelfde vorm (stam + bladeren/den) wordt tientallen keren hertekend met
-   andere positie/grootte via --x, --y en --schaal. Bos-positionering en
-   vogel-animatie opgezet. */
+   Dezelfde vorm (stam + bladeren/den) wordt hertekend met
+   andere positie/grootte via --x, --y en --schaal. */
 
 .bos {
   inset: 0;
@@ -1002,7 +1001,7 @@ main > section:has(> .bos) > section a:hover {
   width: 0.8rem;
 }
 
-/* Bladeren (loofboom) */
+/* Bladeren */
 .boom::after {
   background: var(--blad);
   border-radius: var(--radius-rond);
@@ -1037,16 +1036,15 @@ main > section:has(> .bos) > section a:hover {
   height: 10rem;
 }
 
-/* Bomen ver weg: kleiner en in een andere kleur (staat onder .den, dus wint) */
+/* Bomen ver weg: kleiner en in een andere kleur */
 .ver {
   --blad: var(--kleur-boom-blad-ver);
 }
 
 /* Positie (--x), afstand tot de onderkant (--y) en grootte (--schaal).
    Bomen ver weg staan bovenaan de grond en zijn klein, bomen dichtbij staan
-   lager en zijn groot. Het pad in het midden houden we vrij.
-   Een boom die later in de HTML staat, ligt over eerdere heen: zet bomen die
-   verder weg staan dus eerder in de HTML. */
+   lager en zijn groot. Een boom die later in de HTML staat, ligt over eerdere heen: zet bomen die
+   verder weg staan dus eerder in mijn HTML. Bos en bomen heb ik opgezet met behulp van een studentassistent. */
 .boom:nth-child(1) {
   --x: 4%;
   --y: 47%;
@@ -1188,8 +1186,7 @@ main > section:has(> .bos) > section a:hover {
   --schaal: 1.2;
 }
 
-/* Op mobiel staan een paar bomen dichter bij het pad in de weg; die
-   verbergen we standaard (mobile-first) en tonen we weer op groter scherm. */
+/* Op mobiel staan een paar bomen dichter bij het pad in de weg -> die worden standaard (mobile-first) verborgen en weer getoond op groter scherm. */
 .boom:nth-child(5),
 .boom:nth-child(6),
 .boom:nth-child(9),
