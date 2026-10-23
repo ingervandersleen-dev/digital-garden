@@ -88,6 +88,22 @@ Het is cruciaal dat de menselijke autonomie behouden blijft. Gebruikers kunnen h
 </details>
 
 <details> 
+<summary><strong> Vakantie </strong></summary>
+Daarnaast ben ik aan de slag gegaan met het visualisereen van een songtekst door middel van variabele fonts. Hiervoor heb ik eerst een brainstorm gemaakt rondom het woord Sorrow. Om een goed beeld te krijgen bij wat dit woord oproept, heb ik associaties uitgewerkt zoals verdriet, zwaarte, leegte, tranen en donkere kleuren.   
+   
+Vervolgens ben ik begonnen met het maken van verschillende schetsen waarin ik ben gaan experimenteren met typografie en beweging:   
+-Sorrow: Ik heb geprobeerd om verdriet te visualiseren door middel van vallende druppels aan de letters, zwaarte over te brengen met uitgerekte letters, en warrigheid weer te geven door woorden door elkaar te laten lopen.   
+-Hyper Heart: Hierbij heb ik geëxperimenteerd met een kloppend effect (met streepjes om het woord) en een draaiende tekstvorm om het dynamische en onrustige gevoel van het woord te versterken.   
+-Waves on the water: Dit stukje tekst heb ik laten meebewegen in een golfvorm om de beweging van water na te bootsen.   Rag 'n bones: Hierbij heb Iag gespeeld met de opbouw en zetwijze van de letters.   
+
+Door deze ideeën op papier uit te werken, heb ik een beter beeld gekregen van hoe ik typografie en dynamische stijlen kan inzetten om de emotie van de songtekst visueel over te brengen. 
+
+<img width="850" height="694" alt="Scherm­afbeelding 2026-10-23 om 11 04 02" src="https://github.com/user-attachments/assets/fb9871f3-9928-43df-9169-2d487e89cf03" />
+<img width="520" height="594" alt="Scherm­afbeelding 2026-10-23 om 11 03 48" src="https://github.com/user-attachments/assets/a027c7a4-d99c-4050-8cbb-1b2820d282a4" />
+<img width="925" height="691" alt="Scherm­afbeelding 2026-10-23 om 11 03 32" src="https://github.com/user-attachments/assets/dca9f8c5-3ba0-4ce0-aa90-59f3cd34f0c6" />
+
+
+<details> 
 <summary><strong> Vrijdag 9 oktober </strong></summary>
 ### Voortgangsgesprek
 
