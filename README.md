@@ -101,6 +101,7 @@ Door deze ideeën op papier uit te werken, heb ik een beter beeld gekregen van h
 <img width="850" height="694" alt="Scherm­afbeelding 2026-10-23 om 11 04 02" src="https://github.com/user-attachments/assets/fb9871f3-9928-43df-9169-2d487e89cf03" />
 <img width="520" height="594" alt="Scherm­afbeelding 2026-10-23 om 11 03 48" src="https://github.com/user-attachments/assets/a027c7a4-d99c-4050-8cbb-1b2820d282a4" />
 <img width="925" height="691" alt="Scherm­afbeelding 2026-10-23 om 11 03 32" src="https://github.com/user-attachments/assets/dca9f8c5-3ba0-4ce0-aa90-59f3cd34f0c6" />
+<img width="640" height="670" alt="Scherm­afbeelding 2026-10-23 om 11 11 51" src="https://github.com/user-attachments/assets/bec3e60d-de6d-4a35-94ec-81285ba9f02d" />
 
 </details> 
 
