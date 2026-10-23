@@ -971,7 +971,7 @@ main > section:has(> .bos) > section a:hover {
 /* MARK: Bos
    Dezelfde vorm (stam + bladeren/den) wordt tientallen keren hertekend met
    andere positie/grootte via --x, --y en --schaal. Bos-positionering en
-   vogel-animatie opgezet met hulp van Claude (Anthropic), sept 2026. */
+   vogel-animatie opgezet. */
 
 .bos {
   inset: 0;
