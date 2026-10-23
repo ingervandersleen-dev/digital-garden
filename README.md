@@ -23,7 +23,21 @@ Daarnaast helpt het testen met de rubric om kritisch naar mijn eigen website te 
 
 
 ## Maandag 19 oktober
-Vandaag hebben we tijdens de les zelfstandig aan onze websites gewerkt. Ik ben begonnen aan een nieuwe HTML-pagina: Mindfulness. Op deze pagina wil ik verschillende mindfulnessoefeningen aanbieden, op dezelfde manier als bij de boeken op mijn website. Wanneer je op een oefening klikt, verschijnt er een pop-upvenster met meer informatie.
+Vandaag hebben we tijdens de les zelfstandig aan onze websites gewerkt. Ik heb mijn songtekst verder uitgewerkt en afgerond door kleur toe te voegen en verschillende scroll-driven animaties te implementeren. Hierbij heb ik geprobeerd om de betekenis en het gevoel van de songtekst visueel te versterken door beweging, kleur en typografie met elkaar te combineren.
+
+Zo heb ik ervoor gekozen om het woord *‘sorrow’* uit te rekken, zodat het visueel langer en zwaarder aanvoelt. Bij de zin *‘Don't leave my hyper heart alone on the water’* heb ik een golfanimatie toegepast, waardoor de tekst meebeweegt als golven op het water. Daarnaast heb ik het woord *‘heart’* een kloppende animatie gegeven, zodat het lijkt alsof het hart echt leeft.
+
+Ook heb ik de zin *‘Cause I don't wanna get over you’* uitgewerkt met een scroll-driven animatie waarbij de tekst van links naar rechts beweegt. Het woord *‘over’* heb ik zo geanimeerd dat het als het ware over het woord *‘you’* heen probeert te springen. Hiermee heb ik de betekenis van de zin op een speelse manier vertaald naar beweging.
+
+Tot slot heb ik de titel van het nummer en de naam van de artiest aan de linkerkant van het scherm geplaatst, zodat deze tijdens het scrollen op dezelfde plek blijven staan. Hiervoor heb ik de CSS-eigenschap `writing-mode: sideways-lr;` gebruikt. Hierdoor wordt de tekst verticaal weergegeven en ontstaat er een andere tekstoriëntatie dan bij een standaard horizontale lay-out.
+
+Met deze aanpassingen heb ik verschillende typografische technieken en animaties gecombineerd om de sfeer van het nummer *Sorrow* van The National beter over te brengen. Ik heb hierbij niet alleen gekeken naar de leesbaarheid, maar ook naar hoe beweging en vorm de emotionele betekenis van de tekst kunnen versterken.
+
+<img width="1440" height="773" alt="Scherm­afbeelding 2026-10-23 om 09 54 23" src="https://github.com/user-attachments/assets/0c478d2e-ae95-44f8-a914-c0dea9d92891" />
+<img width="1440" height="773" alt="Scherm­afbeelding 2026-10-23 om 09 54 38" src="https://github.com/user-attachments/assets/d8ed3c9c-abfd-4483-af07-873f53781d7a" />
+<img width="1440" height="773" alt="Scherm­afbeelding 2026-10-23 om 09 54 48" src="https://github.com/user-attachments/assets/3151aec5-e610-42fd-9cc6-fedf55442893" />
+
+Ik ben ook begonnen aan een nieuwe HTML-pagina: Mindfulness. Op deze pagina wil ik verschillende mindfulnessoefeningen aanbieden, op dezelfde manier als bij de boeken op mijn website. Wanneer je op een oefening klikt, verschijnt er een pop-upvenster met meer informatie.
 
 Voor nu heb ik gekozen voor twee oefeningen: Mindful Breathing en 5-4-3-2-1 Grounding. Ik houd het bewust bij deze twee oefeningen, omdat er op dit moment nog andere, belangrijkere onderdelen van mijn website zijn die ik eerst wil afronden.
 
