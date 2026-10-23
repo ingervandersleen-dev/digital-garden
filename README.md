@@ -103,6 +103,9 @@ Door deze ideeën op papier uit te werken, heb ik een beter beeld gekregen van h
 <img width="925" height="691" alt="Scherm­afbeelding 2026-10-23 om 11 03 32" src="https://github.com/user-attachments/assets/dca9f8c5-3ba0-4ce0-aa90-59f3cd34f0c6" />
 <img width="640" height="670" alt="Scherm­afbeelding 2026-10-23 om 11 11 51" src="https://github.com/user-attachments/assets/bec3e60d-de6d-4a35-94ec-81285ba9f02d" />
 
+Ook heb ik mijn HTML nogmaals gevalideerd.
+<img width="768" height="499" alt="Scherm­afbeelding 2026-10-23 om 11 18 48" src="https://github.com/user-attachments/assets/89f65886-340d-4df3-b21a-01227305e017" />
+
 </details> 
 
 <details> 
