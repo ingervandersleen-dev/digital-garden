@@ -102,6 +102,7 @@ Door deze ideeën op papier uit te werken, heb ik een beter beeld gekregen van h
 <img width="520" height="594" alt="Scherm­afbeelding 2026-10-23 om 11 03 48" src="https://github.com/user-attachments/assets/a027c7a4-d99c-4050-8cbb-1b2820d282a4" />
 <img width="925" height="691" alt="Scherm­afbeelding 2026-10-23 om 11 03 32" src="https://github.com/user-attachments/assets/dca9f8c5-3ba0-4ce0-aa90-59f3cd34f0c6" />
 
+</details> 
 
 <details> 
 <summary><strong> Vrijdag 9 oktober </strong></summary>
