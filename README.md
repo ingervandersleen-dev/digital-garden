@@ -16,7 +16,7 @@ Tot slot hebben we onze websites in drietallen getest aan de hand van de rubric.
 
 <img width="450" height="578" alt="Scherm­afbeelding 2026-10-23 om 00 27 53" src="https://github.com/user-attachments/assets/8484e4a3-602f-46dd-8950-e63f11a65bc8" />
 
-<details>  
+</details>  
    
 ## Maandag 19 oktober
 
