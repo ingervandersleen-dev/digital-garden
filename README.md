@@ -9,7 +9,13 @@ Vervolgens gingen we door met het maken van de bi-weekly 3
 
 <img width="921" height="646" alt="Scherm­afbeelding 2026-10-23 om 00 28 00" src="https://github.com/user-attachments/assets/f6dc8d0f-9024-400d-875e-094fc44b6968" />
 
-Tot slot hebben we onze websites in drietallen getest aan de hand van de rubric. We bekeken elkaars websites en controleerden in hoeverre deze voldeden aan de verschillende criteria. Door de websites van anderen te bekijken, kon ik ook inspiratie opdoen en zien hoe medestudenten bepaalde onderdelen hadden aangepakt. Een voorbeeld hiervan is een spotify pop-up die ik ook met behulp van mijn medestudent heb gecodeerd. Daarnaast helpt het testen met de rubric om kritisch naar mijn eigen website te kijken en te ontdekken welke onderdelen eventueel nog verbeterd kunnen worden. 
+Tot slot hebben we onze websites in drietallen getest aan de hand van de rubric. We bekeken elkaars websites en controleerden in hoeverre deze voldeden aan de verschillende criteria. Door de websites van anderen te bekijken, kon ik ook inspiratie opdoen en zien hoe medestudenten bepaalde onderdelen hadden aangepakt. Een voorbeeld hiervan is een spotify pop-up die ik ook met behulp van mijn medestudent heb gecodeerd. 
+
+<img width="653" height="400" alt="Scherm­afbeelding 2026-10-23 om 09 32 19" src="https://github.com/user-attachments/assets/43b206dd-fc2e-4881-bf17-8fcd51cd90f1" />
+<img width="693" height="291" alt="Scherm­afbeelding 2026-10-23 om 09 32 57" src="https://github.com/user-attachments/assets/9b654a80-edc9-4f80-be3e-dc18b0c860f7" />
+
+
+Daarnaast helpt het testen met de rubric om kritisch naar mijn eigen website te kijken en te ontdekken welke onderdelen eventueel nog verbeterd kunnen worden. 
 
 <img width="450" height="578" alt="Scherm­afbeelding 2026-10-23 om 00 27 42" src="https://github.com/user-attachments/assets/49cf2cff-ef6e-4843-99e3-623876bc9634" />
 
