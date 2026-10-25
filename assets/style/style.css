@@ -730,9 +730,10 @@ main > section > a:hover {
 
 /* ==========================================================================
    MARK: 11. Activiteitenpagina: wandel-bingo
-   Elk vakje is een <label> met een verborgen checkbox. Een
-   aangevinkt vakje= :has(input:checked). Een volle rij, kolom
-   of diagonaal= ook :has(), en laat de bingo-melding zien.
+   Alleen CSS: elk vakje is een <label> met een verborgen checkbox. Een
+   aangevinkt vakje herkennen we met :has(input:checked). Een volle rij, kolom
+   of diagonaal herkennen we ook met :has(), en laat de bingo-melding zien.
+   De reset-knop zet alle vakjes terug, zonder JS.
    ========================================================================== */
 
 main > section > form {
@@ -766,7 +767,7 @@ main > section > form ul {
   padding: 0;
 }
 
-/* Elk vakje=een vierkante label */
+/* Elk vakje: een vierkante label */
 main > section > form label {
   align-items: center;
   aspect-ratio: 1 / 1;
@@ -786,7 +787,7 @@ main > section > form label {
     background-color 0.2s ease-in-out;
 }
 
-/* De checkbox zelf verbergen maar wel toetsenbord-toegankelijk */
+/* De checkbox zelf verbergen, wel toetsenbord-toegankelijk houden */
 main > section > form input[type="checkbox"] {
   height: 0.0625rem;
   opacity: 0;
@@ -848,7 +849,7 @@ main > section > form:has(li:nth-child(7) :checked):has(li:nth-child(8) :checked
 main > section > form:has(li:nth-child(1) :checked):has(li:nth-child(4) :checked):has(li:nth-child(7) :checked) > p,
 main > section > form:has(li:nth-child(2) :checked):has(li:nth-child(5) :checked):has(li:nth-child(8) :checked) > p,
 main > section > form:has(li:nth-child(3) :checked):has(li:nth-child(6) :checked):has(li:nth-child(9) :checked) > p,
-/* diagonaal */
+/* diagonalen */
 main > section > form:has(li:nth-child(1) :checked):has(li:nth-child(5) :checked):has(li:nth-child(9) :checked) > p,
 main > section > form:has(li:nth-child(3) :checked):has(li:nth-child(5) :checked):has(li:nth-child(7) :checked) > p {
   display: block;
@@ -1034,16 +1035,17 @@ main > section:has(> .bos) > section {
   text-align: center;
 }
 
+/* Geen achtergrond een zachte gloed achter de letters
+   houdt de tekst leesbaar op zowel het pad als het gras. */
 main > section:has(> .bos) > section h2 {
-  background: var(--kleur-knop-achtergrond);
-  border-radius: var(--radius-knop);
-  color: var(--kleur-knop-tekst);
-  display: inline-block;
+  color: var(--kleur-tekst-park);
   font-family: var(--font-titel);
   font-size: clamp(1.2rem, 4vw, 1.6rem);
   font-weight: normal;
   margin: 0 0 var(--whitespace-s);
-  padding: 0.3em 1em;
+  text-shadow:
+    0 0 0.4em var(--kleur-knop-achtergrond),
+    0 0 0.4em var(--kleur-knop-achtergrond);
 }
 
 main > section:has(> .bos) > section a {
