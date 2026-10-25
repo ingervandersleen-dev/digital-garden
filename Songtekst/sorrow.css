@@ -29,8 +29,8 @@ body {
 
 header {
   position: fixed;
-  inset: 0 auto 0 0; /* boven 0, onder 0, links 0, rechts automatisch */
-  box-sizing: border-box; /* padding telt mee in de hoogte */
+  inset: 0 auto 0 0;
+  box-sizing: border-box;
   padding: 2vh 1vw;
   writing-mode: sideways-lr;
   text-align: center; /* titel in het midden van de hoogte */
@@ -46,7 +46,7 @@ header > h1 {
 }
 
 main {
-  padding-inline: 12vh; /* ruimte voor de titel, links en rechts gelijk */
+  padding-inline: 12vh;
   overflow-x: clip;
 }
 
@@ -54,6 +54,43 @@ footer {
   padding: 8vh 12vh;
   text-align: center;
   color: var(--sorrow);
+}
+
+/* MARK: knoppen bovenaan (Take a different path en Home) */
+main > nav ul {
+  display: flex;
+  flex-wrap: wrap; /* op een smal scherm komen ze onder elkaar */
+  gap: 0.5rem;
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+main > nav a {
+  display: inline-block;
+  padding: 0.5em 1.2em;
+  background: var(--sorrow);
+  color: var(--bg);
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+main > nav a:hover {
+  background: var(--honey-light);
+}
+
+main > nav a:focus-visible {
+  outline: 0.15rem solid var(--text);
+  outline-offset: 0.15rem;
+}
+
+/* pijltje voor de eerste knop; het deel na de / is de tekst voor
+   schermlezers (leeg). */
+main > nav li:first-child a::before {
+  content: "← ";
+  content: "← " / "";
 }
 
 /* MARK: Sorrow (uitrekken bij scrollen) */

@@ -1,12 +1,16 @@
 <!doctype html>
-<html lang="nl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Inger van der Sleen" />
     <meta name="color-scheme" content="dark light" />
+    <meta
+      name="description"
+      content="A walk bingo card: tick off everything you spot on your walk and stop overthinking for a while."
+    />
 
-    <title>Inger's Junk Drawer</title>
+    <title>Inger's Junk Drawer — Activities</title>
     <link rel="stylesheet" href="./assets/style/style.css" />
 
     <!-- Importeer het webring component, voeg jouw eigen domein toe in data-page -->
@@ -19,61 +23,115 @@
   </head>
 
   <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content">Skip to main content</a>
+
     <header>
       <details>
-        <summary>Kleurmodus</summary>
+        <summary>Color mode</summary>
         <form>
           <fieldset>
-            <legend>Kleurmodus</legend>
-            <label for="system-mode">
-              <input
-                type="radio"
-                id="system-mode"
-                name="color-scheme"
-                value="auto"
-                checked
-              />
+            <legend>Color mode</legend>
+            <label>
+              <input type="radio" name="color-scheme" value="auto" checked />
               auto
             </label>
-            <label for="light-mode">
-              <input
-                type="radio"
-                id="light-mode"
-                name="color-scheme"
-                value="light"
-              />
-              Licht
+            <label>
+              <input type="radio" name="color-scheme" value="light" />
+              light
             </label>
-            <label for="dark-mode">
-              <input
-                type="radio"
-                id="dark-mode"
-                name="color-scheme"
-                value="dark"
-              />
-              Donker
+            <label>
+              <input type="radio" name="color-scheme" value="dark" />
+              dark
             </label>
           </fieldset>
         </form>
       </details>
     </header>
-  </body>
-  <main id="main-content" tabindex="-1">
-    <section class="park">
-      <span class="zon" aria-hidden="true"></span>
-      <span class="maan" aria-hidden="true"></span>
 
-      <header class="titel">
-        <p>inger's junk drawer</p>
-        <h1 id="park-titel">Activities</h1>
-        <nav>
-          <ul>
-            <li><a href="beginjewandeling.html">Take a different path</a></li>
-            <li><a href="index.html">Home</a></li>
-          </ul>
-        </nav>
-      </header>
-    </section>
-  </main>
+    <main id="main-content" tabindex="-1">
+      <section>
+        <header>
+          <nav>
+            <ul>
+              <li><a href="beginjewandeling.html">Take a different path</a></li>
+              <li><a href="index.html">Home</a></li>
+            </ul>
+          </nav>
+          <p>inger's junk drawer</p>
+          <h1>Activities</h1>
+        </header>
+
+        <p>
+          Take this card with you on your next walk and tick off everything you
+          spot. Turn your brain off and just look around.
+        </p>
+
+        <form>
+          <fieldset>
+            <legend>Walk bingo</legend>
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" />
+                  Spot a bird
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" />
+                  A red door
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" />
+                  Someone with a dog
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" />
+                  A bicycle
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" checked disabled />
+                  Free space: take a deep breath
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" />
+                  A flower
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" />
+                  A bench
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" />
+                  A cloud that looks like something
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" />
+                  Someone smiling
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <p role="status">Bingo! Great job. Keep going for the whole card.</p>
+
+          <button type="reset">Start over</button>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
