@@ -1,4 +1,24 @@
 # Model
+## Reflectie op het blok
+
+Dit blok heb ik veel geleerd over hoe je een website netjes opbouwt, en ik ben trots op wat ik heb gemaakt: een parkscène die overdag en ‘s nachts anders is, met een vliegende vogel, een bos, een wandel-bingo en kleurmodi die werken zonder JavaScript.
+
+### Dingen die ik echt snap sinds dit blok:
+
+Grid en responsive design. Ik heb mijn kaarten laten schakelen van één kolom naar 2×2 naar vier naast elkaar, met mobile-first media queries. Ik snapte uiteindelijk ook waarom je minmax(0, 1fr) gebruikt, en dat een grid kaarten in een rij vanzelf even hoog maakt.
+Custom properties en light-dark(). Alle kleuren staan op één plek, waardoor ik met één wijziging de hele site kon aanpassen. Mijn dark mode is een nachtscène met een maan in plaats van een zon.
+Slimme selectors. Ik gebruikte :has() om de kaarten, de bingo en de pagina-indelingen te stylen zonder extra classes. Dat paste ook bij de eis om zo min mogelijk div’s, span’s en classes te gebruiken.
+Toegankelijkheid. De skip-link, de kleurmodus-knop met details/summary, voldoende contrast en prefers-reduced-motion voor mensen die geen beweging willen.
+Pop-ups zonder JavaScript met command en commandfor en <dialog>.
+
+Het ging vaak mis door kleine dingen. Een ontbrekende </section> zorgde ervoor dat mijn pop-ups hun opmaak kwijtraakten, en een aspect-ratio die voor één pagina bedoeld was, maakte ineens mijn boeken kleiner. Daarvan heb ik geleerd dat je een wijziging op één plek altijd op alle pagina’s moet controleren.
+
+Dit neem ik mee:
+-Als iets er “gek” uitziet, kijk dan eerst naar de HTML-structuur voordat je de CSS aanpast.
+-Test elke wijziging op alle pagina’s, niet alleen op de pagina waar je mee bezig bent.
+-Een ontwerp hoeft niet perfect te zijn om goed te zijn. 
+
+Met meer tijd zou ik de pagina’s “Coming soon” afmaken met echte oefeningen, mijn tekeningen als vierkante SVG’s maken zodat de kaarten mooi gelijk zijn, en me verder verdiepen in animaties.
 
 <details> 
 <summary><strong> Maandag 26 oktober </strong></summary>
