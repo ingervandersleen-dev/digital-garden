@@ -1,7 +1,36 @@
 # Model
 
 <details> 
-<summary><strong> vrijdag 23 oktober </strong></summary>
+<summary><strong> Zondag 25 oktober </strong></summary>
+
+Bij het kopje ‘Activities’ heb ik ervoor gekozen om de gebruiker niet meerdere activiteiten aan te bieden waaruit die kan kiezen. Te veel opties kunnen namelijk juist zorgen voor keuzestress en extra nadenken, terwijl het doel van de website is om de gebruiker rust en ontspanning te bieden. Daarom heb ik gekozen voor de *‘Walk Bingo’*, waarbij de gebruiker een concreet idee krijgt voor een wandeling. Op deze manier wordt de drempel om naar buiten te gaan lager en kan de gebruiker op een laagdrempelige manier in beweging komen, wat kan bijdragen aan de mentale gezondheid. Daarnaast hoeft de gebruiker tijdens het wandelen niet zelf te bedenken wat die kan doen, maar kan die zich richten op de opdrachten van de bingo. Om dit idee verder uit te werken, heb ik een eerste schets gemaakt in Figma.
+   
+<img width="535" height="516" alt="Scherm­afbeelding 2026-10-27 om 20 32 38" src="https://github.com/user-attachments/assets/7f315061-a1fd-41b9-ae76-d2d3680b0cc4" />
+
+Ik heb dit uitgewerkt in de vorm van een ‘Walk Bingo’. De gebruiker neemt de bingokaart mee tijdens een wandeling en kan vakjes afvinken wanneer die bepaalde dingen tegenkomt, zoals een vogel, een rode deur, iemand met een hond of een bloem. Ook heb ik een vrij vakje toegevoegd met de opdracht om bewust diep adem te halen. Hierdoor is de activiteit niet alleen gericht op bewegen, maar ook op het bewust waarnemen van de omgeving en af en toe een moment van rust nemen.
+
+De opdrachten zijn bewust eenvoudig en herkenbaar gehouden, zodat de gebruiker er niet veel moeite voor hoeft te doen. De bingo geeft de wandeling tegelijkertijd een klein doel. In plaats van tijdens het lopen bezig te zijn met gedachten of zorgen, wordt de gebruiker gestimuleerd om de aandacht naar buiten te richten en details op te merken die anders misschien niet zouden opvallen.
+
+Daarnaast heb ik de bingo interactief gemaakt, zodat de gebruiker de vakjes kan afvinken. Wanneer de kaart is voltooid, verschijnt er een positieve boodschap die de gebruiker aanmoedigt om verder te gaan. Met de knop ‘Start over’ kan de gebruiker de kaart opnieuw gebruiken. Zo blijft de activiteit eenvoudig en herbruikbaar.
+
+Met dit onderdeel probeer ik een kleine, toegankelijke activiteit te creëren die aansluit bij het doel van mijn website: even afstand nemen van het overdenken en meer aandacht hebben voor het moment. Ik heb er bewust voor gekozen om de gebruiker niet te overladen met informatie of keuzes, maar juist een duidelijke opdracht te geven waarmee die meteen aan de slag kan. 
+
+### technische uitwerking
+
+Voor de Walk Bingo heb ik HTML en CSS gecombineerd om een interactieve bingokaart te maken. Ik heb de opdrachten opgebouwd met een lijst en checkboxen die in labels zijn geplaatst. Hierdoor kan de gebruiker op een heel vakje klikken om een opdracht af te vinken. Met CSS Grid heb ik de kaart verdeeld in drie kolommen en met aspect-ratio ervoor gezorgd dat de vakjes vierkant blijven. Ook heb ik clamp() gebruikt om de tekstgroottes flexibel te maken. Dit heb ik gedaan met behulp van een studentenassistent. 
+
+Een belangrijk onderdeel van deze uitwerking is dat ik de interactie grotendeels met CSS heb gemaakt, zonder hiervoor JavaScript te gebruiken omdat ik dit heel lastig vind. Met de :has()-selector kan ik controleren of een checkbox is aangevinkt. Op basis daarvan verander ik de achtergrondkleur, maak ik de tekst dikgedrukt en voeg ik een vinkje toe. Hierdoor is voor de gebruiker direct zichtbaar welke opdrachten al zijn voltooid.
+
+Ik heb ook een bingomelding toegevoegd die verschijnt wanneer een volledige rij, kolom of diagonaal is afgevinkt. Hiervoor heb ik met CSS verschillende combinaties van checkboxen gedefinieerd. Zodra een van deze combinaties compleet is, wordt de melding zichtbaar. Met @keyframes heb ik daar een korte animatie aan toegevoegd, zodat de feedback wat speelser aanvoelt. Daarnaast heb ik een resetknop gemaakt met type="reset", waardoor de gebruiker de kaart opnieuw kan gebruiken zonder dat ik hiervoor JavaScript hoef te schrijven.
+
+Bij de toegankelijkheid heb ik geprobeerd rekening te houden met toetsenbordbediening. De checkboxen zijn visueel verborgen, maar blijven aanwezig in de HTML. Met :focus-visible voeg ik een duidelijke focusrand toe wanneer een vakje toetsenbordfocus heeft. Het vinkje naast de veranderde achtergrondkleur zorgt er bovendien voor dat een geselecteerd vakje niet alleen door kleur te herkennen is.
+
+Door deze aanpak heb ik geleerd dat CSS niet alleen bedoeld is voor de vormgeving, maar ook voor het reageren op gebruikersinteractie en het tonen van feedback. Ik vond het interessant om te ontdekken hoeveel functionaliteit ik met HTML en CSS kan realiseren zonder extra JavaScript te schrijven. Dit houdt de implementatie relatief eenvoudig en past bij mijn doel om de Walk Bingo overzichtelijk en laagdrempelig te maken.
+
+</details> 
+
+<details> 
+<summary><strong> Vrijdag 23 oktober </strong></summary>
    
 ### Reflectie feedback Sprint 3
 
@@ -16,7 +45,6 @@ Voor ik het inlever wil ik toegankelijkheid en het testen van mijn website een v
 <img width="1293" height="674" alt="Scherm­afbeelding 2026-10-27 om 20 24 42" src="https://github.com/user-attachments/assets/a2477311-a127-48ea-a5cf-aced34cf8176" />
 <img width="1293" height="674" alt="Scherm­afbeelding 2026-10-27 om 20 25 11" src="https://github.com/user-attachments/assets/906c18ad-84c7-47d0-8eac-df082a0082cb" />
 <img width="1293" height="674" alt="Scherm­afbeelding 2026-10-27 om 20 25 36" src="https://github.com/user-attachments/assets/043f9ca2-7890-4190-8244-4c13e9fbce67" />
-
 
 </details> 
 
