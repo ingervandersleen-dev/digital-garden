@@ -21,6 +21,22 @@ Tot slot hebben we onze websites in drietallen getest aan de hand van de rubric.
 <details> 
 <summary><strong> Maandag 19 oktober </strong></summary>
 
+### Deep dive: CSS-animaties
+
+Tijdens de deep dive over CSS-animaties heb ik gekeken naar de mogelijkheden om beweging aan webcontent toe te voegen. Met animaties kun je veranderingen in de vormgeving zichtbaar maken en de aandacht van de gebruiker naar specifieke onderdelen leiden.
+
+Met CSS kun je bijvoorbeeld de grootte, positie, rotatie en zichtbaarheid van elementen aanpassen. Met `transition` kun je een verandering geleidelijk laten verlopen wanneer een eigenschap verandert. Voor complexere bewegingen kun je `@keyframes` gebruiken. Hiermee beschrijf je verschillende stappen van een animatie en bepaal je hoe een element zich gedurende de animatie gedraagt.
+
+Ook kun je animaties gebruiken om tekst meer expressie te geven. Door bepaalde woorden groter te maken, te laten draaien of van positie te laten veranderen, kun je de nadruk en het ritme van een tekst visueel versterken.
+
+Het is belangrijk dat beweging een functie heeft binnen het ontwerp. Wanneer er te veel animaties tegelijk plaatsvinden, kan dit afleiden van de inhoud. Animaties werken daarom het beste wanneer ze aansluiten bij de boodschap en de gebruiker helpen om de content beter te begrijpen of te ervaren.
+
+**Wat neem ik hieruit mee?**
+
+CSS-animaties kunnen een ontwerp dynamischer en expressiever maken. Vooral wanneer beweging aansluit bij de betekenis van een woord of de sfeer van een tekst, kan het een extra laag aan de ervaring toevoegen. Daarbij blijft het belangrijk om rekening te houden met de leesbaarheid, toegankelijkheid en hoeveelheid beweging.
+
+**LES** 
+
 Vandaag hebben we tijdens de les zelfstandig aan onze websites gewerkt. Ik heb mijn songtekst verder uitgewerkt en afgerond door kleur toe te voegen en verschillende scroll-driven animaties te implementeren. Hierbij heb ik geprobeerd om de betekenis en het gevoel van de songtekst visueel te versterken door beweging, kleur en typografie met elkaar te combineren.
 
 Zo heb ik ervoor gekozen om het woord _‘sorrow’_ uit te rekken, zodat het visueel langer en zwaarder aanvoelt. Bij de zin _‘Don't leave my hyper heart alone on the water’_ heb ik een golfanimatie toegepast, waardoor de tekst meebeweegt als golven op het water. Daarnaast heb ik het woord _‘heart’_ een kloppende animatie gegeven, zodat het lijkt alsof het hart echt leeft.
@@ -48,6 +64,21 @@ Daarnaast ben ik aan de slag gegaan met het maken van een icoontje voor in het p
 
 <details> 
 <summary><strong> Dinsdag 18 oktober </strong></summary>
+
+   ### Deep dive: Variabele fonts
+
+Variabele fonts zijn lettertypen waarbij meerdere variaties binnen één fontbestand zijn opgenomen. In plaats van voor ieder gewicht of iedere variant een apart bestand te laden, kun je met één variabel font verschillende instellingen gebruiken.
+
+Een variabel font kan verschillende assen bevatten, zoals gewicht, breedte en cursiviteit. Daarnaast kunnen letterontwerpers aangepaste assen toevoegen. Met de CSS-eigenschap `font-variation-settings` kun je zulke assen instellen. Iedere aangepaste as heeft een naam van vier letters.
+
+Met CSS-transitions kun je veranderingen in de eigenschappen van een font geleidelijk laten verlopen. Een overgang van een dun naar een dik lettergewicht kan bijvoorbeeld vloeiend worden geanimeerd. Door iedere letter van een woord afzonderlijk in een `span` te plaatsen, kun je ook een gestapelde transition maken waarbij de letters na elkaar veranderen.
+
+Dit biedt veel mogelijkheden om typografie interactief te maken. Je kunt bijvoorbeeld variëren in lettergewicht, breedte of andere eigenschappen om een woord meer nadruk te geven of om een bewegingseffect te creëren.
+
+**Wat neem ik hieruit mee?**
+
+Variabele fonts bieden meer mogelijkheden dan alleen het kiezen van een standaard lettergewicht. Je kunt de vorm van letters dynamisch aanpassen en typografie daarmee een actievere rol geven in een ontwerp. Het is wel belangrijk om te letten op de leesbaarheid en om te voorkomen dat effecten de tekst onnodig ingewikkeld maken.
+
 ## Artikel: From Shrimp Jesus to Erotic Tractors (2025)
 
 AI-slop is goedkope, surrealistische content die met AI wordt gegenereerd en op social media wordt geplaatst. Het ontstaat door een combinatie van twee factoren:
@@ -89,6 +120,17 @@ Het is cruciaal dat de menselijke autonomie behouden blijft. Gebruikers kunnen h
 
 <details> 
 <summary><strong> Vakantie </strong></summary>
+
+### Toepassing van typografie en animaties
+
+De theorie over variabele fonts en CSS-animaties laat zien hoe typografie meer kan zijn dan statische tekst. Door te experimenteren met eigenschappen zoals lettergrootte, lettergewicht, letterafstand en rotatie kun je woorden een eigen karakter geven.
+
+Animaties kunnen bovendien helpen om de betekenis van tekst te versterken. Een woord kan bijvoorbeeld groter worden om nadruk te leggen, een draaiende beweging kan voor onrust zorgen en een vloeiende beweging kan een gevoel van ritme oproepen.
+
+Bij het ontwerpen van een typografische compositie is het daarom interessant om niet alleen te kijken naar hoe tekst eruitziet, maar ook naar hoe deze verandert en beweegt. De vormgeving kan zo bijdragen aan de manier waarop de boodschap wordt ervaren.
+
+Een belangrijk aandachtspunt is dat de effecten de inhoud moeten ondersteunen. Wanneer de beweging te druk wordt of te veel aandacht opeist, kan dit de leesbaarheid verminderen.
+
 Daarnaast ben ik aan de slag gegaan met het visualisereen van een songtekst door middel van variabele fonts. Hiervoor heb ik eerst een brainstorm gemaakt rondom het woord Sorrow. Om een goed beeld te krijgen bij wat dit woord oproept, heb ik associaties uitgewerkt zoals verdriet, zwaarte, leegte, tranen en donkere kleuren.   
    
 Vervolgens ben ik begonnen met het maken van verschillende schetsen waarin ik ben gaan experimenteren met typografie en beweging:   
@@ -135,19 +177,54 @@ Ik heb al animaties toegevoegd aan mijn songtekst om de tekst wat dynamischer te
 </details> 
 
 <details> 
+<summary><strong> Woensdag 7 oktober </strong></summary>
+
+   ### Gridopbouw en regellengte
+
+Bij het opbouwen van een grid is het belangrijk om rekening te houden met de leesbaarheid van tekst en de beschikbare ruimte. De regelhoogte (*line-height*) kan als uitgangspunt dienen voor de breedte van kolommen en de onderlinge afstanden.
+
+Een consistente regelhoogte helpt om tekstblokken op een logische manier op elkaar af te stemmen. Door vervolgens kolommen, marges en tussenruimtes te bepalen, ontstaat een grid dat aansluit op de inhoud en het ontwerp.
+
+Met CSS Grid kun je deze indeling flexibel opbouwen. Door bijvoorbeeld `repeat()`, `minmax()` en `calc()` te combineren, kun je kolommen maken die zich aanpassen aan de beschikbare ruimte en tegelijkertijd een minimale breedte behouden.
+
+Het is hierbij belangrijk om niet alleen naar de technische indeling te kijken, maar ook naar de uiteindelijke leesbaarheid. De breedte van een tekstkolom moet passen bij de gebruikte lettergrootte en regelafstand. Een goed grid ondersteunt dus zowel de visuele structuur als het comfortabel lezen van content.
+
+### Check-out: grids en structuur
+
+**Waarom is het nuttig om een grid te gebruiken?**
+
+Voor de ontwerper biedt een grid een duidelijk uitgangspunt om elementen te positioneren en de lay-out consistent te houden. Voor de bezoeker zorgt het voor een overzichtelijke pagina, waarin informatie makkelijker te vinden en te scannen is.
+
+**Hoe kun je voorkomen dat een ontwerp chaotisch wordt?**
+
+Je kunt een ontwerp overzichtelijk houden door consequent om te gaan met witruimte, een duidelijke visuele hiërarchie aan te brengen en het aantal verschillende kleuren en lettertypen te beperken. Ook helpt het om elementen bewust uit te lijnen, zodat er samenhang ontstaat.
+
+**Hoeveel experiment mag er in een ontwerp zitten?**
+
+Een ontwerp mag best afwijken van standaardregels en verrassende elementen bevatten. Het is vooral belangrijk dat deze keuzes passen bij het concept en de gebruikservaring niet onnodig ingewikkeld maken. Een goede balans tussen structuur en experiment zorgt ervoor dat een ontwerp zowel herkenbaar als onderscheidend kan zijn.
+
+</details> 
+
+<details> 
 <summary><strong> Dinsdag 6 oktober </strong></summary>
 
 Vandaag deed ik de deep-dive van Vasilis: Interessantere layouts
 
 <img width="1440" height="769" alt="Scherm­afbeelding 2026-10-08 om 22 25 25" src="https://github.com/user-attachments/assets/fa645c1e-43c0-4268-aea8-f34516cef2e6" />
 
-In deze deep dive heb ik geleerd dat grids niet alleen gebruikt hoeven te worden voor strakke, rechte layouts. Je kunt ze ook creatief inzetten door bijvoorbeeld elementen te verschuiven, te draaien of anders te positioneren.
+### Deep dive: Interessantere layouts
 
-Ik vond vooral het schalen van typografie interessant. Met vw en cqi kan de grootte van tekst zich aanpassen aan de beschikbare ruimte. Met clamp() kun je ervoor zorgen dat de tekst niet te groot of te klein wordt. Dit lijkt me handig voor expressieve typografie, omdat de grootte van tekst zo onderdeel kan worden van de compositie.
+Tijdens deze deep dive stond het maken van interessante en flexibele lay-outs centraal. Een belangrijk inzicht is dat een grid niet alleen bedoeld is om alle elementen netjes recht onder elkaar te zetten. Je kunt het ook als basis gebruiken voor een creatiever ontwerp, bijvoorbeeld door elementen te verschuiven, te laten overlappen of verschillende richtingen te geven.
 
-Ook vond ik writing-mode interessant. Hiermee kun je tekst bijvoorbeeld verticaal plaatsen en zo de ruimte aan de zijkant van een scherm gebruiken. In combinatie met mediaqueries kun je dit alleen toepassen wanneer er genoeg ruimte is.
+Ook heb ik gekeken naar manieren om typografie beter te laten aansluiten op de beschikbare ruimte. Met `vw` kun je tekst laten schalen op basis van de breedte van het viewport. Met `cqi` kun je de grootte laten afhangen van de breedte van een container. Hierdoor kun je de typografie beter afstemmen op de ruimte waarin deze wordt weergegeven.
 
-Wat ik meeneem: responsive design hoeft niet alleen te betekenen dat alles kleiner wordt. Je kunt de beschikbare ruimte juist gebruiken om een ontwerp op verschillende schermformaten anders en creatiever vorm te geven.
+De functie `clamp()` is hierbij handig, omdat je een minimale, gewenste en maximale waarde kunt instellen. Zo kan tekst flexibel meegroeien met het scherm, zonder dat deze onleesbaar klein of overdreven groot wordt.
+
+Daarnaast kun je met de CSS-eigenschap `writing-mode` tekst verticaal weergeven. Dit biedt mogelijkheden om ook de ruimte aan de zijkanten van een scherm te benutten. Met mediaqueries kun je zulke keuzes aanpassen aan het formaat van het scherm.
+
+**Wat neem ik hieruit mee?**
+
+Responsief ontwerpen betekent niet alleen dat elementen kleiner worden wanneer een scherm smaller is. Je kunt verschillende schermformaten juist gebruiken om de compositie op een passende manier te veranderen. Door grids, schaalbare typografie en verschillende tekstoriëntaties te combineren, kun je een ontwerp maken dat zowel flexibel als expressief is.
 
 </details> 
 
