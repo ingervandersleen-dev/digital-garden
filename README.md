@@ -431,6 +431,10 @@ Hierdoor kan ik mijn oorspronkelijke schets vertalen naar een dynamisch schermon
 <details> 
 <summary><strong> Vrijdag 2 oktober </strong></summary>
 
+<img width="832" height="387" alt="Scherm­afbeelding 2026-10-27 om 23 36 03" src="https://github.com/user-attachments/assets/c3773098-06cc-4537-bec8-d54eaecfc40a" />
+<img width="509" height="683" alt="Scherm­afbeelding 2026-10-27 om 23 36 36" src="https://github.com/user-attachments/assets/ce47e4aa-7004-4fd4-b7a6-2123dfdd470b" />
+
+
 ### Voortgangsgesprek
 
 Vandaag had ik voor de derde keer een voortgangsgesprek, dit keer met Barbara. Ik vond het een prettig en nuttig gesprek, omdat ik zowel van Barbara als van de studentassistenten concrete feedback en tips heb gekregen.
@@ -447,6 +451,12 @@ Daarnaast gaf Barbara feedback op mijn designkeuzes. Ze keek onder andere naar d
 
 <details> 
 <summary><strong> Woensdag 30 september </strong></summary>
+
+<img width="509" height="683" alt="Scherm­afbeelding 2026-10-27 om 23 37 19" src="https://github.com/user-attachments/assets/46aa67da-5aa2-4610-a0c9-efcb7db2d25c" />
+<img width="509" height="683" alt="Scherm­afbeelding 2026-10-27 om 23 37 40" src="https://github.com/user-attachments/assets/6fa2d17b-16b1-41bf-b90a-4116586190d0" />
+<img width="509" height="683" alt="Scherm­afbeelding 2026-10-27 om 23 37 50" src="https://github.com/user-attachments/assets/7cc172b9-97af-436d-af54-87511a97743b" />
+<img width="509" height="683" alt="Scherm­afbeelding 2026-10-27 om 23 38 12" src="https://github.com/user-attachments/assets/b90d5627-10e3-44fe-9e05-4792b53582f0" />
+<img width="509" height="683" alt="Scherm­afbeelding 2026-10-27 om 23 38 36" src="https://github.com/user-attachments/assets/41118cb7-6224-4f73-a293-4321fe2e1b68" />
 
 ### CHECK-OUT
 
