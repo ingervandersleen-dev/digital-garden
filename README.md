@@ -13,6 +13,11 @@ Wat ik vooral meeneem uit deze sprint, is dat aandacht voor detail en experiment
 
 Voor ik het inlever wil ik toegankelijkheid en het testen van mijn website een vast onderdeel van mijn ontwerpproces laten blijven, zodat ik mijn keuzes niet alleen op uiterlijk baseer, maar ook op hoe goed de website daadwerkelijk werkt.
 
+<img width="1293" height="674" alt="Scherm­afbeelding 2026-10-27 om 20 24 42" src="https://github.com/user-attachments/assets/a2477311-a127-48ea-a5cf-aced34cf8176" />
+<img width="1293" height="674" alt="Scherm­afbeelding 2026-10-27 om 20 25 11" src="https://github.com/user-attachments/assets/906c18ad-84c7-47d0-8eac-df082a0082cb" />
+<img width="1293" height="674" alt="Scherm­afbeelding 2026-10-27 om 20 25 36" src="https://github.com/user-attachments/assets/043f9ca2-7890-4190-8244-4c13e9fbce67" />
+
+
 </details> 
 
 <details> 
