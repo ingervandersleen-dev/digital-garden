@@ -477,7 +477,8 @@ Vandaag heb ik mijn site verder afgemaakt. Ik heb onder andere een keuzemenu gem
 
 </details> 
 
-## Maandag 28 september
+<details> 
+<summary><strong> Maandag 28 september </strong></summary>
 
 ### Deep dive Sanne
 
@@ -519,7 +520,10 @@ Visueel, motorisch, cognitief en auditief
 
 bron bestudeerd: https://developer.mozilla.org/en-US/docs/Web/API/Invoker_Commands_API -> laat zien dat een knop declaratief gedrag kan krijgen via de attributen, zonder script, inclusief een voorbeeld met show-modal
 
-## Woensdag 23 september
+</details> 
+
+<details> 
+<summary><strong> Woensdag 23 september </strong></summary>
 
 ### Herontwerp wireframe
 
@@ -550,7 +554,10 @@ Begrijpelijke taal: vermijd ingewikkelde juridische termen.
 Geen manipulatie: gebruik geen dark patterns, zoals misleidende knoppen, schuldgevoel of tijdsdruk.
 Controle: geef de gebruiker de mogelijkheid om de keuze later aan te passen of in te trekken.
 
-## Maandag 21 september
+</details> 
+
+<details> 
+<summary><strong> Maandag 21 september </strong></summary>
 
 ### Deep dive Sanne
 
@@ -580,7 +587,10 @@ Ik accepteerde cookies voorheen vaak zonder er echt bij stil te staan. Vooral om
 
 bron vogel animatie: https://web.dev/articles/prefers-reduced-motion -> maak een versie van je site mee met minder beweging voor mensen die dat hebben aangegeven.
 
-## 31 aug - Kickoff
+</details>
+
+<details> 
+<summary><strong> KICK-OFF 31 augustus </strong></summary>
 
 Een fork van de model repository gemaakt en gepubliceerd via mijn eigen Github omgeving.
 
@@ -601,7 +611,10 @@ Ik heb mijn domeinnaam gekoppeld aan mijn website die op GitHub staat. Hierdoor 
 
 GitHub verwerkt vervolgens de nieuwe versie van mijn bestanden, waardoor de aanpassingen op de website worden gepubliceerd. Op deze manier kan ik mijn website blijven aanpassen en ervoor zorgen dat de nieuwste versie online beschikbaar is.
 
-## Woensdag 2 september
+</details> 
+
+<details> 
+<summary><strong> Woensdag 2 september </strong></summary>
 
 ### DEEP DIVE 1 HTML/CSS BASICS
 
@@ -614,9 +627,14 @@ GitHub verwerkt vervolgens de nieuwe versie van mijn bestanden, waardoor de aanp
 
 FOTO MENU KAART FIGMA
 
-## Vrijdag 5 september
+</details>
 
-## Maandag 7 september
+<details> 
+<summary><strong> Vrijdag 5 september </strong></summary>
+</details>
+
+<details> 
+<summary><strong> Maandag 7 september </strong></summary>
 
 ### OPDRACHT 1-RANGSCHIKKEN
 
@@ -656,7 +674,10 @@ Muziek is een groot onderdeel van mijn leven en ik koppel in mijn hoofd vaak bep
 3. Vertel waar jij mee aan de slag wilt gaan bij het maken van jouw eigen digital garden (let op: dit zijn jouw eerste ideeën, dit kan en mag veranderen in de loop van het programma.
    Ik wil aan de slag met het maken van een digital junk drawer. Hieraan plaats ik al mijn ideeën en gedachtes over bepaalde onderwerpen.
 
-## Dinsdag 8 september
+</details> 
+
+<details> 
+<summary><strong> Dinsdag 8 september </strong></summary>
 
 ### OPDRACHT 3- VERZAMELEN VAN INSPIRATIE
 
@@ -813,7 +834,10 @@ Een junk drawer is een verzameling van dingen die nergens anders thuishoren. Mij
 <img width="1060" height="663" alt="Scherm­afbeelding 2026-09-08 om 23 10 47" src="https://github.com/user-attachments/assets/3423e8c4-e862-4954-ac7b-cf32f888971c" />
 <img width="1060" height="663" alt="Scherm­afbeelding 2026-09-08 om 23 12 59" src="https://github.com/user-attachments/assets/cbc41ab0-7c5d-43dc-9f77-1779a2ddb608" />
 
-# Woensdag 9 september
+</details>
+
+<details> 
+<summary><strong> Woensdag 9 september </strong></summary>
 
 ### PRESENTEREN IN DUO'S (Isabeau Cool)
 
@@ -867,7 +891,8 @@ Uit mijn 25 afbeeldingen haal ik vooral inspiratie uit de combinatie van verschi
 <img width="762" height="784" alt="Scherm­afbeelding 2026-09-11 om 11 45 00" src="https://github.com/user-attachments/assets/093bc8a8-63d9-4f74-a04a-32ef5fade414" />
 <img width="762" height="784" alt="Scherm­afbeelding 2026-09-11 om 11 45 09" src="https://github.com/user-attachments/assets/5f80ab77-8aeb-4464-a33b-0d2b675a328b" />
 
-## Maandag 14 september
+<details> 
+<summary><strong> Maandag 14 september </strong></summary>
 
 Ik startte vandaag met het schetsen van het hoofdscherm. Tijdens het schetsen kwam ik tot de conclusie dat ik liever voor een concept wil kiezen die goed aansluit bij de naam van mijn website: The Ingerverse. Toen dacht ik aan een 'Junk Web' in plaats van een 'Junk Drawer'. Ik startte met een grove schets:
 
@@ -889,7 +914,10 @@ deep dive toepassen,
 
 Kun je het ontwerp en de bouw van je eigen Garden (zo uit je hoofd) onderbouwen in Webby vocabulair?
 
-## Woensdag 16 september
+</details> 
+
+<details> 
+<summary><strong> Woensdag 16 september </strong></summary>
 
 Tijdens het uitwerken van mijn homepage in VSCodium kwam ik tot de conclusie dat ik mijn onderwerp toch te breed vind en ik het mezelf hiermee onnodig lastig maak. Daarom koos ik ervoor mijn onderwerp aan te scherpen naar één specifiek onderdeel van mijn website waar ik nog steeds enorm veel interessants mee kan doen. Toen kwam ik uit op 'Overthinking Everything'. Ik startte met het maken van schetsen.
 
@@ -904,3 +932,5 @@ Toen startte ik met coderen. Ik vind het niet gebruiken van div en classes heel 
 
 <img width="511" height="593" alt="Scherm­afbeelding 2026-10-02 om 09 25 30" src="https://github.com/user-attachments/assets/6f61a5f0-28b5-446e-88b2-8a4c913f10ee" />
 <img width="857" height="593" alt="Scherm­afbeelding 2026-10-02 om 09 25 06" src="https://github.com/user-attachments/assets/39b71dfd-a4ad-4c70-ad36-5f2e6c3a31e6" />
+
+</details>
