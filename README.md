@@ -90,6 +90,8 @@ Daarnaast heb ik de bingo interactief gemaakt, zodat de gebruiker de vakjes kan 
 
 Met dit onderdeel probeer ik een kleine, toegankelijke activiteit te creëren die aansluit bij het doel van mijn website: even afstand nemen van het overdenken en meer aandacht hebben voor het moment. Ik heb er bewust voor gekozen om de gebruiker niet te overladen met informatie of keuzes, maar juist een duidelijke opdracht te geven waarmee die meteen aan de slag kan. 
 
+https://www.youtube.com/watch?v=cxSowU9sDdU -> gebruikt als bron als een verkenning van creatieve toepassingen van :has()
+
 ### technische uitwerking
 
 Voor de Walk Bingo heb ik HTML en CSS gecombineerd om een interactieve bingokaart te maken. Ik heb de opdrachten opgebouwd met een lijst en checkboxen die in labels zijn geplaatst. Hierdoor kan de gebruiker op een heel vakje klikken om een opdracht af te vinken. Met CSS Grid heb ik de kaart verdeeld in drie kolommen en met aspect-ratio ervoor gezorgd dat de vakjes vierkant blijven. Ook heb ik clamp() gebruikt om de tekstgroottes flexibel te maken. Dit heb ik gedaan met behulp van een studentenassistent. 
@@ -101,6 +103,11 @@ Ik heb ook een bingomelding toegevoegd die verschijnt wanneer een volledige rij,
 Bij de toegankelijkheid heb ik geprobeerd rekening te houden met toetsenbordbediening. De checkboxen zijn visueel verborgen, maar blijven aanwezig in de HTML. Met :focus-visible voeg ik een duidelijke focusrand toe wanneer een vakje toetsenbordfocus heeft. Het vinkje naast de veranderde achtergrondkleur zorgt er bovendien voor dat een geselecteerd vakje niet alleen door kleur te herkennen is.
 
 Door deze aanpak heb ik geleerd dat CSS niet alleen bedoeld is voor de vormgeving, maar ook voor het reageren op gebruikersinteractie en het tonen van feedback. Ik vond het interessant om te ontdekken hoeveel functionaliteit ik met HTML en CSS kan realiseren zonder extra JavaScript te schrijven. Dit houdt de implementatie relatief eenvoudig en past bij mijn doel om de Walk Bingo overzichtelijk en laagdrempelig te maken.
+
+### retrospect 
+<img width="521" height="693" alt="Scherm­afbeelding 2026-10-27 om 23 17 27" src="https://github.com/user-attachments/assets/68e172e5-a749-458a-a99f-26c3b7714173" />
+<img width="632" height="272" alt="Scherm­afbeelding 2026-10-27 om 23 18 33" src="https://github.com/user-attachments/assets/c63f7b76-6530-4ba8-8715-1061465556eb" />
+<img width="496" height="545" alt="Scherm­afbeelding 2026-10-27 om 23 19 08" src="https://github.com/user-attachments/assets/8c40e7a9-d36e-4aaf-b0ba-4e8244027c3f" />
 
 </details> 
 
@@ -468,6 +475,8 @@ Visueel, motorisch, cognitief en auditief
 - [control]+[option]+[A] = de hele website voorlezen
 - [control]+[option]+[U] = open lijst met headings, links, formelementen
 
+bron bestudeerd: https://developer.mozilla.org/en-US/docs/Web/API/Invoker_Commands_API -> laat zien dat een knop declaratief gedrag kan krijgen via de attributen, zonder script, inclusief een voorbeeld met show-modal
+
 ## Woensdag 23 september
 
 ### Herontwerp wireframe
@@ -526,6 +535,8 @@ Heading elementen zijn de titels en tussenkoppen op een webpagina. In HTML gebru
 3. Hoe ga jij met cookies om? Beschrijf jouw beweegredenen en of die zijn veranderd na het volgen van dit college.
 
 Ik accepteerde cookies voorheen vaak zonder er echt bij stil te staan. Vooral omdat ik snel verder wilde op een website en de cookie-melding vaak als iets kleins en onbelangrijks zag. Na dit college ben ik me meer bewust geworden van hoeveel informatie cookies kunnen verzamelen en hoe websites met de keuzes van gebruikers kunnen omgaan. Ik kijk nu beter naar welke cookies ik accepteer en kies waar mogelijk alleen voor noodzakelijke cookies. Mijn belangrijkste reden hiervoor is dat ik meer controle wil houden over mijn persoonlijke gegevens en online gedrag.
+
+bron vogel animatie: https://web.dev/articles/prefers-reduced-motion -> maak een versie van je site mee met minder beweging voor mensen die dat hebben aangegeven.
 
 ## 31 aug - Kickoff
 
