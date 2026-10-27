@@ -14,9 +14,14 @@ Pop-ups zonder JavaScript met command en commandfor en <dialog>.
 Het ging vaak mis door kleine dingen. Een ontbrekende </section> zorgde ervoor dat mijn pop-ups hun opmaak kwijtraakten, en een aspect-ratio die voor één pagina bedoeld was, maakte ineens mijn boeken kleiner. Daarvan heb ik geleerd dat je een wijziging op één plek altijd op alle pagina’s moet controleren.
 
 Dit neem ik mee:
+
 -Als iets er “gek” uitziet, kijk dan eerst naar de HTML-structuur voordat je de CSS aanpast.
+
 -Test elke wijziging op alle pagina’s, niet alleen op de pagina waar je mee bezig bent.
--Een ontwerp hoeft niet perfect te zijn om goed te zijn. 
+
+-Een ontwerp hoeft niet perfect te zijn om goed te zijn.
+
+-Accepteren dat het gevoelsmatig nooit 'af' is.
 
 Met meer tijd zou ik de pagina’s “Coming soon” afmaken met echte oefeningen, mijn tekeningen als vierkante SVG’s maken zodat de kaarten mooi gelijk zijn, en me verder verdiepen in animaties.
 
