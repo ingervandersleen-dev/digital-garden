@@ -3,7 +3,7 @@
 <details> 
 <summary><strong> vrijdag 23 oktober </strong></summary>
    
-Reflectie feedback Sprint 3
+### Reflectie feedback Sprint 3
 
 Ik kreeg positieve feedback op Sprint 3. Vooral mijn aandacht voor detail in de vormgeving, de stappen die ik heb gezet in het leren programmeren en de duidelijke README werden benoemd. Dat vind ik fijn om terug te horen, omdat ik veel tijd heb besteed aan het uitwerken van mijn ideeën en het zorgvuldig vormgeven van mijn website. Ik merk dat ik steeds beter in staat ben om mijn visuele ideeën niet alleen te bedenken, maar ze ook daadwerkelijk met code uit te werken.
 
