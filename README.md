@@ -11,7 +11,7 @@ Ook ben ik blij dat mijn proces en keuzes duidelijk terug te zien zijn in mijn l
 
 Wat ik vooral meeneem uit deze sprint, is dat aandacht voor detail en experimenteren met code een groot verschil kunnen maken in het eindresultaat. Ik wil deze nauwkeurigheid blijven toepassen, maar ook blijven letten op de balans tussen vormgeving, functionaliteit en toegankelijkheid. Een website moet er niet alleen goed uitzien, maar ook prettig en bruikbaar zijn voor verschillende gebruikers.
 
-Voor een volgende sprint wil ik blijven experimenteren met nieuwe technieken en mezelf uitdagen om mijn ideeën technisch verder uit te werken. Daarnaast wil ik toegankelijkheid en het testen van mijn website een vast onderdeel van mijn ontwerpproces laten blijven, zodat ik mijn keuzes niet alleen op uiterlijk baseer, maar ook op hoe goed de website daadwerkelijk werkt.
+Voor ik het inlever wil ik toegankelijkheid en het testen van mijn website een vast onderdeel van mijn ontwerpproces laten blijven, zodat ik mijn keuzes niet alleen op uiterlijk baseer, maar ook op hoe goed de website daadwerkelijk werkt.
 
 </details> 
 
