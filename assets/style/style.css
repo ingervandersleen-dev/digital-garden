@@ -596,10 +596,13 @@ main > section > ul:has(a) li:nth-child(4) a {
 
 /* ==========================================================================
    MARK: 9. Kaarten (book en mindfulness)
-   Elke kaart is een <li> met een <button> die een <dialog> opent via command. bron: deep dives
+   Elke kaart is een <li>. Op de boekenpagina bevat die een <button> die een
+   <dialog> opent via command. bron: deep dives
+   De lijst herkennen we aan "geen links erin" (:not(:has(a))), zodat het ook
+   werkt als er (nog) geen knoppen in de kaarten staan.
    ========================================================================== */
 
-main > section > ul:has(button) {
+main > section > ul:not(:has(a)) {
   display: grid;
   gap: var(--whitespace);
   grid-template-columns: minmax(0, 1fr); /* smal: onder elkaar */
@@ -610,40 +613,34 @@ main > section > ul:has(button) {
 
 /* Middelgroot: 2 x 2 */
 @media (min-width: 30em) {
-  main > section > ul:has(button) {
+  main > section > ul:not(:has(a)) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 /* Desktop: vier naast elkaar */
 @media (min-width: 60em) {
-  main > section > ul:has(button) {
+  main > section > ul:not(:has(a)) {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  /* Weinig kaarten (mindfulness): twee blokken, in het midden */
-  main > section > ul:has(button):not(:has(li:nth-child(3))) {
-    grid-template-columns: repeat(2, minmax(0, 18rem));
-    justify-content: center;
   }
 }
 
-main > section > ul:has(button) > li {
+main > section > ul:not(:has(a)) > li {
+  align-items: center;
   background: var(--kleur-wolk);
   border-radius: 1rem;
+  display: flex;
+  justify-content: center;
   min-width: 0;
   padding: var(--whitespace-s);
 }
 
-/* Elke tekening krijgt hetzelfde vierkante vak */
-main > section > ul:has(button) img {
-  aspect-ratio: 1 / 1;
+main > section > ul:not(:has(a)) img {
   border-radius: 0.5rem;
-  object-fit: contain;
   width: 100%;
 }
 
-main > section > ul:has(button) button {
+main > section > ul:not(:has(a)) button {
   background: none;
   border: none;
   border-radius: 0.5rem;
@@ -656,25 +653,22 @@ main > section > ul:has(button) button {
   width: 100%;
 }
 
-main > section > ul:has(button) button:hover,
-main > section > ul:has(button) button:focus-visible {
+main > section > ul:not(:has(a)) button:hover,
+main > section > ul:not(:has(a)) button:focus-visible {
   transform: translateY(-0.2rem);
 }
 
-main > section > ul:has(button) button:focus-visible {
+main > section > ul:not(:has(a)) button:focus-visible {
   outline: 0.15rem dashed var(--kleur-knop-hover);
   outline-offset: 0.3rem;
 }
 
-/* Placeholder-kaarten zelfde vierkante vak als een tekening */
-main > section > ul:has(button) > li:not(:has(button)) {
-  align-items: center;
+/* Placeholder-kaarten ("coming soon"): vierkant, tekst in het midden */
+main > section > ul:not(:has(a)) > li:not(:has(button)) {
   aspect-ratio: 1 / 1;
-  display: flex;
-  justify-content: center;
 }
 
-main > section > ul:has(button) > li:not(:has(button)) p {
+main > section > ul:not(:has(a)) > li:not(:has(button)) p {
   font-family: var(--font-titel);
   font-size: clamp(1rem, 2.5vw, 1.4rem);
   margin: 0;
