@@ -1,6 +1,21 @@
 # Model
 
 <details> 
+<summary><strong> vrijdag 23 oktober </strong></summary>
+   
+Reflectie feedback Sprint 3
+
+Ik kreeg positieve feedback op Sprint 3. Vooral mijn aandacht voor detail in de vormgeving, de stappen die ik heb gezet in het leren programmeren en de duidelijke README werden benoemd. Dat vind ik fijn om terug te horen, omdat ik veel tijd heb besteed aan het uitwerken van mijn ideeën en het zorgvuldig vormgeven van mijn website. Ik merk dat ik steeds beter in staat ben om mijn visuele ideeën niet alleen te bedenken, maar ze ook daadwerkelijk met code uit te werken.
+
+Ook ben ik blij dat mijn proces en keuzes duidelijk terug te zien zijn in mijn learning log en README. Hierdoor is niet alleen het eindresultaat zichtbaar, maar ook hoe ik tot bepaalde oplossingen ben gekomen.
+
+Wat ik vooral meeneem uit deze sprint, is dat aandacht voor detail en experimenteren met code een groot verschil kunnen maken in het eindresultaat. Ik wil deze nauwkeurigheid blijven toepassen, maar ook blijven letten op de balans tussen vormgeving, functionaliteit en toegankelijkheid. Een website moet er niet alleen goed uitzien, maar ook prettig en bruikbaar zijn voor verschillende gebruikers.
+
+Voor een volgende sprint wil ik blijven experimenteren met nieuwe technieken en mezelf uitdagen om mijn ideeën technisch verder uit te werken. Daarnaast wil ik toegankelijkheid en het testen van mijn website een vast onderdeel van mijn ontwerpproces laten blijven, zodat ik mijn keuzes niet alleen op uiterlijk baseer, maar ook op hoe goed de website daadwerkelijk werkt.
+
+</details> 
+
+<details> 
 <summary><strong> Woensdag 21 oktober </strong></summary>
 We begonnen de dag met een aantal stellingen.
 
