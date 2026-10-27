@@ -1,29 +1,36 @@
 # Model
 ## Reflectie op het blok
 
-Dit blok heb ik veel geleerd over hoe je een website netjes opbouwt, en ik ben trots op wat ik heb gemaakt: een parkscène die overdag en ‘s nachts anders is, met een vliegende vogel, een bos, een wandel-bingo en kleurmodi die werken zonder JavaScript.
+Dit blok heb ik vooral veel geleerd over hoe je een website goed opbouwt en hoe kleine dingen in je code uiteindelijk best veel verschil kunnen maken. Ik ben best trots op wat ik heb gemaakt. Vooral de parkscène vind ik leuk geworden: overdag ziet de pagina er anders uit dan ’s nachts, er vliegt een vogel door het beeld en ik heb een bos, wandelbingo en verschillende kleurmodi toegevoegd. En dat allemaal zonder JavaScript te gebruiken! Ik ben er ook trots op dat ik dit blok heel veel om hulp heb gevraagd wanneer ik ergens niet uitkwam. In plaats van eindeloos zelf te blijven worstelen, heb ik geleerd dat hulp vragen juist een goede manier is om verder te komen en nieuwe dingen te begrijpen.
 
-### Dingen die ik echt snap sinds dit blok:
+### Dingen die ik nu beter begrijp
 
-Grid en responsive design. Ik heb mijn kaarten laten schakelen van één kolom naar 2×2 naar vier naast elkaar, met mobile-first media queries. Ik snapte uiteindelijk ook waarom je minmax(0, 1fr) gebruikt, en dat een grid kaarten in een rij vanzelf even hoog maakt.
-Custom properties en light-dark(). Alle kleuren staan op één plek, waardoor ik met één wijziging de hele site kon aanpassen. Mijn dark mode is een nachtscène met een maan in plaats van een zon.
-Slimme selectors. Ik gebruikte :has() om de kaarten, de bingo en de pagina-indelingen te stylen zonder extra classes. Dat paste ook bij de eis om zo min mogelijk div’s, span’s en classes te gebruiken.
-Toegankelijkheid. De skip-link, de kleurmodus-knop met details/summary, voldoende contrast en prefers-reduced-motion voor mensen die geen beweging willen.
-Pop-ups zonder JavaScript met command en commandfor en <dialog>.
+**Grid en responsive design.** Ik heb mijn kaarten zo gemaakt dat ze op verschillende schermformaten anders worden ingedeeld: op mobiel staan ze onder elkaar, daarna in een 2×2-grid en op grotere schermen naast elkaar. Door hiermee te experimenteren, snap ik nu beter hoe mobile-first media queries werken. Ook begrijp ik inmiddels waarom je `minmax(0, 1fr)` gebruikt en hoe een grid ervoor zorgt dat kaarten binnen een rij even hoog blijven.
 
-Het ging vaak mis door kleine dingen. Een ontbrekende </section> zorgde ervoor dat mijn pop-ups hun opmaak kwijtraakten, en een aspect-ratio die voor één pagina bedoeld was, maakte ineens mijn boeken kleiner. Daarvan heb ik geleerd dat je een wijziging op één plek altijd op alle pagina’s moet controleren.
+**Custom properties en light-dark().** Ik vond het fijn om te ontdekken hoe handig het is om mijn kleuren op één plek te bewaren. Hierdoor kan ik met een kleine aanpassing meteen de hele website veranderen. Mijn dark mode is uiteindelijk ook meer geworden dan alleen een donkerdere versie van de website: het is echt een nachtscène geworden, met een maan in plaats van een zon.
 
-Dit neem ik mee:
+**Slimme selectors.** Ik heb veel geëxperimenteerd met selectors zoals `:has()`, waarmee ik verschillende onderdelen van mijn website kon stylen zonder overal extra classes toe te voegen. Dit vond ik interessant, omdat ik hierdoor meer uit CSS kon halen en tegelijkertijd rekening hield met de eis om zo min mogelijk onnodige `div`’s, `span`’s en classes te gebruiken.
 
--Als iets er “gek” uitziet, kijk dan eerst naar de HTML-structuur voordat je de CSS aanpast.
+**Toegankelijkheid.** Ook heb ik meer geleerd over hoe je een website toegankelijker kunt maken. Zo heb ik een skip-link toegevoegd, een kleurmodus-knop gemaakt met `details` en `summary`, rekening gehouden met contrast en `prefers-reduced-motion` gebruikt voor mensen die liever geen beweging zien. Daarnaast heb ik pop-ups gemaakt zonder JavaScript, met `command` en `commandfor`. Ik vind het leuk om te merken dat je met HTML en CSS veel meer kunt dan ik aan het begin van het blok dacht.
 
--Test elke wijziging op alle pagina’s, niet alleen op de pagina waar je mee bezig bent.
+### Wat ging minder soepel?
 
--Een ontwerp hoeft niet perfect te zijn om goed te zijn.
+Niet alles werkte natuurlijk meteen. Soms zat het probleem in iets heel kleins, terwijl ik er veel langer naar aan het zoeken was dan nodig. Zo zorgde een ontbrekend stukje HTML ervoor dat de opmaak van mijn pop-ups ineens niet meer klopte. Ook had ik een `aspect-ratio` toegevoegd om één pagina mooier te maken, maar daardoor werden mijn boeken op een andere pagina ineens kleiner.
 
--Accepteren dat het gevoelsmatig nooit 'af' is.
+Dit soort dingen zijn soms frustrerend, vooral als je denkt dat je iets eindelijk goed hebt staan en er vervolgens ergens anders weer iets verandert. Tegelijkertijd heb ik hiervan geleerd dat HTML en CSS niet los van elkaar staan en dat een aanpassing op één plek invloed kan hebben op andere onderdelen van je website.
 
-Met meer tijd zou ik de pagina’s “Coming soon” afmaken met echte oefeningen, mijn tekeningen als vierkante SVG’s maken zodat de kaarten mooi gelijk zijn, en me verder verdiepen in animaties.
+### Wat neem ik mee naar het volgende blok?
+
+- Als iets er ineens gek uitziet, moet ik eerst naar de HTML-structuur kijken voordat ik van alles in mijn CSS ga aanpassen.
+- Ik moet veranderingen niet alleen testen op de pagina waar ik op dat moment aan werk, maar ook op de rest van mijn website.
+- Ik mag soms wat eerder tevreden zijn met mijn werk. Ik blijf namelijk makkelijk kleine dingen aanpassen, omdat ik het gevoel heb dat het altijd nóg beter kan.
+- Een ontwerp hoeft niet perfect te zijn om goed te zijn. Soms is het ook gewoon tijd om iets af te ronden en door te gaan.
+
+### Wat zou ik nog willen doen?
+
+Als ik meer tijd had gehad, zou ik de Coming soon-pagina’s verder hebben uitgewerkt met echte oefeningen. Ook zou ik mijn tekeningen als vierkante SVG’s willen maken, zodat de kaarten er visueel wat gelijkmatiger uitzien. Daarnaast wil ik me verder verdiepen in animaties en kijken hoe ik die op een leuke manier kan toepassen.
+
+Al met al ben ik blij met wat ik dit blok heb geleerd en gemaakt. Ik merk dat ik steeds beter begrijp hoe HTML en CSS samenwerken en dat ik steeds zelfstandiger problemen kan oplossen. Mijn grootste leerpunt blijft denk ik om niet eindeloos aan details te blijven sleutelen. Ik wil graag dat alles klopt, maar ik moet ook leren wanneer iets goed genoeg is om het los te laten.
 
 <details> 
 <summary><strong> Maandag 26 oktober </strong></summary>
