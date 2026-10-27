@@ -2,6 +2,16 @@
 
 <details> 
 <summary><strong> Maandag 26 oktober </strong></summary>
+
+Ik heb besloten om de mindfulness pagina aan te passen. Om een geheel te vormen staat er nu op elk blok 'coming soon'.
+
+<img width="1430" height="699" alt="Scherm­afbeelding 2026-10-27 om 23 05 06" src="https://github.com/user-attachments/assets/1a6cfb64-3f5f-4392-b72b-ac8bba2a2a13" />
+<img width="1430" height="699" alt="Scherm­afbeelding 2026-10-27 om 23 05 55" src="https://github.com/user-attachments/assets/4a187d18-410a-428b-8ba7-c20e17386e20" />
+
+---->>>>>
+<img width="1430" height="699" alt="Scherm­afbeelding 2026-10-27 om 23 06 16" src="https://github.com/user-attachments/assets/f50132fe-786d-456c-8f8a-42a2fe0b5ae6" />
+
+
 <img width="516" height="666" alt="Scherm­afbeelding 2026-10-27 om 20 48 41" src="https://github.com/user-attachments/assets/ee9ec241-67b6-4288-bf32-28ce7b002c36" />
 <img width="665" height="464" alt="Scherm­afbeelding 2026-10-27 om 20 49 28" src="https://github.com/user-attachments/assets/853c05ac-8a0a-4233-af79-1dd159920410" />
 
