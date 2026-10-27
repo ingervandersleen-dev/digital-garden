@@ -20,7 +20,7 @@
 /* ==========================================================================
    MARK: 1. Custom properties
    light-dark(licht, donker) kiest zelf de juiste kleur, op basis van
-   color-scheme (dus zowel voor "auto" als voor de Licht/Donker-knoppen).
+   color-scheme (dus zowel voor "auto" als voor de Licht/Donker-knoppen). bron: deep dives
    ========================================================================== */
 
 :root {
@@ -72,7 +72,7 @@
   --whitespace-s: 1rem;
   --whitespace-xs: 0.5rem;
 
-  /* Wolken en sterren: één keer gedefinieerd, gebruikt op elke pagina */
+  /* Wolken en sterren: één keer gedefinieerd, gebruikt op elke pagina (gradient bron: deep dives) */
   --wolken-en-sterren:
     /* Wolken */
     radial-gradient(
@@ -202,7 +202,7 @@ a:focus-visible {
    MARK: 4. Op elke pagina: skip-link en kleurmodus-knop
    ========================================================================== */
 
-/* Skip-link: onzichtbaar totdat een toetsenbordgebruiker er met Tab op komt. */
+/* Skip-link: onzichtbaar totdat een toetsenbordgebruiker er met Tab op komt. bron: deep dives */
 a[href="#main-content"] {
   position: absolute;
   top: -3rem;
@@ -221,10 +221,9 @@ a[href="#main-content"]:focus {
 }
 
 /* Kleurmodus-knop: één klein knopje (<details>/<summary>) linksboven. Pas na
-   een klik klapt de pil met auto/light/dark eronder open. De radiobuttons
-   blijven in de DOM, dus de gekozen modus blijft werken als het menu dicht is.
+   een klik klapt de pil met auto/light/dark eronder open. 
    "body > header" i.p.v. gewoon "header", want de titel is óók een <header>.
-   fixed: de knop moet altijd bereikbaar blijven, ook tijdens het scrollen. */
+   fixed: de knop moet altijd bereikbaar blijven, ook tijdens het scrollen. bron: deep dives */
 body > header {
   position: fixed;
   top: 1rem;
@@ -247,12 +246,12 @@ body > header summary {
   color: var(--kleur-knop-tekst);
   border-radius: var(--radius-knop);
   font-size: 0.9rem;
-  list-style: none; /* haalt het standaard driehoekje weg */
+  list-style: none; /* dit haalt het standaard driehoekje weg bron: studentassistent */
   transition: background-color 0.2s ease-in-out;
 }
 
 body > header summary::-webkit-details-marker {
-  display: none; /* hetzelfde voor Safari */
+  display: none; /* hetzelfde voor Safari, bron: studentassistent */
 }
 
 body > header summary::before {
@@ -346,8 +345,7 @@ main > section {
 }
 
 /* Zon en maan staan op dezelfde plek. Door de kleuren (zon: licht, maan:
-   donker) is steeds maar één van de twee zichtbaar. Het zijn pseudo-elementen,
-   dus er is geen extra HTML voor nodig. */
+   donker) is steeds maar één van de twee zichtbaar. */
 main > section::before,
 main > section::after {
   content: "";
@@ -439,7 +437,7 @@ main > section > header nav a:hover {
 }
 
 /* pijltje voor de eerste knop; het deel na de / is de tekst voor
-   schermlezers (leeg). De eerste regel is de terugval voor oudere browsers. */
+   schermlezers (leeg). De eerste regel is de terugval voor oudere browsers. bron: studentassistent */
 main > section > header nav li:first-child a::before {
   content: "← ";
   content: "← " / "";
@@ -571,7 +569,7 @@ main > section > ul:has(a) a:hover {
 
 /* Zachte zweefbeweging, met een kleine vertraging per wolkje zodat ze niet
    allemaal precies gelijk bewegen. Het gebruikt "translate" (en niet
-   "transform"), zodat de hover-beweging er gewoon bovenop werkt. */
+   "transform"), zodat de hover-beweging er gewoon bovenop werkt. bron: 4e jaars CMD-student (mede-bestuurslid) */
 @keyframes zweven {
   0%,
   100% {
@@ -598,7 +596,7 @@ main > section > ul:has(a) li:nth-child(4) a {
 
 /* ==========================================================================
    MARK: 9. Kaarten (book en mindfulness)
-   Elke kaart is een <li> met een <button> die een <dialog> opent via command.
+   Elke kaart is een <li> met een <button> die een <dialog> opent via command. bron: deep dives
    ========================================================================== */
 
 main > section > ul:has(button) {
@@ -637,15 +635,12 @@ main > section > ul:has(button) > li {
   padding: var(--whitespace-s);
 }
 
+/* Elke tekening krijgt hetzelfde vierkante vak */
 main > section > ul:has(button) img {
-  border-radius: 0.5rem;
-  width: 100%;
-}
-
-/* Weinig kaarten (mindfulness): elke tekening krijgt hetzelfde vierkante vak */
-main > section > ul:has(button):not(:has(li:nth-child(3))) img {
   aspect-ratio: 1 / 1;
+  border-radius: 0.5rem;
   object-fit: contain;
+  width: 100%;
 }
 
 main > section > ul:has(button) button {
@@ -671,6 +666,22 @@ main > section > ul:has(button) button:focus-visible {
   outline-offset: 0.3rem;
 }
 
+/* Placeholder-kaarten zelfde vierkante vak als een tekening */
+main > section > ul:has(button) > li:not(:has(button)) {
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+}
+
+main > section > ul:has(button) > li:not(:has(button)) p {
+  font-family: var(--font-titel);
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  margin: 0;
+  opacity: 0.7;
+  text-align: center;
+}
+
 /* ==========================================================================
    MARK: 10. Muziekpagina: playlist en songtekst-knop
    ========================================================================== */
@@ -681,7 +692,7 @@ main > section > section:has(> iframe) {
   padding: var(--whitespace) var(--whitespace-s);
 }
 
-/* De (verborgen) kop van de playlist: wel voor schermlezers, niet zichtbaar */
+/* De (verborgen) kop van de playlist: wel voor schermlezers, niet zichtbaar bron: volledig gecodeerd samen met klasgenoot */
 main > section > section:has(> iframe) > h2 {
   block-size: 0.0625rem;
   clip-path: inset(50%);
@@ -733,7 +744,7 @@ main > section > a:hover {
    Alleen CSS: elk vakje is een <label> met een verborgen checkbox. Een
    aangevinkt vakje herkennen we met :has(input:checked). Een volle rij, kolom
    of diagonaal herkennen we ook met :has(), en laat de bingo-melding zien.
-   De reset-knop zet alle vakjes terug, zonder JS.
+   De reset-knop zet alle vakjes terug, zonder JS. bron: studentassistent
    ========================================================================== */
 
 main > section > form {
@@ -841,7 +852,7 @@ main > section > form > p {
   text-align: center;
 }
 
-/* rijen */
+/* rijen gemaakt op zelfde manier als bos */
 main > section > form:has(li:nth-child(1) :checked):has(li:nth-child(2) :checked):has(li:nth-child(3) :checked) > p,
 main > section > form:has(li:nth-child(4) :checked):has(li:nth-child(5) :checked):has(li:nth-child(6) :checked) > p,
 main > section > form:has(li:nth-child(7) :checked):has(li:nth-child(8) :checked):has(li:nth-child(9) :checked) > p,
@@ -891,7 +902,7 @@ main > section > form > button:focus-visible {
 /* ==========================================================================
    MARK: 12. Pop-ups bij de kaarten
    Elke pop-up heeft dezelfde opmaak. Smal scherm: alles onder elkaar (titel,
-   plaatje, tekst, link, knop).
+   plaatje, tekst, link, knop). bron: deep dives
    ========================================================================== */
 
 main > dialog {
@@ -955,8 +966,7 @@ main > dialog form button:hover {
 }
 
 /* Breder scherm: plaatje links, tekst rechts.
-   [open] is nodig, anders overschrijft het display: grid het standaard
-   "display: none" van een gesloten dialog. */
+   [open] is nodig, anders overschrijft het display: grid */
 @media (min-width: 40em) {
   main > dialog {
     max-width: 40rem;
@@ -1002,9 +1012,9 @@ main > dialog form button:hover {
 
 /* ==========================================================================
    MARK: 13. Homepage: bos, vogel, pad en tekst
-   De homepage herkennen we aan het bos in de section (.bos).
+   De homepage herkennen we aan het bos.
    De bomen, het bos en de vogel zijn decoratie: die elementen zijn er alleen
-   voor de styling, dus daarom wél classes, span en div.
+   voor de styling, dus daarom wél classes, span en div. (gecheckt bij vasilis) 
    ========================================================================== */
 
 main > section:has(> .bos) {
@@ -1022,7 +1032,7 @@ main > section:has(> .bos) {
   padding-bottom: 10rem; /* ruimte onder de tekst, boven de onderrand */
 }
 
-/* De titel en de tekst liggen boven het bos (z-index werkt op grid-items) */
+/* De titel en de tekst liggen boven het bos, z-index werkt op grid-items (hulp studentassistent) */
 main > section:has(> .bos) > header,
 main > section:has(> .bos) > section {
   z-index: 1;
@@ -1098,7 +1108,7 @@ main > section:has(> .bos) > section a:hover {
   transform-origin: left top;
 }
 
-/* Van links naar rechts over het scherm, met een lichte golfbeweging */
+/* Van links naar rechts over het scherm, met een lichte golfbeweging bron: deep dives */
 @keyframes vlieg {
   0% {
     transform: translate(-4rem, 1rem);
@@ -1136,7 +1146,7 @@ main > section:has(> .bos) > section a:hover {
 /* MARK: Bos
    Dezelfde vorm (stam + bladeren/den) wordt tientallen keren hertekend met
    andere positie/grootte via --x, --y en --schaal. Bos-positionering en
-   vogel-animatie opgezet met hulp van Claude (Anthropic), sept 2026. */
+   vogel-animatie opgezet met hulp van 4e jaars CMD-student (mede-bestuurslid) */
 
 .bos {
   inset: 0;
@@ -1202,15 +1212,14 @@ main > section:has(> .bos) > section a:hover {
   height: 10rem;
 }
 
-/* Bomen ver weg: kleiner en in een andere kleur (staat onder .den, dus wint) */
+/* Bomen ver weg: kleiner en in een andere kleur */
 .ver {
   --blad: var(--kleur-boom-blad-ver);
 }
 
 /* Positie (--x), afstand tot de onderkant (--y) en grootte (--schaal).
    Bomen ver weg staan bovenaan de grond en zijn klein, bomen dichtbij staan
-   lager en zijn groot. Het pad in het midden houden we vrij.
-   Een boom die later in de HTML staat, ligt over eerdere heen: zet bomen die
+   lager en zijn groot. Een boom die later in de HTML staat, ligt over eerdere heen: zet bomen die
    verder weg staan dus eerder in de HTML. */
 .boom:nth-child(1) {
   --x: 4%;
@@ -1354,7 +1363,7 @@ main > section:has(> .bos) > section a:hover {
 }
 
 /* Op mobiel staan een paar bomen dichter bij het pad in de weg; die
-   verbergen we standaard (mobile-first) en tonen we weer op groter scherm. */
+   verbergen standaard (mobile-first) en tonen we weer op groter scherm. */
 .boom:nth-child(5),
 .boom:nth-child(6),
 .boom:nth-child(9),
@@ -1396,7 +1405,7 @@ main > section:has(> .bos) > section a:hover {
    MARK: 14. Homepage: cookie-knop en cookie-pop-up
    ========================================================================== */
 
-/* Cookie-knop: blijft altijd zichtbaar (fixed), ook tijdens het scrollen. */
+/* Cookie-knop: blijft altijd zichtbaar (fixed), ook tijdens het scrollen. bron: deep dives */
 body > footer {
   bottom: 1rem;
   left: 1rem;
@@ -1516,7 +1525,7 @@ body > dialog button:focus-visible {
 
 /* ==========================================================================
    MARK: 15. Beweging uit
-   Geen beweging voor mensen die dat in hun systeem hebben uitgezet.
+   Geen beweging voor mensen die dat in hun systeem hebben uitgezet. bron: studentassistent
    ========================================================================== */
 
 @media (prefers-reduced-motion: reduce) {
