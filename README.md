@@ -1,7 +1,72 @@
 # Model
 
 <details> 
-<summary><strong> Zondag 25 oktober </strong></summary>
+<summary><strong> Maandag 26 oktober </strong></summary>
+<img width="516" height="666" alt="Scherm­afbeelding 2026-10-27 om 20 48 41" src="https://github.com/user-attachments/assets/ee9ec241-67b6-4288-bf32-28ce7b002c36" />
+<img width="665" height="464" alt="Scherm­afbeelding 2026-10-27 om 20 49 28" src="https://github.com/user-attachments/assets/853c05ac-8a0a-4233-af79-1dd159920410" />
+
+### Expo – Feedback van medestudenten
+
+Tijdens de expo kregen we de kans om elkaars websites te bekijken en feedback te geven. Dit deden we door stickers te plakken bij de onderdelen die ons het meest aanspraken. We konden blauwe stickers gebruiken voor toegankelijkheid en privacy, rode stickers voor het ontwerp en de vormgeving, en groene stickers voor de technische uitwerking. Elk vak kon maximaal zes stickers ontvangen, waardoor we per categorie moesten kiezen welke websites of onderdelen ons het meest opvielen.
+
+Mijn website kreeg feedback in alle drie de categorieën. Bij de blauwe stickers werd onder andere benoemd dat de light- en darkmode goed werken en dat de website als geheel goed functioneert. Ook werd mijn cookiepop-up genoemd, waarbij werd opgemerkt dat deze vrij groot is en veel tekst bevat. Dit is een aandachtspunt dat ik kan meenemen, omdat informatie over privacy duidelijk moet zijn zonder dat de pop-up onnodig veel ruimte inneemt.
+
+Bij de rode stickers werd mijn website onder andere omschreven als vernieuwend, persoonlijk en creatief. Ook kreeg ik complimenten over de vormgeving en de manier waarop ik mijn eigen persoonlijkheid in de website heb verwerkt. Het is fijn om terug te zien dat het persoonlijke karakter van mijn digitale tuin ook bij anderen overkomt. Dat was namelijk een belangrijk uitgangspunt van mijn concept.
+
+Bij de groene stickers kreeg ik feedback op de technische uitwerking. Medestudenten benoemden onder andere de animaties in mijn songtekst en de manier waarop ik animaties heb gecombineerd met light- en darkmode. Ook werd de technische uitwerking van de Walk Bingo positief genoemd. Dit vond ik fijn om te horen, omdat ik tijdens deze sprint veel heb geëxperimenteerd met CSS en nieuwe technieken heb toegepast om mijn ideeën tot leven te brengen.
+
+Terugkijkend op de expo ben ik vooral blij dat mijn website niet alleen visueel opvalt, maar dat ook de technische uitwerking en het persoonlijke concept worden gewaardeerd. Tegelijkertijd heeft de feedback over de cookiepop-up mij eraan herinnerd dat kleine ontwerpkeuzes invloed hebben op de gebruikservaring. Ik wil daarom blijven zoeken naar een goede balans tussen een eigenzinnige vormgeving, technische mogelijkheden en toegankelijkheid.
+
+<img width="638" height="474" alt="Scherm­afbeelding 2026-10-27 om 20 47 57" src="https://github.com/user-attachments/assets/4d8acdc9-5a40-4736-a7ad-20ee1102389a" />
+
+Vervolgens moesten we opnieuw kritisch naar ons eigen eindproduct kijken en beoordelen hoe ‘webby’ onze website is aan de hand van verschillende criteria. Helaas kreeg ik die dag ontzettend veel last van migraine, waardoor ik niet op school kon blijven en de opdracht thuis heb gemaakt.
+
+### korte samenvatting 
+
+Fluïditeit en adaptiviteit
+
+Ik vind dat mijn website zich goed aanpast aan verschillende schermformaten. De flexibele styling zorgt ervoor dat de pagina's zowel op kleinere schermen als op grotere desktopmonitoren goed worden weergegeven. Ook zijn de knoppen en interactieve elementen goed bereikbaar en te bedienen, zelfs met dikkere vingers of een touchscreen.
+
+Interactiviteit en dynamiek
+
+Ik heb bewust aandacht besteed aan interactieve elementen en animaties. Deze geven de website meer karakter en zorgen ervoor dat de gebruiker feedback krijgt bij bepaalde acties. Tegelijkertijd heb ik geprobeerd de navigatie overzichtelijk te houden en rekening te houden met toegankelijkheid, zodat de interacties niet alleen visueel interessant zijn, maar ook bruikbaar blijven.
+
+Toegankelijkheid
+
+Bij het vormgeven van mijn website heb ik rekening gehouden met contrast, visuele hiërarchie en de leesbaarheid van de typografie. De afbeeldingen zijn voorzien van alternatieve teksten en de knoppen zijn ruim genoeg opgezet. Ook heb ik aandacht besteed aan de bediening met het toetsenbord. Een aandachtspunt blijft om de website uitgebreid te testen met een screenreader en te controleren of alle onderdelen voor verschillende gebruikers goed toegankelijk zijn.
+
+Volwassenheid
+
+Ik vind dat mijn website een verzorgde en samenhangende uitstraling heeft. De structuur van de code is overzichtelijk en ik heb bewust nagedacht over de presentatie van onderdelen, zoals de cookiepop-up. Hierdoor voelt de website als een uitgewerkt geheel in plaats van een verzameling losse pagina's.
+
+Expressiviteit
+
+Een belangrijk doel van mijn website was om mijn eigen persoonlijkheid en creativiteit te laten zien. Hiervoor heb ik geëxperimenteerd met typografie, kleurgebruik, animaties en visuele details. Ik heb onder andere zelfgemaakte SVG-iconen en unieke vormgevingselementen gebruikt om de website een eigen karakter te geven. Ook heb ik veel geleerd over het vertalen van mijn creatieve ideeën naar werkende code.
+
+Leuk en verrassend
+
+Ik vind dat mijn website een eigenzinnige en persoonlijke uitstraling heeft gekregen. Tijdens het maken heb ik veel geëxperimenteerd en nieuwe technieken geleerd. Vooral het combineren van vormgeving en code vond ik interessant, omdat ik hierdoor mijn ideeën steeds verder kon uitwerken. Ik ben blij dat het eindresultaat niet alleen functioneel is, maar ook een persoonlijke ervaring biedt die afwijkt van een standaardwebsite.
+
+Terugkijkend op deze evaluatie zie ik dat mijn sterke punten vooral liggen in de visuele uitwerking, de persoonlijke stijl en het experimenteren met code. Tegelijkertijd wil ik toegankelijkheid als een doorlopend onderdeel van mijn ontwerpproces blijven zien. Een website is voor mij pas echt geslaagd wanneer de vormgeving en techniek samenkomen en de gebruiker de website ook prettig en zelfstandig kan gebruiken.
+
+</details> 
+
+<details> 
+<summary><strong> Vrijdag 23 oktober </strong></summary>
+   
+### Reflectie feedback Sprint 3
+
+Ik kreeg positieve feedback op Sprint 3. Vooral mijn aandacht voor detail in de vormgeving, de stappen die ik heb gezet in het leren programmeren en de duidelijke README werden benoemd. Dat vind ik fijn om terug te horen, omdat ik veel tijd heb besteed aan het uitwerken van mijn ideeën en het zorgvuldig vormgeven van mijn website. Ik merk dat ik steeds beter in staat ben om mijn visuele ideeën niet alleen te bedenken, maar ze ook daadwerkelijk met code uit te werken.
+
+Ook ben ik blij dat mijn proces en keuzes duidelijk terug te zien zijn in mijn learning log en README. Hierdoor is niet alleen het eindresultaat zichtbaar, maar ook hoe ik tot bepaalde oplossingen ben gekomen.
+
+Wat ik vooral meeneem uit deze sprint, is dat aandacht voor detail en experimenteren met code een groot verschil kunnen maken in het eindresultaat. Ik wil deze nauwkeurigheid blijven toepassen, maar ook blijven letten op de balans tussen vormgeving, functionaliteit en toegankelijkheid. Een website moet er niet alleen goed uitzien, maar ook prettig en bruikbaar zijn voor verschillende gebruikers.
+
+Voor ik het inlever wil ik toegankelijkheid en het testen van mijn website een vast onderdeel van mijn ontwerpproces laten blijven, zodat ik mijn keuzes niet alleen op uiterlijk baseer, maar ook op hoe goed de website daadwerkelijk werkt.
+
+<img width="1293" height="674" alt="Scherm­afbeelding 2026-10-27 om 20 24 42" src="https://github.com/user-attachments/assets/a2477311-a127-48ea-a5cf-aced34cf8176" />
+<img width="1293" height="674" alt="Scherm­afbeelding 2026-10-27 om 20 25 11" src="https://github.com/user-attachments/assets/906c18ad-84c7-47d0-8eac-df082a0082cb" />
+<img width="1293" height="674" alt="Scherm­afbeelding 2026-10-27 om 20 25 36" src="https://github.com/user-attachments/assets/043f9ca2-7890-4190-8244-4c13e9fbce67" />
 
 Bij het kopje ‘Activities’ heb ik ervoor gekozen om de gebruiker niet meerdere activiteiten aan te bieden waaruit die kan kiezen. Te veel opties kunnen namelijk juist zorgen voor keuzestress en extra nadenken, terwijl het doel van de website is om de gebruiker rust en ontspanning te bieden. Daarom heb ik gekozen voor de *‘Walk Bingo’*, waarbij de gebruiker een concreet idee krijgt voor een wandeling. Op deze manier wordt de drempel om naar buiten te gaan lager en kan de gebruiker op een laagdrempelige manier in beweging komen, wat kan bijdragen aan de mentale gezondheid. Daarnaast hoeft de gebruiker tijdens het wandelen niet zelf te bedenken wat die kan doen, maar kan die zich richten op de opdrachten van de bingo. Om dit idee verder uit te werken, heb ik een eerste schets gemaakt in Figma.
    
@@ -26,25 +91,6 @@ Ik heb ook een bingomelding toegevoegd die verschijnt wanneer een volledige rij,
 Bij de toegankelijkheid heb ik geprobeerd rekening te houden met toetsenbordbediening. De checkboxen zijn visueel verborgen, maar blijven aanwezig in de HTML. Met :focus-visible voeg ik een duidelijke focusrand toe wanneer een vakje toetsenbordfocus heeft. Het vinkje naast de veranderde achtergrondkleur zorgt er bovendien voor dat een geselecteerd vakje niet alleen door kleur te herkennen is.
 
 Door deze aanpak heb ik geleerd dat CSS niet alleen bedoeld is voor de vormgeving, maar ook voor het reageren op gebruikersinteractie en het tonen van feedback. Ik vond het interessant om te ontdekken hoeveel functionaliteit ik met HTML en CSS kan realiseren zonder extra JavaScript te schrijven. Dit houdt de implementatie relatief eenvoudig en past bij mijn doel om de Walk Bingo overzichtelijk en laagdrempelig te maken.
-
-</details> 
-
-<details> 
-<summary><strong> Vrijdag 23 oktober </strong></summary>
-   
-### Reflectie feedback Sprint 3
-
-Ik kreeg positieve feedback op Sprint 3. Vooral mijn aandacht voor detail in de vormgeving, de stappen die ik heb gezet in het leren programmeren en de duidelijke README werden benoemd. Dat vind ik fijn om terug te horen, omdat ik veel tijd heb besteed aan het uitwerken van mijn ideeën en het zorgvuldig vormgeven van mijn website. Ik merk dat ik steeds beter in staat ben om mijn visuele ideeën niet alleen te bedenken, maar ze ook daadwerkelijk met code uit te werken.
-
-Ook ben ik blij dat mijn proces en keuzes duidelijk terug te zien zijn in mijn learning log en README. Hierdoor is niet alleen het eindresultaat zichtbaar, maar ook hoe ik tot bepaalde oplossingen ben gekomen.
-
-Wat ik vooral meeneem uit deze sprint, is dat aandacht voor detail en experimenteren met code een groot verschil kunnen maken in het eindresultaat. Ik wil deze nauwkeurigheid blijven toepassen, maar ook blijven letten op de balans tussen vormgeving, functionaliteit en toegankelijkheid. Een website moet er niet alleen goed uitzien, maar ook prettig en bruikbaar zijn voor verschillende gebruikers.
-
-Voor ik het inlever wil ik toegankelijkheid en het testen van mijn website een vast onderdeel van mijn ontwerpproces laten blijven, zodat ik mijn keuzes niet alleen op uiterlijk baseer, maar ook op hoe goed de website daadwerkelijk werkt.
-
-<img width="1293" height="674" alt="Scherm­afbeelding 2026-10-27 om 20 24 42" src="https://github.com/user-attachments/assets/a2477311-a127-48ea-a5cf-aced34cf8176" />
-<img width="1293" height="674" alt="Scherm­afbeelding 2026-10-27 om 20 25 11" src="https://github.com/user-attachments/assets/906c18ad-84c7-47d0-8eac-df082a0082cb" />
-<img width="1293" height="674" alt="Scherm­afbeelding 2026-10-27 om 20 25 36" src="https://github.com/user-attachments/assets/043f9ca2-7890-4190-8244-4c13e9fbce67" />
 
 </details> 
 
